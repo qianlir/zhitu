@@ -1,0 +1,115 @@
+/* 上海中考志愿助手 — design tokens */
+:root {
+  --primary: #1a56db;
+  --primary-50: #eff6ff;
+  --primary-100: #dbeafe;
+  --primary-700: #1e40af;
+  --secondary: #0694a2;
+  --secondary-50: #ecfeff;
+  --accent: #d97706;
+  --accent-50: #fffbeb;
+  --success: #059669;
+  --success-50: #ecfdf5;
+  --danger: #dc2626;
+  --danger-50: #fef2f2;
+
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --border: #e5e7eb;
+  --border-strong: #d1d5db;
+
+  --text: #111827;
+  --text-2: #374151;
+  --text-3: #6b7280;
+  --text-muted: #9ca3af;
+
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+  --shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.08), 0 2px 4px -2px rgba(0,0,0,0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -4px rgba(0,0,0,0.04);
+
+  --r-card: 8px;
+  --r-input: 6px;
+  --r-pill: 24px;
+
+  --font: -apple-system, BlinkMacSystemFont, "PingFang SC", "Source Han Sans CN", "Microsoft YaHei", "Hiragino Sans GB", "Helvetica Neue", sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { font-family: var(--font); background: var(--bg); color: var(--text); -webkit-font-smoothing: antialiased; font-size: 14px; line-height: 1.5; }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; font-family: inherit; font-size: 14px; font-weight: 500; padding: 9px 18px; border-radius: var(--r-input); border: 1px solid transparent; cursor: pointer; transition: all 120ms; white-space: nowrap; }
+.btn-primary { background: var(--primary); color: #fff; }
+.btn-primary:hover { background: var(--primary-700); }
+.btn-secondary { background: var(--surface); color: var(--text); border-color: var(--border-strong); }
+.btn-secondary:hover { background: var(--bg); }
+.btn-ghost { background: transparent; color: var(--text-2); }
+.btn-ghost:hover { background: var(--bg); }
+.btn-lg { padding: 13px 24px; font-size: 15px; }
+
+.pill { display: inline-flex; align-items: center; gap: 4px; padding: 4px 12px; border-radius: var(--r-pill); font-size: 12px; font-weight: 500; background: var(--bg); color: var(--text-2); border: 1px solid var(--border); }
+.pill-blue { background: var(--primary-50); color: var(--primary); border-color: transparent; }
+.pill-teal { background: var(--secondary-50); color: var(--secondary); border-color: transparent; }
+.pill-amber { background: var(--accent-50); color: var(--accent); border-color: transparent; }
+.pill-green { background: var(--success-50); color: var(--success); border-color: transparent; }
+.pill-gray { background: #f3f4f6; color: var(--text-3); border-color: transparent; }
+
+.card { background: var(--surface); border-radius: var(--r-card); border: 1px solid var(--border); box-shadow: var(--shadow-sm); }
+.card-pad { padding: 24px; }
+
+input[type="text"], input[type="number"], input[type="search"], input[type="email"], select, textarea {
+  font-family: inherit; font-size: 14px; padding: 10px 14px; border: 1px solid var(--border-strong); border-radius: var(--r-input); background: #fff; color: var(--text); width: 100%;
+}
+input:focus, select:focus, textarea:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(26,86,219,0.12); }
+
+.score-chip { display: inline-flex; align-items: center; padding: 3px 12px; border-radius: var(--r-pill); font-size: 12px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.score-chip.tier-1 { background: #1e3a8a; color: #fff; }
+.score-chip.tier-2 { background: var(--primary); color: #fff; }
+.score-chip.tier-3 { background: var(--secondary); color: #fff; }
+.score-chip.tier-4 { background: var(--success); color: #fff; }
+.score-chip.tier-5 { background: #6b7280; color: #fff; }
+
+.ai-badge { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; color: #7c3aed; background: #f5f3ff; padding: 2px 8px; border-radius: 999px; font-weight: 500; }
+
+.field-label { display: block; font-size: 12px; font-weight: 500; color: var(--text-3); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.04em; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+
+/* ========== 移动端响应式 ========== */
+@media (max-width: 768px) {
+  .card-pad { padding: 16px; }
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr !important; }
+  .btn-lg { padding: 12px 20px; font-size: 14px; }
+  body { font-size: 13px; }
+
+  /* 首页 hero */
+  h1 { font-size: 28px !important; }
+
+  /* 统计栏：2列 */
+  .stats-bar { grid-template-columns: repeat(2, 1fr) !important; gap: 12px !important; }
+  .stats-bar > div { border-right: none !important; }
+
+  /* 学校详情：分数指标横滑 */
+  .score-metrics { grid-template-columns: repeat(3, 1fr) !important; gap: 8px !important; }
+  .score-metrics > div { padding: 8px !important; }
+
+  /* AI对话：单列 */
+  .chat-layout { grid-template-columns: 1fr !important; }
+  .chat-sidebar { position: static !important; }
+
+  /* Step0 输入：单列 */
+  .step0-inputs { grid-template-columns: 1fr !important; }
+
+  /* Header: 可滚动导航 */
+  .header-nav { gap: 4px !important; font-size: 13px !important; }
+  .header-nav a, .header-nav button { padding: 6px 10px !important; white-space: nowrap; }
+
+  /* 志愿方案 summary：2列 */
+  .plan-summary-stats { gap: 12px !important; }
+}
+
+.spinner { display: inline-block; width: 16px; height: 16px; border: 2px solid var(--border); border-top-color: var(--primary); border-radius: 50%; animation: spin 0.7s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.loading { display: flex; align-items: center; justify-content: center; padding: 64px; color: var(--text-3); gap: 12px; }

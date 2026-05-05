@@ -1,0 +1,1794 @@
+[
+  {
+    "seq": 1,
+    "name": "上海市格致中学",
+    "code": "012001",
+    "district": "黄浦",
+    "ownership": "公办",
+    "type": "市实验性示范性高中"
+  },
+  {
+    "seq": 3,
+    "name": "上海市向明中学",
+    "code": "012005",
+    "district": "黄浦",
+    "ownership": "公办",
+    "type": "市实验性上示范性高中"
+  },
+  {
+    "seq": 4,
+    "name": "上海外国语大学附属大境中学",
+    "code": "012007",
+    "district": "黄浦",
+    "ownership": "公办",
+    "type": "市实验性示范性高中"
+  },
+  {
+    "seq": 5,
+    "name": "上海市光明中学",
+    "code": "012008",
+    "district": "黄浦",
+    "ownership": "公办",
+    "type": "市实验性示范性高中"
+  },
+  {
+    "seq": 6,
+    "name": "上海市敬业中学",
+    "code": "012009",
+    "district": "黄浦",
+    "ownership": "公办",
+    "type": "市实验性示范性高中"
+  },
+  {
+    "seq": 10,
+    "name": "上海市第八中学",
+    "code": "013001",
+    "district": "黄浦",
+    "ownership": "公办",
+    "type": "区实验性示院范性高中"
+  },
+  {
+    "seq": 11,
+    "name": "上海市第十中学",
+    "code": "013003",
+    "district": "黄浦",
+    "ownership": "公办",
+    "type": "区实验性示范性高中"
+  },
+  {
+    "seq": 12,
+    "name": "上海理工大学附属储能中学",
+    "code": "013004",
+    "district": "黄浦",
+    "ownership": "公办",
+    "type": "考区实验性示范性高中"
+  },
+  {
+    "seq": 13,
+    "name": "上海市金陵中学海",
+    "code": "014001",
+    "district": "黄浦",
+    "ownership": "公办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 14,
+    "name": "上海市市南中学",
+    "code": "014003",
+    "district": "黄浦",
+    "ownership": "公办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 16,
+    "name": "上海市同济黄浦设计创意中学",
+    "code": "014006",
+    "district": "黄浦",
+    "ownership": "公办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 19,
+    "name": "上海市位育中学",
+    "code": "042035",
+    "district": "徐汇",
+    "ownership": "公办",
+    "type": "市实验性示范育性高中"
+  },
+  {
+    "seq": 21,
+    "name": "上海市第二中学（梅陇校区）",
+    "code": "042002",
+    "district": "徐汇",
+    "ownership": "公办",
+    "type": "市高中招生政策高中"
+  },
+  {
+    "seq": 24,
+    "name": "上海市紫竹园中学",
+    "code": "044223",
+    "district": "徐汇",
+    "ownership": "公办",
+    "type": "市特色普通高中"
+  },
+  {
+    "seq": 25,
+    "name": "上海市中国中学",
+    "code": "044103",
+    "district": "徐汇",
+    "ownership": "公办",
+    "type": "区实验性示范性高中"
+  },
+  {
+    "seq": 26,
+    "name": "上海市第五十四中学",
+    "code": "044107",
+    "district": "徐汇",
+    "ownership": "公办",
+    "type": "区实验性示范性海高中"
+  },
+  {
+    "seq": 29,
+    "name": "上海市世外中学",
+    "code": "041363",
+    "district": "徐汇",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 34,
+    "name": "上海市徐汇区董恒甫高级中学",
+    "code": "044239",
+    "district": "徐汇",
+    "ownership": "公办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 35,
+    "name": "上海市位育附属徐汇科技实验中学",
+    "code": "044101",
+    "district": "徐汇",
+    "ownership": "公办",
+    "type": "区实验性示范性高中"
+  },
+  {
+    "seq": 36,
+    "name": "上海市第三女子中学",
+    "code": "052001",
+    "district": "长宁",
+    "ownership": "公办",
+    "type": "市实验性示范性高中"
+  },
+  {
+    "seq": 38,
+    "name": "上海市复旦中学",
+    "code": "053004",
+    "district": "长宁",
+    "ownership": "公办",
+    "type": "市实验性示范性海高中"
+  },
+  {
+    "seq": 41,
+    "name": "上海市建青实验学校",
+    "code": "053005",
+    "district": "长宁",
+    "ownership": "公办",
+    "type": "区实验性示范性高中"
+  },
+  {
+    "seq": 42,
+    "name": "上海市仙霞高级中学",
+    "code": "054030",
+    "district": "长宁",
+    "ownership": "公办",
+    "type": "区实验性示范性高中"
+  },
+  {
+    "seq": 43,
+    "name": "上海市西郊学校",
+    "code": "054010",
+    "district": "长宁",
+    "ownership": "公办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 44,
+    "name": "上海市民办新虹桥中学",
+    "code": "054043",
+    "district": "长宁",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 45,
+    "name": "上海市市西中学",
+    "code": "062001",
+    "district": "静安试",
+    "ownership": "公办",
+    "type": "市实验性示范性高中"
+  },
+  {
+    "seq": 47,
+    "name": "上海市新中高级中学",
+    "code": "062003",
+    "district": "静安",
+    "ownership": "公办",
+    "type": "市实验性示范性高中"
+  },
+  {
+    "seq": 51,
+    "name": "上海市华东模范中学",
+    "code": "064001",
+    "district": "静安",
+    "ownership": "公办",
+    "type": "市实验性示范性高中"
+  },
+  {
+    "seq": 52,
+    "name": "上海戏剧学院附属高级中学",
+    "code": "064004",
+    "district": "静安",
+    "ownership": "公办",
+    "type": "海"
+  },
+  {
+    "seq": 53,
+    "name": "上海市民立中学",
+    "code": "063001",
+    "district": "静安",
+    "ownership": "公办",
+    "type": "区实验性示范性高中"
+  },
+  {
+    "seq": 55,
+    "name": "上海市风华中学",
+    "code": "063003",
+    "district": "静安",
+    "ownership": "公办",
+    "type": "区实验性示范性高中"
+  },
+  {
+    "seq": 60,
+    "name": "上海田家炳中学",
+    "code": "064020",
+    "district": "静安",
+    "ownership": "民办",
+    "type": "区实验性示范性高中"
+  },
+  {
+    "seq": 61,
+    "name": "上海市向东中学",
+    "code": "064007",
+    "district": "静安",
+    "ownership": "公办",
+    "type": "市一般高中"
+  },
+  {
+    "seq": 62,
+    "name": "上海大学市北附属中学",
+    "code": "064008",
+    "district": "静安",
+    "ownership": "公办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 63,
+    "name": "上海市民办扬波中学",
+    "code": "064021",
+    "district": "静安",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 65,
+    "name": "上海市民试办风范中学",
+    "code": "064024",
+    "district": "静安",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 67,
+    "name": "上海市曹杨第二中学",
+    "code": "072002",
+    "district": "普陀",
+    "ownership": "公办",
+    "type": "市实验性示范性高中"
+  },
+  {
+    "seq": 68,
+    "name": "上海市宜川中学",
+    "code": "073003",
+    "district": "普陀",
+    "ownership": "公办",
+    "type": "市实验性示范性高中"
+  },
+  {
+    "seq": 74,
+    "name": "上海市长征中学",
+    "code": "074010",
+    "district": "普陀",
+    "ownership": "公办",
+    "type": "区实验性示范性高中"
+  },
+  {
+    "seq": 75,
+    "name": "上海市桃浦中学",
+    "code": "074011",
+    "district": "普陀",
+    "ownership": "公办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 76,
+    "name": "上海华东师范大学附属进华中学",
+    "code": "074018",
+    "district": "普陀",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 77,
+    "name": "上海安生学校育",
+    "code": "074081",
+    "district": "普陀",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 78,
+    "name": "上海市曹杨第二中学东校",
+    "code": "074085",
+    "district": "普陀",
+    "ownership": "公办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 79,
+    "name": "上海培佳双语学校",
+    "code": "075013",
+    "district": "普陀试",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 83,
+    "name": "上海师范大学附属虹口中学",
+    "code": "094005",
+    "district": "虹口",
+    "ownership": "公办",
+    "type": "区实验性示范性高中"
+  },
+  {
+    "seq": 85,
+    "name": "上海市继光高级中学",
+    "code": "093004",
+    "district": "虹口",
+    "ownership": "公办",
+    "type": "区实验性示范性高中"
+  },
+  {
+    "seq": 88,
+    "name": "上海市第五十二中学",
+    "code": "094003",
+    "district": "虹口",
+    "ownership": "公办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 90,
+    "name": "上海外国语大学附属外国语学校东校",
+    "code": "094049",
+    "district": "虹口",
+    "ownership": "公办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 95,
+    "name": "上海市市东实验学校（上海市市东中学）",
+    "code": "103012",
+    "district": "杨浦",
+    "ownership": "公办",
+    "type": "市区实验性示范性高中"
+  },
+  {
+    "seq": 96,
+    "name": "上海财经大学附属中学",
+    "code": "103026",
+    "district": "杨浦",
+    "ownership": "公办",
+    "type": "区实验性示范性高中"
+  },
+  {
+    "seq": 97,
+    "name": "上海市同济中学",
+    "code": "103049",
+    "district": "杨浦",
+    "ownership": "公办",
+    "type": "区实验性示范性高中"
+  },
+  {
+    "seq": 99,
+    "name": "上海市复试旦实验中学",
+    "code": "103075",
+    "district": "杨浦",
+    "ownership": "公办",
+    "type": "区实验性示范性高中"
+  },
+  {
+    "seq": 101,
+    "name": "上海市民星中学",
+    "code": "104066",
+    "district": "杨浦",
+    "ownership": "公办",
+    "type": "区实验性示范性高中"
+  },
+  {
+    "seq": 104,
+    "name": "上海市民办上实剑桥外国语中学",
+    "code": "104021",
+    "district": "杨浦",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 105,
+    "name": "上海市七宝中学",
+    "code": "122001",
+    "district": "闵行",
+    "ownership": "公办",
+    "type": "市实验性示范性高中"
+  },
+  {
+    "seq": 106,
+    "name": "上海市闵行中学",
+    "code": "123001",
+    "district": "闵行",
+    "ownership": "公办",
+    "type": "市实验性示范性高中"
+  },
+  {
+    "seq": 111,
+    "name": "上海市莘庄中学",
+    "code": "123002",
+    "district": "闵行",
+    "ownership": "公办",
+    "type": "区实验性示范性高中"
+  },
+  {
+    "seq": 115,
+    "name": "上海市文来中学",
+    "code": "124108",
+    "district": "闵行",
+    "ownership": "民办",
+    "type": "区实验性示范性高中"
+  },
+  {
+    "seq": 117,
+    "name": "上海市第二体育运动学校（上育海市体育中学）",
+    "code": "124010",
+    "district": "闵行",
+    "ownership": "公办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 118,
+    "name": "上海市七宝中学附属鑫都实验中学",
+    "code": "124011",
+    "district": "闵行",
+    "ownership": "公办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 119,
+    "name": "上海市闵行中学东校",
+    "code": "124012",
+    "district": "闵行试",
+    "ownership": "公办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 120,
+    "name": "上海市闵市行区实验高级中学",
+    "code": "124013",
+    "district": "闵行",
+    "ownership": "公办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 121,
+    "name": "上海市七宝中学浦江分校",
+    "code": "124015",
+    "district": "闵行",
+    "ownership": "公办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 125,
+    "name": "上海市民办文绮中学",
+    "code": "124109",
+    "district": "闵行",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 126,
+    "name": "上海协和双语高级中学",
+    "code": "124111",
+    "district": "闵行",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 128,
+    "name": "上海闵行区协和双语教科学校",
+    "code": "124115",
+    "district": "闵行",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 130,
+    "name": "上海交通大学附属闵行实验学校",
+    "code": "125008",
+    "district": "闵行",
+    "ownership": "公办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 136,
+    "name": "上海市行知中学",
+    "code": "132001",
+    "district": "宝山",
+    "ownership": "公办",
+    "type": "市实验性示范性高中"
+  },
+  {
+    "seq": 137,
+    "name": "上海大学附属中学",
+    "code": "132002",
+    "district": "宝山",
+    "ownership": "公办",
+    "type": "市实验性示范性高中"
+  },
+  {
+    "seq": 139,
+    "name": "上海师范大学附属中学宝山分校",
+    "code": "132003",
+    "district": "宝山",
+    "ownership": "公办",
+    "type": "高中招生政策高中"
+  },
+  {
+    "seq": 142,
+    "name": "上海市宝山中学",
+    "code": "134001",
+    "district": "宝山",
+    "ownership": "公办",
+    "type": "区实验性示范性高中"
+  },
+  {
+    "seq": 147,
+    "name": "上海市高境第一中学",
+    "code": "134006",
+    "district": "宝山",
+    "ownership": "公办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 148,
+    "name": "上海市宝山区海滨中学",
+    "code": "134009",
+    "district": "宝山",
+    "ownership": "公办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 149,
+    "name": "上海民办行中中学",
+    "code": "134010",
+    "district": "宝山",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 151,
+    "name": "上海宝山区民办维尚高级中学",
+    "code": "134013",
+    "district": "宝山",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 154,
+    "name": "上海市同洲模范学校",
+    "code": "135001",
+    "district": "宝山",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 156,
+    "name": "上海宝山区世外学校",
+    "code": "135034",
+    "district": "宝山",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 157,
+    "name": "上海市嘉定区第一中学",
+    "code": "142001",
+    "district": "嘉定",
+    "ownership": "公办",
+    "type": "市实验性示范性高中"
+  },
+  {
+    "seq": 158,
+    "name": "上海交通大学附教属中学嘉定分校",
+    "code": "142002",
+    "district": "嘉定",
+    "ownership": "公办",
+    "type": "高中招生政策高中"
+  },
+  {
+    "seq": 162,
+    "name": "上海师范大学附属嘉定高级中学",
+    "code": "143002",
+    "district": "嘉定",
+    "ownership": "公办",
+    "type": "区实验性示范性高中"
+  },
+  {
+    "seq": 163,
+    "name": "上海市嘉定区安亭高级中学",
+    "code": "143003",
+    "district": "嘉定",
+    "ownership": "公办",
+    "type": "考区实验性示范性高中"
+  },
+  {
+    "seq": 165,
+    "name": "上海市嘉定区中光高级中学",
+    "code": "144010",
+    "district": "嘉定",
+    "ownership": "公办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 167,
+    "name": "上海市民办远东学校",
+    "code": "145007",
+    "district": "嘉定",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 172,
+    "name": "上海南汇中学",
+    "code": "152004",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": "市实验性示范性高中"
+  },
+  {
+    "seq": 173,
+    "name": "上海市洋泾中学",
+    "code": "153001",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": "市市实验性示范性高中"
+  },
+  {
+    "seq": 174,
+    "name": "上海市高桥中学",
+    "code": "153004",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": "市实验性示范性高中"
+  },
+  {
+    "seq": 175,
+    "name": "上海市川沙中学",
+    "code": "153005",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": "市实验性示范性高中"
+  },
+  {
+    "seq": 180,
+    "name": "上海市香山中学",
+    "code": "154009",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": "（市特色普通高中）"
+  },
+  {
+    "seq": 182,
+    "name": "上海市上南中学",
+    "code": "153003",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": "区实验性示范性高中"
+  },
+  {
+    "seq": 183,
+    "name": "上海市三林中学",
+    "code": "153006",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": "区实验性示范性高中"
+  },
+  {
+    "seq": 185,
+    "name": "上海市新川中学",
+    "code": "153008",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": "区实验性示范性海高中"
+  },
+  {
+    "seq": 188,
+    "name": "上海市新场中学",
+    "code": "153011",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": "区实验性示范性高中"
+  },
+  {
+    "seq": 191,
+    "name": "上海市文建中学",
+    "code": "154003",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": "区实验性示范性高中"
+  },
+  {
+    "seq": 192,
+    "name": "上海市陆行中学",
+    "code": "154011",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": "区实验性示范性高中"
+  },
+  {
+    "seq": 193,
+    "name": "上海市浦东中学",
+    "code": "154012",
+    "district": "浦东试新",
+    "ownership": "公办",
+    "type": "区实验性示范性高中"
+  },
+  {
+    "seq": 194,
+    "name": "上海立信会计市金融学院附属高行中学",
+    "code": "154016",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": "区实验性示范性高中"
+  },
+  {
+    "seq": 195,
+    "name": "上海市建平世纪中学",
+    "code": "154044",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": "区实验性示范性高中"
+  },
+  {
+    "seq": 199,
+    "name": "上海民办光华中学",
+    "code": "151082",
+    "district": "浦东新",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 200,
+    "name": "上海市建平中学筠溪分校",
+    "code": "152007",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 202,
+    "name": "上海市川沙中学友仁分校",
+    "code": "152009",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 203,
+    "name": "上海市泾南中学",
+    "code": "154008",
+    "district": "浦东新教",
+    "ownership": "公办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 204,
+    "name": "上海市沪新中学",
+    "code": "154010",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 209,
+    "name": "上海市三林中学东校",
+    "code": "154026",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 210,
+    "name": "上海市川沙中学北校",
+    "code": "154028",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 212,
+    "name": "上海市民办育辛高级中学",
+    "code": "154037",
+    "district": "浦东新",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 214,
+    "name": "上海市试高东中学",
+    "code": "154045",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 221,
+    "name": "上海市民办平和学校",
+    "code": "155008",
+    "district": "浦东新",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 222,
+    "name": "上海市民办金苹果学校",
+    "code": "155013",
+    "district": "浦东新",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 224,
+    "name": "上海市民办尚德实验学校",
+    "code": "155043",
+    "district": "浦东新",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 225,
+    "name": "上海浦东新区民办沪港学校",
+    "code": "155047",
+    "district": "浦东新",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 226,
+    "name": "上海民办华曜浦东实验学校",
+    "code": "155049",
+    "district": "浦东新",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 227,
+    "name": "上海浦考东新区民办万科学校",
+    "code": "155050",
+    "district": "浦东新",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 228,
+    "name": "上海浦东新区民办惠立学校",
+    "code": "155052",
+    "district": "浦东新",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 231,
+    "name": "上海浦东新区民办康德学校",
+    "code": "155056",
+    "district": "浦东新",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 233,
+    "name": "上海市金山中学",
+    "code": "162000",
+    "district": "金山",
+    "ownership": "公办",
+    "type": "市实验性示范性高中"
+  },
+  {
+    "seq": 235,
+    "name": "上海师范大学教第二附属中学",
+    "code": "163001",
+    "district": "金山",
+    "ownership": "公办",
+    "type": "（市特色普通高中）"
+  },
+  {
+    "seq": 240,
+    "name": "上海枫叶双语学校",
+    "code": "164006",
+    "district": "金山",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 241,
+    "name": "上海市民办永昌中学",
+    "code": "164008",
+    "district": "金山",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 248,
+    "name": "上海师范大学附属外国语中学",
+    "code": "174009",
+    "district": "松江",
+    "ownership": "公办",
+    "type": "市区实验性示范性高中"
+  },
+  {
+    "seq": 252,
+    "name": "上海市松江区试科德高级中学",
+    "code": "173002",
+    "district": "松江",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 254,
+    "name": "上海市松江区第四中学",
+    "code": "174002",
+    "district": "松江",
+    "ownership": "公办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 257,
+    "name": "上海领科双语学校",
+    "code": "174013",
+    "district": "松江",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 258,
+    "name": "上海市西外外国语学校",
+    "code": "175018",
+    "district": "松江",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 259,
+    "name": "上海民办包玉刚实验高中",
+    "code": "175021",
+    "district": "松江",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 263,
+    "name": "上海市朱家角中学",
+    "code": "183002",
+    "district": "青浦",
+    "ownership": "公办",
+    "type": "市实验性示范性高中"
+  },
+  {
+    "seq": 268,
+    "name": "上海青浦区世外高级中学",
+    "code": "184006",
+    "district": "青浦",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 269,
+    "name": "上海青浦区宏润博源高级中学",
+    "code": "184007",
+    "district": "青浦",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 270,
+    "name": "上海宋庆龄学校",
+    "code": "185008",
+    "district": "青浦",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 271,
+    "name": "上海青浦区协和双语育学校",
+    "code": "185014",
+    "district": "青浦",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 272,
+    "name": "上海市奉贤中学",
+    "code": "202001",
+    "district": "奉贤",
+    "ownership": "公办",
+    "type": "市实验性示范性高中"
+  },
+  {
+    "seq": 277,
+    "name": "上海师范大学第四附属中学",
+    "code": "204006",
+    "district": "奉贤",
+    "ownership": "公办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 278,
+    "name": "上海市奉贤区景秀高级中学",
+    "code": "204008",
+    "district": "奉贤",
+    "ownership": "公办",
+    "type": "考一般高中"
+  },
+  {
+    "seq": 280,
+    "name": "上海美达菲双语高级中学",
+    "code": "204020",
+    "district": "奉贤",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 285,
+    "name": "上海市扬子中学",
+    "code": "513009",
+    "district": "崇明",
+    "ownership": "公办",
+    "type": "区实验性示范性高中"
+  },
+  {
+    "seq": 286,
+    "name": "上海市崇明区堡镇中学",
+    "code": "514004",
+    "district": "崇明",
+    "ownership": "公办",
+    "type": "市区实验性示范性高中"
+  },
+  {
+    "seq": 287,
+    "name": "上海民办民一中学",
+    "code": "514010",
+    "district": "崇明",
+    "ownership": "民办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 288,
+    "name": "上海市崇明区横沙中学",
+    "code": "514013",
+    "district": "崇明",
+    "ownership": "公办",
+    "type": "一般高中"
+  },
+  {
+    "seq": 0,
+    "name": "上海市格致中学教（奉贤校区）",
+    "code": "012002",
+    "district": "黄浦",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市向明中学（浦江校区）",
+    "code": "012006",
+    "district": "考黄浦",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海音乐学院附属黄浦比乐中学",
+    "code": "014004",
+    "district": "黄浦",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市第二中学",
+    "code": "042001",
+    "district": "徐汇",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市南洋模范中学",
+    "code": "042008",
+    "district": "徐汇",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市徐汇中学",
+    "code": "044109",
+    "district": "徐汇",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市西南位育中学",
+    "code": "044162",
+    "district": "徐汇",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市民办西南高级中学 考044083 徐汇区 民办 一般高中31 上海市零陵中学",
+    "code": "044114",
+    "district": "徐汇",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市西南模范中学",
+    "code": "044164",
+    "district": "徐汇",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市延安中学",
+    "code": "052002",
+    "district": "长宁",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市回民中学",
+    "code": "062011",
+    "district": "静安",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市第六十中学",
+    "code": "063004",
+    "district": "静安",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市第一中学",
+    "code": "063002",
+    "district": "静安",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市彭浦中学",
+    "code": "063007",
+    "district": "静安",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市闸北第八中学",
+    "code": "063077",
+    "district": "静安",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市民办新和中学",
+    "code": "064023",
+    "district": "静安",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市晋元高级中学",
+    "code": "072001",
+    "district": "普陀",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市曹杨中学",
+    "code": "073004",
+    "district": "普陀",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市甘泉外国语中学",
+    "code": "074007",
+    "district": "普陀",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海音乐学院附属安师实验中学",
+    "code": "074016",
+    "district": "普陀",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海音乐学院虹口区北虹高级中学",
+    "code": "093003",
+    "district": "虹口",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市鲁迅中学海",
+    "code": "094001",
+    "district": "虹口",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市友谊中学",
+    "code": "094004",
+    "district": "虹口",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市杨浦高级中学",
+    "code": "102004",
+    "district": "杨浦",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海理工大学附属中学",
+    "code": "103039",
+    "district": "杨浦",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市中原中学",
+    "code": "103061",
+    "district": "杨浦",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市复试旦实验中学 103075 杨浦区 公办 区实验性示范性高中 100 上海理工大学附属杨浦少云中学",
+    "code": "104050",
+    "district": "杨浦",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市体育学院附属中学",
+    "code": "104073",
+    "district": "杨浦",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海师范大学附属中学闵行分校",
+    "code": "122003",
+    "district": "闵行",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海交通大学试附属中学闵行分校",
+    "code": "122004",
+    "district": "闵行",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海闵行田园高级中学",
+    "code": "124022",
+    "district": "闵行",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市金汇高级中学",
+    "code": "124020",
+    "district": "闵行",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市古美高级中学",
+    "code": "124024",
+    "district": "闵行",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海协和双语高级中学 124111 闵行区 民办 一般高中 国际课程班 127 上海市闵行区教育学院附海属中学",
+    "code": "124114",
+    "district": "闵行",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市民办燎原双语高级中学",
+    "code": "124116",
+    "district": "闵行",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海星河湾双语学校",
+    "code": "125113",
+    "district": "闵行",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海闵行区诺达双语学校",
+    "code": "125117",
+    "district": "闵行",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海闵行区民办德闳学校",
+    "code": "125119",
+    "district": "闵行",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海七宝德怀特高级中学",
+    "code": "128100",
+    "district": "闵行",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市吴淞中学",
+    "code": "133001",
+    "district": "宝山",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海师范大学附属宝山罗店中学",
+    "code": "133002",
+    "district": "宝山",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市通河中学 考134002 宝山区 公办 区实验性示范性高中144 上海市顾村中学",
+    "code": "134004",
+    "district": "宝山",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市行知实验中学",
+    "code": "134005",
+    "district": "宝山",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市淞浦中学",
+    "code": "134003",
+    "district": "宝山",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市宝山华曜高级中学",
+    "code": "134015",
+    "district": "宝山",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海师范大学附属中学嘉定新城分校",
+    "code": "142004",
+    "district": "考嘉定",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市嘉定区第二中学",
+    "code": "143001",
+    "district": "嘉定",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市嘉定区嘉一实验高级中学",
+    "code": "142003",
+    "district": "嘉定",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海大学附属嘉定高级海中学",
+    "code": "144011",
+    "district": "嘉定",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市嘉定区封浜高级中学",
+    "code": "144006",
+    "district": "嘉定",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海华旭双语学校",
+    "code": "145018",
+    "district": "嘉定",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市建平中学",
+    "code": "152001",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市进才中学",
+    "code": "152002",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海海事大学附属北蔡高级中学",
+    "code": "154013",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海海洋大学附属大团高级中学",
+    "code": "153010",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市南汇第一中学",
+    "code": "154050",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市浦东外国语学校东校",
+    "code": "151087",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市建平中学筠溪分校 152007 浦东新区 公办 一般高中 201 上海市进才中学根林分海校",
+    "code": "152008",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市育民中学",
+    "code": "154015",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市江镇中学",
+    "code": "154020",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市浦东新区民办浦实高级中学",
+    "code": "154033",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市民办丰华高级中学",
+    "code": "154039",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市试高东中学 154045 浦东新区 公办 一般高中 215 上海市祝桥高级中学",
+    "code": "154047",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海工商外国语职业学院附属中学",
+    "code": "154048",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市老港中学",
+    "code": "154051",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市泥城中学",
+    "code": "154052",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市长岛中学",
+    "code": "155002",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海浦东新区民办东鼎外国语学校",
+    "code": "155041",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海浦东民办未来科技学校",
+    "code": "155055",
+    "district": "浦东新",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海体育大学附属金山亭林中学",
+    "code": "164002",
+    "district": "金山",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市民办交大南洋中学",
+    "code": "164005",
+    "district": "金山",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市民办永昌中学 164008 金山区 民办 一般高中 242 上海金山区世外学校海",
+    "code": "165004",
+    "district": "金山",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海外国语大学附属外国语学校松江云间中 海 享受市实验性示范性 246",
+    "code": "174003",
+    "district": "松江",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海师范大学附属中学松江分校",
+    "code": "172004",
+    "district": "松江",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市松江区试科德高级中学 173002 松江区 民办 一般高中 253 上海市松江区立达中学",
+    "code": "174001",
+    "district": "松江",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市松江区民办茸一中学",
+    "code": "174007",
+    "district": "松江",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市松江九峰实验学校",
+    "code": "174008",
+    "district": "松江",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海民办包玉刚实验高中 175021 松江区 民办 一般高中 国际课程班260 上海赫贤学校",
+    "code": "175024",
+    "district": "松江",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海松江区爱菊学校",
+    "code": "175025",
+    "district": "松江",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市青浦高级中学",
+    "code": "182001",
+    "district": "青浦",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市青浦区第一中学",
+    "code": "184005",
+    "district": "青浦",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市青浦区东湖中学",
+    "code": "184004",
+    "district": "青浦",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市奉贤区奉城高级中学",
+    "code": "204005",
+    "district": "奉贤",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市奉贤区景秀高级中学 204008 奉贤区 公办 考一般高中 279 上海奉贤区博华高级中海学",
+    "code": "205006",
+    "district": "奉贤",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市崇明中学",
+    "code": "512000",
+    "district": "崇明",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市实验学校东滩高级中学",
+    "code": "512001",
+    "district": "市崇明",
+    "ownership": "公办",
+    "type": ""
+  },
+  {
+    "seq": 0,
+    "name": "上海市崇明区城桥中学",
+    "code": "514001",
+    "district": "崇明",
+    "ownership": "公办",
+    "type": ""
+  }
+]

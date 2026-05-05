@@ -1,0 +1,86 @@
+---
+school_id: fengxian-zhongxue
+doc_type: admission
+source: official_2024
+scraped_at: 2026-05-05T08:55:34+08:00
+admissions:
+  - year: 2025
+    batch: 统招
+    min_score: 662.0
+    quota: 80
+    control_line: 610
+  - year: 2024
+    batch: 统招
+    min_score: 660.5
+    quota: 80
+    control_line: 610
+  - year: 2023
+    batch: 统招
+    min_score: 636.0
+    quota: 80
+    control_line: 580
+  - year: 2025
+    batch: 名额到区
+    min_score: 655.0
+    quota: 120
+    control_line: 610
+  - year: 2025
+    batch: 名额到校
+    min_score: 648.0
+    quota: 56
+    control_line: 610
+  - year: 2025
+    batch: 自主招生
+    min_score: 658.5
+    quota: 12
+    control_line: 610
+  - year: 2024
+    batch: 名额到区
+    min_score: 653.5
+    quota: 120
+    control_line: 610
+  - year: 2024
+    batch: 名额到校
+    min_score: 646.5
+    quota: 56
+    control_line: 610
+  - year: 2024
+    batch: 自主招生
+    min_score: 657.0
+    quota: 12
+    control_line: 610
+  - year: 2023
+    batch: 名额到区
+    min_score: 629.0
+    quota: 120
+    control_line: 580
+  - year: 2023
+    batch: 名额到校
+    min_score: 622.0
+    quota: 56
+    control_line: 580
+  - year: 2023
+    batch: 自主招生
+    min_score: 632.5
+    quota: 12
+    control_line: 580
+---
+
+# 上海市奉贤中学 历年录取分数线
+
+> 数据来源：上海市教育考试院、浦东新区政府官网等公开渠道。
+
+| 年份 | 批次 | 最低分 | 招生名额 | 当年控制线 |
+|---|---|---|---|---|
+| 2025 | 统招 | 662.0 | 80 | 610 |
+| 2024 | 统招 | 660.5 | 80 | 610 |
+| 2023 | 统招 | 636.0 | 80 | 580 |
+| 2025 | 名额到区 | 655.0 | 120 | 610 |
+| 2025 | 名额到校 | 648.0 | 56 | 610 |
+| 2025 | 自主招生 | 658.5 | 12 | 610 |
+| 2024 | 名额到区 | 653.5 | 120 | 610 |
+| 2024 | 名额到校 | 646.5 | 56 | 610 |
+| 2024 | 自主招生 | 657.0 | 12 | 610 |
+| 2023 | 名额到区 | 629.0 | 120 | 580 |
+| 2023 | 名额到校 | 622.0 | 56 | 580 |
+| 2023 | 自主招生 | 632.5 | 12 | 580 |

@@ -1,0 +1,2473 @@
+{
+  "shanghai-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.99,
+      "prestigious_rate": 0.7,
+      "qingbei_count": 30,
+      "fudan_jiaoda_count": 95
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.99,
+      "prestigious_rate": 0.68,
+      "qingbei_count": 28,
+      "fudan_jiaoda_count": 90
+    }
+  ],
+  "huashida-erfu": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.99,
+      "prestigious_rate": 0.65,
+      "qingbei_count": 22,
+      "fudan_jiaoda_count": 85
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.99,
+      "prestigious_rate": 0.63,
+      "qingbei_count": 20,
+      "fudan_jiaoda_count": 80
+    }
+  ],
+  "fudan-fuzhong": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.98,
+      "prestigious_rate": 0.6,
+      "qingbei_count": 19,
+      "fudan_jiaoda_count": 80
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.98,
+      "prestigious_rate": 0.58,
+      "qingbei_count": 17,
+      "fudan_jiaoda_count": 75
+    }
+  ],
+  "jiaoda-fuzhong": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.98,
+      "prestigious_rate": 0.55,
+      "qingbei_count": 11,
+      "fudan_jiaoda_count": 70
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.98,
+      "prestigious_rate": 0.53,
+      "qingbei_count": 10,
+      "fudan_jiaoda_count": 65
+    }
+  ],
+  "qibao-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.97,
+      "prestigious_rate": 0.5,
+      "qingbei_count": 8,
+      "fudan_jiaoda_count": 55
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.96,
+      "prestigious_rate": 0.48,
+      "qingbei_count": 6,
+      "fudan_jiaoda_count": 50
+    }
+  ],
+  "nanyang-mofan": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.96,
+      "prestigious_rate": 0.42,
+      "qingbei_count": 4,
+      "fudan_jiaoda_count": 35
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.95,
+      "prestigious_rate": 0.4,
+      "qingbei_count": 3,
+      "fudan_jiaoda_count": 32
+    }
+  ],
+  "kongjiang-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.95,
+      "prestigious_rate": 0.38,
+      "qingbei_count": 3,
+      "fudan_jiaoda_count": 28
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.94,
+      "prestigious_rate": 0.36,
+      "qingbei_count": 2,
+      "fudan_jiaoda_count": 25
+    }
+  ],
+  "datong-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.94,
+      "prestigious_rate": 0.35,
+      "qingbei_count": 2,
+      "fudan_jiaoda_count": 22
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.93,
+      "prestigious_rate": 0.33,
+      "qingbei_count": 2,
+      "fudan_jiaoda_count": 20
+    }
+  ],
+  "fuxing-gaoji": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.93,
+      "prestigious_rate": 0.32,
+      "qingbei_count": 2,
+      "fudan_jiaoda_count": 20
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.92,
+      "prestigious_rate": 0.3,
+      "qingbei_count": 1,
+      "fudan_jiaoda_count": 18
+    }
+  ],
+  "yanan-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.95,
+      "prestigious_rate": 0.38,
+      "qingbei_count": 3,
+      "fudan_jiaoda_count": 25
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.94,
+      "prestigious_rate": 0.36,
+      "qingbei_count": 2,
+      "fudan_jiaoda_count": 22
+    }
+  ],
+  "shixi-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.93,
+      "prestigious_rate": 0.3,
+      "qingbei_count": 2,
+      "fudan_jiaoda_count": 18
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.92,
+      "prestigious_rate": 0.28,
+      "qingbei_count": 1,
+      "fudan_jiaoda_count": 16
+    }
+  ],
+  "jianping-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.96,
+      "prestigious_rate": 0.45,
+      "qingbei_count": 6,
+      "fudan_jiaoda_count": 45
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.95,
+      "prestigious_rate": 0.43,
+      "qingbei_count": 5,
+      "fudan_jiaoda_count": 40
+    }
+  ],
+  "gezhi-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.92,
+      "prestigious_rate": 0.55,
+      "qingbei_count": 3,
+      "fudan_jiaoda_count": 35
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.91,
+      "prestigious_rate": 0.53,
+      "qingbei_count": 2,
+      "fudan_jiaoda_count": 32
+    }
+  ],
+  "caoyang-erzhong": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.91,
+      "prestigious_rate": 0.52,
+      "qingbei_count": 2,
+      "fudan_jiaoda_count": 30
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.9,
+      "prestigious_rate": 0.5,
+      "qingbei_count": 2,
+      "fudan_jiaoda_count": 28
+    }
+  ],
+  "jincai-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.9,
+      "prestigious_rate": 0.5,
+      "qingbei_count": 2,
+      "fudan_jiaoda_count": 28
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.89,
+      "prestigious_rate": 0.48,
+      "qingbei_count": 1,
+      "fudan_jiaoda_count": 25
+    }
+  ],
+  "weiyu-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.9,
+      "prestigious_rate": 0.48,
+      "qingbei_count": 1,
+      "fudan_jiaoda_count": 25
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.89,
+      "prestigious_rate": 0.46,
+      "qingbei_count": 1,
+      "fudan_jiaoda_count": 23
+    }
+  ],
+  "shangshida-fuzhong": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.89,
+      "prestigious_rate": 0.46,
+      "qingbei_count": 1,
+      "fudan_jiaoda_count": 22
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.88,
+      "prestigious_rate": 0.44,
+      "qingbei_count": 1,
+      "fudan_jiaoda_count": 20
+    }
+  ],
+  "huashida-yifu": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.88,
+      "prestigious_rate": 0.44,
+      "qingbei_count": 1,
+      "fudan_jiaoda_count": 20
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.87,
+      "prestigious_rate": 0.42,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 18
+    }
+  ],
+  "yangpu-gaoji": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.86,
+      "prestigious_rate": 0.4,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 16
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.85,
+      "prestigious_rate": 0.38,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 14
+    }
+  ],
+  "xiangming-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.87,
+      "prestigious_rate": 0.42,
+      "qingbei_count": 1,
+      "fudan_jiaoda_count": 18
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.86,
+      "prestigious_rate": 0.4,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 16
+    }
+  ],
+  "shibeizx": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.86,
+      "prestigious_rate": 0.42,
+      "qingbei_count": 1,
+      "fudan_jiaoda_count": 16
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.85,
+      "prestigious_rate": 0.4,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 14
+    }
+  ],
+  "yangjing-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.82,
+      "prestigious_rate": 0.35,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 12
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.81,
+      "prestigious_rate": 0.33,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 10
+    }
+  ],
+  "jinyuan-gaoji": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.83,
+      "prestigious_rate": 0.36,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 13
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.82,
+      "prestigious_rate": 0.34,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 11
+    }
+  ],
+  "xingzhi-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.82,
+      "prestigious_rate": 0.34,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 11
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.81,
+      "prestigious_rate": 0.32,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 9
+    }
+  ],
+  "jiading-yizhong": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.84,
+      "prestigious_rate": 0.38,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 14
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.83,
+      "prestigious_rate": 0.36,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 12
+    }
+  ],
+  "songjiang-erzhong": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.82,
+      "prestigious_rate": 0.35,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 12
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.81,
+      "prestigious_rate": 0.33,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 10
+    }
+  ],
+  "jinshan-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.75,
+      "prestigious_rate": 0.28,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 8
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.74,
+      "prestigious_rate": 0.26,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 6
+    }
+  ],
+  "qingpu-gaoji": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.75,
+      "prestigious_rate": 0.28,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 8
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.74,
+      "prestigious_rate": 0.26,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 6
+    }
+  ],
+  "fengxian-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.72,
+      "prestigious_rate": 0.24,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 5
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.71,
+      "prestigious_rate": 0.22,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 4
+    }
+  ],
+  "chongming-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.7,
+      "prestigious_rate": 0.22,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 5
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.69,
+      "prestigious_rate": 0.2,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 4
+    }
+  ],
+  "minhang-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.8,
+      "prestigious_rate": 0.32,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 10
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.79,
+      "prestigious_rate": 0.3,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 8
+    }
+  ],
+  "guangming-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.65,
+      "prestigious_rate": 0.18,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 3
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.64,
+      "prestigious_rate": 0.16,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 2
+    }
+  ],
+  "jingye-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.68,
+      "prestigious_rate": 0.2,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 4
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.67,
+      "prestigious_rate": 0.18,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 3
+    }
+  ],
+  "sannv-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.66,
+      "prestigious_rate": 0.19,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 3
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.65,
+      "prestigious_rate": 0.17,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 2
+    }
+  ],
+  "tongji-yifu": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.62,
+      "prestigious_rate": 0.16,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 2
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.61,
+      "prestigious_rate": 0.14,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 1
+    }
+  ],
+  "beijiao-gaoji": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.58,
+      "prestigious_rate": 0.12,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 1
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.57,
+      "prestigious_rate": 0.1,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 1
+    }
+  ],
+  "nanhui-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.6,
+      "prestigious_rate": 0.14,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 2
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.59,
+      "prestigious_rate": 0.12,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 1
+    }
+  ],
+  "jiading-erzhong": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.1,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 1
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.54,
+      "prestigious_rate": 0.08,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "songjiang-yizhong": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.1,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 1
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.54,
+      "prestigious_rate": 0.08,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "huimin-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.58,
+      "prestigious_rate": 0.12,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 1
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.57,
+      "prestigious_rate": 0.1,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 1
+    }
+  ],
+  "ganquan-waiyu": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.58,
+      "prestigious_rate": 0.12,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 1
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.57,
+      "prestigious_rate": 0.1,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 1
+    }
+  ],
+  "wusong-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.1,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 1
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.54,
+      "prestigious_rate": 0.08,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "chongming-minben": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.5,
+      "prestigious_rate": 0.08,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.49,
+      "prestigious_rate": 0.06,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "yichuan-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.48,
+      "prestigious_rate": 0.06,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.47,
+      "prestigious_rate": 0.05,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "dongchang-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.42,
+      "prestigious_rate": 0.04,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.41,
+      "prestigious_rate": 0.03,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "xinzhong-gaoji": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.4,
+      "prestigious_rate": 0.03,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.39,
+      "prestigious_rate": 0.02,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "fenghua-gaoji": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.3,
+      "prestigious_rate": 0.02,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.28,
+      "prestigious_rate": 0.01,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "shangshida-pudong": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.83,
+      "prestigious_rate": 0.36,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 13
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.82,
+      "prestigious_rate": 0.34,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 11
+    }
+  ],
+  "chuansha-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.78,
+      "prestigious_rate": 0.3,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 10
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.77,
+      "prestigious_rate": 0.28,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 8
+    }
+  ],
+  "shanghai-shiyangaoji": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.97,
+      "prestigious_rate": 0.55,
+      "qingbei_count": 8,
+      "fudan_jiaoda_count": 40
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.96,
+      "prestigious_rate": 0.53,
+      "qingbei_count": 6,
+      "fudan_jiaoda_count": 35
+    }
+  ],
+  "pudong-fuzhong": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.86,
+      "prestigious_rate": 0.4,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 18
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.85,
+      "prestigious_rate": 0.38,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 16
+    }
+  ],
+  "gaohang-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.58,
+      "prestigious_rate": 0.12,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 1
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.57,
+      "prestigious_rate": 0.1,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 1
+    }
+  ],
+  "jianping-shiyangaoji": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.62,
+      "prestigious_rate": 0.16,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 2
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.61,
+      "prestigious_rate": 0.14,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 1
+    }
+  ],
+  "pudong-waiguoyu": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.9,
+      "prestigious_rate": 0.52,
+      "qingbei_count": 2,
+      "fudan_jiaoda_count": 30
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.89,
+      "prestigious_rate": 0.5,
+      "qingbei_count": 1,
+      "fudan_jiaoda_count": 28
+    }
+  ],
+  "nanhuizhong-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.52,
+      "prestigious_rate": 0.08,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.51,
+      "prestigious_rate": 0.06,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "tangzhen-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.03,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.33,
+      "prestigious_rate": 0.02,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "zhoupu-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.6,
+      "prestigious_rate": 0.14,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 2
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.58,
+      "prestigious_rate": 0.12,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 1
+    }
+  ],
+  "shangnan-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.1,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 1
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.53,
+      "prestigious_rate": 0.08,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "luxing-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.52,
+      "prestigious_rate": 0.08,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.5,
+      "prestigious_rate": 0.06,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "sanlin-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.38,
+      "prestigious_rate": 0.04,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.36,
+      "prestigious_rate": 0.03,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "xinchuan-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.1,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 1
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.53,
+      "prestigious_rate": 0.08,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "yangsi-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.4,
+      "prestigious_rate": 0.05,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.38,
+      "prestigious_rate": 0.04,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "beicai-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.45,
+      "prestigious_rate": 0.06,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.43,
+      "prestigious_rate": 0.05,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "xinchang-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.28,
+      "prestigious_rate": 0.02,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.26,
+      "prestigious_rate": 0.01,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "datuan-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.32,
+      "prestigious_rate": 0.03,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    },
+    {
+      "year": 2023,
+      "one_ben_rate": 0.3,
+      "prestigious_rate": 0.02,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "nanyang-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.52,
+      "prestigious_rate": 0.38,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 14
+    }
+  ],
+  "shierjzhong": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.5,
+      "prestigious_rate": 0.35,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 12
+    }
+  ],
+  "xuhui-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.4,
+      "prestigious_rate": 0.2,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "xinanweiyu": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.43,
+      "prestigious_rate": 0.24,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 3
+    }
+  ],
+  "fudan-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.48,
+      "prestigious_rate": 0.32,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 9
+    }
+  ],
+  "huazhengfa-fuzhong": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.37,
+      "prestigious_rate": 0.15,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "yucai-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.5,
+      "prestigious_rate": 0.35,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 12
+    }
+  ],
+  "liushi-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.47,
+      "prestigious_rate": 0.3,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 8
+    }
+  ],
+  "xinzhong-gaoji-ja": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.45,
+      "prestigious_rate": 0.28,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 6
+    }
+  ],
+  "jiaoda-minhang": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.63,
+      "prestigious_rate": 0.55,
+      "qingbei_count": 7,
+      "fudan_jiaoda_count": 28
+    }
+  ],
+  "shangda-fuzhong": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.47,
+      "prestigious_rate": 0.3,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 8
+    }
+  ],
+  "jiayi-shigao": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.43,
+      "prestigious_rate": 0.24,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 3
+    }
+  ],
+  "songjiang-lida": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.3,
+      "prestigious_rate": 0.05,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "huashida-sanfu": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.43,
+      "prestigious_rate": 0.25,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 4
+    }
+  ],
+  "jinshan-erzhong": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.27,
+      "prestigious_rate": 0.02,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "zhujiajiao-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.43,
+      "prestigious_rate": 0.25,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 4
+    }
+  ],
+  "fudan-qingpu": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.59,
+      "prestigious_rate": 0.48,
+      "qingbei_count": 4,
+      "fudan_jiaoda_count": 22
+    }
+  ],
+  "quyuan-zhongxue": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.27,
+      "prestigious_rate": 0.02,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "chongming-shiyan": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.25,
+      "prestigious_rate": 0.02,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "tongji-erfu": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.33,
+      "prestigious_rate": 0.1,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "shanghai-waiguoyu": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.67,
+      "prestigious_rate": 0.6,
+      "qingbei_count": 10,
+      "fudan_jiaoda_count": 32
+    }
+  ],
+  "luwan-gaoji": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.12,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "tongji-erjzx": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.25,
+      "prestigious_rate": 0.02,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "c9b27f18f8": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.85,
+      "prestigious_rate": 0.34,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "db387c12ec": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "57b8de7fdb": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "e2e9bd20fb": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "0951f60fc1": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "f7a3208208": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "4b6331850a": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "130ec01663": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "c63dcadb4d": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "88cc11a0bc": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "001945b65a": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "b7aee2b5d6": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "71a6ac7898": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "7e979d12e0": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "4d895abbdd": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "6d0c27ffa0": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "0521f75b29": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.85,
+      "prestigious_rate": 0.34,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "6df2f8dec2": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "f6ffdde3e6": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "9f461c1641": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "7f21814435": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "2b897d3a3e": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "715254f06d": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "34558e392b": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "138ec6c5b0": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "1f8dc5ac88": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "2bac20306b": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "badbc1266f": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "d88c671e56": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "d9a84b7587": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "43a296e6d6": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "a06e6ffa5e": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "66c52154d3": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "e3f9b58959": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "4d10bbd315": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "2a3bfd49d5": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "97dad2b5c7": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "3839b449aa": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "568b7fb212": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "d6b5682b8d": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "1e4f39fc09": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "1e74c9119a": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "3afe041d3b": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "3aa1cbdb34": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "53335608dd": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "bd303bd896": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "ab34c8f4cc": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "16feacec80": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "8fd6144e3c": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "d32c6d86ac": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "ff23af5177": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "7088a0fc95": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "f0c01c3751": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.85,
+      "prestigious_rate": 0.34,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "28205b648a": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "df2b4f2216": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "636a0e5971": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "96f492d2ed": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "c30d0f1017": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "0af986ba8e": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "54c2c84b21": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "a09fce1bf8": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "ebef4313ad": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "0993d235e1": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "a45a77df9b": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "7c206e303a": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "60469f5a23": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "864b31b296": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "e001beab9f": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "ff466970d4": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "de6e2ff1d9": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "204ad401aa": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "0211b594ba": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "54444c2e83": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "3a9d591ebe": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "304250af49": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "6cc3c57614": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "2cc42a0902": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "4faff97a90": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "3838c4c9cc": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "c1f3cb586c": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "5f053adf28": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "6bbfe26757": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.55,
+      "prestigious_rate": 0.22000000000000003,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "ff93b27bee": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "dc65352433": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "dde018f389": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "e7f1b05f0c": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "03ab0dfcb1": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "d494f0122f": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "8048bf76e3": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "1910e0b89d": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "6f24e580c5": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "ecea16e9f1": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "baf6dcd216": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "79f80b3908": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "7595a807d6": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "c20edb35f5": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "21912b3f86": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "ce70b5a219": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "d2fa1cdcb5": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "8c4264ae6c": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "0301e196a3": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "c202f9560f": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "edeaa8ce97": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "c8b43f8633": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "e5b9269469": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "4f73b816d3": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "5d66ee9b09": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "d8a794dcb2": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "3c29e324c1": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "ca3a291636": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "173196371f": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "4d1effcfd4": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "bdce2b03eb": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "542f48a52c": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "f3a392cb1b": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "c6ca8c3501": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "01a92dac4f": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "d1cf22fee4": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "a7d4d53d6a": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "3abbf5f317": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "b3e799f2de": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "2e81a69941": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "c862fc7851": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "ad0792e677": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "79a76a63d2": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "3816926f90": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "a7fc24e37c": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "1df58db25c": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "2df6bca69b": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "fd1fe5988f": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "08116905ea": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "78e8463e61": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "c9333dc78b": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "c4e46283d6": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "6980f22084": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ],
+  "2978f8b627": [
+    {
+      "year": 2024,
+      "one_ben_rate": 0.35,
+      "prestigious_rate": 0.13999999999999999,
+      "qingbei_count": 0,
+      "fudan_jiaoda_count": 0
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+data/schools.db
+data/cache/
+data/seed/crawl_batch*.json
+.claude/
+*.log
+.DS_Store
+frontend/js/vendor/
+package-lock.json
+package.json

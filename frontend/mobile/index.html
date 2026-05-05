@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>千里·知途 — 上海中考志愿助手</title>
+  <link rel="stylesheet" href="/mobile/css/mobile.css" />
+  <script src="/js/vendor/react.min.js"></script>
+  <script src="/js/vendor/react-dom.min.js"></script>
+  <script src="/js/vendor/babel.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="/js/api.js"></script>
+  <script src="/js/util.js"></script>
+  <script type="text/babel" src="/js/components.jsx"></script>
+  <script type="text/babel" src="/mobile/js/components.jsx"></script>
+  <script type="text/babel" src="/mobile/js/pages/Home.jsx"></script>
+  <script type="text/babel" src="/mobile/js/pages/Schools.jsx"></script>
+  <script type="text/babel" src="/mobile/js/pages/SchoolDetail.jsx"></script>
+  <script type="text/babel" src="/mobile/js/pages/Compare.jsx"></script>
+  <script type="text/babel" src="/mobile/js/pages/Recommend.jsx"></script>
+  <script type="text/babel" src="/mobile/js/pages/About.jsx"></script>
+
+  <script type="text/babel">
+    function App() {
+      const [tab, setTab] = React.useState('home');
+      const [schoolId, setSchoolId] = React.useState(null);
+      const [prevTab, setPrevTab] = React.useState(null);
+      const [searchQ, setSearchQ] = React.useState('');
+
+      const openSchool = (id) => { setPrevTab(tab); setSchoolId(id); setTab('detail'); };
+      const navigate = (t, opts) => {
+        if (opts && opts.q) setSearchQ(opts.q);
+        else setSearchQ('');
+        setTab(t);
+        window.scrollTo(0, 0);
+      };
+      const goBack = () => { setTab(prevTab || 'home'); setPrevTab(null); };
+
+      const showDetail = tab === 'detail';
+      const baseTab = showDetail ? (prevTab || 'home') : tab;
+      const showTabBar = !['detail', 'recommend'].includes(tab);
+
+      return (
+        <div style={{ minHeight: '100vh', background: 'var(--bg)', paddingBottom: showTabBar ? 'var(--tab-h)' : 0 }}>
+          <div style={{ display: showDetail ? 'none' : 'block' }}>
+            {baseTab === 'home' && <MHome onNavigate={navigate} onOpenSchool={openSchool} />}
+            {baseTab === 'schools' && <MSchools onOpenSchool={openSchool} onBack={() => navigate('home')} initialQuery={searchQ} />}
+            {baseTab === 'compare' && <MCompare onOpenSchool={openSchool} onBack={() => navigate('home')} />}
+            {baseTab === 'recommend' && <MRecommend onOpenSchool={openSchool} onBack={() => navigate('home')} />}
+            {baseTab === 'about' && <MAbout onBack={() => navigate('home')} />}
+          </div>
+          {showDetail && <MSchoolDetail schoolId={schoolId} onBack={goBack} />}
+          {showTabBar && <MTabBar tab={tab} setTab={navigate} />}
+        </div>
+      );
+    }
+    ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+  </script>
+</body>
+</html>

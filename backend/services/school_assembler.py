@@ -1,0 +1,233 @@
+"""Assemble flat school objects from normalized DB tables.
+
+The frontend expects a flat shape like:
+  { id, name, district, tier, kind, funding, website,
+    score2025, score2024, score2023, mingeDistrict, zizhao, ctrl, intake,
+    bbenRate, top985, qbfd,
+    admissions: [...], gaokao: [...], evaluation: {...} }
+"""
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+from backend.db.connection import query, query_one
+
+REPO_ROOT = Path(__file__).resolve().parent.parent.parent
+
+TIER_LABELS = {
+    "four_schools": "四校",
+    "eight_greats": "八大",
+    "city_key": "市重点",
+    "district_key": "区重点",
+    "regular": "普通高中",
+}
+
+
+def _tier_label(tier: str) -> str:
+    return TIER_LABELS.get(tier, tier)
+
+
+def _build_flat(school: dict, admissions: list[dict], gaokao: list[dict], evaluation: dict | None) -> dict:
+    latest_year = 2025
+    score_by_year = {}
+    minge = None
+    minge_school = None
+    zizhao = None
+    ctrl = None
+    intake = 0
+
+    for a in admissions:
+        yr = a["year"]
+        batch = a["batch"]
+        if yr == latest_year:
+            intake += a.get("quota") or 0
+        if batch == "统招":
+            score_by_year[yr] = a["min_score"]
+            if yr == latest_year:
+                ctrl = a["control_line"]
+        elif batch == "名额到区" and yr == latest_year:
+            minge = a["min_score"]
+        elif batch == "名额到校" and yr == latest_year:
+            minge_school = a["min_score"]
+        elif batch == "自主招生" and yr == latest_year:
+            zizhao = a["min_score"]
+
+    latest_gk = None
+    for g in gaokao:
+        if latest_gk is None or g["year"] > latest_gk["year"]:
+            latest_gk = g
+
+    bben_rate = round((latest_gk["one_ben_rate"] or 0) * 100) if latest_gk else 0
+    top985 = round((latest_gk["prestigious_rate"] or 0) * 100) if latest_gk else 0
+    qbfd = ((latest_gk.get("qingbei_count") or 0) + (latest_gk.get("fudan_jiaoda_count") or 0)) if latest_gk else 0
+
+    eval_data = None
+    if evaluation:
+        eval_data = {
+            "overall": evaluation.get("overall_score"),
+            "academic": evaluation.get("academic"),
+            "college": evaluation.get("college_placement"),
+            "management": evaluation.get("management"),
+            "extra": evaluation.get("extracurricular"),
+            "location": evaluation.get("location"),
+            "summary": evaluation.get("llm_summary"),
+        }
+
+    intro = ""
+    md_path = REPO_ROOT / school.get("md_dir", "") / "basic-info.md"
+    if md_path.exists():
+        text = md_path.read_text(encoding="utf-8")
+        if "## 简介" in text:
+            intro = text.split("## 简介")[-1].strip().split("\n---")[0].strip()
+
+    return {
+        "id": school["school_id"],
+        "name": school["name"],
+        "shortName": school.get("short_name") or "",
+        "district": school["district"],
+        "tier": _tier_label(school["tier"]),
+        "kind": school["type"],
+        "funding": school.get("ownership") or "公办",
+        "website": school.get("website") or "",
+        "address": school.get("address") or "",
+        "phone": school.get("phone") or "",
+        "intro": intro,
+        "tags": json.loads(school.get("tags") or "[]") if isinstance(school.get("tags"), str) else (school.get("tags") or []),
+        "score2025": score_by_year.get(2025),
+        "score2024": score_by_year.get(2024),
+        "score2023": score_by_year.get(2023),
+        "mingeDistrict": minge,
+        "mingeSchool": minge_school,
+        "zizhao": zizhao,
+        "ctrl": ctrl,
+        "intake": intake,
+        "bbenRate": bben_rate,
+        "top985": top985,
+        "qbfd": qbfd,
+        "admissions": admissions,
+        "gaokao": [
+            {
+                "year": g["year"],
+                "oneBenRate": round((g["one_ben_rate"] or 0) * 100),
+                "top985": round((g["prestigious_rate"] or 0) * 100),
+                "qingbei": g.get("qingbei_count") or 0,
+                "fudanJiaoda": g.get("fudan_jiaoda_count") or 0,
+            }
+            for g in gaokao
+        ],
+        "evaluation": eval_data,
+    }
+
+
+def assemble_school(school_id: str) -> dict | None:
+    school = query_one("SELECT * FROM schools WHERE school_id = ?", (school_id,))
+    if not school:
+        return None
+    admissions = query(
+        "SELECT * FROM admissions WHERE school_id = ? ORDER BY year DESC, batch",
+        (school_id,),
+    )
+    gaokao = query(
+        "SELECT * FROM gaokao_results WHERE school_id = ? ORDER BY year DESC",
+        (school_id,),
+    )
+    evaluation = query_one(
+        "SELECT * FROM evaluations WHERE school_id = ?",
+        (school_id,),
+    )
+    return _build_flat(school, admissions, gaokao, evaluation)
+
+
+def _fts_search(q: str) -> list[str]:
+    safe_q = q.replace('"', '').replace("'", '').strip()
+    if not safe_q:
+        return []
+    terms = safe_q.split()
+    if not terms:
+        terms = [safe_q]
+    fts_q = " AND ".join(f'"{t}"*' for t in terms)
+    try:
+        rows = query(
+            "SELECT school_id FROM schools_fts WHERE schools_fts MATCH ? ORDER BY bm25(schools_fts)",
+            (fts_q,),
+        )
+        return [r["school_id"] for r in rows]
+    except Exception:
+        return []
+
+
+def _hybrid_search(q: str) -> list[str]:
+    """混合搜索：FTS5 关键词 + TF-IDF 向量，合并去重。"""
+    fts_ids = _fts_search(q)
+
+    from backend.services.vector_search import vector_search
+    vec_results = vector_search(q, limit=30)
+    vec_ids = [r["school_id"] for r in vec_results]
+
+    # Merge: FTS results first (exact match priority), then vector results
+    seen = set()
+    merged = []
+    for sid in fts_ids:
+        if sid not in seen:
+            merged.append(sid)
+            seen.add(sid)
+    for sid in vec_ids:
+        if sid not in seen:
+            merged.append(sid)
+            seen.add(sid)
+    return merged
+
+
+def assemble_school_list(
+    q: str = "",
+    districts: list[str] | None = None,
+    types: list[str] | None = None,
+    funding: str | None = None,
+    score_min: float = 0,
+    score_max: float = 999,
+    bben_min: float = 0,
+    sort: str = "score_desc",
+    limit: int = 200,
+    offset: int = 0,
+) -> dict:
+    if q:
+        all_ids = _hybrid_search(q)
+    else:
+        all_ids = [r["school_id"] for r in query("SELECT school_id FROM schools")]
+
+    results = []
+    for sid in all_ids:
+        s = assemble_school(sid)
+        if not s:
+            continue
+        if districts and s["district"] not in districts:
+            continue
+        if types and s["kind"] not in types:
+            continue
+        if funding and s["funding"] != funding:
+            continue
+
+        score = s.get("score2025") or 0
+        if score < score_min or score > score_max:
+            continue
+
+        bben = (s.get("bbenRate") or 0) / 100
+        if bben < bben_min:
+            continue
+
+        results.append(s)
+
+    if sort == "score_desc":
+        results.sort(key=lambda x: x.get("score2025") or 0, reverse=True)
+    elif sort == "score_asc":
+        results.sort(key=lambda x: x.get("score2025") or 0)
+    elif sort == "bben_desc":
+        results.sort(key=lambda x: x.get("bbenRate") or 0, reverse=True)
+    elif sort == "intake_desc":
+        results.sort(key=lambda x: x.get("intake") or 0, reverse=True)
+
+    total = len(results)
+    page = results[offset : offset + limit]
+
+    return {"total": total, "schools": page}

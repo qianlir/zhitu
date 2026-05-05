@@ -1,0 +1,20 @@
+# 上海中考志愿助手 — Python 依赖
+# 安装：pip install -r requirements.txt
+
+# ===== 必需 =====
+pyyaml>=6.0           # md frontmatter 解析（md_to_db.py）
+httpx>=0.27           # 爬虫 HTTP 客户端
+beautifulsoup4>=4.12  # HTML 解析
+lxml>=5.0             # bs4 后端
+
+# ===== 爬虫增强 =====
+markdownify>=0.11     # HTML → Markdown 转换（无则退化为纯文本）
+pypinyin>=0.51        # 中文学校名 → slug（无则退化为 hash）
+
+# ===== 后端 (M1+) =====
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.6
+
+# ===== LLM (M3) =====
+anthropic>=0.40       # Claude API

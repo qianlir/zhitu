@@ -1,0 +1,6022 @@
+{
+  "shanghai-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 706.5,
+      "quota": 68,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 696.0,
+      "quota": 266,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 685.5,
+      "quota": 133,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 700.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 706.5,
+      "quota": 65,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 695.0,
+      "quota": 245,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 684.0,
+      "quota": 125,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 698.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 704.0,
+      "quota": 60,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 690.0,
+      "quota": 230,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 678.0,
+      "quota": 120,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 695.0,
+      "quota": 75,
+      "control_line": 580
+    }
+  ],
+  "huashida-erfu": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 705.0,
+      "quota": 70,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 694.0,
+      "quota": 263,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 683.0,
+      "quota": 135,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 698.0,
+      "quota": 82,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 706.0,
+      "quota": 65,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 693.0,
+      "quota": 244,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 681.0,
+      "quota": 130,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 696.0,
+      "quota": 82,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 705.0,
+      "quota": 60,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 688.0,
+      "quota": 230,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 676.0,
+      "quota": 125,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 693.0,
+      "quota": 78,
+      "control_line": 580
+    }
+  ],
+  "fudan-fuzhong": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 702.0,
+      "quota": 55,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 694.0,
+      "quota": 239,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 682.0,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 696.0,
+      "quota": 77,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 706.5,
+      "quota": 50,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 694.5,
+      "quota": 228,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 680.0,
+      "quota": 115,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 694.0,
+      "quota": 77,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 703.5,
+      "quota": 48,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 689.0,
+      "quota": 215,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 675.0,
+      "quota": 110,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 690.0,
+      "quota": 73,
+      "control_line": 580
+    }
+  ],
+  "jiaoda-fuzhong": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 700.0,
+      "quota": 60,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 695.0,
+      "quota": 275,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 680.0,
+      "quota": 140,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 694.0,
+      "quota": 88,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 706.5,
+      "quota": 55,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 695.0,
+      "quota": 255,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 678.0,
+      "quota": 130,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 692.0,
+      "quota": 88,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 703.0,
+      "quota": 52,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 690.0,
+      "quota": 240,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 673.0,
+      "quota": 125,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 688.0,
+      "quota": 83,
+      "control_line": 580
+    }
+  ],
+  "qibao-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 695.5,
+      "quota": 168,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 687.0,
+      "quota": 195,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 679.0,
+      "quota": 130,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 690.0,
+      "quota": 48,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 691.5,
+      "quota": 160,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 685.0,
+      "quota": 185,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 676.0,
+      "quota": 125,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 688.0,
+      "quota": 48,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 690.0,
+      "quota": 155,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 680.0,
+      "quota": 180,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 672.0,
+      "quota": 120,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 685.0,
+      "quota": 45,
+      "control_line": 580
+    }
+  ],
+  "nanyang-mofan": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 692.0,
+      "quota": 140,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 686.5,
+      "quota": 162,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 676.5,
+      "quota": 108,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 687.0,
+      "quota": 40,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 693.0,
+      "quota": 135,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 686.5,
+      "quota": 155,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 675.0,
+      "quota": 103,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 685.0,
+      "quota": 40,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 688.0,
+      "quota": 130,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 682.0,
+      "quota": 150,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 670.0,
+      "quota": 100,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 680.0,
+      "quota": 38,
+      "control_line": 580
+    }
+  ],
+  "kongjiang-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 690.0,
+      "quota": 135,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 682.5,
+      "quota": 156,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 675.0,
+      "quota": 104,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 685.0,
+      "quota": 38,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 688.5,
+      "quota": 130,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 679.5,
+      "quota": 150,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 673.0,
+      "quota": 100,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 683.0,
+      "quota": 38,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 685.0,
+      "quota": 125,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 676.0,
+      "quota": 145,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 668.0,
+      "quota": 97,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 679.0,
+      "quota": 36,
+      "control_line": 580
+    }
+  ],
+  "datong-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 689.0,
+      "quota": 130,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 681.5,
+      "quota": 150,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 674.0,
+      "quota": 100,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 684.0,
+      "quota": 36,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 680.0,
+      "quota": 125,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 675.5,
+      "quota": 145,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 668.0,
+      "quota": 97,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 675.0,
+      "quota": 36,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 678.0,
+      "quota": 120,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 671.0,
+      "quota": 140,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 664.0,
+      "quota": 93,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 672.0,
+      "quota": 34,
+      "control_line": 580
+    }
+  ],
+  "fuxing-gaoji": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 688.5,
+      "quota": 128,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 681.0,
+      "quota": 148,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 673.5,
+      "quota": 99,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 683.5,
+      "quota": 36,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 685.0,
+      "quota": 123,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 678.0,
+      "quota": 143,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 670.0,
+      "quota": 95,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 680.0,
+      "quota": 36,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 682.0,
+      "quota": 118,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 674.0,
+      "quota": 138,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 666.0,
+      "quota": 92,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 676.0,
+      "quota": 34,
+      "control_line": 580
+    }
+  ],
+  "yanan-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 690.5,
+      "quota": 140,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 683.0,
+      "quota": 162,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 675.5,
+      "quota": 108,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 685.5,
+      "quota": 40,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 687.0,
+      "quota": 135,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 681.0,
+      "quota": 155,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 673.0,
+      "quota": 103,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 683.0,
+      "quota": 40,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 684.0,
+      "quota": 130,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 677.0,
+      "quota": 150,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 669.0,
+      "quota": 100,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 679.0,
+      "quota": 38,
+      "control_line": 580
+    }
+  ],
+  "shixi-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 687.0,
+      "quota": 125,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 680.0,
+      "quota": 145,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 672.0,
+      "quota": 97,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 682.0,
+      "quota": 35,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 683.0,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 677.0,
+      "quota": 140,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 668.0,
+      "quota": 93,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 679.0,
+      "quota": 35,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 680.0,
+      "quota": 115,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 673.0,
+      "quota": 135,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 664.0,
+      "quota": 90,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 675.0,
+      "quota": 33,
+      "control_line": 580
+    }
+  ],
+  "jianping-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 695.0,
+      "quota": 168,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 685.0,
+      "quota": 195,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 676.0,
+      "quota": 130,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 690.0,
+      "quota": 48,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 695.0,
+      "quota": 160,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 685.0,
+      "quota": 185,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 674.0,
+      "quota": 125,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 688.0,
+      "quota": 48,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 692.0,
+      "quota": 155,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 681.0,
+      "quota": 180,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 670.0,
+      "quota": 120,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 685.0,
+      "quota": 45,
+      "control_line": 580
+    }
+  ],
+  "gezhi-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 685.0,
+      "quota": 90,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 683.5,
+      "quota": 90,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 659.0,
+      "quota": 90,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 678.0,
+      "quota": 135,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 671.0,
+      "quota": 62,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 681.5,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 676.5,
+      "quota": 135,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 669.5,
+      "quota": 62,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 680.0,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 652.0,
+      "quota": 135,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 645.0,
+      "quota": 62,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 655.5,
+      "quota": 12,
+      "control_line": 580
+    }
+  ],
+  "caoyang-erzhong": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 684.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 682.5,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 658.0,
+      "quota": 80,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 677.0,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 670.0,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 680.5,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 675.5,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 668.5,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 679.0,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 651.0,
+      "quota": 120,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 644.0,
+      "quota": 56,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 654.5,
+      "quota": 12,
+      "control_line": 580
+    }
+  ],
+  "jincai-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 682.0,
+      "quota": 100,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 680.5,
+      "quota": 100,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 656.0,
+      "quota": 100,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 675.0,
+      "quota": 150,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 668.0,
+      "quota": 70,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 678.5,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 673.5,
+      "quota": 150,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 666.5,
+      "quota": 70,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 677.0,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 649.0,
+      "quota": 150,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 642.0,
+      "quota": 70,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 652.5,
+      "quota": 12,
+      "control_line": 580
+    }
+  ],
+  "weiyu-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 681.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 679.5,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 655.0,
+      "quota": 80,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 674.0,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 667.0,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 677.5,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 672.5,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 665.5,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 676.0,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 648.0,
+      "quota": 120,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 641.0,
+      "quota": 56,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 651.5,
+      "quota": 12,
+      "control_line": 580
+    }
+  ],
+  "shangshida-fuzhong": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 680.0,
+      "quota": 90,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 678.5,
+      "quota": 90,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 654.0,
+      "quota": 90,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 673.0,
+      "quota": 135,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 666.0,
+      "quota": 62,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 676.5,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 671.5,
+      "quota": 135,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 664.5,
+      "quota": 62,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 675.0,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 647.0,
+      "quota": 135,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 640.0,
+      "quota": 62,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 650.5,
+      "quota": 12,
+      "control_line": 580
+    }
+  ],
+  "huashida-yifu": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 678.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 676.5,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 652.0,
+      "quota": 80,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 671.0,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 664.0,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 674.5,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 669.5,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 662.5,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 673.0,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 645.0,
+      "quota": 120,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 638.0,
+      "quota": 56,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 648.5,
+      "quota": 12,
+      "control_line": 580
+    }
+  ],
+  "yangpu-gaoji": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 676.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 674.5,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 650.0,
+      "quota": 80,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 669.0,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 662.0,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 672.5,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 667.5,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 660.5,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 671.0,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 643.0,
+      "quota": 120,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 636.0,
+      "quota": 56,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 646.5,
+      "quota": 12,
+      "control_line": 580
+    }
+  ],
+  "xiangming-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 677.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 675.5,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 651.0,
+      "quota": 80,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 670.0,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 663.0,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 673.5,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 668.5,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 661.5,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 672.0,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 644.0,
+      "quota": 120,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 637.0,
+      "quota": 56,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 647.5,
+      "quota": 12,
+      "control_line": 580
+    }
+  ],
+  "shibeizx": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 676.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 674.5,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 650.0,
+      "quota": 80,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 669.0,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 662.0,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 672.5,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 667.5,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 660.5,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 671.0,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 643.0,
+      "quota": 120,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 636.0,
+      "quota": 56,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 646.5,
+      "quota": 12,
+      "control_line": 580
+    }
+  ],
+  "yangjing-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 672.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 670.5,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 646.0,
+      "quota": 80,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 665.0,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 658.0,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 668.5,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 663.5,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 656.5,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 667.0,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 639.0,
+      "quota": 120,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 632.0,
+      "quota": 56,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 642.5,
+      "quota": 12,
+      "control_line": 580
+    }
+  ],
+  "jinyuan-gaoji": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 673.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 671.5,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 647.0,
+      "quota": 80,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 666.0,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 659.0,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 669.5,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 664.5,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 657.5,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 668.0,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 640.0,
+      "quota": 120,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 633.0,
+      "quota": 56,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 643.5,
+      "quota": 12,
+      "control_line": 580
+    }
+  ],
+  "xingzhi-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 672.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 670.5,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 646.0,
+      "quota": 80,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 665.0,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 658.0,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 668.5,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 663.5,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 656.5,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 667.0,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 639.0,
+      "quota": 120,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 632.0,
+      "quota": 56,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 642.5,
+      "quota": 12,
+      "control_line": 580
+    }
+  ],
+  "jiading-yizhong": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 675.0,
+      "quota": 90,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 673.5,
+      "quota": 90,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 649.0,
+      "quota": 90,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 668.0,
+      "quota": 135,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 661.0,
+      "quota": 62,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 671.5,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 666.5,
+      "quota": 135,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 659.5,
+      "quota": 62,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 670.0,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 642.0,
+      "quota": 135,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 635.0,
+      "quota": 62,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 645.5,
+      "quota": 12,
+      "control_line": 580
+    }
+  ],
+  "songjiang-erzhong": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 672.0,
+      "quota": 90,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 670.5,
+      "quota": 90,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 646.0,
+      "quota": 90,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 665.0,
+      "quota": 135,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 658.0,
+      "quota": 62,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 668.5,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 663.5,
+      "quota": 135,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 656.5,
+      "quota": 62,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 667.0,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 639.0,
+      "quota": 135,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 632.0,
+      "quota": 62,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 642.5,
+      "quota": 12,
+      "control_line": 580
+    }
+  ],
+  "jinshan-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 665.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 663.5,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 639.0,
+      "quota": 80,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 658.0,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 651.0,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 661.5,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 656.5,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 649.5,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 660.0,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 632.0,
+      "quota": 120,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 625.0,
+      "quota": 56,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 635.5,
+      "quota": 12,
+      "control_line": 580
+    }
+  ],
+  "qingpu-gaoji": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 665.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 663.5,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 639.0,
+      "quota": 80,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 658.0,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 651.0,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 661.5,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 656.5,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 649.5,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 660.0,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 632.0,
+      "quota": 120,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 625.0,
+      "quota": 56,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 635.5,
+      "quota": 12,
+      "control_line": 580
+    }
+  ],
+  "fengxian-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 662.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 660.5,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 636.0,
+      "quota": 80,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 655.0,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 648.0,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 658.5,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 653.5,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 646.5,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 657.0,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 629.0,
+      "quota": 120,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 622.0,
+      "quota": 56,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 632.5,
+      "quota": 12,
+      "control_line": 580
+    }
+  ],
+  "chongming-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 660.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 658.5,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 634.0,
+      "quota": 80,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 653.0,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 646.0,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 656.5,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 651.5,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 644.5,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 655.0,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 627.0,
+      "quota": 120,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 620.0,
+      "quota": 56,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 630.5,
+      "quota": 12,
+      "control_line": 580
+    }
+  ],
+  "minhang-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 670.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 668.5,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 644.0,
+      "quota": 80,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 663.0,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 656.0,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 666.5,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 661.5,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 654.5,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 665.0,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 637.0,
+      "quota": 120,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 630.0,
+      "quota": 56,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 640.5,
+      "quota": 12,
+      "control_line": 580
+    }
+  ],
+  "guangming-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 655.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 653.5,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 629.0,
+      "quota": 80,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 650.5,
+      "quota": 96,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 649.0,
+      "quota": 96,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 624.5,
+      "quota": 96,
+      "control_line": 580
+    }
+  ],
+  "jingye-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 658.0,
+      "quota": 70,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 656.5,
+      "quota": 70,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 632.0,
+      "quota": 70,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 653.5,
+      "quota": 84,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 652.0,
+      "quota": 84,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 627.5,
+      "quota": 84,
+      "control_line": 580
+    }
+  ],
+  "sannv-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 656.0,
+      "quota": 60,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 654.5,
+      "quota": 60,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 630.0,
+      "quota": 60,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 651.5,
+      "quota": 72,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 650.0,
+      "quota": 72,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 625.5,
+      "quota": 72,
+      "control_line": 580
+    }
+  ],
+  "tongji-yifu": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 652.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 650.5,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 626.0,
+      "quota": 80,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 647.5,
+      "quota": 96,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 646.0,
+      "quota": 96,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 621.5,
+      "quota": 96,
+      "control_line": 580
+    }
+  ],
+  "beijiao-gaoji": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 648.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 646.5,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 622.0,
+      "quota": 80,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 643.5,
+      "quota": 96,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 642.0,
+      "quota": 96,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 617.5,
+      "quota": 96,
+      "control_line": 580
+    }
+  ],
+  "nanhui-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 650.0,
+      "quota": 90,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 648.5,
+      "quota": 90,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 624.0,
+      "quota": 90,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 645.5,
+      "quota": 108,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 644.0,
+      "quota": 108,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 619.5,
+      "quota": 108,
+      "control_line": 580
+    }
+  ],
+  "jiading-erzhong": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 645.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 643.5,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 619.0,
+      "quota": 80,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 640.5,
+      "quota": 96,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 639.0,
+      "quota": 96,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 614.5,
+      "quota": 96,
+      "control_line": 580
+    }
+  ],
+  "songjiang-yizhong": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 645.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 643.5,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 619.0,
+      "quota": 80,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 640.5,
+      "quota": 96,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 639.0,
+      "quota": 96,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 614.5,
+      "quota": 96,
+      "control_line": 580
+    }
+  ],
+  "huimin-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 648.0,
+      "quota": 70,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 646.5,
+      "quota": 70,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 622.0,
+      "quota": 70,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 643.5,
+      "quota": 84,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 642.0,
+      "quota": 84,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 617.5,
+      "quota": 84,
+      "control_line": 580
+    }
+  ],
+  "ganquan-waiyu": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 648.0,
+      "quota": 70,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 646.5,
+      "quota": 70,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 622.0,
+      "quota": 70,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 643.5,
+      "quota": 84,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 642.0,
+      "quota": 84,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 617.5,
+      "quota": 84,
+      "control_line": 580
+    }
+  ],
+  "wusong-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 645.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 643.5,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 619.0,
+      "quota": 80,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 640.5,
+      "quota": 96,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 639.0,
+      "quota": 96,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 614.5,
+      "quota": 96,
+      "control_line": 580
+    }
+  ],
+  "chongming-minben": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 640.0,
+      "quota": 70,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 638.5,
+      "quota": 70,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 614.0,
+      "quota": 70,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 635.5,
+      "quota": 84,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 634.0,
+      "quota": 84,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 609.5,
+      "quota": 84,
+      "control_line": 580
+    }
+  ],
+  "yichuan-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 638.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 636.5,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 612.0,
+      "quota": 80,
+      "control_line": 580
+    }
+  ],
+  "dongchang-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 632.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 630.5,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 606.0,
+      "quota": 80,
+      "control_line": 580
+    }
+  ],
+  "xinzhong-gaoji": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 630.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 628.5,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 604.0,
+      "quota": 80,
+      "control_line": 580
+    }
+  ],
+  "fenghua-gaoji": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 620.0,
+      "quota": 60,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 618.5,
+      "quota": 60,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 594.0,
+      "quota": 60,
+      "control_line": 580
+    }
+  ],
+  "shangshida-pudong": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 690.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 689.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 685.0,
+      "quota": 80,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 683.0,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 676.0,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 686.5,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 682.0,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 675.0,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 685.5,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 678.0,
+      "quota": 120,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 671.0,
+      "quota": 56,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 681.5,
+      "quota": 12,
+      "control_line": 580
+    }
+  ],
+  "chuansha-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 682.0,
+      "quota": 90,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 680.5,
+      "quota": 90,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 676.0,
+      "quota": 90,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 675.0,
+      "quota": 135,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 668.0,
+      "quota": 62,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 678.5,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 673.5,
+      "quota": 135,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 666.5,
+      "quota": 62,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 677.0,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 669.0,
+      "quota": 135,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 662.0,
+      "quota": 62,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 672.5,
+      "quota": 12,
+      "control_line": 580
+    }
+  ],
+  "shanghai-shiyangaoji": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 702.0,
+      "quota": 60,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 701.0,
+      "quota": 60,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 696.5,
+      "quota": 60,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 695.0,
+      "quota": 90,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 688.0,
+      "quota": 42,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 698.5,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 694.0,
+      "quota": 90,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 687.0,
+      "quota": 42,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 697.5,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 689.5,
+      "quota": 90,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 682.5,
+      "quota": 42,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 693.0,
+      "quota": 12,
+      "control_line": 580
+    }
+  ],
+  "pudong-fuzhong": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 686.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 685.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 681.0,
+      "quota": 80,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 679.0,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 672.0,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 682.5,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 678.0,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 671.0,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 681.5,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 674.0,
+      "quota": 120,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 667.0,
+      "quota": 56,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 677.5,
+      "quota": 12,
+      "control_line": 580
+    }
+  ],
+  "gaohang-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 670.0,
+      "quota": 70,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 669.0,
+      "quota": 70,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 664.0,
+      "quota": 70,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 665.5,
+      "quota": 84,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 664.5,
+      "quota": 84,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 659.5,
+      "quota": 84,
+      "control_line": 580
+    }
+  ],
+  "jianping-shiyangaoji": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 660.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 659.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 654.0,
+      "quota": 80,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 655.5,
+      "quota": 96,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 654.5,
+      "quota": 96,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 649.5,
+      "quota": 96,
+      "control_line": 580
+    }
+  ],
+  "pudong-waiguoyu": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 690.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 689.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 685.0,
+      "quota": 80,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 683.0,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 676.0,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "自主招生",
+      "min_score": 686.5,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 682.0,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 675.0,
+      "quota": 56,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "自主招生",
+      "min_score": 685.5,
+      "quota": 12,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 678.0,
+      "quota": 120,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "名额到校",
+      "min_score": 671.0,
+      "quota": 56,
+      "control_line": 580
+    },
+    {
+      "year": 2023,
+      "batch": "自主招生",
+      "min_score": 681.5,
+      "quota": 12,
+      "control_line": 580
+    }
+  ],
+  "nanhuizhong-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 650.0,
+      "quota": 70,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 648.0,
+      "quota": 70,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 643.0,
+      "quota": 70,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 645.5,
+      "quota": 84,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 643.5,
+      "quota": 84,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 638.5,
+      "quota": 84,
+      "control_line": 580
+    }
+  ],
+  "tangzhen-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 630.0,
+      "quota": 60,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 628.0,
+      "quota": 60,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 622.0,
+      "quota": 60,
+      "control_line": 580
+    }
+  ],
+  "zhoupu-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 653.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 651.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 645.0,
+      "quota": 80,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 648.5,
+      "quota": 96,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 646.5,
+      "quota": 96,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 640.5,
+      "quota": 96,
+      "control_line": 580
+    }
+  ],
+  "shangnan-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 648.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 646.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 640.0,
+      "quota": 80,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 643.5,
+      "quota": 96,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 641.5,
+      "quota": 96,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 635.5,
+      "quota": 96,
+      "control_line": 580
+    }
+  ],
+  "luxing-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 645.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 643.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 637.0,
+      "quota": 80,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 640.5,
+      "quota": 96,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 638.5,
+      "quota": 96,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 632.5,
+      "quota": 96,
+      "control_line": 580
+    }
+  ],
+  "sanlin-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 638.0,
+      "quota": 70,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 636.0,
+      "quota": 70,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 630.0,
+      "quota": 70,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 633.5,
+      "quota": 84,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 631.5,
+      "quota": 84,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 625.5,
+      "quota": 84,
+      "control_line": 580
+    }
+  ],
+  "xinchuan-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 646.0,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 644.5,
+      "quota": 80,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 638.0,
+      "quota": 80,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 641.5,
+      "quota": 96,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 640.0,
+      "quota": 96,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 633.5,
+      "quota": 96,
+      "control_line": 580
+    }
+  ],
+  "yangsi-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 630.0,
+      "quota": 70,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 628.5,
+      "quota": 70,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 622.0,
+      "quota": 70,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 625.5,
+      "quota": 84,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 624.0,
+      "quota": 84,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 617.5,
+      "quota": 84,
+      "control_line": 580
+    }
+  ],
+  "beicai-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 635.0,
+      "quota": 70,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 633.0,
+      "quota": 70,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 627.0,
+      "quota": 70,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 630.5,
+      "quota": 84,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 628.5,
+      "quota": 84,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 622.5,
+      "quota": 84,
+      "control_line": 580
+    }
+  ],
+  "xinchang-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 580.0,
+      "quota": 70,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 578.5,
+      "quota": 70,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 572.0,
+      "quota": 70,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 575.5,
+      "quota": 84,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 574.0,
+      "quota": 84,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 567.5,
+      "quota": 84,
+      "control_line": 580
+    }
+  ],
+  "datuan-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 605.0,
+      "quota": 60,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 603.0,
+      "quota": 60,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 597.0,
+      "quota": 60,
+      "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 600.5,
+      "quota": 72,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 598.5,
+      "quota": 72,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "名额到区",
+      "min_score": 592.5,
+      "quota": 72,
+      "control_line": 580
+    }
+  ],
+  "nanyang-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 678,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 676.5,
+      "quota": 115,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 673,
+      "quota": 110,
+      "control_line": 580
+    }
+  ],
+  "shierjzhong": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 675,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 673.5,
+      "quota": 115,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 670,
+      "quota": 110,
+      "control_line": 580
+    }
+  ],
+  "xuhui-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 660,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 658.5,
+      "quota": 115,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 655,
+      "quota": 110,
+      "control_line": 580
+    }
+  ],
+  "xinanweiyu": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 664,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 662.5,
+      "quota": 115,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 659,
+      "quota": 110,
+      "control_line": 580
+    }
+  ],
+  "fudan-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 672,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 670.5,
+      "quota": 115,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 667,
+      "quota": 110,
+      "control_line": 580
+    }
+  ],
+  "huazhengfa-fuzhong": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 655,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 653.5,
+      "quota": 115,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 650,
+      "quota": 110,
+      "control_line": 580
+    }
+  ],
+  "yucai-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 675,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 673.5,
+      "quota": 115,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 670,
+      "quota": 110,
+      "control_line": 580
+    }
+  ],
+  "liushi-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 670,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 668.5,
+      "quota": 115,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 665,
+      "quota": 110,
+      "control_line": 580
+    }
+  ],
+  "xinzhong-gaoji-ja": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 668,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 666.5,
+      "quota": 115,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 663,
+      "quota": 110,
+      "control_line": 580
+    }
+  ],
+  "jiaoda-minhang": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 695,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 693.5,
+      "quota": 115,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 690,
+      "quota": 110,
+      "control_line": 580
+    }
+  ],
+  "shangda-fuzhong": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 670,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 668.5,
+      "quota": 115,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 665,
+      "quota": 110,
+      "control_line": 580
+    }
+  ],
+  "jiayi-shigao": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 664,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 662.5,
+      "quota": 115,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 659,
+      "quota": 110,
+      "control_line": 580
+    }
+  ],
+  "songjiang-lida": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 643.5,
+      "quota": 115,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 640,
+      "quota": 110,
+      "control_line": 580
+    }
+  ],
+  "huashida-sanfu": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 665,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 663.5,
+      "quota": 115,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 660,
+      "quota": 110,
+      "control_line": 580
+    }
+  ],
+  "jinshan-erzhong": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 640,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 638.5,
+      "quota": 115,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 635,
+      "quota": 110,
+      "control_line": 580
+    }
+  ],
+  "zhujiajiao-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 665,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 663.5,
+      "quota": 115,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 660,
+      "quota": 110,
+      "control_line": 580
+    }
+  ],
+  "fudan-qingpu": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 688,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 686.5,
+      "quota": 115,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 683,
+      "quota": 110,
+      "control_line": 580
+    }
+  ],
+  "quyuan-zhongxue": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 640,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 638.5,
+      "quota": 115,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 635,
+      "quota": 110,
+      "control_line": 580
+    }
+  ],
+  "chongming-shiyan": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 635,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 633.5,
+      "quota": 115,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 630,
+      "quota": 110,
+      "control_line": 580
+    }
+  ],
+  "tongji-erfu": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 650,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 648.5,
+      "quota": 115,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 110,
+      "control_line": 580
+    }
+  ],
+  "shanghai-waiguoyu": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 700,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 698.5,
+      "quota": 115,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 695,
+      "quota": 110,
+      "control_line": 580
+    }
+  ],
+  "luwan-gaoji": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 652,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 650.5,
+      "quota": 115,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 647,
+      "quota": 110,
+      "control_line": 580
+    }
+  ],
+  "tongji-erjzx": [
+    {
+      "year": 2025,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 120,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 618.5,
+      "quota": 115,
+      "control_line": 610
+    },
+    {
+      "year": 2023,
+      "batch": "统招",
+      "min_score": 615,
+      "quota": 110,
+      "control_line": 580
+    }
+  ],
+  "c9b27f18f8": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 675,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "db387c12ec": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "57b8de7fdb": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "e2e9bd20fb": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "0951f60fc1": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "f7a3208208": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "4b6331850a": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "130ec01663": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "c63dcadb4d": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "88cc11a0bc": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "001945b65a": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "b7aee2b5d6": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "71a6ac7898": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "7e979d12e0": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "4d895abbdd": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "6d0c27ffa0": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "0521f75b29": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 675,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "6df2f8dec2": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "f6ffdde3e6": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "9f461c1641": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "7f21814435": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "2b897d3a3e": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "715254f06d": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "34558e392b": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "138ec6c5b0": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "1f8dc5ac88": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "2bac20306b": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "badbc1266f": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "d88c671e56": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "d9a84b7587": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "43a296e6d6": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "a06e6ffa5e": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "66c52154d3": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "e3f9b58959": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "4d10bbd315": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "2a3bfd49d5": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "97dad2b5c7": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "3839b449aa": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "568b7fb212": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "d6b5682b8d": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "1e4f39fc09": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "1e74c9119a": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "3afe041d3b": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "3aa1cbdb34": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "53335608dd": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "bd303bd896": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "ab34c8f4cc": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "16feacec80": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "8fd6144e3c": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "d32c6d86ac": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "ff23af5177": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "7088a0fc95": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "f0c01c3751": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 675,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "28205b648a": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "df2b4f2216": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "636a0e5971": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "96f492d2ed": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "c30d0f1017": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "0af986ba8e": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "54c2c84b21": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "a09fce1bf8": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "ebef4313ad": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "0993d235e1": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "a45a77df9b": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "7c206e303a": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "60469f5a23": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "864b31b296": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "e001beab9f": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "ff466970d4": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "de6e2ff1d9": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "204ad401aa": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "0211b594ba": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "54444c2e83": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "3a9d591ebe": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "304250af49": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "6cc3c57614": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "2cc42a0902": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "4faff97a90": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "3838c4c9cc": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "c1f3cb586c": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "5f053adf28": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "6bbfe26757": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 645,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "ff93b27bee": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "dc65352433": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "dde018f389": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "e7f1b05f0c": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "03ab0dfcb1": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "d494f0122f": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "8048bf76e3": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "1910e0b89d": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "6f24e580c5": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "ecea16e9f1": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "baf6dcd216": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "79f80b3908": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "7595a807d6": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "c20edb35f5": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "21912b3f86": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "ce70b5a219": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "d2fa1cdcb5": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "8c4264ae6c": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "0301e196a3": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "c202f9560f": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "edeaa8ce97": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "c8b43f8633": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "e5b9269469": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "4f73b816d3": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "5d66ee9b09": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "d8a794dcb2": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "3c29e324c1": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "ca3a291636": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "173196371f": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "4d1effcfd4": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "bdce2b03eb": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "542f48a52c": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "f3a392cb1b": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "c6ca8c3501": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "01a92dac4f": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "d1cf22fee4": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "a7d4d53d6a": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "3abbf5f317": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "b3e799f2de": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "2e81a69941": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "c862fc7851": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "ad0792e677": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "79a76a63d2": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "3816926f90": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "a7fc24e37c": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "1df58db25c": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "2df6bca69b": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "fd1fe5988f": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "08116905ea": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "78e8463e61": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "c9333dc78b": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "c4e46283d6": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "6980f22084": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ],
+  "2978f8b627": [
+    {
+      "year": 2024,
+      "batch": "统招",
+      "min_score": 620,
+      "quota": 100,
+      "control_line": 610
+    }
+  ]
+}
