@@ -214,7 +214,7 @@ function BasicTab({ school }) {
     ["所在区", school.district + "区"],
     ["校区地址", school.address || "—"],
     ["联系电话", school.phone || "—"],
-    ["招生人数", school.intake + " 人（含统招+名额到区+到校+自招）"]
+    ["招生人数", school.intake + " 人（" + (school.intakeNote || "统招") + "）"]
   ];
   if (school.website)
     rows.push(["官方网站", school.website, true]);

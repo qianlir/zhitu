@@ -37,11 +37,13 @@ def _build_flat(school: dict, admissions: list[dict], gaokao: list[dict], evalua
     ctrl = None
     intake = 0
 
+    batch_set = set()
     for a in admissions:
         yr = a["year"]
         batch = a["batch"]
         if yr == latest_year:
             intake += a.get("quota") or 0
+            batch_set.add(batch)
         if batch == "统招":
             score_by_year[yr] = a["min_score"]
             if yr == latest_year:
@@ -52,6 +54,8 @@ def _build_flat(school: dict, admissions: list[dict], gaokao: list[dict], evalua
             minge_school = a["min_score"]
         elif batch == "自主招生" and yr == latest_year:
             zizhao = a["min_score"]
+
+    intake_note = "统招+到区+到校+自招" if len(batch_set) > 1 else "仅统招批次"
 
     latest_gk = None
     for g in gaokao:
@@ -102,6 +106,7 @@ def _build_flat(school: dict, admissions: list[dict], gaokao: list[dict], evalua
         "zizhao": zizhao,
         "ctrl": ctrl,
         "intake": intake,
+        "intakeNote": intake_note,
         "bbenRate": bben_rate,
         "top985": top985,
         "qbfd": qbfd,
