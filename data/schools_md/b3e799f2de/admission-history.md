@@ -2,7 +2,7 @@
 school_id: b3e799f2de
 doc_type: admission
 source: official_2024
-scraped_at: 2026-05-05T11:07:24+08:00
+scraped_at: 2026-05-05T11:39:07+08:00
 admissions:
   - year: 2024
     batch: 统招

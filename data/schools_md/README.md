@@ -69,7 +69,6 @@
 | 风华中学 | 上海市风华中学 | 静安 | 区实验示范 | [`9f461c1641/`](9f461c1641/) |
 | 市东实验学校 | 上海市市东实验学校（上海市市东中学） | 杨浦 | 区实验示范 | [`a06e6ffa5e/`](a06e6ffa5e/) |
 | 位育附属徐汇科技 | 上海市位育附属徐汇科技实验中学 | 徐汇 | 区实验示范 | [`b7aee2b5d6/`](b7aee2b5d6/) |
-| 北蔡 | 上海海事大学附属北蔡高级中学 | 浦东 | 区实验示范 | [`beicai-zhongxue/`](beicai-zhongxue/) |
 | 北郊 | 上海财经大学附属北郊高级中学 | 虹口 | 区实验示范 | [`beijiao-gaoji/`](beijiao-gaoji/) |
 | 中国中学 | 上海市中国中学 | 徐汇 | 区实验示范 | [`c63dcadb4d/`](c63dcadb4d/) |
 | 民本 | 上海市崇明区民本中学 | 崇明 | 区实验示范 | [`chongming-minben/`](chongming-minben/) |
@@ -226,5 +225,4 @@
 | 民办民一中学 | 上海民办民一中学 | 崇明 | 普通高中 | [`ff93b27bee/`](ff93b27bee/) |
 | 唐镇 | 上海市唐镇中学 | 浦东 | 普通高中 | [`tangzhen-zhongxue/`](tangzhen-zhongxue/) |
 | 桃浦 | 上海市桃浦中学 | 普陀 | 普通高中 | [`tongji-erjzx/`](tongji-erjzx/) |
-| 新中 | 上海市新中高级中学 | 闵行 | 普通高中 | [`xinzhong-gaoji/`](xinzhong-gaoji/) |
 | 宜川 | 上海市宜川中学 | 普陀 | 普通高中 | [`yichuan-zhongxue/`](yichuan-zhongxue/) |

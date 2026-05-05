@@ -12,7 +12,7 @@ website: https://jy.hpe.cn
 tags: ["区重点", "历史名校", "270年历史", "毗邻文庙"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T11:07:24+08:00
+scraped_at: 2026-05-05T11:39:07+08:00
 ---
 
 # 上海市敬业中学 基本信息

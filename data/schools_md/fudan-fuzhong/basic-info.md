@@ -12,7 +12,7 @@ website: https://www.fdfz.cn
 tags: ["四校", "人文底蕴", "文理并重", "综合素质", "复旦资源", "寄宿制"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T11:07:24+08:00
+scraped_at: 2026-05-05T11:39:07+08:00
 ---
 
 # 复旦大学附属中学 基本信息

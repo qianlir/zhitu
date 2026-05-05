@@ -12,7 +12,7 @@ website: https://www.sfls.cn
 tags: ["市重点", "外语特色", "保送资格", "全国16所外国语之一"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T11:07:24+08:00
+scraped_at: 2026-05-05T11:39:07+08:00
 ---
 
 # 上海外国语大学附属外国语学校 基本信息

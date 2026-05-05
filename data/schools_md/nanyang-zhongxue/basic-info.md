@@ -12,7 +12,7 @@ website: ""
 tags: ["市重点", "百年名校", "1896年创办"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T11:07:24+08:00
+scraped_at: 2026-05-05T11:39:07+08:00
 ---
 
 # 上海市南洋中学 基本信息

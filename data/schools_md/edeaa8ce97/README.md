@@ -8,7 +8,7 @@ type: 普通高中
 ownership: 公办
 doc_type: readme
 source: seed_json
-scraped_at: 2026-05-05T11:07:24+08:00
+scraped_at: 2026-05-05T11:39:07+08:00
 ---
 
 # 上海协和双语高级中学 124111 闵行区 民办 一般高中 国际课程班 127 上海市闵行区学附海属中学 (协和双语高级)

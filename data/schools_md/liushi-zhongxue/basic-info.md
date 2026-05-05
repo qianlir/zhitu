@@ -12,7 +12,7 @@ website: ""
 tags: ["市重点", "信息技术特色", "千兆校园网"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T11:07:24+08:00
+scraped_at: 2026-05-05T11:39:07+08:00
 ---
 
 # 上海市第六十中学 基本信息

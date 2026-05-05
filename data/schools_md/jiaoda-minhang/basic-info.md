@@ -12,7 +12,7 @@ website: https://jzmf.mhedu.sh.cn/
 tags: ["市重点", "四校分校", "交大系"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T11:07:24+08:00
+scraped_at: 2026-05-05T11:39:07+08:00
 ---
 
 # 上海交通大学附属中学闵行分校 基本信息

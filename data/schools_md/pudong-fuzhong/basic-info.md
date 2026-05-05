@@ -12,7 +12,7 @@ website: ""
 tags: ["市重点", "上海中学分校", "临港新片区", "150亩", "寄宿制"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T11:07:24+08:00
+scraped_at: 2026-05-05T11:39:07+08:00
 ---
 
 # 上海中学东校 基本信息

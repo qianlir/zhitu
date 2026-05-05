@@ -7,22 +7,21 @@
   <link rel="stylesheet" href="/mobile/css/mobile.css" />
   <script src="/js/vendor/react.min.js"></script>
   <script src="/js/vendor/react-dom.min.js"></script>
-  <script src="/js/vendor/babel.min.js"></script>
 </head>
 <body>
   <div id="root"></div>
   <script src="/js/api.js"></script>
   <script src="/js/util.js"></script>
-  <script type="text/babel" src="/js/components.jsx"></script>
-  <script type="text/babel" src="/mobile/js/components.jsx"></script>
-  <script type="text/babel" src="/mobile/js/pages/Home.jsx"></script>
-  <script type="text/babel" src="/mobile/js/pages/Schools.jsx"></script>
-  <script type="text/babel" src="/mobile/js/pages/SchoolDetail.jsx"></script>
-  <script type="text/babel" src="/mobile/js/pages/Compare.jsx"></script>
-  <script type="text/babel" src="/mobile/js/pages/Recommend.jsx"></script>
-  <script type="text/babel" src="/mobile/js/pages/About.jsx"></script>
+  <script src="/js/components.js"></script>
+  <script src="/mobile/js/components.js"></script>
+  <script src="/mobile/js/pages/Home.js"></script>
+  <script src="/mobile/js/pages/Schools.js"></script>
+  <script src="/mobile/js/pages/SchoolDetail.js"></script>
+  <script src="/mobile/js/pages/Compare.js"></script>
+  <script src="/mobile/js/pages/Recommend.js"></script>
+  <script src="/mobile/js/pages/About.js"></script>
 
-  <script type="text/babel">
+  <script>
     function App() {
       const [tab, setTab] = React.useState('home');
       const [schoolId, setSchoolId] = React.useState(null);
@@ -43,20 +42,20 @@
       const showTabBar = !['detail', 'recommend'].includes(tab);
 
       return (
-        <div style={{ minHeight: '100vh', background: 'var(--bg)', paddingBottom: showTabBar ? 'var(--tab-h)' : 0 }}>
-          <div style={{ display: showDetail ? 'none' : 'block' }}>
-            {baseTab === 'home' && <MHome onNavigate={navigate} onOpenSchool={openSchool} />}
-            {baseTab === 'schools' && <MSchools onOpenSchool={openSchool} onBack={() => navigate('home')} initialQuery={searchQ} />}
-            {baseTab === 'compare' && <MCompare onOpenSchool={openSchool} onBack={() => navigate('home')} />}
-            {baseTab === 'recommend' && <MRecommend onOpenSchool={openSchool} onBack={() => navigate('home')} />}
-            {baseTab === 'about' && <MAbout onBack={() => navigate('home')} />}
-          </div>
-          {showDetail && <MSchoolDetail schoolId={schoolId} onBack={goBack} />}
-          {showTabBar && <MTabBar tab={tab} setTab={navigate} />}
-        </div>
+        React.createElement('div', { style: { minHeight: '100vh', background: 'var(--bg)', paddingBottom: showTabBar ? 'var(--tab-h)' : 0 } },
+          React.createElement('div', { style: { display: showDetail ? 'none' : 'block' } },
+            baseTab === 'home' && React.createElement(MHome, { onNavigate: navigate, onOpenSchool: openSchool }),
+            baseTab === 'schools' && React.createElement(MSchools, { onOpenSchool: openSchool, onBack: function() { navigate('home'); }, initialQuery: searchQ }),
+            baseTab === 'compare' && React.createElement(MCompare, { onOpenSchool: openSchool, onBack: function() { navigate('home'); } }),
+            baseTab === 'recommend' && React.createElement(MRecommend, { onOpenSchool: openSchool, onBack: function() { navigate('home'); } }),
+            baseTab === 'about' && React.createElement(MAbout, { onBack: function() { navigate('home'); } })
+          ),
+          showDetail && React.createElement(MSchoolDetail, { schoolId: schoolId, onBack: goBack }),
+          showTabBar && React.createElement(MTabBar, { tab: tab, setTab: navigate })
+        )
       );
     }
-    ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+    ReactDOM.createRoot(document.getElementById('root')).render(React.createElement(App));
   </script>
 </body>
 </html>

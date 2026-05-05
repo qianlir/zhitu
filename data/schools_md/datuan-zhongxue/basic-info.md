@@ -12,7 +12,7 @@ website: http://www.dtg.sh.cn/WebSite/
 tags: ["区重点", "海洋大学附属", "寄宿制"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T11:07:24+08:00
+scraped_at: 2026-05-05T11:39:07+08:00
 ---
 
 # 上海海洋大学附属大团高级中学 基本信息
