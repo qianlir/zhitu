@@ -106,6 +106,13 @@ function MSchoolRow({ school, onClick, showScore }) {
             ]
           }, undefined, true, undefined, this)
         ]
+      }, undefined, true, undefined, this),
+      school.matchReason && jsxDEV_7x81h0kn("div", {
+        style: { fontSize: 11, color: "var(--primary)", marginTop: 4, padding: "4px 8px", background: "var(--primary-50)", borderRadius: 4, lineHeight: 1.5 },
+        children: [
+          "匹配: ",
+          school.matchReason
+        ]
       }, undefined, true, undefined, this)
     ]
   }, undefined, true, undefined, this);

@@ -153,6 +153,13 @@ function SchoolCard({ school, onClick, compact }) {
             ]
           }, undefined, true, undefined, this)
         ]
+      }, undefined, true, undefined, this),
+      school.matchReason && jsxDEV_7x81h0kn("div", {
+        style: { fontSize: 12, color: "var(--primary)", marginTop: 10, padding: "6px 10px", background: "var(--primary-50)", borderRadius: 6, lineHeight: 1.5 },
+        children: [
+          "匹配: ",
+          school.matchReason
+        ]
       }, undefined, true, undefined, this)
     ]
   }, undefined, true, undefined, this);

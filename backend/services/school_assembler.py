@@ -162,6 +162,47 @@ def _fts_search(q: str) -> list[str]:
         return []
 
 
+def _extract_snippet(text: str, q: str, max_len: int = 60) -> str:
+    """从 text 中提取包含 q 的句子片段。"""
+    if not text or not q:
+        return ""
+    # 按句号/逗号/换行分句
+    import re
+    sentences = re.split(r'[。，,\n；]', text)
+    for s in sentences:
+        s = s.strip()
+        if q in s and len(s) > 4:
+            return s[:max_len]
+    # 按字符找
+    idx = text.find(q)
+    if idx >= 0:
+        start = max(0, idx - 15)
+        return text[start:start + max_len].strip()
+    return ""
+
+
+def _match_reason(school_row: dict, q: str) -> str:
+    """生成匹配理由。校名匹配返回空，语义匹配返回 snippet。"""
+    if not q:
+        return ""
+    name = school_row.get("name", "") + (school_row.get("short_name") or "")
+    # 校名直接匹配 → 不需要理由
+    if q in name:
+        return ""
+    # 从 tags, intro_text 中提取
+    tags = school_row.get("tags") or ""
+    intro = school_row.get("intro_text") or ""
+    for source in [tags, intro]:
+        snippet = _extract_snippet(source, q)
+        if snippet:
+            return snippet
+    # 模糊：按字分词匹配
+    for ch in q:
+        if len(ch) > 1 or not ch.strip():
+            continue
+    return ""
+
+
 def _hybrid_search(q: str) -> list[str]:
     """混合搜索：FTS5 关键词 + TF-IDF 向量，合并去重。"""
     fts_ids = _fts_search(q)
@@ -170,7 +211,6 @@ def _hybrid_search(q: str) -> list[str]:
     vec_results = vector_search(q, limit=30)
     vec_ids = [r["school_id"] for r in vec_results]
 
-    # Merge: FTS results first (exact match priority), then vector results
     seen = set()
     merged = []
     for sid in fts_ids:
@@ -198,14 +238,23 @@ def assemble_school_list(
 ) -> dict:
     if q:
         all_ids = _hybrid_search(q)
+        # Pre-fetch school rows for match reason
+        _reason_cache = {}
+        for sid in all_ids:
+            row = query_one("SELECT name, short_name, tags, intro_text FROM schools WHERE school_id = ?", (sid,))
+            if row:
+                _reason_cache[sid] = row
     else:
         all_ids = [r["school_id"] for r in query("SELECT school_id FROM schools")]
+        _reason_cache = {}
 
     results = []
     for sid in all_ids:
         s = assemble_school(sid)
         if not s:
             continue
+        if q and sid in _reason_cache:
+            s["matchReason"] = _match_reason(_reason_cache[sid], q)
         if districts and s["district"] not in districts:
             continue
         if types and s["kind"] not in types:

@@ -54,6 +54,9 @@ function SchoolCard({ school, onClick, compact }) {
           <div><div style={{ fontSize: 11, marginBottom: 2 }}>招生</div><div style={{ color: 'var(--text)', fontWeight: 600 }}>{school.intake} 人</div></div>
         </div>
       )}
+      {school.matchReason && (
+        <div style={{ fontSize: 12, color: 'var(--primary)', marginTop: 10, padding: '6px 10px', background: 'var(--primary-50)', borderRadius: 6, lineHeight: 1.5 }}>匹配: {school.matchReason}</div>
+      )}
     </div>
   );
 }

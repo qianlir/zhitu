@@ -45,6 +45,7 @@ function MSchoolRow({ school, onClick, showScore }) {
         {school.bbenRate != null && <span>一本率 <strong style={{color:'var(--text)'}}>{school.bbenRate}%</strong></span>}
         {school.intake != null && <span>招生 <strong style={{color:'var(--text)'}}>{school.intake}人</strong></span>}
       </div>
+      {school.matchReason && <div style={{fontSize:11,color:'var(--primary)',marginTop:4,padding:'4px 8px',background:'var(--primary-50)',borderRadius:4,lineHeight:1.5}}>匹配: {school.matchReason}</div>}
     </div>
   );
 }
