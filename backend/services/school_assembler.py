@@ -163,38 +163,37 @@ def _fts_search(q: str) -> list[str]:
 
 
 def _extract_snippet(text: str, q: str, max_len: int = 40) -> str:
-    """从 text 中提取包含 q 或其子词的最佳句子片段。"""
+    """从 text 中提取与查询最相关的句子片段。优先完整匹配，次优多词匹配。"""
     import re
     if not text or not q:
         return ""
 
     sentences = [s.strip() for s in re.split(r'[。，,\n；、]', text) if len(s.strip()) > 3]
 
-    # 1. 完整匹配
+    # 1. 完整匹配（最高优先）
     for s in sentences:
         if q in s:
             return s[:max_len]
 
-    # 2. 拆词匹配 — 按2字词拆分，找包含最多子词的句子
+    # 2. 拆成2字词，要求至少一半以上子词命中同一句
     sub_words = []
-    if len(q) >= 2:
+    if len(q) >= 4:
+        sub_words = [q[:2], q[2:]]  # 如"物理竞赛"→["物理","竞赛"]
+    elif len(q) >= 2:
         for i in range(len(q) - 1):
             sub_words.append(q[i:i+2])
     if not sub_words:
         sub_words = list(q)
 
     best_s, best_n = "", 0
+    threshold = max(2, len(sub_words) // 2 + 1)  # 至少一半子词命中
     for s in sentences:
         n = sum(1 for w in sub_words if w in s)
         if n > best_n:
             best_s, best_n = s, n
-    if best_n > 0:
-        return best_s[:max_len]
 
-    # 3. 单字匹配
-    for s in sentences:
-        if any(ch in s for ch in q if ch.strip()):
-            return s[:max_len]
+    if best_n >= threshold:
+        return best_s[:max_len]
 
     return ""
 
