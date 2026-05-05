@@ -2,7 +2,7 @@
 school_id: fudan-zhongxue
 doc_type: admission
 source: official_2024
-scraped_at: 2026-05-05T11:39:07+08:00
+scraped_at: 2026-05-05T12:04:55+08:00
 admissions:
   - year: 2025
     batch: 统招
@@ -19,6 +19,16 @@ admissions:
     min_score: 667
     quota: 110
     control_line: 580
+  - year: 2025
+    batch: 名额到区
+    min_score: 664
+    quota: 53
+    control_line: 610
+  - year: 2025
+    batch: 名额到校
+    min_score: 657
+    quota: 79
+    control_line: 610
 ---
 
 # 上海市复旦中学 历年录取分数线
@@ -30,3 +40,5 @@ admissions:
 | 2025 | 统招 | 672 | 120 | 610 |
 | 2024 | 统招 | 670.5 | 115 | 610 |
 | 2023 | 统招 | 667 | 110 | 580 |
+| 2025 | 名额到区 | 664 | 53 | 610 |
+| 2025 | 名额到校 | 657 | 79 | 610 |

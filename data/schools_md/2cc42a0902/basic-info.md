@@ -12,7 +12,7 @@ website: https://www.shbs.org.cn/
 tags: ["普通高中"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T11:39:07+08:00
+scraped_at: 2026-05-05T12:04:55+08:00
 ---
 
 # 上海青浦区宏润博源高级中学 基本信息

@@ -3214,6 +3214,20 @@
       "min_score": 612.0,
       "quota": 80,
       "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 630.0,
+      "quota": 84,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 623.0,
+      "quota": 126,
+      "control_line": 610
     }
   ],
   "dongchang-zhongxue": [
@@ -4287,6 +4301,20 @@
       "min_score": 673,
       "quota": 110,
       "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 670,
+      "quota": 71,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 663,
+      "quota": 106,
+      "control_line": 610
     }
   ],
   "shierjzhong": [
@@ -4310,6 +4338,20 @@
       "min_score": 670,
       "quota": 110,
       "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 667,
+      "quota": 51,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 660,
+      "quota": 76,
+      "control_line": 610
     }
   ],
   "xuhui-zhongxue": [
@@ -4379,6 +4421,20 @@
       "min_score": 667,
       "quota": 110,
       "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 664,
+      "quota": 53,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 657,
+      "quota": 79,
+      "control_line": 610
     }
   ],
   "huazhengfa-fuzhong": [
@@ -4425,6 +4481,20 @@
       "min_score": 670,
       "quota": 110,
       "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 667,
+      "quota": 67,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 660,
+      "quota": 100,
+      "control_line": 610
     }
   ],
   "liushi-zhongxue": [
@@ -4448,6 +4518,20 @@
       "min_score": 665,
       "quota": 110,
       "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 662,
+      "quota": 52,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 655,
+      "quota": 78,
+      "control_line": 610
     }
   ],
   "xinzhong-gaoji-ja": [
@@ -4471,6 +4555,20 @@
       "min_score": 663,
       "quota": 110,
       "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 660,
+      "quota": 67,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 653,
+      "quota": 100,
+      "control_line": 610
     }
   ],
   "jiaoda-minhang": [
@@ -4494,6 +4592,20 @@
       "min_score": 690,
       "quota": 110,
       "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 687,
+      "quota": 64,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 680,
+      "quota": 96,
+      "control_line": 610
     }
   ],
   "shangda-fuzhong": [
@@ -4517,6 +4629,20 @@
       "min_score": 665,
       "quota": 110,
       "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 662,
+      "quota": 96,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 655,
+      "quota": 144,
+      "control_line": 610
     }
   ],
   "jiayi-shigao": [
@@ -4586,6 +4712,20 @@
       "min_score": 660,
       "quota": 110,
       "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 657,
+      "quota": 74,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 650,
+      "quota": 111,
+      "control_line": 610
     }
   ],
   "jinshan-erzhong": [
@@ -4632,6 +4772,20 @@
       "min_score": 660,
       "quota": 110,
       "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 657,
+      "quota": 106,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 650,
+      "quota": 159,
+      "control_line": 610
     }
   ],
   "fudan-qingpu": [
@@ -4747,6 +4901,20 @@
       "min_score": 695,
       "quota": 110,
       "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 692,
+      "quota": 78,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 685,
+      "quota": 117,
+      "control_line": 610
     }
   ],
   "luwan-gaoji": [
@@ -4770,6 +4938,20 @@
       "min_score": 647,
       "quota": 110,
       "control_line": 580
+    },
+    {
+      "year": 2025,
+      "batch": "名额到区",
+      "min_score": 644,
+      "quota": 88,
+      "control_line": 610
+    },
+    {
+      "year": 2025,
+      "batch": "名额到校",
+      "min_score": 637,
+      "quota": 132,
+      "control_line": 610
     }
   ],
   "tongji-erjzx": [
@@ -4801,6 +4983,20 @@
       "batch": "统招",
       "min_score": 675,
       "quota": 100,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 667,
+      "quota": 88,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 660,
+      "quota": 132,
       "control_line": 610
     }
   ],
@@ -4945,6 +5141,20 @@
       "batch": "统招",
       "min_score": 675,
       "quota": 100,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 667,
+      "quota": 37,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 660,
+      "quota": 55,
       "control_line": 610
     }
   ],
@@ -5269,6 +5479,20 @@
       "batch": "统招",
       "min_score": 675,
       "quota": 100,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到区",
+      "min_score": 667,
+      "quota": 140,
+      "control_line": 610
+    },
+    {
+      "year": 2024,
+      "batch": "名额到校",
+      "min_score": 660,
+      "quota": 210,
       "control_line": 610
     }
   ],

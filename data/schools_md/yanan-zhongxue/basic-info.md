@@ -12,7 +12,7 @@ website: https://www.yananhs.com
 tags: ["八大", "全寄宿制", "理科特色", "竞赛师资强", "长宁区第一", "邓小平题校名"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T11:39:07+08:00
+scraped_at: 2026-05-05T12:04:55+08:00
 ---
 
 # 上海市延安中学 基本信息

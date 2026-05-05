@@ -8,7 +8,7 @@ type: 普通高中
 ownership: 公办
 doc_type: readme
 source: seed_json
-scraped_at: 2026-05-05T11:39:07+08:00
+scraped_at: 2026-05-05T12:04:56+08:00
 ---
 
 # 上海师范大学附属宝山罗店中学 (师范大学附属)

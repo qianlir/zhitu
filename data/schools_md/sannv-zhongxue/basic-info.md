@@ -12,7 +12,7 @@ website: https://www.ssnz.sh.cn
 tags: ["区重点", "女子学校", "百年名校", "80亩校园"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T11:39:07+08:00
+scraped_at: 2026-05-05T12:04:55+08:00
 ---
 
 # 上海市第三女子中学 基本信息

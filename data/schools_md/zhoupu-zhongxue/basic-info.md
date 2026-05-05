@@ -12,7 +12,7 @@ website: ""
 tags: ["区重点", "华师大附属", "周浦镇"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T11:39:07+08:00
+scraped_at: 2026-05-05T12:04:55+08:00
 ---
 
 # 华东师范大学附属周浦中学 基本信息

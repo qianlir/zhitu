@@ -12,7 +12,7 @@ website: https://hzfz.chneic.sh.cn/
 tags: ["区重点", "市特色高中", "法治教育"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T11:39:07+08:00
+scraped_at: 2026-05-05T12:04:55+08:00
 ---
 
 # 华东政法大学附属中学 基本信息

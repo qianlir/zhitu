@@ -2,12 +2,22 @@
 school_id: 0521f75b29
 doc_type: admission
 source: official_2024
-scraped_at: 2026-05-05T11:39:07+08:00
+scraped_at: 2026-05-05T12:04:55+08:00
 admissions:
   - year: 2024
     batch: 统招
     min_score: 675
     quota: 100
+    control_line: 610
+  - year: 2024
+    batch: 名额到区
+    min_score: 667
+    quota: 37
+    control_line: 610
+  - year: 2024
+    batch: 名额到校
+    min_score: 660
+    quota: 55
     control_line: 610
 ---
 
@@ -18,3 +28,5 @@ admissions:
 | 年份 | 批次 | 最低分 | 招生名额 | 当年控制线 |
 |---|---|---|---|---|
 | 2024 | 统招 | 675 | 100 | 610 |
+| 2024 | 名额到区 | 667 | 37 | 610 |
+| 2024 | 名额到校 | 660 | 55 | 610 |

@@ -12,7 +12,7 @@ website: http://xczx.pdedu.sh.cn/
 tags: ["区重点", "新场古镇", "寄宿制"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T11:39:07+08:00
+scraped_at: 2026-05-05T12:04:55+08:00
 ---
 
 # 上海市新场中学 基本信息

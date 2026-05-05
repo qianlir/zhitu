@@ -12,7 +12,7 @@ website: https://www.jdfz.sh.cn
 tags: ["四校", "理工科强", "科创教育", "机器人大赛", "学生自管", "IB课程", "寄宿制"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T11:39:07+08:00
+scraped_at: 2026-05-05T12:04:55+08:00
 ---
 
 # 上海交通大学附属中学 基本信息

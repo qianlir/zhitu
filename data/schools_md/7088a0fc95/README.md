@@ -8,7 +8,7 @@ type: 普通高中
 ownership: 民办
 doc_type: readme
 source: seed_json
-scraped_at: 2026-05-05T11:39:07+08:00
+scraped_at: 2026-05-05T12:04:55+08:00
 ---
 
 # 上海市民办远东学校 (民办远东学校)
