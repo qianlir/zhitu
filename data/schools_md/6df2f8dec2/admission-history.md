@@ -2,7 +2,7 @@
 school_id: 6df2f8dec2
 doc_type: admission
 source: official_2024
-scraped_at: 2026-05-05T08:55:34+08:00
+scraped_at: 2026-05-05T11:07:24+08:00
 admissions:
   - year: 2024
     batch: 统招
@@ -11,7 +11,7 @@ admissions:
     control_line: 610
 ---
 
-# 上海戏剧学附属高级中学 历年录取分数线
+# 上海戏剧学院附属高级中学 历年录取分数线
 
 > 数据来源：上海市教育考试院、浦东新区政府官网等公开渠道。
 

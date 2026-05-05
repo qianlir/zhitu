@@ -12,7 +12,7 @@ website: https://web-hscyez.pte.sh.cn
 tags: ["市重点", "新五虎", "德语班", "博雅班", "普陀第一", "2024黑马", "UNESCO ESD示范校"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T08:55:34+08:00
+scraped_at: 2026-05-05T11:07:24+08:00
 ---
 
 # 上海市曹杨第二中学 基本信息

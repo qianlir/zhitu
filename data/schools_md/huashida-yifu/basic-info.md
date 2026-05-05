@@ -12,7 +12,7 @@ website: https://www.hsyfu.cn
 tags: ["市重点", "市实验性示范性", "百年名校"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T08:55:34+08:00
+scraped_at: 2026-05-05T11:07:24+08:00
 ---
 
 # 华东师范大学第一附属中学 基本信息

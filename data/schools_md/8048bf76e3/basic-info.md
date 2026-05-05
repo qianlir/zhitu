@@ -12,7 +12,7 @@ website: http://www.yizhong.edu.sh.cn
 tags: ["普通高中"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T08:55:34+08:00
+scraped_at: 2026-05-05T11:07:24+08:00
 ---
 
 # 上海市第一中学 基本信息

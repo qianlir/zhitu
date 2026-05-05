@@ -12,7 +12,7 @@ website: ""
 tags: ["普通高中"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T08:55:34+08:00
+scraped_at: 2026-05-05T11:07:24+08:00
 ---
 
 # 上海市民办西南高级中学 044083 徐汇区 民办 一般高中31 上海市零陵中学 基本信息

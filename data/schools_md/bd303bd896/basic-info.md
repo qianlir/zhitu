@@ -12,7 +12,7 @@ website: https://school.bsedu.org.cn/xingzhong/
 tags: ["普通高中"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T08:55:34+08:00
+scraped_at: 2026-05-05T11:07:24+08:00
 ---
 
 # 上海民办行中中学 基本信息

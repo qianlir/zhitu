@@ -2,7 +2,7 @@
 school_id: ad0792e677
 doc_type: gaokao
 source: seed_approximate
-scraped_at: 2026-05-05T08:55:34+08:00
+scraped_at: 2026-05-05T11:07:24+08:00
 gaokao_results:
   - year: 2024
     one_ben_rate: 0.35

@@ -2,7 +2,7 @@
 school_id: 79f80b3908
 doc_type: gaokao
 source: seed_approximate
-scraped_at: 2026-05-05T08:55:34+08:00
+scraped_at: 2026-05-05T11:07:24+08:00
 gaokao_results:
   - year: 2024
     one_ben_rate: 0.35
@@ -11,7 +11,7 @@ gaokao_results:
     fudan_jiaoda_count: 0
 ---
 
-# 上海音乐学附属安师实验中学 高考成绩
+# 上海音乐学院附属安师实验中学 高考成绩
 
 > 数据为公开报道近似值，部分学校未公布完整数据。
 
