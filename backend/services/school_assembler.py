@@ -55,7 +55,27 @@ def _build_flat(school: dict, admissions: list[dict], gaokao: list[dict], evalua
         elif batch == "自主招生" and yr == latest_year:
             zizhao = a["min_score"]
 
-    intake_note = "统招+到区+到校+自招" if len(batch_set) > 1 else "仅统招批次"
+    # 生成招生人数说明
+    batch_labels = []
+    has_official = False
+    for b in ["统招", "名额到区", "名额到校", "自主招生"]:
+        if b in batch_set:
+            batch_labels.append(b.replace("名额", "").replace("自主招生", "自招"))
+
+    # 检查数据来源
+    sources_2025 = set()
+    for a in admissions:
+        if a["year"] == latest_year and a.get("source"):
+            sources_2025.add(a["source"])
+
+    if not batch_labels:
+        intake_note = "暂无招生数据"
+    elif len(batch_labels) >= 4:
+        intake_note = "含全部批次"
+    else:
+        intake_note = "+".join(batch_labels)
+        if "到校" not in intake_note or "统招" not in intake_note:
+            intake_note += "（部分批次）"
 
     latest_gk = None
     for g in gaokao:

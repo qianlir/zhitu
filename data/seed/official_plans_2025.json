@@ -1,0 +1,555 @@
+{
+  "year": 2025,
+  "sources": {
+    "daoqu_plan": "https://www.shmeea.edu.cn/download/20250528/014.pdf",
+    "zizhao_plan": "https://www.shmeea.edu.cn/download/20250528/013.pdf"
+  },
+  "schools": [
+    {
+      "code": "012001",
+      "name": "上海市格致中学",
+      "daoqu_plan": 126,
+      "zizhao_plan": 39
+    },
+    {
+      "code": "012002",
+      "name": "上海市格致中学（奉贤校区）",
+      "daoqu_plan": 40,
+      "zizhao_plan": 25
+    },
+    {
+      "code": "012003",
+      "name": "上海市大同中学",
+      "daoqu_plan": 136,
+      "zizhao_plan": 46
+    },
+    {
+      "code": "012005",
+      "name": "上海市向明中学",
+      "daoqu_plan": 59,
+      "zizhao_plan": 30
+    },
+    {
+      "code": "012006",
+      "name": "上海市向明中学（浦江校区）",
+      "daoqu_plan": 38,
+      "zizhao_plan": 20
+    },
+    {
+      "code": "012007",
+      "name": "上海外国语大学附属大境中学",
+      "daoqu_plan": 96,
+      "zizhao_plan": 36
+    },
+    {
+      "code": "012008",
+      "name": "上海市光明中学",
+      "daoqu_plan": 86,
+      "zizhao_plan": 40
+    },
+    {
+      "code": "012009",
+      "name": "上海市敬业中学",
+      "daoqu_plan": 76,
+      "zizhao_plan": 34
+    },
+    {
+      "code": "012010",
+      "name": "上海市卢湾高级中学",
+      "daoqu_plan": 96,
+      "zizhao_plan": 37
+    },
+    {
+      "code": "042001",
+      "name": "上海市第二中学",
+      "daoqu_plan": 52,
+      "zizhao_plan": 30
+    },
+    {
+      "code": "042002",
+      "name": "上海市第二中学（梅陇校区）",
+      "daoqu_plan": 53,
+      "zizhao_plan": 33
+    },
+    {
+      "code": "042008",
+      "name": "上海市南洋模范中学",
+      "daoqu_plan": 90,
+      "zizhao_plan": 61
+    },
+    {
+      "code": "042032",
+      "name": "上海市上海中学",
+      "daoqu_plan": 286,
+      "zizhao_plan": 165
+    },
+    {
+      "code": "042035",
+      "name": "上海市位育中学",
+      "daoqu_plan": 89,
+      "zizhao_plan": 54
+    },
+    {
+      "code": "042036",
+      "name": "复旦大学附属中学徐汇分校",
+      "daoqu_plan": 31,
+      "zizhao_plan": 16
+    },
+    {
+      "code": "043015",
+      "name": "上海市南洋中学",
+      "daoqu_plan": 78,
+      "zizhao_plan": 50
+    },
+    {
+      "code": "044109",
+      "name": "上海市徐汇中学",
+      "zizhao_plan": 65
+    },
+    {
+      "code": "044223",
+      "name": "上海市紫竹园中学",
+      "zizhao_plan": 31
+    },
+    {
+      "code": "052001",
+      "name": "上海市第三女子中学",
+      "daoqu_plan": 51,
+      "zizhao_plan": 48
+    },
+    {
+      "code": "052002",
+      "name": "上海市延安中学",
+      "daoqu_plan": 72,
+      "zizhao_plan": 57
+    },
+    {
+      "code": "053004",
+      "name": "上海市复旦中学",
+      "daoqu_plan": 53,
+      "zizhao_plan": 38
+    },
+    {
+      "code": "054013",
+      "name": "华东政法大学附属中学",
+      "zizhao_plan": 24
+    },
+    {
+      "code": "062001",
+      "name": "上海市市西中学",
+      "daoqu_plan": 70,
+      "zizhao_plan": 52
+    },
+    {
+      "code": "062002",
+      "name": "上海市育才中学",
+      "daoqu_plan": 67,
+      "zizhao_plan": 38
+    },
+    {
+      "code": "062003",
+      "name": "上海市新中高级中学",
+      "daoqu_plan": 67,
+      "zizhao_plan": 50
+    },
+    {
+      "code": "062004",
+      "name": "上海市市北中学",
+      "daoqu_plan": 74,
+      "zizhao_plan": 48
+    },
+    {
+      "code": "062011",
+      "name": "上海市回民中学",
+      "daoqu_plan": 53,
+      "zizhao_plan": 35
+    },
+    {
+      "code": "063004",
+      "name": "上海市第六十中学",
+      "daoqu_plan": 53,
+      "zizhao_plan": 33
+    },
+    {
+      "code": "064001",
+      "name": "上海市华东模范中学",
+      "daoqu_plan": 44,
+      "zizhao_plan": 31
+    },
+    {
+      "code": "072001",
+      "name": "上海市晋元高级中学",
+      "daoqu_plan": 84,
+      "zizhao_plan": 49
+    },
+    {
+      "code": "072002",
+      "name": "上海市曹杨第二中学",
+      "daoqu_plan": 82,
+      "zizhao_plan": 51
+    },
+    {
+      "code": "073003",
+      "name": "上海市宜川中学",
+      "daoqu_plan": 84,
+      "zizhao_plan": 46
+    },
+    {
+      "code": "073004",
+      "name": "上海市曹杨中学",
+      "zizhao_plan": 60
+    },
+    {
+      "code": "073082",
+      "name": "华东师范大学第二附属中学（普陀校区）",
+      "daoqu_plan": 30,
+      "zizhao_plan": 16
+    },
+    {
+      "code": "074005",
+      "name": "同济大学第二附属中学",
+      "zizhao_plan": 63
+    },
+    {
+      "code": "074007",
+      "name": "上海市甘泉外国语中学",
+      "zizhao_plan": 69
+    },
+    {
+      "code": "092001",
+      "name": "复旦大学附属复兴中学",
+      "daoqu_plan": 76,
+      "zizhao_plan": 51
+    },
+    {
+      "code": "092002",
+      "name": "华东师范大学第一附属中学",
+      "daoqu_plan": 71,
+      "zizhao_plan": 42
+    },
+    {
+      "code": "093001",
+      "name": "上海财经大学附属",
+      "daoqu_plan": 56,
+      "zizhao_plan": 37
+    },
+    {
+      "code": "102004",
+      "name": "上海市杨浦高级中学",
+      "daoqu_plan": 100,
+      "zizhao_plan": 61
+    },
+    {
+      "code": "102032",
+      "name": "上海市控江中学",
+      "daoqu_plan": 100,
+      "zizhao_plan": 64
+    },
+    {
+      "code": "102056",
+      "name": "上海交通大学附属中学",
+      "daoqu_plan": 319,
+      "zizhao_plan": 203
+    },
+    {
+      "code": "102057",
+      "name": "复旦大学附属中学",
+      "daoqu_plan": 255,
+      "zizhao_plan": 161
+    },
+    {
+      "code": "103002",
+      "name": "同济大学第一附属中学",
+      "daoqu_plan": 84,
+      "zizhao_plan": 75
+    },
+    {
+      "code": "103039",
+      "name": "上海理工大学附属中学",
+      "zizhao_plan": 52
+    },
+    {
+      "code": "122001",
+      "name": "上海市七宝中学",
+      "daoqu_plan": 120,
+      "zizhao_plan": 98
+    },
+    {
+      "code": "122002",
+      "name": "华东师范大学第二附属中学",
+      "daoqu_plan": 69,
+      "zizhao_plan": 50
+    },
+    {
+      "code": "122003",
+      "name": "上海师范大学附属中学",
+      "daoqu_plan": 86,
+      "zizhao_plan": 54
+    },
+    {
+      "code": "122004",
+      "name": "上海交通大学附属中学",
+      "daoqu_plan": 69,
+      "zizhao_plan": 38
+    },
+    {
+      "code": "123001",
+      "name": "上海市闵行中学",
+      "daoqu_plan": 120,
+      "zizhao_plan": 82
+    },
+    {
+      "code": "124006",
+      "name": "上海市闵行第三中学",
+      "zizhao_plan": 81
+    },
+    {
+      "code": "132001",
+      "name": "上海市行知中学",
+      "daoqu_plan": 101,
+      "zizhao_plan": 62
+    },
+    {
+      "code": "132002",
+      "name": "上海大学附属中学",
+      "daoqu_plan": 101,
+      "zizhao_plan": 62
+    },
+    {
+      "code": "132003",
+      "name": "上海师范大学附属中学",
+      "daoqu_plan": 34,
+      "zizhao_plan": 17
+    },
+    {
+      "code": "133001",
+      "name": "上海市吴淞中学",
+      "daoqu_plan": 98,
+      "zizhao_plan": 66
+    },
+    {
+      "code": "133002",
+      "name": "上海师范大学附属宝山罗店中学",
+      "zizhao_plan": 76
+    },
+    {
+      "code": "133003",
+      "name": "华东师范大学第二附属中学（宝山校区）",
+      "daoqu_plan": 49,
+      "zizhao_plan": 25
+    },
+    {
+      "code": "142001",
+      "name": "上海市嘉定区第一中学",
+      "daoqu_plan": 87,
+      "zizhao_plan": 59
+    },
+    {
+      "code": "142002",
+      "name": "上海交通大学附属中学",
+      "daoqu_plan": 105,
+      "zizhao_plan": 74
+    },
+    {
+      "code": "142004",
+      "name": "上海师范大学附属中学",
+      "daoqu_plan": 35,
+      "zizhao_plan": 18
+    },
+    {
+      "code": "143001",
+      "name": "上海市嘉定区第二中学",
+      "zizhao_plan": 81
+    },
+    {
+      "code": "151078",
+      "name": "上海中学东校",
+      "daoqu_plan": 94,
+      "zizhao_plan": 56
+    },
+    {
+      "code": "152001",
+      "name": "上海市建平中学",
+      "daoqu_plan": 109,
+      "zizhao_plan": 75
+    },
+    {
+      "code": "152002",
+      "name": "上海市进才中学",
+      "daoqu_plan": 109,
+      "zizhao_plan": 73
+    },
+    {
+      "code": "152003",
+      "name": "华东师范大学第二附属中学",
+      "daoqu_plan": 280,
+      "zizhao_plan": 163
+    },
+    {
+      "code": "152004",
+      "name": "上海南汇中学",
+      "daoqu_plan": 140,
+      "zizhao_plan": 80
+    },
+    {
+      "code": "152005",
+      "name": "上海市浦东复旦附中分校",
+      "daoqu_plan": 56,
+      "zizhao_plan": 32
+    },
+    {
+      "code": "152006",
+      "name": "上海师范大学附属中学",
+      "daoqu_plan": 187,
+      "zizhao_plan": 85
+    },
+    {
+      "code": "153001",
+      "name": "上海市洋泾中学",
+      "daoqu_plan": 109,
+      "zizhao_plan": 65
+    },
+    {
+      "code": "153002",
+      "name": "华东师范大学附属东昌中学",
+      "zizhao_plan": 90
+    },
+    {
+      "code": "153004",
+      "name": "上海市高桥中学",
+      "daoqu_plan": 94,
+      "zizhao_plan": 54
+    },
+    {
+      "code": "153005",
+      "name": "上海市川沙中学",
+      "daoqu_plan": 94,
+      "zizhao_plan": 58
+    },
+    {
+      "code": "154009",
+      "name": "上海市香山中学",
+      "zizhao_plan": 72
+    },
+    {
+      "code": "154013",
+      "name": "上海海事大学附属北蔡高级中学",
+      "zizhao_plan": 48
+    },
+    {
+      "code": "155001",
+      "name": "上海市实验学校",
+      "daoqu_plan": 52,
+      "zizhao_plan": 27
+    },
+    {
+      "code": "162000",
+      "name": "上海市金山中学",
+      "daoqu_plan": 78,
+      "zizhao_plan": 44
+    },
+    {
+      "code": "163001",
+      "name": "上海师范大学第二附属中学",
+      "zizhao_plan": 54
+    },
+    {
+      "code": "163002",
+      "name": "华东师范大学第三附属中学",
+      "daoqu_plan": 78,
+      "zizhao_plan": 53
+    },
+    {
+      "code": "164000",
+      "name": "华东师范大学附属枫泾中学",
+      "zizhao_plan": 38
+    },
+    {
+      "code": "172001",
+      "name": "上海市松江二中",
+      "daoqu_plan": 82,
+      "zizhao_plan": 54
+    },
+    {
+      "code": "172002",
+      "name": "华东师范大学第二附属中学",
+      "daoqu_plan": 33,
+      "zizhao_plan": 22
+    },
+    {
+      "code": "172004",
+      "name": "上海师范大学附属中学",
+      "daoqu_plan": 18,
+      "zizhao_plan": 9
+    },
+    {
+      "code": "173001",
+      "name": "上海市松江一中",
+      "daoqu_plan": 82,
+      "zizhao_plan": 56
+    },
+    {
+      "code": "174003",
+      "name": "上海外国语大学附属外国语学校",
+      "daoqu_plan": 82,
+      "zizhao_plan": 49
+    },
+    {
+      "code": "182001",
+      "name": "上海市青浦高级中学",
+      "daoqu_plan": 112,
+      "zizhao_plan": 65
+    },
+    {
+      "code": "182002",
+      "name": "复旦大学附属中学青浦分校",
+      "daoqu_plan": 49,
+      "zizhao_plan": 36
+    },
+    {
+      "code": "183002",
+      "name": "上海市朱家角中学",
+      "daoqu_plan": 112,
+      "zizhao_plan": 62
+    },
+    {
+      "code": "184005",
+      "name": "上海市青浦区第一中学",
+      "zizhao_plan": 52
+    },
+    {
+      "code": "202001",
+      "name": "上海市奉贤中学",
+      "daoqu_plan": 87,
+      "zizhao_plan": 55
+    },
+    {
+      "code": "202002",
+      "name": "华东师范大学第二附属中学临港奉贤分校",
+      "daoqu_plan": 43,
+      "zizhao_plan": 26
+    },
+    {
+      "code": "203002",
+      "name": "华东理工大学附属奉贤曙光中学",
+      "zizhao_plan": 66
+    },
+    {
+      "code": "512000",
+      "name": "上海市崇明中学",
+      "daoqu_plan": 62,
+      "zizhao_plan": 38
+    },
+    {
+      "code": "512001",
+      "name": "上海市实验学校东滩高级中学",
+      "daoqu_plan": 31,
+      "zizhao_plan": 16
+    },
+    {
+      "code": "514001",
+      "name": "上海市崇明区城桥中学",
+      "zizhao_plan": 1
+    }
+  ]
+}
