@@ -16,5 +16,9 @@ fastapi>=0.110
 uvicorn[standard]>=0.29
 pydantic>=2.6
 
+# ===== 搜索重排 (本地模型) =====
+sentence-transformers>=4.0  # 本地语义重排（paraphrase-multilingual-MiniLM-L12-v2）
+torch>=2.0                  # sentence-transformers 依赖
+
 # ===== LLM (M3) =====
 anthropic>=0.40       # Claude API

@@ -186,16 +186,14 @@ def _extract_snippet(text: str, q: str, max_len: int = 40) -> str:
         sub_words = list(q)
 
     best_s, best_n = "", 0
-    threshold = max(1, len(sub_words) // 2)  # 至少1个子词命中
+    threshold = len(sub_words)  # 要求所有子词命中（防止"物理竞赛"匹配到"数学竞赛"）
     for s in sentences:
         n = sum(1 for w in sub_words if w in s)
         if n > best_n:
             best_s, best_n = s, n
 
     if best_n >= threshold:
-        # 防误导：确保snippet和查询相关（至少有1个查询字出现）
-        if any(ch in best_s for ch in q if ch.strip()):
-            return best_s[:max_len]
+        return best_s[:max_len]
 
     return ""
 
@@ -208,13 +206,24 @@ def _match_reason(school_row: dict, q: str) -> str:
     if q in name:
         return ""
 
-    tags = school_row.get("tags") or ""
+    tags_raw = school_row.get("tags") or ""
+    # tags 可能是 JSON 数组字符串，解析为纯文本
+    if tags_raw.startswith("["):
+        try:
+            tags = "，".join(json.loads(tags_raw))
+        except Exception:
+            tags = tags_raw.strip("[]\"'")
+    else:
+        tags = tags_raw
     intro = school_row.get("intro_text") or ""
 
-    # 先查 tags（短且精准）
-    snippet = _extract_snippet(tags, q, 30)
-    if snippet:
-        return snippet
+    # 先查 tags（短且精准）— 对 tags 做直接子串匹配
+    if q in tags:
+        # 找到包含查询词的 tag
+        tag_list = [t.strip() for t in tags.split("，") if t.strip()]
+        for t in tag_list:
+            if q in t:
+                return t[:30]
     # 再查 intro
     snippet = _extract_snippet(intro, q, 40)
     if snippet:
@@ -242,24 +251,30 @@ def assemble_school_list(
 ) -> dict:
     SH_DISTRICTS = {'黄浦','徐汇','长宁','静安','普陀','虹口','杨浦','闵行','宝山','嘉定','浦东','金山','松江','青浦','奉贤','崇明'}
 
+    # 查询预处理：提取区名作为 filter（参考 QMD 的 prefecture filter 策略）
+    semantic_q = ""  # 去掉区名后的语义查询部分
     if q:
-        # 从查询中提取区名作为过滤条件
-        detected_district = None
         clean_q = q
         for d in SH_DISTRICTS:
             if d in q:
-                detected_district = d
+                if not districts:
+                    districts = [d]
                 clean_q = q.replace(d, '').strip()
                 break
-        if detected_district and not districts:
-            districts = [detected_district]
+        semantic_q = clean_q
 
-        all_ids = _hybrid_search(clean_q or q)
-        _reason_cache = {}
-        for sid in all_ids:
-            row = query_one("SELECT name, short_name, tags, intro_text FROM schools WHERE school_id = ?", (sid,))
-            if row:
-                _reason_cache[sid] = row
+        if semantic_q:
+            # 有语义查询部分 → 走 QMD 搜索管线
+            all_ids = _hybrid_search(semantic_q)
+            _reason_cache = {}
+            for sid in all_ids:
+                row = query_one("SELECT name, short_name, tags, intro_text FROM schools WHERE school_id = ?", (sid,))
+                if row:
+                    _reason_cache[sid] = row
+        else:
+            # 纯区名查询 → 跳过搜索管线，直接列出该区学校
+            all_ids = [r["school_id"] for r in query("SELECT school_id FROM schools")]
+            _reason_cache = {}
     else:
         all_ids = [r["school_id"] for r in query("SELECT school_id FROM schools")]
         _reason_cache = {}
@@ -269,8 +284,8 @@ def assemble_school_list(
         s = assemble_school(sid)
         if not s:
             continue
-        if q and sid in _reason_cache:
-            s["matchReason"] = _match_reason(_reason_cache[sid], q)
+        if semantic_q and sid in _reason_cache:
+            s["matchReason"] = _match_reason(_reason_cache[sid], semantic_q)
         if districts and s["district"] not in districts:
             continue
         if types and s["kind"] not in types:

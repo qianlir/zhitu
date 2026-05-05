@@ -156,37 +156,27 @@ def _rrf_merge(ranked_lists: list[list[str]], k: int = 60) -> list[tuple[str, fl
 
 
 # ============================================================
-# 4. 重排序 — 关键词精确覆盖率（替代 LLM reranker）
+# 4. 重排序 — 本地小模型语义重排 + 关键词覆盖混合
+#    参考 QMD 的 qwen3-reranker 策略，使用 MiniLM 替代
 # ============================================================
 
-def _rerank_score(sid: str, q: str) -> float:
-    """基于关键词精确覆盖率的重排分数。0-1。"""
+def _rerank_batch(candidates: list[tuple[str, float]], q: str) -> list[tuple[str, float]]:
+    """对 RRF 候选集做本地模型重排。返回 [(sid, blended_score)]。"""
     global _INDEX
     if _INDEX is None:
         _build_index()
 
-    text = _INDEX.get("raw_texts", {}).get(sid, "")
-    if not text or not q:
-        return 0.0
+    from backend.services.local_reranker import rerank_documents
 
-    # 完整查询词出现
-    if q in text:
-        return 1.0
+    # 准备文档文本
+    docs = []
+    for sid, _ in candidates:
+        text = _INDEX.get("raw_texts", {}).get(sid, "")
+        docs.append((sid, text))
 
-    # 按2字词拆分，计算覆盖率
-    words = []
-    if len(q) >= 4:
-        words = [q[i:i+2] for i in range(0, len(q)-1, 2)]
-    elif len(q) >= 2:
-        words = [q[i:i+2] for i in range(len(q)-1)]
-    else:
-        words = list(q)
-
-    if not words:
-        return 0.0
-
-    hits = sum(1 for w in words if w in text)
-    return hits / len(words)
+    # 混合重排（alpha=0.5: 语义 50% + 关键词 50%）
+    reranked = rerank_documents(q, docs, alpha=0.5)
+    return reranked
 
 
 # ============================================================
@@ -194,7 +184,7 @@ def _rerank_score(sid: str, q: str) -> float:
 # ============================================================
 
 def hybrid_search(q: str, limit: int = 30) -> list[str]:
-    """QMD 理论搜索管线：扩展 → 多路搜索 → RRF → 重排。"""
+    """QMD 理论搜索管线：扩展 → 多路搜索 → RRF → 本地模型重排。"""
     if not q:
         return []
 
@@ -222,19 +212,30 @@ def hybrid_search(q: str, limit: int = 30) -> list[str]:
     # Step 3: RRF 融合
     rrf_results = _rrf_merge(ranked_lists, k=60)
 
-    # Step 4: 重排序（位置感知混合）
-    final = []
-    for sid, rrf_score in rrf_results[:50]:
-        rerank = _rerank_score(sid, q)
+    # Step 4: 本地模型重排序（语义 + 关键词混合）
+    # 取 top-50 候选送入 reranker（参考 QMD：reranker 只处理粗排后的短列表）
+    top_candidates = rrf_results[:50]
 
-        # 位置感知混合（QMD 策略）
+    # 位置感知混合（QMD 策略）：RRF 分数 + reranker 分数
+    reranked = _rerank_batch(top_candidates, q)
+
+    # 最终混合：RRF 提供召回排序信号，reranker 提供精确度信号
+    rrf_map = {sid: score for sid, score in top_candidates}
+    rerank_map = {sid: score for sid, score in reranked}
+
+    final = []
+    for sid in rrf_map:
+        rrf_score = rrf_map[sid]
+        rerank_score = rerank_map.get(sid, 0.0)
+
+        # 位置感知（按 RRF 原始排名）
         rank_idx = len(final)
         if rank_idx < 3:
-            blend = 0.75 * rrf_score + 0.25 * rerank  # top-3: 偏向检索
+            blend = 0.65 * rrf_score + 0.35 * rerank_score  # top-3: 偏向检索
         elif rank_idx < 10:
-            blend = 0.60 * rrf_score + 0.40 * rerank  # 4-10: 平衡
+            blend = 0.50 * rrf_score + 0.50 * rerank_score  # 4-10: 平衡
         else:
-            blend = 0.40 * rrf_score + 0.60 * rerank  # 11+: 偏向精确度
+            blend = 0.35 * rrf_score + 0.65 * rerank_score  # 11+: 偏向精确度
 
         final.append((sid, blend))
 
