@@ -80,24 +80,44 @@ function MSchoolDetail({ schoolId, onBack }) {
                 <div onClick={()=>setShowDqDetail(!showDqDetail)} style={{display:'flex',justifyContent:'space-between',alignItems:'center',cursor:'pointer'}}>
                   <div>
                     <div style={{fontSize:14,fontWeight:600}}>名额到区分数线</div>
-                    <div style={{fontSize:12,color:'var(--text-3)',marginTop:2}}>点击查看历年数据</div>
+                    <div style={{fontSize:12,color:(school.daoqu&&school.daoqu.length)?'var(--primary)':'var(--text-3)',marginTop:2}}>
+                      {(school.daoqu&&school.daoqu.length) ? `各区分数不同，点击查看${school.daoqu.length}区详情` : '点击查看历年数据'}
+                    </div>
                   </div>
                   <span style={{fontSize:18,color:'var(--text-3)',transform:showDqDetail?'rotate(180deg)':'',transition:'transform 200ms'}}>▾</span>
                 </div>
                 {showDqDetail && (
                   <div style={{marginTop:12,paddingTop:12,borderTop:'1px solid var(--border)'}}>
-                    {(school.admissions||[]).filter(a=>a.batch==='名额到区').sort((a,b)=>b.year-a.year).map(a=>(
-                      <div key={a.year+a.batch} style={{display:'flex',justifyContent:'space-between',padding:'8px 0',borderBottom:'1px solid var(--border)',fontSize:14}}>
-                        <span style={{color:'var(--text-3)'}}>{a.year}年</span>
-                        <div style={{textAlign:'right'}}>
-                          <span style={{fontWeight:600,color:'#d97706'}}>{fmtScore(a.min_score)}</span>
-                          <span style={{fontSize:11,color:'var(--text-3)',marginLeft:8}}>({a.quota}人)</span>
+                    {(school.daoqu&&school.daoqu.length > 0) ? (
+                      <div>
+                        <div style={{display:'grid',gridTemplateColumns:'repeat(2,1fr)',gap:6}}>
+                          {school.daoqu.filter(d=>d.year===2025).sort((a,b)=>b.score-a.score).map(d=>(
+                            <div key={d.district} style={{display:'flex',justifyContent:'space-between',padding:'6px 10px',background:'var(--bg)',borderRadius:6,fontSize:13}}>
+                              <span style={{color:'var(--text-3)'}}>{d.district}</span>
+                              <span style={{fontWeight:600,color:'#d97706',fontVariantNumeric:'tabular-nums'}}>{d.score}</span>
+                            </div>
+                          ))}
+                        </div>
+                        <div style={{fontSize:11,color:'var(--text-3)',marginTop:8,lineHeight:1.5}}>
+                          数据来源：上海市教育考试院 | 含综合素质评价（50分），总分800分
                         </div>
                       </div>
-                    ))}
-                    <div style={{fontSize:11,color:'var(--text-3)',marginTop:8,padding:'8px 10px',background:'var(--bg)',borderRadius:6,lineHeight:1.6}}>
-                      说明：以上为该校名额到区的整体最低录取分。各区实际分数线不同，暂未获取到分区数据。待官方数据补充后将自动显示各区详细分数线。
-                    </div>
+                    ) : (
+                      <div>
+                        {(school.admissions||[]).filter(a=>a.batch==='名额到区').sort((a,b)=>b.year-a.year).map(a=>(
+                          <div key={a.year+a.batch} style={{display:'flex',justifyContent:'space-between',padding:'8px 0',borderBottom:'1px solid var(--border)',fontSize:14}}>
+                            <span style={{color:'var(--text-3)'}}>{a.year}年</span>
+                            <div style={{textAlign:'right'}}>
+                              <span style={{fontWeight:600,color:'#d97706'}}>{fmtScore(a.min_score)}</span>
+                              <span style={{fontSize:11,color:'var(--text-3)',marginLeft:8}}>({a.quota}人)</span>
+                            </div>
+                          </div>
+                        ))}
+                        <div style={{fontSize:11,color:'var(--text-3)',marginTop:8,padding:'8px 10px',background:'var(--bg)',borderRadius:6,lineHeight:1.6}}>
+                          暂无分区数据。待官方数据补充后将自动显示各区详细分数线。
+                        </div>
+                      </div>
+                    )}
                   </div>
                 )}
               </div>

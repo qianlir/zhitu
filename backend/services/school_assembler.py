@@ -28,7 +28,7 @@ def _tier_label(tier: str) -> str:
     return TIER_LABELS.get(tier, tier)
 
 
-def _build_flat(school: dict, admissions: list[dict], gaokao: list[dict], evaluation: dict | None) -> dict:
+def _build_flat(school: dict, admissions: list[dict], gaokao: list[dict], evaluation: dict | None, daoqu_scores: list[dict] | None = None) -> dict:
     latest_year = 2025
     score_by_year = {}
     minge = None
@@ -122,6 +122,15 @@ def _build_flat(school: dict, admissions: list[dict], gaokao: list[dict], evalua
             for g in gaokao
         ],
         "evaluation": eval_data,
+        "daoqu": [
+            {
+                "year": d["year"],
+                "district": d["district"],
+                "score": d["min_score"],
+                "scoreType": d.get("score_type", "800"),
+            }
+            for d in (daoqu_scores or [])
+        ],
     }
 
 
@@ -141,7 +150,11 @@ def assemble_school(school_id: str) -> dict | None:
         "SELECT * FROM evaluations WHERE school_id = ?",
         (school_id,),
     )
-    return _build_flat(school, admissions, gaokao, evaluation)
+    daoqu_scores = query(
+        "SELECT year, district, min_score, score_type FROM daoqu_district_scores WHERE school_id = ? ORDER BY year DESC, district",
+        (school_id,),
+    )
+    return _build_flat(school, admissions, gaokao, evaluation, daoqu_scores)
 
 
 def _fts_search(q: str) -> list[str]:

@@ -128,6 +128,25 @@ CREATE TABLE IF NOT EXISTS load_runs (
 );
 
 -- ============================================================
+-- 名额到区各区分数线（一行 = 一校一年一区）
+-- ============================================================
+CREATE TABLE IF NOT EXISTS daoqu_district_scores (
+  id            INTEGER PRIMARY KEY AUTOINCREMENT,
+  school_id     TEXT NOT NULL,
+  year          INTEGER NOT NULL,
+  district      TEXT NOT NULL,           -- 考生所在区：黄浦/徐汇/...
+  min_score     REAL NOT NULL,           -- 该区录取最低分
+  score_type    TEXT DEFAULT '800',      -- 分制：'800'含综评50分，'750'纯学业考
+  source        TEXT,                    -- official
+  source_url    TEXT,
+  FOREIGN KEY (school_id) REFERENCES schools(school_id) ON DELETE CASCADE,
+  UNIQUE (school_id, year, district)
+);
+
+CREATE INDEX IF NOT EXISTS idx_daoqu_school_year ON daoqu_district_scores(school_id, year);
+CREATE INDEX IF NOT EXISTS idx_daoqu_district ON daoqu_district_scores(district);
+
+-- ============================================================
 -- 全文检索（FTS5）— 支持按学校名/标签/简介/地址等任意文本搜索
 -- ============================================================
 CREATE VIRTUAL TABLE IF NOT EXISTS schools_fts USING fts5(

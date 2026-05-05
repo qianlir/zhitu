@@ -279,9 +279,27 @@ function HistoryTab({ school }) {
           </tbody>
         </table>
         <div style={{ padding: '10px 16px', fontSize: 12, color: 'var(--text-3)', background: 'var(--bg)', borderTop: '1px solid var(--border)' }}>
-          注：名额到区分数为整体最低录取分，各区实际分数线不同。待各区分数据补充后将自动显示分区详情。
+          注：名额到区分数为整体最低录取分，各区实际分数线不同。
         </div>
       </div>
+
+      {/* 各区详细分数线 */}
+      {school.daoqu && school.daoqu.length > 0 && (
+        <div className="card" style={{ marginTop: 16 }}>
+          <div style={{ padding: '16px 20px 12px', borderBottom: '1px solid var(--border)' }}>
+            <div style={{ fontSize: 15, fontWeight: 600 }}>各区名额到区录取分数线</div>
+            <div style={{ fontSize: 12, color: 'var(--text-3)', marginTop: 4 }}>数据来源：上海市教育考试院 | 含综评50分，总分800</div>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 0 }}>
+            {school.daoqu.filter(d => d.year === 2025).sort((a, b) => b.score - a.score).map(d => (
+              <div key={d.district} style={{ padding: '10px 16px', borderBottom: '1px solid var(--border)', borderRight: '1px solid var(--border)', textAlign: 'center' }}>
+                <div style={{ fontSize: 11, color: 'var(--text-3)' }}>{d.district}</div>
+                <div style={{ fontSize: 15, fontWeight: 600, color: '#d97706', fontVariantNumeric: 'tabular-nums', marginTop: 2 }}>{d.score}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
