@@ -162,22 +162,40 @@ def _fts_search(q: str) -> list[str]:
         return []
 
 
-def _extract_snippet(text: str, q: str, max_len: int = 60) -> str:
-    """从 text 中提取包含 q 的句子片段。"""
+def _extract_snippet(text: str, q: str, max_len: int = 40) -> str:
+    """从 text 中提取包含 q 或其子词的最佳句子片段。"""
+    import re
     if not text or not q:
         return ""
-    # 按句号/逗号/换行分句
-    import re
-    sentences = re.split(r'[。，,\n；]', text)
+
+    sentences = [s.strip() for s in re.split(r'[。，,\n；、]', text) if len(s.strip()) > 3]
+
+    # 1. 完整匹配
     for s in sentences:
-        s = s.strip()
-        if q in s and len(s) > 4:
+        if q in s:
             return s[:max_len]
-    # 按字符找
-    idx = text.find(q)
-    if idx >= 0:
-        start = max(0, idx - 15)
-        return text[start:start + max_len].strip()
+
+    # 2. 拆词匹配 — 按2字词拆分，找包含最多子词的句子
+    sub_words = []
+    if len(q) >= 2:
+        for i in range(len(q) - 1):
+            sub_words.append(q[i:i+2])
+    if not sub_words:
+        sub_words = list(q)
+
+    best_s, best_n = "", 0
+    for s in sentences:
+        n = sum(1 for w in sub_words if w in s)
+        if n > best_n:
+            best_s, best_n = s, n
+    if best_n > 0:
+        return best_s[:max_len]
+
+    # 3. 单字匹配
+    for s in sentences:
+        if any(ch in s for ch in q if ch.strip()):
+            return s[:max_len]
+
     return ""
 
 
@@ -186,20 +204,20 @@ def _match_reason(school_row: dict, q: str) -> str:
     if not q:
         return ""
     name = school_row.get("name", "") + (school_row.get("short_name") or "")
-    # 校名直接匹配 → 不需要理由
     if q in name:
         return ""
-    # 从 tags, intro_text 中提取
+
     tags = school_row.get("tags") or ""
     intro = school_row.get("intro_text") or ""
-    for source in [tags, intro]:
-        snippet = _extract_snippet(source, q)
-        if snippet:
-            return snippet
-    # 模糊：按字分词匹配
-    for ch in q:
-        if len(ch) > 1 or not ch.strip():
-            continue
+
+    # 先查 tags（短且精准）
+    snippet = _extract_snippet(tags, q, 30)
+    if snippet:
+        return snippet
+    # 再查 intro
+    snippet = _extract_snippet(intro, q, 40)
+    if snippet:
+        return snippet
     return ""
 
 
