@@ -221,24 +221,9 @@ def _match_reason(school_row: dict, q: str) -> str:
 
 
 def _hybrid_search(q: str) -> list[str]:
-    """混合搜索：FTS5 关键词 + TF-IDF 向量，合并去重。"""
-    fts_ids = _fts_search(q)
-
-    from backend.services.vector_search import vector_search
-    vec_results = vector_search(q, limit=30)
-    vec_ids = [r["school_id"] for r in vec_results]
-
-    seen = set()
-    merged = []
-    for sid in fts_ids:
-        if sid not in seen:
-            merged.append(sid)
-            seen.add(sid)
-    for sid in vec_ids:
-        if sid not in seen:
-            merged.append(sid)
-            seen.add(sid)
-    return merged
+    """QMD 理论搜索管线：查询扩展 → 多路搜索 → RRF → 重排。"""
+    from backend.services.vector_search import hybrid_search
+    return hybrid_search(q, limit=30)
 
 
 def assemble_school_list(
