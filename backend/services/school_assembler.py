@@ -186,14 +186,16 @@ def _extract_snippet(text: str, q: str, max_len: int = 40) -> str:
         sub_words = list(q)
 
     best_s, best_n = "", 0
-    threshold = max(2, len(sub_words) // 2 + 1)  # 至少一半子词命中
+    threshold = max(1, len(sub_words) // 2)  # 至少1个子词命中
     for s in sentences:
         n = sum(1 for w in sub_words if w in s)
         if n > best_n:
             best_s, best_n = s, n
 
     if best_n >= threshold:
-        return best_s[:max_len]
+        # 防误导：确保snippet和查询相关（至少有1个查询字出现）
+        if any(ch in best_s for ch in q if ch.strip()):
+            return best_s[:max_len]
 
     return ""
 
@@ -238,9 +240,21 @@ def assemble_school_list(
     limit: int = 200,
     offset: int = 0,
 ) -> dict:
+    SH_DISTRICTS = {'黄浦','徐汇','长宁','静安','普陀','虹口','杨浦','闵行','宝山','嘉定','浦东','金山','松江','青浦','奉贤','崇明'}
+
     if q:
-        all_ids = _hybrid_search(q)
-        # Pre-fetch school rows for match reason
+        # 从查询中提取区名作为过滤条件
+        detected_district = None
+        clean_q = q
+        for d in SH_DISTRICTS:
+            if d in q:
+                detected_district = d
+                clean_q = q.replace(d, '').strip()
+                break
+        if detected_district and not districts:
+            districts = [detected_district]
+
+        all_ids = _hybrid_search(clean_q or q)
         _reason_cache = {}
         for sid in all_ids:
             row = query_one("SELECT name, short_name, tags, intro_text FROM schools WHERE school_id = ?", (sid,))
