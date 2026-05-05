@@ -41,6 +41,7 @@ function MSchoolRow({ school, onClick, showScore }) {
         </div>
         <ScoreChip score={showScore || school.score2025} />
       </div>
+      {school.intro && <div style={{fontSize:12,color:'var(--text-3)',marginBottom:4,lineHeight:1.5,display:'-webkit-box',WebkitLineClamp:2,WebkitBoxOrient:'vertical',overflow:'hidden'}}>{school.intro}</div>}
       <div style={{display:'flex',gap:12,fontSize:12,color:'var(--text-3)'}}>
         {school.bbenRate != null && <span>一本率 <strong style={{color:'var(--text)'}}>{school.bbenRate}%</strong></span>}
         {school.intake != null && <span>招生 <strong style={{color:'var(--text)'}}>{school.intake}人</strong></span>}

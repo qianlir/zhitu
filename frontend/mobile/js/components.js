@@ -78,6 +78,10 @@ function MSchoolRow({ school, onClick, showScore }) {
           }, undefined, false, undefined, this)
         ]
       }, undefined, true, undefined, this),
+      school.intro && jsxDEV_7x81h0kn("div", {
+        style: { fontSize: 12, color: "var(--text-3)", marginBottom: 4, lineHeight: 1.5, display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden" },
+        children: school.intro
+      }, undefined, false, undefined, this),
       jsxDEV_7x81h0kn("div", {
         style: { display: "flex", gap: 12, fontSize: 12, color: "var(--text-3)" },
         children: [
