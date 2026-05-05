@@ -278,6 +278,9 @@ function HistoryTab({ school }) {
             })}
           </tbody>
         </table>
+        <div style={{ padding: '10px 16px', fontSize: 12, color: 'var(--text-3)', background: 'var(--bg)', borderTop: '1px solid var(--border)' }}>
+          注：名额到区分数为整体最低录取分，各区实际分数线不同。待各区分数据补充后将自动显示分区详情。
+        </div>
       </div>
     </div>
   );

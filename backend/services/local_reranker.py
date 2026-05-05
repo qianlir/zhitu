@@ -19,11 +19,43 @@ os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
 _MODEL = None
 _MODEL_NAME = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 
+# 环境变量 RERANKER_DISABLE=1 可强制禁用模型（内存不足的服务器用）
+_DISABLED = os.environ.get("RERANKER_DISABLE", "0") == "1"
+
+
+def _check_memory(min_mb: int = 600) -> bool:
+    """检查可用内存（RAM + swap free）是否足够加载模型。"""
+    try:
+        available_kb = 0
+        swap_free_kb = 0
+        with open("/proc/meminfo") as f:
+            for line in f:
+                if line.startswith("MemAvailable:"):
+                    available_kb = int(line.split()[1])
+                elif line.startswith("SwapFree:"):
+                    swap_free_kb = int(line.split()[1])
+        total_available = available_kb + swap_free_kb
+        return total_available > min_mb * 1024
+    except (FileNotFoundError, ValueError):
+        return True  # macOS 等不支持 /proc 的系统默认允许
+    return False
+
 
 def _ensure_model():
-    """懒加载模型（首次调用约 1-2 秒）。"""
+    """懒加载模型（首次调用约 1-2 秒）。内存不足时自动降级。"""
     global _MODEL
     if _MODEL is not None:
+        return _MODEL
+
+    if _DISABLED:
+        logger.info("Reranker disabled via RERANKER_DISABLE=1. Using keyword-only.")
+        _MODEL = False
+        return _MODEL
+
+    # 内存预检：模型约需 500MB，低于 600MB 可用时跳过
+    if not _check_memory(600):
+        logger.warning("Available memory < 600MB, skipping model load. Using keyword-only reranking.")
+        _MODEL = False
         return _MODEL
 
     try:

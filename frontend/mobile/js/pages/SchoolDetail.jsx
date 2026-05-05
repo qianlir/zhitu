@@ -80,7 +80,7 @@ function MSchoolDetail({ schoolId, onBack }) {
                 <div onClick={()=>setShowDqDetail(!showDqDetail)} style={{display:'flex',justifyContent:'space-between',alignItems:'center',cursor:'pointer'}}>
                   <div>
                     <div style={{fontSize:14,fontWeight:600}}>名额到区分数线</div>
-                    <div style={{fontSize:12,color:'var(--accent)',marginTop:2}}>⚠️ 各区分数不同，点击查看</div>
+                    <div style={{fontSize:12,color:'var(--text-3)',marginTop:2}}>点击查看历年数据</div>
                   </div>
                   <span style={{fontSize:18,color:'var(--text-3)',transform:showDqDetail?'rotate(180deg)':'',transition:'transform 200ms'}}>▾</span>
                 </div>
@@ -95,7 +95,9 @@ function MSchoolDetail({ schoolId, onBack }) {
                         </div>
                       </div>
                     ))}
-                    <div style={{fontSize:11,color:'var(--text-muted)',marginTop:8}}>注：以上为该校在某区的参考分数线，实际各区分数不同</div>
+                    <div style={{fontSize:11,color:'var(--text-3)',marginTop:8,padding:'8px 10px',background:'var(--bg)',borderRadius:6,lineHeight:1.6}}>
+                      说明：以上为该校名额到区的整体最低录取分。各区实际分数线不同，暂未获取到分区数据。待官方数据补充后将自动显示各区详细分数线。
+                    </div>
                   </div>
                 )}
               </div>
