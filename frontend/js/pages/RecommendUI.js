@@ -1,15 +1,16 @@
 function StepBar({ step, setStep }) {
   const items = [
-    { n: 0, label: "基本信息", icon: "\uD83D\uDCDD" },
-    { n: 1, label: "名额到区(1)", icon: "\uD83C\uDFDB️" },
-    { n: 2, label: "名额到校(2)", icon: "\uD83C\uDFEB" },
-    { n: 3, label: "平行志愿(15)", icon: "\uD83D\uDCCB" }
+    { n: 0, label: "\u57FA\u672C\u4FE1\u606F", icon: "\u{1F4DD}" },
+    { n: 1, label: "\u540D\u989D\u5230\u533A(1)", icon: "\u{1F3DB}\uFE0F" },
+    { n: 2, label: "\u540D\u989D\u5230\u6821(2)", icon: "\u{1F3EB}" },
+    { n: 3, label: "\u5E73\u884C\u5FD7\u613F(15)", icon: "\u{1F4CB}" }
   ];
-  return jsxDEV_7x81h0kn("div", {
-    style: { display: "flex", gap: 4, marginBottom: 24 },
-    children: items.map((s) => {
-      const active = step === s.n, done = step > s.n;
-      return jsxDEV_7x81h0kn("button", {
+  return /* @__PURE__ */ React.createElement("div", { style: { display: "flex", gap: 4, marginBottom: 24 } }, items.map((s) => {
+    const active = step === s.n, done = step > s.n;
+    return /* @__PURE__ */ React.createElement(
+      "button",
+      {
+        key: s.n,
         onClick: () => s.n <= step && setStep(s.n),
         style: {
           flex: 1,
@@ -22,159 +23,37 @@ function StepBar({ step, setStep }) {
           transition: "all 150ms",
           background: active ? "var(--primary)" : done ? "var(--primary-50)" : "var(--bg)",
           color: active ? "#fff" : done ? "var(--primary)" : "var(--text-3)"
-        },
-        children: [
-          jsxDEV_7x81h0kn("div", {
-            style: { fontSize: 16 },
-            children: done ? "✓" : s.icon
-          }, undefined, false, undefined, this),
-          jsxDEV_7x81h0kn("div", {
-            style: { fontSize: 12, fontWeight: active ? 600 : 500, marginTop: 4 },
-            children: s.label
-          }, undefined, false, undefined, this)
-        ]
-      }, s.n, true, undefined, this);
-    })
-  }, undefined, false, undefined, this);
+        }
+      },
+      /* @__PURE__ */ React.createElement("div", { style: { fontSize: 16 } }, done ? "\u2713" : s.icon),
+      /* @__PURE__ */ React.createElement("div", { style: { fontSize: 12, fontWeight: active ? 600 : 500, marginTop: 4 } }, s.label)
+    );
+  }));
 }
 function PickCard({ school, scoreVal, selected, onToggle, disabled, planCount }) {
   const diff = scoreVal - (window._recScore || 685);
-  const tag = diff > 5 ? { t: "冲刺", c: "#dc2626", bg: "rgba(220,38,38,0.08)" } : diff > -3 ? { t: "匹配", c: "var(--primary)", bg: "var(--primary-50)" } : { t: "保底", c: "var(--success)", bg: "rgba(5,150,105,0.08)" };
+  const tag = diff > 5 ? { t: "\u51B2\u523A", c: "#dc2626", bg: "rgba(220,38,38,0.08)" } : diff > -3 ? { t: "\u5339\u914D", c: "var(--primary)", bg: "var(--primary-50)" } : { t: "\u4FDD\u5E95", c: "var(--success)", bg: "rgba(5,150,105,0.08)" };
   const prob = diff > 8 ? "15%" : diff > 3 ? "35%" : diff > -3 ? "65%" : diff > -10 ? "85%" : "95%";
-  return jsxDEV_7x81h0kn("div", {
-    onClick: () => !disabled && onToggle(school.id),
-    className: "card",
-    style: {
-      padding: 14,
-      cursor: disabled ? "default" : "pointer",
-      opacity: disabled ? 0.5 : 1,
-      borderLeft: "3px solid " + (selected ? "var(--primary)" : tag.c),
-      background: selected ? "var(--primary-50)" : "#fff",
-      transition: "all 120ms"
+  return /* @__PURE__ */ React.createElement(
+    "div",
+    {
+      onClick: () => !disabled && onToggle(school.id),
+      className: "card",
+      style: {
+        padding: 14,
+        cursor: disabled ? "default" : "pointer",
+        opacity: disabled ? 0.5 : 1,
+        borderLeft: "3px solid " + (selected ? "var(--primary)" : tag.c),
+        background: selected ? "var(--primary-50)" : "#fff",
+        transition: "all 120ms"
+      }
     },
-    children: [
-      jsxDEV_7x81h0kn("div", {
-        style: { display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 8 },
-        children: [
-          jsxDEV_7x81h0kn("div", {
-            children: [
-              jsxDEV_7x81h0kn("div", {
-                style: { fontSize: 14, fontWeight: 600 },
-                children: school.name
-              }, undefined, false, undefined, this),
-              jsxDEV_7x81h0kn("div", {
-                style: { fontSize: 11, color: "var(--text-3)", marginTop: 2 },
-                children: [
-                  school.district,
-                  "区 · ",
-                  school.kind
-                ]
-              }, undefined, true, undefined, this)
-            ]
-          }, undefined, true, undefined, this),
-          jsxDEV_7x81h0kn("div", {
-            style: { textAlign: "right" },
-            children: [
-              jsxDEV_7x81h0kn("span", {
-                style: { fontSize: 10, fontWeight: 600, color: tag.c, background: tag.bg, padding: "2px 6px", borderRadius: 4 },
-                children: tag.t
-              }, undefined, false, undefined, this),
-              selected && jsxDEV_7x81h0kn("div", {
-                style: { fontSize: 10, color: "var(--primary)", fontWeight: 600, marginTop: 4 },
-                children: "✓ 已选"
-              }, undefined, false, undefined, this)
-            ]
-          }, undefined, true, undefined, this)
-        ]
-      }, undefined, true, undefined, this),
-      jsxDEV_7x81h0kn("div", {
-        style: { display: "flex", gap: 12, fontSize: 11, color: "var(--text-3)", borderTop: "1px solid var(--border)", paddingTop: 8 },
-        children: [
-          jsxDEV_7x81h0kn("span", {
-            children: [
-              "录取分 ",
-              jsxDEV_7x81h0kn("strong", {
-                style: { color: "var(--text)" },
-                children: fmtScore(scoreVal)
-              }, undefined, false, undefined, this)
-            ]
-          }, undefined, true, undefined, this),
-          jsxDEV_7x81h0kn("span", {
-            children: [
-              "分差 ",
-              jsxDEV_7x81h0kn("strong", {
-                style: { color: tag.c },
-                children: [
-                  diff >= 0 ? "+" : "",
-                  diff.toFixed(1)
-                ]
-              }, undefined, true, undefined, this)
-            ]
-          }, undefined, true, undefined, this),
-          jsxDEV_7x81h0kn("span", {
-            children: [
-              "概率 ",
-              jsxDEV_7x81h0kn("strong", {
-                style: { color: tag.c },
-                children: prob
-              }, undefined, false, undefined, this)
-            ]
-          }, undefined, true, undefined, this),
-          planCount != null && jsxDEV_7x81h0kn("span", {
-            children: [
-              "计划 ",
-              jsxDEV_7x81h0kn("strong", {
-                children: [
-                  planCount,
-                  "人"
-                ]
-              }, undefined, true, undefined, this)
-            ]
-          }, undefined, true, undefined, this)
-        ]
-      }, undefined, true, undefined, this)
-    ]
-  }, undefined, true, undefined, this);
+    /* @__PURE__ */ React.createElement("div", { style: { display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 8 } }, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { style: { fontSize: 14, fontWeight: 600 } }, school.name), /* @__PURE__ */ React.createElement("div", { style: { fontSize: 11, color: "var(--text-3)", marginTop: 2 } }, school.district, "\u533A \xB7 ", school.kind)), /* @__PURE__ */ React.createElement("div", { style: { textAlign: "right" } }, /* @__PURE__ */ React.createElement("span", { style: { fontSize: 10, fontWeight: 600, color: tag.c, background: tag.bg, padding: "2px 6px", borderRadius: 4 } }, tag.t), selected && /* @__PURE__ */ React.createElement("div", { style: { fontSize: 10, color: "var(--primary)", fontWeight: 600, marginTop: 4 } }, "\u2713 \u5DF2\u9009"))),
+    /* @__PURE__ */ React.createElement("div", { style: { display: "flex", gap: 12, fontSize: 11, color: "var(--text-3)", borderTop: "1px solid var(--border)", paddingTop: 8 } }, /* @__PURE__ */ React.createElement("span", null, "\u5F55\u53D6\u5206 ", /* @__PURE__ */ React.createElement("strong", { style: { color: "var(--text)" } }, fmtScore(scoreVal))), /* @__PURE__ */ React.createElement("span", null, "\u5206\u5DEE ", /* @__PURE__ */ React.createElement("strong", { style: { color: tag.c } }, diff >= 0 ? "+" : "", diff.toFixed(1))), /* @__PURE__ */ React.createElement("span", null, "\u6982\u7387 ", /* @__PURE__ */ React.createElement("strong", { style: { color: tag.c } }, prob)), planCount != null && /* @__PURE__ */ React.createElement("span", null, "\u8BA1\u5212 ", /* @__PURE__ */ React.createElement("strong", null, planCount, "\u4EBA")))
+  );
 }
 function BatchHeader({ icon, title, subtitle, rule, picked, max }) {
-  return jsxDEV_7x81h0kn("div", {
-    className: "card card-pad",
-    style: { marginBottom: 16, borderLeft: "3px solid var(--primary)" },
-    children: [
-      jsxDEV_7x81h0kn("div", {
-        style: { display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 6 },
-        children: [
-          jsxDEV_7x81h0kn("h2", {
-            style: { fontSize: 18, fontWeight: 600, margin: 0 },
-            children: [
-              icon,
-              " ",
-              title
-            ]
-          }, undefined, true, undefined, this),
-          jsxDEV_7x81h0kn("div", {
-            style: { fontSize: 22, fontWeight: 700, color: "var(--primary)" },
-            children: [
-              picked,
-              "/",
-              max
-            ]
-          }, undefined, true, undefined, this)
-        ]
-      }, undefined, true, undefined, this),
-      jsxDEV_7x81h0kn("p", {
-        style: { fontSize: 13, color: "var(--text-3)", margin: "0 0 8px" },
-        children: subtitle
-      }, undefined, false, undefined, this),
-      jsxDEV_7x81h0kn("div", {
-        style: { fontSize: 12, color: "var(--text-2)", background: "var(--bg)", borderRadius: 6, padding: "8px 12px", lineHeight: 1.6 },
-        children: [
-          "\uD83D\uDCCB ",
-          rule
-        ]
-      }, undefined, true, undefined, this)
-    ]
-  }, undefined, true, undefined, this);
+  return /* @__PURE__ */ React.createElement("div", { className: "card card-pad", style: { marginBottom: 16, borderLeft: "3px solid var(--primary)" } }, /* @__PURE__ */ React.createElement("div", { style: { display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 6 } }, /* @__PURE__ */ React.createElement("h2", { style: { fontSize: 18, fontWeight: 600, margin: 0 } }, icon, " ", title), /* @__PURE__ */ React.createElement("div", { style: { fontSize: 22, fontWeight: 700, color: "var(--primary)" } }, picked, "/", max)), /* @__PURE__ */ React.createElement("p", { style: { fontSize: 13, color: "var(--text-3)", margin: "0 0 8px" } }, subtitle), /* @__PURE__ */ React.createElement("div", { style: { fontSize: 12, color: "var(--text-2)", background: "var(--bg)", borderRadius: 6, padding: "8px 12px", lineHeight: 1.6 } }, "\u{1F4CB} ", rule));
 }
 window.StepBar = StepBar;
 window.PickCard = PickCard;

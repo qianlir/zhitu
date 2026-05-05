@@ -1,6 +1,6 @@
 function RecommendPage({ onOpenSchool }) {
   const [score, setScore] = React.useState(685);
-  const [district, setDistrict] = React.useState("浦东");
+  const [district, setDistrict] = React.useState("\u6D66\u4E1C");
   const [step, setStep] = React.useState(0);
   const [tdPick, setTdPick] = React.useState(null);
   const [tsPicks, setTsPicks] = React.useState([]);
@@ -16,103 +16,100 @@ function RecommendPage({ onOpenSchool }) {
       setLoading(false);
     });
   }, []);
-  const tdList = React.useMemo(() => allSchools.filter((s) => s.mingeDistrict != null && (s.tier === "四校" || s.tier === "八大" || s.kind === "市实验示范" || s.kind === "委属市重点")).sort((a, b) => (b.mingeDistrict || 0) - (a.mingeDistrict || 0)), [allSchools]);
-  const tsList = React.useMemo(() => allSchools.filter((s) => s.mingeSchool != null && (s.district === district || s.tier === "四校")).sort((a, b) => (b.mingeSchool || 0) - (a.mingeSchool || 0)), [allSchools, district]);
-  const pList = React.useMemo(() => allSchools.filter((s) => s.score2025 != null && (s.district === district || s.tier === "四校" || s.tier === "八大")).sort((a, b) => b.score2025 - a.score2025), [allSchools, district]);
+  const tdList = React.useMemo(
+    () => allSchools.filter((s) => s.mingeDistrict != null && (s.tier === "\u56DB\u6821" || s.tier === "\u516B\u5927" || s.kind === "\u5E02\u5B9E\u9A8C\u793A\u8303" || s.kind === "\u59D4\u5C5E\u5E02\u91CD\u70B9")).sort((a, b) => (b.mingeDistrict || 0) - (a.mingeDistrict || 0)),
+    [allSchools]
+  );
+  const tsList = React.useMemo(
+    () => allSchools.filter((s) => s.mingeSchool != null && (s.district === district || s.tier === "\u56DB\u6821")).sort((a, b) => (b.mingeSchool || 0) - (a.mingeSchool || 0)),
+    [allSchools, district]
+  );
+  const pList = React.useMemo(
+    () => allSchools.filter((s) => s.score2025 != null && (s.district === district || s.tier === "\u56DB\u6821" || s.tier === "\u516B\u5927")).sort((a, b) => b.score2025 - a.score2025),
+    [allSchools, district]
+  );
   const totalPicked = (tdPick ? 1 : 0) + tsPicks.length + pPicks.length;
   const stepDefs = [
-    { label: "\uD83D\uDCDD 基本信息", done: step > 0 },
-    { label: "\uD83D\uDCAC AI 对话分析", done: step > 1 },
-    { label: "\uD83D\uDCCB 志愿方案" + (totalPicked > 0 ? " (" + totalPicked + ")" : ""), done: false }
+    { label: "\u{1F4DD} \u57FA\u672C\u4FE1\u606F", done: step > 0 },
+    { label: "\u{1F4AC} AI \u5BF9\u8BDD\u5206\u6790", done: step > 1 },
+    { label: "\u{1F4CB} \u5FD7\u613F\u65B9\u6848" + (totalPicked > 0 ? " (" + totalPicked + ")" : ""), done: false }
   ];
-  if (loading)
-    return jsxDEV_7x81h0kn("main", {
-      style: { maxWidth: 1200, margin: "0 auto", padding: "32px 24px 64px" },
-      children: jsxDEV_7x81h0kn(Loading, {}, undefined, false, undefined, this)
-    }, undefined, false, undefined, this);
-  return jsxDEV_7x81h0kn("main", {
-    style: { maxWidth: 1200, margin: "0 auto", padding: "32px 24px 64px" },
-    children: [
-      jsxDEV_7x81h0kn("h1", {
-        style: { fontSize: 28, fontWeight: 700, margin: "0 0 8px" },
-        children: "志愿填报助手"
-      }, undefined, false, undefined, this),
-      jsxDEV_7x81h0kn("p", {
-        style: { fontSize: 14, color: "var(--text-3)", margin: "0 0 24px" },
-        children: "AI 顾问根据你的情况，智能生成完整志愿方案（到区1 + 到校2 + 平行15）"
-      }, undefined, false, undefined, this),
-      jsxDEV_7x81h0kn("div", {
-        style: { display: "flex", gap: 4, marginBottom: 28 },
-        children: stepDefs.map((s, i) => jsxDEV_7x81h0kn("button", {
-          onClick: () => i <= step && setStep(i),
-          style: {
-            flex: 1,
-            padding: "14px 12px",
-            borderRadius: 8,
-            border: "none",
-            fontSize: 14,
-            fontWeight: i === step ? 600 : 500,
-            cursor: i <= step ? "pointer" : "default",
-            fontFamily: "inherit",
-            textAlign: "center",
-            background: i === step ? "var(--primary)" : i < step ? "var(--primary-50)" : "var(--bg)",
-            color: i === step ? "#fff" : i < step ? "var(--primary)" : "var(--text-3)"
-          },
-          children: [
-            s.done ? "✓ " : "",
-            s.label
-          ]
-        }, i, true, undefined, this))
-      }, undefined, false, undefined, this),
-      step === 0 && jsxDEV_7x81h0kn(Step0, {
-        score,
-        setScore,
-        district,
-        setDistrict,
-        generate: () => setStep(1),
-        tdCount: tdList.length,
-        tsCount: tsList.length,
-        pCount: pList.length,
-        districtRank,
-        setDistrictRank,
-        cityRank,
-        setCityRank
-      }, undefined, false, undefined, this),
-      step === 1 && jsxDEV_7x81h0kn(AIChat, {
-        score,
-        district,
-        districtRank,
-        cityRank,
-        tdPick,
-        setTdPick,
-        tsPicks,
-        setTsPicks,
-        pPicks,
-        setPPicks,
-        tdList,
-        tsList,
-        pList,
-        onDone: () => setStep(2),
-        onBack: () => setStep(0),
-        allSchools
-      }, undefined, false, undefined, this),
-      step === 2 && jsxDEV_7x81h0kn(PlanResult, {
-        score,
-        district,
-        tdPick,
-        setTdPick,
-        tsPicks,
-        setTsPicks,
-        pPicks,
-        setPPicks,
-        tdList,
-        tsList,
-        pList,
-        onOpenSchool,
-        onBack: () => setStep(1),
-        allSchools
-      }, undefined, false, undefined, this)
-    ]
-  }, undefined, true, undefined, this);
+  if (loading) return /* @__PURE__ */ React.createElement("main", { style: { maxWidth: 1200, margin: "0 auto", padding: "32px 24px 64px" } }, /* @__PURE__ */ React.createElement(Loading, null));
+  return /* @__PURE__ */ React.createElement("main", { style: { maxWidth: 1200, margin: "0 auto", padding: "32px 24px 64px" } }, /* @__PURE__ */ React.createElement("h1", { style: { fontSize: 28, fontWeight: 700, margin: "0 0 8px" } }, "\u5FD7\u613F\u586B\u62A5\u52A9\u624B"), /* @__PURE__ */ React.createElement("p", { style: { fontSize: 14, color: "var(--text-3)", margin: "0 0 24px" } }, "AI \u987E\u95EE\u6839\u636E\u4F60\u7684\u60C5\u51B5\uFF0C\u667A\u80FD\u751F\u6210\u5B8C\u6574\u5FD7\u613F\u65B9\u6848\uFF08\u5230\u533A1 + \u5230\u68212 + \u5E73\u884C15\uFF09"), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", gap: 4, marginBottom: 28 } }, stepDefs.map((s, i) => /* @__PURE__ */ React.createElement(
+    "button",
+    {
+      key: i,
+      onClick: () => i <= step && setStep(i),
+      style: {
+        flex: 1,
+        padding: "14px 12px",
+        borderRadius: 8,
+        border: "none",
+        fontSize: 14,
+        fontWeight: i === step ? 600 : 500,
+        cursor: i <= step ? "pointer" : "default",
+        fontFamily: "inherit",
+        textAlign: "center",
+        background: i === step ? "var(--primary)" : i < step ? "var(--primary-50)" : "var(--bg)",
+        color: i === step ? "#fff" : i < step ? "var(--primary)" : "var(--text-3)"
+      }
+    },
+    s.done ? "\u2713 " : "",
+    s.label
+  ))), step === 0 && /* @__PURE__ */ React.createElement(
+    Step0,
+    {
+      score,
+      setScore,
+      district,
+      setDistrict,
+      generate: () => setStep(1),
+      tdCount: tdList.length,
+      tsCount: tsList.length,
+      pCount: pList.length,
+      districtRank,
+      setDistrictRank,
+      cityRank,
+      setCityRank
+    }
+  ), step === 1 && /* @__PURE__ */ React.createElement(
+    AIChat,
+    {
+      score,
+      district,
+      districtRank,
+      cityRank,
+      tdPick,
+      setTdPick,
+      tsPicks,
+      setTsPicks,
+      pPicks,
+      setPPicks,
+      tdList,
+      tsList,
+      pList,
+      onDone: () => setStep(2),
+      onBack: () => setStep(0),
+      allSchools
+    }
+  ), step === 2 && /* @__PURE__ */ React.createElement(
+    PlanResult,
+    {
+      score,
+      district,
+      tdPick,
+      setTdPick,
+      tsPicks,
+      setTsPicks,
+      pPicks,
+      setPPicks,
+      tdList,
+      tsList,
+      pList,
+      onOpenSchool,
+      onBack: () => setStep(1),
+      allSchools
+    }
+  ));
 }
 window.RecommendPage = RecommendPage;

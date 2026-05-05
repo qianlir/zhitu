@@ -55,24 +55,24 @@ function App() {
   let basePage;
   switch (baseRoute) {
     case "home":
-      basePage = /* @__PURE__ */ jsxDEV_7x81h0kn(HomePage, { onNavigate: navigate, onOpenSchool: openSchool });
+      basePage = /* @__PURE__ */ React.createElement(HomePage, { onNavigate: navigate, onOpenSchool: openSchool });
       break;
     case "schools":
-      basePage = /* @__PURE__ */ jsxDEV_7x81h0kn(SchoolsPage, { onOpenSchool: openSchool, initialQuery: searchQuery, onNavigate: navigate });
+      basePage = /* @__PURE__ */ React.createElement(SchoolsPage, { onOpenSchool: openSchool, initialQuery: searchQuery, onNavigate: navigate });
       break;
     case "compare":
-      basePage = /* @__PURE__ */ jsxDEV_7x81h0kn(ComparePage, { initialIds: compareIds, onOpenSchool: openSchool, onNavigate: navigate });
+      basePage = /* @__PURE__ */ React.createElement(ComparePage, { initialIds: compareIds, onOpenSchool: openSchool, onNavigate: navigate });
       break;
     case "recommend":
-      basePage = /* @__PURE__ */ jsxDEV_7x81h0kn(RecommendPage, { onOpenSchool: openSchool });
+      basePage = /* @__PURE__ */ React.createElement(RecommendPage, { onOpenSchool: openSchool });
       break;
     case "about":
-      basePage = /* @__PURE__ */ jsxDEV_7x81h0kn(AboutPage, null);
+      basePage = /* @__PURE__ */ React.createElement(AboutPage, null);
       break;
     default:
-      basePage = /* @__PURE__ */ jsxDEV_7x81h0kn(HomePage, { onNavigate: navigate, onOpenSchool: openSchool });
+      basePage = /* @__PURE__ */ React.createElement(HomePage, { onNavigate: navigate, onOpenSchool: openSchool });
   }
-  return /* @__PURE__ */ jsxDEV_7x81h0kn("div", { style: { minHeight: "100vh", background: "var(--bg)" } }, /* @__PURE__ */ jsxDEV_7x81h0kn(Header, { route, onNavigate: navigate }), /* @__PURE__ */ jsxDEV_7x81h0kn("div", { style: { display: showDetail ? "none" : "block" } }, basePage), showDetail && /* @__PURE__ */ jsxDEV_7x81h0kn(
+  return /* @__PURE__ */ React.createElement("div", { style: { minHeight: "100vh", background: "var(--bg)" } }, /* @__PURE__ */ React.createElement(Header, { route, onNavigate: navigate }), /* @__PURE__ */ React.createElement("div", { style: { display: showDetail ? "none" : "block" } }, basePage), showDetail && /* @__PURE__ */ React.createElement(
     SchoolDetailPage,
     {
       schoolId,
@@ -84,5 +84,20 @@ function App() {
     }
   ));
 }
+class ErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { error: null };
+  }
+  static getDerivedStateFromError(error) {
+    return { error };
+  }
+  render() {
+    if (this.state.error) {
+      return /* @__PURE__ */ React.createElement("div", { style: { padding: 20, color: "red", whiteSpace: "pre-wrap", fontFamily: "monospace" } }, "React Error: " + this.state.error.message + "\n" + (this.state.error.stack || ""));
+    }
+    return this.props.children;
+  }
+}
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(/* @__PURE__ */ jsxDEV_7x81h0kn(App, null));
+root.render(/* @__PURE__ */ React.createElement(ErrorBoundary, null, /* @__PURE__ */ React.createElement(App, null)));

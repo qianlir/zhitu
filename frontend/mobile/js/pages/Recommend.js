@@ -1,6 +1,6 @@
 function MRecommend({ onOpenSchool, onBack }) {
   const [score, setScore] = React.useState(685);
-  const [district, setDistrict] = React.useState("浦东");
+  const [district, setDistrict] = React.useState("\u6D66\u4E1C");
   const [phase, setPhase] = React.useState("input");
   const [tdPick, setTdPick] = React.useState(null);
   const [tsPicks, setTsPicks] = React.useState([]);
@@ -25,12 +25,11 @@ function MRecommend({ onOpenSchool, onBack }) {
   }, []);
   const getS = (id) => allSchools.find((s) => s.id === id);
   const autoGen = () => {
-    const pList = allSchools.filter((s) => s.score2025 != null && (s.district === district || s.tier === "四校" || s.tier === "八大")).sort((a, b) => b.score2025 - a.score2025);
-    const tdList = allSchools.filter((s) => s.mingeDistrict != null && (s.tier === "四校" || s.kind === "委属市重点" || s.kind === "市实验示范"));
-    const tsList = allSchools.filter((s) => s.mingeSchool != null && (s.district === district || s.tier === "四校"));
+    const pList = allSchools.filter((s) => s.score2025 != null && (s.district === district || s.tier === "\u56DB\u6821" || s.tier === "\u516B\u5927")).sort((a, b2) => b2.score2025 - a.score2025);
+    const tdList = allSchools.filter((s) => s.mingeDistrict != null && (s.tier === "\u56DB\u6821" || s.kind === "\u59D4\u5C5E\u5E02\u91CD\u70B9" || s.kind === "\u5E02\u5B9E\u9A8C\u793A\u8303"));
+    const tsList = allSchools.filter((s) => s.mingeSchool != null && (s.district === district || s.tier === "\u56DB\u6821"));
     const td = tdList.find((s) => (s.mingeDistrict || 999) <= score + 8);
-    if (td)
-      setTdPick(td.id);
+    if (td) setTdPick(td.id);
     const ts = tsList.filter((s) => (s.mingeSchool || 999) <= score + 5).slice(0, 2);
     setTsPicks(ts.map((s) => s.id));
     const used = new Set([td?.id, ...ts.map((s) => s.id)].filter(Boolean));
@@ -42,8 +41,7 @@ function MRecommend({ onOpenSchool, onBack }) {
   };
   const sendMsg = async (text) => {
     const msg = (text || input).trim();
-    if (!msg || loading)
-      return;
+    if (!msg || loading) return;
     setInput("");
     setMessages((prev) => [...prev, { role: "user", content: msg }]);
     setLoading(true);
@@ -74,21 +72,15 @@ function MRecommend({ onOpenSchool, onBack }) {
       while ((m = actionRegex.exec(full)) !== null) {
         const [, cmd, args] = m;
         const ids = args.split(",").map((s) => s.trim());
-        if (cmd === "SET_DQ" && getS(ids[0]))
-          setTdPick(ids[0]);
-        if (cmd === "SET_DX")
-          setTsPicks(ids.filter((id) => getS(id)).slice(0, 2));
-        if (cmd === "SET_PX")
-          setPPicks(ids.filter((id) => getS(id)).slice(0, 15));
-        if (cmd === "ADD_PX")
-          setPPicks((prev) => [...prev, ...ids.filter((id) => getS(id) && !prev.includes(id))].slice(0, 15));
+        if (cmd === "SET_DQ" && getS(ids[0])) setTdPick(ids[0]);
+        if (cmd === "SET_DX") setTsPicks(ids.filter((id) => getS(id)).slice(0, 2));
+        if (cmd === "SET_PX") setPPicks(ids.filter((id) => getS(id)).slice(0, 15));
+        if (cmd === "ADD_PX") setPPicks((prev) => [...prev, ...ids.filter((id) => getS(id) && !prev.includes(id))].slice(0, 15));
         if (cmd === "REPLACE_PX") {
           const [o, n] = args.split(">").map((s) => s.trim());
-          if (o && n && getS(n))
-            setPPicks((prev) => prev.map((id) => id === o ? n : id));
+          if (o && n && getS(n)) setPPicks((prev) => prev.map((id) => id === o ? n : id));
         }
-        if (cmd === "REMOVE_PX")
-          setPPicks((prev) => prev.filter((id) => !ids.includes(id)));
+        if (cmd === "REMOVE_PX") setPPicks((prev) => prev.filter((id) => !ids.includes(id)));
       }
       setMessages((prev) => {
         const arr = [...prev];
@@ -98,516 +90,102 @@ function MRecommend({ onOpenSchool, onBack }) {
     } catch (err) {
       setMessages((prev) => {
         const arr = [...prev];
-        arr[arr.length - 1] = { role: "assistant", content: "抱歉：" + (err.message || "请稍后再试") };
+        arr[arr.length - 1] = { role: "assistant", content: "\u62B1\u6B49\uFF1A" + (err.message || "\u8BF7\u7A0D\u540E\u518D\u8BD5") };
         return arr;
       });
     }
     setLoading(false);
   };
   React.useEffect(() => {
-    if (chatRef.current)
-      chatRef.current.scrollTop = chatRef.current.scrollHeight;
+    if (chatRef.current) chatRef.current.scrollTop = chatRef.current.scrollHeight;
   }, [messages, loading]);
   const startChat = () => {
     autoGen();
     setMessages([{
       role: "assistant",
-      content: `你好！\uD83C\uDF93
+      content: `\u4F60\u597D\uFF01\u{1F393}
 
-**${score}分 · ${district}区 · 区排名约${dr}名**
+**${score}\u5206 \xB7 ${district}\u533A \xB7 \u533A\u6392\u540D\u7EA6${dr}\u540D**
 
-${dr <= 500 ? "头部考生，四校有竞争力" : dr <= 1500 ? "中上水平，市重点有较大机会" : "建议以市重点中段和区重点为主"}
+${dr <= 500 ? "\u5934\u90E8\u8003\u751F\uFF0C\u56DB\u6821\u6709\u7ADE\u4E89\u529B" : dr <= 1500 ? "\u4E2D\u4E0A\u6C34\u5E73\uFF0C\u5E02\u91CD\u70B9\u6709\u8F83\u5927\u673A\u4F1A" : "\u5EFA\u8BAE\u4EE5\u5E02\u91CD\u70B9\u4E2D\u6BB5\u548C\u533A\u91CD\u70B9\u4E3A\u4E3B"}
 
-已生成初步方案。你可以：
-• 告诉我偏好（升学率/离家近/特色班）
-• 要求调整某个志愿
-• 直接查看方案`
+\u5DF2\u751F\u6210\u521D\u6B65\u65B9\u6848\u3002\u4F60\u53EF\u4EE5\uFF1A
+\u2022 \u544A\u8BC9\u6211\u504F\u597D\uFF08\u5347\u5B66\u7387/\u79BB\u5BB6\u8FD1/\u7279\u8272\u73ED\uFF09
+\u2022 \u8981\u6C42\u8C03\u6574\u67D0\u4E2A\u5FD7\u613F
+\u2022 \u76F4\u63A5\u67E5\u770B\u65B9\u6848`
     }]);
     setPhase("chat");
   };
   const totalPicked = (tdPick ? 1 : 0) + tsPicks.length + pPicks.length;
-  if (phase === "input")
-    return jsxDEV_7x81h0kn("div", {
-      children: [
-        jsxDEV_7x81h0kn(MNav, {
-          title: "志愿填报",
-          subtitle: "AI 智能推荐",
-          onBack
-        }, undefined, false, undefined, this),
-        jsxDEV_7x81h0kn("div", {
-          className: "mp",
-          children: [
-            jsxDEV_7x81h0kn("div", {
-              className: "mc",
-              style: { background: "var(--primary-50)", marginBottom: 16 },
-              children: jsxDEV_7x81h0kn("div", {
-                style: { fontSize: 13, color: "var(--text-2)", lineHeight: 1.7 },
-                children: [
-                  jsxDEV_7x81h0kn("strong", {
-                    children: "\uD83D\uDCCC 录取顺序："
-                  }, undefined, false, undefined, this),
-                  "名额到区(1) → 名额到校(2) → 平行志愿(15)",
-                  jsxDEV_7x81h0kn("br", {}, undefined, false, undefined, this),
-                  jsxDEV_7x81h0kn("span", {
-                    style: { color: "var(--accent)", fontSize: 12 },
-                    children: "⚠️ 名额到校：各初中分配名额不同，需确认你所在初中的具体名额"
-                  }, undefined, false, undefined, this)
-                ]
-              }, undefined, true, undefined, this)
-            }, undefined, false, undefined, this),
-            jsxDEV_7x81h0kn("div", {
-              style: { marginBottom: 16 },
-              children: [
-                jsxDEV_7x81h0kn("label", {
-                  style: { fontSize: 13, fontWeight: 600, color: "var(--text-3)", display: "block", marginBottom: 6 },
-                  children: "中考成绩"
-                }, undefined, false, undefined, this),
-                jsxDEV_7x81h0kn("input", {
-                  className: "mi",
-                  type: "number",
-                  value: score,
-                  onChange: (e) => setScore(+e.target.value),
-                  style: { fontSize: 24, fontWeight: 700, color: "var(--primary)", textAlign: "center" }
-                }, undefined, false, undefined, this),
-                jsxDEV_7x81h0kn("input", {
-                  type: "range",
-                  min: 550,
-                  max: 720,
-                  step: 0.5,
-                  value: score,
-                  onChange: (e) => setScore(+e.target.value),
-                  style: { width: "100%", marginTop: 8, accentColor: "var(--primary)" }
-                }, undefined, false, undefined, this)
-              ]
-            }, undefined, true, undefined, this),
-            jsxDEV_7x81h0kn("div", {
-              style: { marginBottom: 16 },
-              children: [
-                jsxDEV_7x81h0kn("label", {
-                  style: { fontSize: 13, fontWeight: 600, color: "var(--text-3)", display: "block", marginBottom: 6 },
-                  children: "所在区"
-                }, undefined, false, undefined, this),
-                jsxDEV_7x81h0kn("select", {
-                  className: "ms",
-                  value: district,
-                  onChange: (e) => setDistrict(e.target.value),
-                  children: SH_DISTRICTS.map((d) => jsxDEV_7x81h0kn("option", {
-                    value: d,
-                    children: [
-                      d,
-                      "区"
-                    ]
-                  }, d, true, undefined, this))
-                }, undefined, false, undefined, this)
-              ]
-            }, undefined, true, undefined, this),
-            jsxDEV_7x81h0kn("div", {
-              className: "mc",
-              style: { marginBottom: 16 },
-              children: [
-                jsxDEV_7x81h0kn("div", {
-                  style: { fontSize: 13, fontWeight: 600, marginBottom: 10 },
-                  children: "\uD83D\uDCCA 排名估算"
-                }, undefined, false, undefined, this),
-                jsxDEV_7x81h0kn("div", {
-                  style: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 },
-                  children: [
-                    jsxDEV_7x81h0kn("div", {
-                      style: { textAlign: "center", padding: 12, background: "var(--bg)", borderRadius: 8 },
-                      children: [
-                        jsxDEV_7x81h0kn("div", {
-                          style: { fontSize: 11, color: "var(--text-3)", marginBottom: 4 },
-                          children: [
-                            district,
-                            "区排名"
-                          ]
-                        }, undefined, true, undefined, this),
-                        jsxDEV_7x81h0kn("div", {
-                          style: { display: "flex", alignItems: "center", justifyContent: "center", gap: 4 },
-                          children: [
-                            jsxDEV_7x81h0kn("span", {
-                              style: { fontSize: 13, color: "var(--text-3)" },
-                              children: "第"
-                            }, undefined, false, undefined, this),
-                            jsxDEV_7x81h0kn("input", {
-                              type: "number",
-                              value: dr,
-                              onChange: (e) => setDistrictRank(+e.target.value || null),
-                              style: { width: 70, fontSize: 18, fontWeight: 700, color: "var(--primary)", textAlign: "center", border: "1px solid var(--border)", borderRadius: 6, padding: "4px 0", fontFamily: "inherit" }
-                            }, undefined, false, undefined, this),
-                            jsxDEV_7x81h0kn("span", {
-                              style: { fontSize: 13, color: "var(--text-3)" },
-                              children: "名"
-                            }, undefined, false, undefined, this)
-                          ]
-                        }, undefined, true, undefined, this),
-                        jsxDEV_7x81h0kn("div", {
-                          style: { fontSize: 10, color: "var(--text-muted)", marginTop: 4 },
-                          children: [
-                            "估算≈",
-                            estDR
-                          ]
-                        }, undefined, true, undefined, this)
-                      ]
-                    }, undefined, true, undefined, this),
-                    jsxDEV_7x81h0kn("div", {
-                      style: { textAlign: "center", padding: 12, background: "var(--bg)", borderRadius: 8 },
-                      children: [
-                        jsxDEV_7x81h0kn("div", {
-                          style: { fontSize: 11, color: "var(--text-3)", marginBottom: 4 },
-                          children: "全市排名"
-                        }, undefined, false, undefined, this),
-                        jsxDEV_7x81h0kn("div", {
-                          style: { display: "flex", alignItems: "center", justifyContent: "center", gap: 4 },
-                          children: [
-                            jsxDEV_7x81h0kn("span", {
-                              style: { fontSize: 13, color: "var(--text-3)" },
-                              children: "第"
-                            }, undefined, false, undefined, this),
-                            jsxDEV_7x81h0kn("input", {
-                              type: "number",
-                              value: cr,
-                              onChange: (e) => setCityRank(+e.target.value || null),
-                              style: { width: 70, fontSize: 18, fontWeight: 700, color: "var(--secondary)", textAlign: "center", border: "1px solid var(--border)", borderRadius: 6, padding: "4px 0", fontFamily: "inherit" }
-                            }, undefined, false, undefined, this),
-                            jsxDEV_7x81h0kn("span", {
-                              style: { fontSize: 13, color: "var(--text-3)" },
-                              children: "名"
-                            }, undefined, false, undefined, this)
-                          ]
-                        }, undefined, true, undefined, this),
-                        jsxDEV_7x81h0kn("div", {
-                          style: { fontSize: 10, color: "var(--text-muted)", marginTop: 4 },
-                          children: [
-                            "估算≈",
-                            estCR
-                          ]
-                        }, undefined, true, undefined, this)
-                      ]
-                    }, undefined, true, undefined, this)
-                  ]
-                }, undefined, true, undefined, this),
-                jsxDEV_7x81h0kn("div", {
-                  style: { marginTop: 8, fontSize: 11, color: "var(--text-3)" },
-                  children: [
-                    "定位：",
-                    jsxDEV_7x81h0kn("span", {
-                      className: "score-chip " + tierClass(score),
-                      children: tierLabel(score)
-                    }, undefined, false, undefined, this)
-                  ]
-                }, undefined, true, undefined, this),
-                jsxDEV_7x81h0kn("div", {
-                  style: { marginTop: 4, fontSize: 10, color: "var(--accent)" },
-                  children: "排名可手动修改，直接影响推荐结果"
-                }, undefined, false, undefined, this)
-              ]
-            }, undefined, true, undefined, this),
-            jsxDEV_7x81h0kn("button", {
-              className: "mb mb1",
-              onClick: startChat,
-              children: "开始 AI 志愿分析 →"
-            }, undefined, false, undefined, this)
-          ]
-        }, undefined, true, undefined, this)
-      ]
-    }, undefined, true, undefined, this);
-  if (phase === "chat")
-    return jsxDEV_7x81h0kn("div", {
-      style: { display: "flex", flexDirection: "column", height: "100vh" },
-      children: [
-        jsxDEV_7x81h0kn("div", {
-          style: { padding: "12px 16px", background: "linear-gradient(135deg,#1a56db,#0694a2)", color: "#fff", display: "flex", justifyContent: "space-between", alignItems: "center" },
-          children: [
-            jsxDEV_7x81h0kn("div", {
-              children: [
-                jsxDEV_7x81h0kn("button", {
-                  onClick: () => setPhase("input"),
-                  style: { background: "transparent", border: "none", color: "#fff", cursor: "pointer", fontSize: 16, marginRight: 8 },
-                  children: "←"
-                }, undefined, false, undefined, this),
-                jsxDEV_7x81h0kn("span", {
-                  style: { fontSize: 16, fontWeight: 600 },
-                  children: "\uD83C\uDF93 AI 志愿顾问"
-                }, undefined, false, undefined, this),
-                jsxDEV_7x81h0kn("div", {
-                  style: { fontSize: 11, opacity: 0.8, marginTop: 2 },
-                  children: [
-                    score,
-                    "分 · ",
-                    district,
-                    "区 · 已填",
-                    totalPicked,
-                    "个志愿"
-                  ]
-                }, undefined, true, undefined, this)
-              ]
-            }, undefined, true, undefined, this),
-            jsxDEV_7x81h0kn("button", {
-              onClick: () => setPhase("result"),
-              style: { background: "rgba(255,255,255,0.2)", border: "none", color: "#fff", padding: "8px 14px", borderRadius: 999, fontSize: 13, fontWeight: 600, cursor: "pointer" },
-              children: "查看方案"
-            }, undefined, false, undefined, this)
-          ]
-        }, undefined, true, undefined, this),
-        jsxDEV_7x81h0kn("div", {
-          ref: chatRef,
-          style: { flex: 1, overflowY: "auto", padding: 16 },
-          children: [
-            messages.map((msg, i) => jsxDEV_7x81h0kn("div", {
-              style: { marginBottom: 12, display: "flex", justifyContent: msg.role === "user" ? "flex-end" : "flex-start" },
-              children: jsxDEV_7x81h0kn("div", {
-                style: {
-                  maxWidth: "85%",
-                  padding: "12px 16px",
-                  borderRadius: 16,
-                  fontSize: 14,
-                  lineHeight: 1.7,
-                  whiteSpace: "pre-wrap",
-                  background: msg.role === "user" ? "var(--primary)" : "#f1f5f9",
-                  color: msg.role === "user" ? "#fff" : "var(--text)",
-                  borderBottomRightRadius: msg.role === "user" ? 4 : 16,
-                  borderBottomLeftRadius: msg.role === "user" ? 16 : 4
-                },
-                dangerouslySetInnerHTML: msg.role === "assistant" ? { __html: renderMd(msg.content) } : undefined,
-                children: msg.role === "user" ? msg.content : undefined
-              }, undefined, false, undefined, this)
-            }, i, false, undefined, this)),
-            loading && jsxDEV_7x81h0kn("div", {
-              style: { padding: "12px 16px", background: "#f1f5f9", borderRadius: 16, fontSize: 14, color: "var(--text-3)", display: "inline-block" },
-              children: "分析中…"
-            }, undefined, false, undefined, this)
-          ]
-        }, undefined, true, undefined, this),
-        messages.length <= 1 && jsxDEV_7x81h0kn("div", {
-          style: { padding: "0 16px 8px", display: "flex", gap: 6, overflowX: "auto" },
-          children: ["帮我生成方案", "分析方案风险", "我想冲四校", "查看方案"].map((q) => jsxDEV_7x81h0kn("button", {
-            onClick: () => q === "查看方案" ? setPhase("result") : sendMsg(q),
-            style: { padding: "8px 14px", fontSize: 12, background: "#fff", border: "1px solid var(--border)", borderRadius: 999, cursor: "pointer", whiteSpace: "nowrap", flexShrink: 0, fontFamily: "inherit" },
-            children: q
-          }, q, false, undefined, this))
-        }, undefined, false, undefined, this),
-        jsxDEV_7x81h0kn("div", {
-          style: { padding: "10px 16px calc(10px + env(safe-area-inset-bottom,0px))", borderTop: "1px solid var(--border)", background: "#fff", display: "flex", gap: 8 },
-          children: [
-            jsxDEV_7x81h0kn("input", {
-              value: input,
-              onChange: (e) => setInput(e.target.value),
-              onKeyDown: (e) => e.key === "Enter" && sendMsg(),
-              placeholder: "说出你的需求…",
-              className: "mi",
-              style: { flex: 1, borderRadius: 999, padding: "12px 18px" }
-            }, undefined, false, undefined, this),
-            jsxDEV_7x81h0kn("button", {
-              onClick: () => sendMsg(),
-              disabled: loading || !input.trim(),
-              style: { width: 44, height: 44, borderRadius: "50%", border: "none", background: input.trim() ? "var(--primary)" : "var(--bg)", color: input.trim() ? "#fff" : "var(--text-muted)", cursor: input.trim() ? "pointer" : "default", fontSize: 18, flexShrink: 0 },
-              children: "↑"
-            }, undefined, false, undefined, this)
-          ]
-        }, undefined, true, undefined, this)
-      ]
-    }, undefined, true, undefined, this);
-  return jsxDEV_7x81h0kn("div", {
-    children: [
-      jsxDEV_7x81h0kn(MNav, {
-        title: "志愿方案",
-        subtitle: totalPicked + "/18 个志愿",
-        onBack: () => setPhase("chat")
-      }, undefined, false, undefined, this),
-      jsxDEV_7x81h0kn("div", {
-        className: "mp",
-        children: [
-          jsxDEV_7x81h0kn("div", {
-            className: "mc",
-            style: { background: "linear-gradient(135deg,var(--primary-50),rgba(6,148,162,0.06))" },
-            children: jsxDEV_7x81h0kn("div", {
-              style: { display: "flex", justifyContent: "space-around", textAlign: "center" },
-              children: [
-                jsxDEV_7x81h0kn("div", {
-                  children: [
-                    jsxDEV_7x81h0kn("div", {
-                      style: { fontSize: 22, fontWeight: 700, color: "var(--primary)" },
-                      children: tdPick ? 1 : 0
-                    }, undefined, false, undefined, this),
-                    jsxDEV_7x81h0kn("div", {
-                      style: { fontSize: 11, color: "var(--text-3)" },
-                      children: "到区"
-                    }, undefined, false, undefined, this)
-                  ]
-                }, undefined, true, undefined, this),
-                jsxDEV_7x81h0kn("div", {
-                  children: [
-                    jsxDEV_7x81h0kn("div", {
-                      style: { fontSize: 22, fontWeight: 700, color: "var(--secondary)" },
-                      children: tsPicks.length
-                    }, undefined, false, undefined, this),
-                    jsxDEV_7x81h0kn("div", {
-                      style: { fontSize: 11, color: "var(--text-3)" },
-                      children: "到校"
-                    }, undefined, false, undefined, this)
-                  ]
-                }, undefined, true, undefined, this),
-                jsxDEV_7x81h0kn("div", {
-                  children: [
-                    jsxDEV_7x81h0kn("div", {
-                      style: { fontSize: 22, fontWeight: 700, color: "var(--accent)" },
-                      children: pPicks.length
-                    }, undefined, false, undefined, this),
-                    jsxDEV_7x81h0kn("div", {
-                      style: { fontSize: 11, color: "var(--text-3)" },
-                      children: "平行"
-                    }, undefined, false, undefined, this)
-                  ]
-                }, undefined, true, undefined, this)
-              ]
-            }, undefined, true, undefined, this)
-          }, undefined, false, undefined, this),
-          jsxDEV_7x81h0kn("h3", {
-            style: { fontSize: 15, fontWeight: 600, margin: "16px 0 8px" },
-            children: "\uD83C\uDFDB️ 名额到区"
-          }, undefined, false, undefined, this),
-          tdPick && getS(tdPick) ? jsxDEV_7x81h0kn("div", {
-            style: { position: "relative" },
-            children: [
-              jsxDEV_7x81h0kn(MSchoolRow, {
-                school: getS(tdPick),
-                onClick: () => onOpenSchool(tdPick),
-                showScore: getS(tdPick)?.mingeDistrict
-              }, undefined, false, undefined, this),
-              jsxDEV_7x81h0kn("button", {
-                onClick: (e) => {
-                  e.stopPropagation();
-                  setTdPick(null);
-                },
-                style: { position: "absolute", top: 8, right: 8, background: "var(--danger)", color: "#fff", border: "none", borderRadius: "50%", width: 22, height: 22, fontSize: 12, cursor: "pointer" },
-                children: "×"
-              }, undefined, false, undefined, this)
-            ]
-          }, undefined, true, undefined, this) : jsxDEV_7x81h0kn("div", {
-            className: "mc-sm",
-            style: { color: "var(--text-muted)", textAlign: "center", padding: 20 },
-            children: "未选"
-          }, undefined, false, undefined, this),
-          jsxDEV_7x81h0kn("h3", {
-            style: { fontSize: 15, fontWeight: 600, margin: "16px 0 8px" },
-            children: "\uD83C\uDFEB 名额到校"
-          }, undefined, false, undefined, this),
-          jsxDEV_7x81h0kn("div", {
-            style: { fontSize: 11, color: "var(--accent)", marginBottom: 6 },
-            children: "⚠️ 各初中名额不同，请确认你所在初中的具体分配"
-          }, undefined, false, undefined, this),
-          tsPicks.length > 0 ? tsPicks.map((id) => {
-            const s = getS(id);
-            return s ? jsxDEV_7x81h0kn("div", {
-              style: { position: "relative" },
-              children: [
-                jsxDEV_7x81h0kn(MSchoolRow, {
-                  school: s,
-                  onClick: () => onOpenSchool(id),
-                  showScore: s?.mingeSchool
-                }, undefined, false, undefined, this),
-                jsxDEV_7x81h0kn("button", {
-                  onClick: (e) => {
-                    e.stopPropagation();
-                    setTsPicks(tsPicks.filter((x) => x !== id));
-                  },
-                  style: { position: "absolute", top: 8, right: 8, background: "var(--danger)", color: "#fff", border: "none", borderRadius: "50%", width: 22, height: 22, fontSize: 12, cursor: "pointer" },
-                  children: "×"
-                }, undefined, false, undefined, this)
-              ]
-            }, id, true, undefined, this) : null;
-          }) : jsxDEV_7x81h0kn("div", {
-            className: "mc-sm",
-            style: { color: "var(--text-muted)", textAlign: "center", padding: 20 },
-            children: "未选"
-          }, undefined, false, undefined, this),
-          jsxDEV_7x81h0kn("h3", {
-            style: { fontSize: 15, fontWeight: 600, margin: "16px 0 8px" },
-            children: [
-              "\uD83D\uDCCB 平行志愿 (",
-              pPicks.length,
-              "/15)"
-            ]
-          }, undefined, true, undefined, this),
-          pPicks.map((id, i) => {
-            const s = getS(id);
-            if (!s)
-              return null;
-            const diff = (s.score2025 || 0) - score;
-            const tag = diff > 5 ? "冲" : diff > -3 ? "稳" : "保";
-            const color = diff > 5 ? "#dc2626" : diff > -3 ? "var(--primary)" : "var(--success)";
-            return jsxDEV_7x81h0kn("div", {
-              className: "mc-sm",
-              onClick: () => onOpenSchool(id),
-              style: { cursor: "pointer", display: "flex", alignItems: "center", gap: 10 },
-              children: [
-                jsxDEV_7x81h0kn("span", {
-                  style: { width: 24, height: 24, borderRadius: "50%", background: color, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 11, fontWeight: 700, flexShrink: 0 },
-                  children: i + 1
-                }, undefined, false, undefined, this),
-                jsxDEV_7x81h0kn("div", {
-                  style: { flex: 1 },
-                  children: [
-                    jsxDEV_7x81h0kn("div", {
-                      style: { fontWeight: 600, fontSize: 14 },
-                      children: s.name
-                    }, undefined, false, undefined, this),
-                    jsxDEV_7x81h0kn("div", {
-                      style: { fontSize: 11, color: "var(--text-3)" },
-                      children: [
-                        s.district,
-                        " · ",
-                        fmtScore(s.score2025)
-                      ]
-                    }, undefined, true, undefined, this)
-                  ]
-                }, undefined, true, undefined, this),
-                jsxDEV_7x81h0kn("span", {
-                  style: { fontSize: 11, fontWeight: 600, color, padding: "2px 8px", background: color + "15", borderRadius: 4 },
-                  children: tag
-                }, undefined, false, undefined, this),
-                jsxDEV_7x81h0kn("button", {
-                  onClick: (e) => {
-                    e.stopPropagation();
-                    setPPicks(pPicks.filter((x) => x !== id));
-                  },
-                  style: { background: "transparent", border: "none", color: "var(--text-muted)", fontSize: 16, cursor: "pointer", padding: "0 4px", flexShrink: 0 },
-                  children: "×"
-                }, undefined, false, undefined, this)
-              ]
-            }, id, true, undefined, this);
-          }),
-          pPicks.length < 15 && jsxDEV_7x81h0kn("div", {
-            style: { padding: 10, fontSize: 12, color: "var(--danger)", textAlign: "center" },
-            children: "⚠️ 建议填满15个"
-          }, undefined, false, undefined, this),
-          jsxDEV_7x81h0kn("div", {
-            style: { display: "flex", gap: 10, marginTop: 16 },
-            children: [
-              jsxDEV_7x81h0kn("button", {
-                className: "mb mb2",
-                onClick: () => setPhase("chat"),
-                style: { flex: 1, fontSize: 14 },
-                children: "← AI 调整"
-              }, undefined, false, undefined, this),
-              jsxDEV_7x81h0kn("button", {
-                className: "mb mb1",
-                onClick: () => setPhase("input"),
-                style: { flex: 1, fontSize: 14 },
-                children: "重新填报"
-              }, undefined, false, undefined, this)
-            ]
-          }, undefined, true, undefined, this)
-        ]
-      }, undefined, true, undefined, this)
-    ]
-  }, undefined, true, undefined, this);
+  if (phase === "input") return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement(MNav, { title: "\u5FD7\u613F\u586B\u62A5", subtitle: "AI \u667A\u80FD\u63A8\u8350", onBack }), /* @__PURE__ */ React.createElement("div", { className: "mp" }, /* @__PURE__ */ React.createElement("div", { className: "mc", style: { background: "var(--primary-50)", marginBottom: 16 } }, /* @__PURE__ */ React.createElement("div", { style: { fontSize: 13, color: "var(--text-2)", lineHeight: 1.7 } }, /* @__PURE__ */ React.createElement("strong", null, "\u{1F4CC} \u5F55\u53D6\u987A\u5E8F\uFF1A"), "\u540D\u989D\u5230\u533A(1) \u2192 \u540D\u989D\u5230\u6821(2) \u2192 \u5E73\u884C\u5FD7\u613F(15)", /* @__PURE__ */ React.createElement("br", null), /* @__PURE__ */ React.createElement("span", { style: { color: "var(--accent)", fontSize: 12 } }, "\u26A0\uFE0F \u540D\u989D\u5230\u6821\uFF1A\u5404\u521D\u4E2D\u5206\u914D\u540D\u989D\u4E0D\u540C\uFF0C\u9700\u786E\u8BA4\u4F60\u6240\u5728\u521D\u4E2D\u7684\u5177\u4F53\u540D\u989D"))), /* @__PURE__ */ React.createElement("div", { style: { marginBottom: 16 } }, /* @__PURE__ */ React.createElement("label", { style: { fontSize: 13, fontWeight: 600, color: "var(--text-3)", display: "block", marginBottom: 6 } }, "\u4E2D\u8003\u6210\u7EE9"), /* @__PURE__ */ React.createElement("input", { className: "mi", type: "number", value: score, onChange: (e) => setScore(+e.target.value), style: { fontSize: 24, fontWeight: 700, color: "var(--primary)", textAlign: "center" } }), /* @__PURE__ */ React.createElement("input", { type: "range", min: 550, max: 720, step: 0.5, value: score, onChange: (e) => setScore(+e.target.value), style: { width: "100%", marginTop: 8, accentColor: "var(--primary)" } })), /* @__PURE__ */ React.createElement("div", { style: { marginBottom: 16 } }, /* @__PURE__ */ React.createElement("label", { style: { fontSize: 13, fontWeight: 600, color: "var(--text-3)", display: "block", marginBottom: 6 } }, "\u6240\u5728\u533A"), /* @__PURE__ */ React.createElement("select", { className: "ms", value: district, onChange: (e) => setDistrict(e.target.value) }, SH_DISTRICTS.map((d) => /* @__PURE__ */ React.createElement("option", { key: d, value: d }, d, "\u533A")))), /* @__PURE__ */ React.createElement("div", { className: "mc", style: { marginBottom: 16 } }, /* @__PURE__ */ React.createElement("div", { style: { fontSize: 13, fontWeight: 600, marginBottom: 10 } }, "\u{1F4CA} \u6392\u540D\u4F30\u7B97"), /* @__PURE__ */ React.createElement("div", { style: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 } }, /* @__PURE__ */ React.createElement("div", { style: { textAlign: "center", padding: 12, background: "var(--bg)", borderRadius: 8 } }, /* @__PURE__ */ React.createElement("div", { style: { fontSize: 11, color: "var(--text-3)", marginBottom: 4 } }, district, "\u533A\u6392\u540D"), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", alignItems: "center", justifyContent: "center", gap: 4 } }, /* @__PURE__ */ React.createElement("span", { style: { fontSize: 13, color: "var(--text-3)" } }, "\u7B2C"), /* @__PURE__ */ React.createElement("input", { type: "number", value: dr, onChange: (e) => setDistrictRank(+e.target.value || null), style: { width: 70, fontSize: 18, fontWeight: 700, color: "var(--primary)", textAlign: "center", border: "1px solid var(--border)", borderRadius: 6, padding: "4px 0", fontFamily: "inherit" } }), /* @__PURE__ */ React.createElement("span", { style: { fontSize: 13, color: "var(--text-3)" } }, "\u540D")), /* @__PURE__ */ React.createElement("div", { style: { fontSize: 10, color: "var(--text-muted)", marginTop: 4 } }, "\u4F30\u7B97\u2248", estDR)), /* @__PURE__ */ React.createElement("div", { style: { textAlign: "center", padding: 12, background: "var(--bg)", borderRadius: 8 } }, /* @__PURE__ */ React.createElement("div", { style: { fontSize: 11, color: "var(--text-3)", marginBottom: 4 } }, "\u5168\u5E02\u6392\u540D"), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", alignItems: "center", justifyContent: "center", gap: 4 } }, /* @__PURE__ */ React.createElement("span", { style: { fontSize: 13, color: "var(--text-3)" } }, "\u7B2C"), /* @__PURE__ */ React.createElement("input", { type: "number", value: cr, onChange: (e) => setCityRank(+e.target.value || null), style: { width: 70, fontSize: 18, fontWeight: 700, color: "var(--secondary)", textAlign: "center", border: "1px solid var(--border)", borderRadius: 6, padding: "4px 0", fontFamily: "inherit" } }), /* @__PURE__ */ React.createElement("span", { style: { fontSize: 13, color: "var(--text-3)" } }, "\u540D")), /* @__PURE__ */ React.createElement("div", { style: { fontSize: 10, color: "var(--text-muted)", marginTop: 4 } }, "\u4F30\u7B97\u2248", estCR))), /* @__PURE__ */ React.createElement("div", { style: { marginTop: 8, fontSize: 11, color: "var(--text-3)" } }, "\u5B9A\u4F4D\uFF1A", /* @__PURE__ */ React.createElement("span", { className: "score-chip " + tierClass(score) }, tierLabel(score))), /* @__PURE__ */ React.createElement("div", { style: { marginTop: 4, fontSize: 10, color: "var(--accent)" } }, "\u6392\u540D\u53EF\u624B\u52A8\u4FEE\u6539\uFF0C\u76F4\u63A5\u5F71\u54CD\u63A8\u8350\u7ED3\u679C")), /* @__PURE__ */ React.createElement("button", { className: "mb mb1", onClick: startChat }, "\u5F00\u59CB AI \u5FD7\u613F\u5206\u6790 \u2192")));
+  if (phase === "chat") return /* @__PURE__ */ React.createElement("div", { style: { display: "flex", flexDirection: "column", height: "100vh" } }, /* @__PURE__ */ React.createElement("div", { style: { padding: "12px 16px", background: "linear-gradient(135deg,#1a56db,#0694a2)", color: "#fff", display: "flex", justifyContent: "space-between", alignItems: "center" } }, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("button", { onClick: () => setPhase("input"), style: { background: "transparent", border: "none", color: "#fff", cursor: "pointer", fontSize: 16, marginRight: 8 } }, "\u2190"), /* @__PURE__ */ React.createElement("span", { style: { fontSize: 16, fontWeight: 600 } }, "\u{1F393} AI \u5FD7\u613F\u987E\u95EE"), /* @__PURE__ */ React.createElement("div", { style: { fontSize: 11, opacity: 0.8, marginTop: 2 } }, score, "\u5206 \xB7 ", district, "\u533A \xB7 \u5DF2\u586B", totalPicked, "\u4E2A\u5FD7\u613F")), /* @__PURE__ */ React.createElement("button", { onClick: () => setPhase("result"), style: { background: "rgba(255,255,255,0.2)", border: "none", color: "#fff", padding: "8px 14px", borderRadius: 999, fontSize: 13, fontWeight: 600, cursor: "pointer" } }, "\u67E5\u770B\u65B9\u6848")), /* @__PURE__ */ React.createElement("div", { ref: chatRef, style: { flex: 1, overflowY: "auto", padding: 16 } }, messages.map((msg, i) => /* @__PURE__ */ React.createElement("div", { key: i, style: { marginBottom: 12, display: "flex", justifyContent: msg.role === "user" ? "flex-end" : "flex-start" } }, /* @__PURE__ */ React.createElement(
+    "div",
+    {
+      style: {
+        maxWidth: "85%",
+        padding: "12px 16px",
+        borderRadius: 16,
+        fontSize: 14,
+        lineHeight: 1.7,
+        whiteSpace: "pre-wrap",
+        background: msg.role === "user" ? "var(--primary)" : "#f1f5f9",
+        color: msg.role === "user" ? "#fff" : "var(--text)",
+        borderBottomRightRadius: msg.role === "user" ? 4 : 16,
+        borderBottomLeftRadius: msg.role === "user" ? 16 : 4
+      },
+      dangerouslySetInnerHTML: msg.role === "assistant" ? { __html: renderMd(msg.content) } : void 0
+    },
+    msg.role === "user" ? msg.content : void 0
+  ))), loading && /* @__PURE__ */ React.createElement("div", { style: { padding: "12px 16px", background: "#f1f5f9", borderRadius: 16, fontSize: 14, color: "var(--text-3)", display: "inline-block" } }, "\u5206\u6790\u4E2D\u2026")), messages.length <= 1 && /* @__PURE__ */ React.createElement("div", { style: { padding: "0 16px 8px", display: "flex", gap: 6, overflowX: "auto" } }, ["\u5E2E\u6211\u751F\u6210\u65B9\u6848", "\u5206\u6790\u65B9\u6848\u98CE\u9669", "\u6211\u60F3\u51B2\u56DB\u6821", "\u67E5\u770B\u65B9\u6848"].map((q) => /* @__PURE__ */ React.createElement(
+    "button",
+    {
+      key: q,
+      onClick: () => q === "\u67E5\u770B\u65B9\u6848" ? setPhase("result") : sendMsg(q),
+      style: { padding: "8px 14px", fontSize: 12, background: "#fff", border: "1px solid var(--border)", borderRadius: 999, cursor: "pointer", whiteSpace: "nowrap", flexShrink: 0, fontFamily: "inherit" }
+    },
+    q
+  ))), /* @__PURE__ */ React.createElement("div", { style: { padding: "10px 16px calc(10px + env(safe-area-inset-bottom,0px))", borderTop: "1px solid var(--border)", background: "#fff", display: "flex", gap: 8 } }, /* @__PURE__ */ React.createElement(
+    "input",
+    {
+      value: input,
+      onChange: (e) => setInput(e.target.value),
+      onKeyDown: (e) => e.key === "Enter" && sendMsg(),
+      placeholder: "\u8BF4\u51FA\u4F60\u7684\u9700\u6C42\u2026",
+      className: "mi",
+      style: { flex: 1, borderRadius: 999, padding: "12px 18px" }
+    }
+  ), /* @__PURE__ */ React.createElement(
+    "button",
+    {
+      onClick: () => sendMsg(),
+      disabled: loading || !input.trim(),
+      style: { width: 44, height: 44, borderRadius: "50%", border: "none", background: input.trim() ? "var(--primary)" : "var(--bg)", color: input.trim() ? "#fff" : "var(--text-muted)", cursor: input.trim() ? "pointer" : "default", fontSize: 18, flexShrink: 0 }
+    },
+    "\u2191"
+  )));
+  return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement(MNav, { title: "\u5FD7\u613F\u65B9\u6848", subtitle: totalPicked + "/18 \u4E2A\u5FD7\u613F", onBack: () => setPhase("chat") }), /* @__PURE__ */ React.createElement("div", { className: "mp" }, /* @__PURE__ */ React.createElement("div", { className: "mc", style: { background: "linear-gradient(135deg,var(--primary-50),rgba(6,148,162,0.06))" } }, /* @__PURE__ */ React.createElement("div", { style: { display: "flex", justifyContent: "space-around", textAlign: "center" } }, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { style: { fontSize: 22, fontWeight: 700, color: "var(--primary)" } }, tdPick ? 1 : 0), /* @__PURE__ */ React.createElement("div", { style: { fontSize: 11, color: "var(--text-3)" } }, "\u5230\u533A")), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { style: { fontSize: 22, fontWeight: 700, color: "var(--secondary)" } }, tsPicks.length), /* @__PURE__ */ React.createElement("div", { style: { fontSize: 11, color: "var(--text-3)" } }, "\u5230\u6821")), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { style: { fontSize: 22, fontWeight: 700, color: "var(--accent)" } }, pPicks.length), /* @__PURE__ */ React.createElement("div", { style: { fontSize: 11, color: "var(--text-3)" } }, "\u5E73\u884C")))), /* @__PURE__ */ React.createElement("h3", { style: { fontSize: 15, fontWeight: 600, margin: "16px 0 8px" } }, "\u{1F3DB}\uFE0F \u540D\u989D\u5230\u533A"), tdPick && getS(tdPick) ? /* @__PURE__ */ React.createElement("div", { style: { position: "relative" } }, /* @__PURE__ */ React.createElement(MSchoolRow, { school: getS(tdPick), onClick: () => onOpenSchool(tdPick), showScore: getS(tdPick)?.mingeDistrict }), /* @__PURE__ */ React.createElement("button", { onClick: (e) => {
+    e.stopPropagation();
+    setTdPick(null);
+  }, style: { position: "absolute", top: 8, right: 8, background: "var(--danger)", color: "#fff", border: "none", borderRadius: "50%", width: 22, height: 22, fontSize: 12, cursor: "pointer" } }, "\xD7")) : /* @__PURE__ */ React.createElement("div", { className: "mc-sm", style: { color: "var(--text-muted)", textAlign: "center", padding: 20 } }, "\u672A\u9009"), /* @__PURE__ */ React.createElement("h3", { style: { fontSize: 15, fontWeight: 600, margin: "16px 0 8px" } }, "\u{1F3EB} \u540D\u989D\u5230\u6821"), /* @__PURE__ */ React.createElement("div", { style: { fontSize: 11, color: "var(--accent)", marginBottom: 6 } }, "\u26A0\uFE0F \u5404\u521D\u4E2D\u540D\u989D\u4E0D\u540C\uFF0C\u8BF7\u786E\u8BA4\u4F60\u6240\u5728\u521D\u4E2D\u7684\u5177\u4F53\u5206\u914D"), tsPicks.length > 0 ? tsPicks.map((id) => {
+    const s = getS(id);
+    return s ? /* @__PURE__ */ React.createElement("div", { key: id, style: { position: "relative" } }, /* @__PURE__ */ React.createElement(MSchoolRow, { school: s, onClick: () => onOpenSchool(id), showScore: s?.mingeSchool }), /* @__PURE__ */ React.createElement("button", { onClick: (e) => {
+      e.stopPropagation();
+      setTsPicks(tsPicks.filter((x) => x !== id));
+    }, style: { position: "absolute", top: 8, right: 8, background: "var(--danger)", color: "#fff", border: "none", borderRadius: "50%", width: 22, height: 22, fontSize: 12, cursor: "pointer" } }, "\xD7")) : null;
+  }) : /* @__PURE__ */ React.createElement("div", { className: "mc-sm", style: { color: "var(--text-muted)", textAlign: "center", padding: 20 } }, "\u672A\u9009"), /* @__PURE__ */ React.createElement("h3", { style: { fontSize: 15, fontWeight: 600, margin: "16px 0 8px" } }, "\u{1F4CB} \u5E73\u884C\u5FD7\u613F (", pPicks.length, "/15)"), pPicks.map((id, i) => {
+    const s = getS(id);
+    if (!s) return null;
+    const diff = (s.score2025 || 0) - score;
+    const tag = diff > 5 ? "\u51B2" : diff > -3 ? "\u7A33" : "\u4FDD";
+    const color = diff > 5 ? "#dc2626" : diff > -3 ? "var(--primary)" : "var(--success)";
+    return /* @__PURE__ */ React.createElement("div", { key: id, className: "mc-sm", onClick: () => onOpenSchool(id), style: { cursor: "pointer", display: "flex", alignItems: "center", gap: 10 } }, /* @__PURE__ */ React.createElement("span", { style: { width: 24, height: 24, borderRadius: "50%", background: color, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 11, fontWeight: 700, flexShrink: 0 } }, i + 1), /* @__PURE__ */ React.createElement("div", { style: { flex: 1 } }, /* @__PURE__ */ React.createElement("div", { style: { fontWeight: 600, fontSize: 14 } }, s.name), /* @__PURE__ */ React.createElement("div", { style: { fontSize: 11, color: "var(--text-3)" } }, s.district, " \xB7 ", fmtScore(s.score2025))), /* @__PURE__ */ React.createElement("span", { style: { fontSize: 11, fontWeight: 600, color, padding: "2px 8px", background: color + "15", borderRadius: 4 } }, tag), /* @__PURE__ */ React.createElement("button", { onClick: (e) => {
+      e.stopPropagation();
+      setPPicks(pPicks.filter((x) => x !== id));
+    }, style: { background: "transparent", border: "none", color: "var(--text-muted)", fontSize: 16, cursor: "pointer", padding: "0 4px", flexShrink: 0 } }, "\xD7"));
+  }), pPicks.length < 15 && /* @__PURE__ */ React.createElement("div", { style: { padding: 10, fontSize: 12, color: "var(--danger)", textAlign: "center" } }, "\u26A0\uFE0F \u5EFA\u8BAE\u586B\u6EE115\u4E2A"), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", gap: 10, marginTop: 16 } }, /* @__PURE__ */ React.createElement("button", { className: "mb mb2", onClick: () => setPhase("chat"), style: { flex: 1, fontSize: 14 } }, "\u2190 AI \u8C03\u6574"), /* @__PURE__ */ React.createElement("button", { className: "mb mb1", onClick: () => setPhase("input"), style: { flex: 1, fontSize: 14 } }, "\u91CD\u65B0\u586B\u62A5"))));
 }
 function renderMd(text) {
-  if (!text)
-    return "";
-  return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/\n- /g, `
-• `).replace(/\n/g, "<br/>");
+  if (!text) return "";
+  return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/\n- /g, "\n\u2022 ").replace(/\n/g, "<br/>");
 }
 window.MRecommend = MRecommend;

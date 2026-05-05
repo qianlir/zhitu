@@ -59,5 +59,18 @@ function App() {
   );
 }
 
+class ErrorBoundary extends React.Component {
+  constructor(props) { super(props); this.state = { error: null }; }
+  static getDerivedStateFromError(error) { return { error }; }
+  render() {
+    if (this.state.error) {
+      return <div style={{padding:20,color:'red',whiteSpace:'pre-wrap',fontFamily:'monospace'}}>
+        {'React Error: ' + this.state.error.message + '\n' + (this.state.error.stack || '')}
+      </div>;
+    }
+    return this.props.children;
+  }
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+root.render(<ErrorBoundary><App /></ErrorBoundary>);
