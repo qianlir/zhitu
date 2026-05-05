@@ -9,10 +9,10 @@ ownership: 公办
 address: "上海市嘉定区安驰路569号"
 phone: "021-39915300"
 website: https://www.arete.cn
-tags: ["普通高中"]
+tags: ["普通高中", "IB课程", "A-Level课程", "寄宿制", "大学合作"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 上海华旭双语学校 基本信息
@@ -27,7 +27,7 @@ scraped_at: 2026-05-05T12:42:57+08:00
 | 校区地址 | 上海市嘉定区安驰路569号 |
 | 联系电话 | 021-39915300 |
 | 官方网站 | https://www.arete.cn |
-| 标签 | 普通高中 |
+| 标签 | 普通高中, IB课程, A-Level课程, 寄宿制, 大学合作 |
 
 ## 简介
 

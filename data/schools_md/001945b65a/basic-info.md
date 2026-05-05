@@ -9,10 +9,10 @@ ownership: 公办
 address: "上海市徐汇区蒲汇塘路99号"
 phone: ""
 website: http://dhf.xhedu.sh.cn/
-tags: ["普通高中"]
+tags: ["普通高中", "非遗传承", "红色传统", "百年底蕴"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 上海市徐汇区董恒甫高级中学 基本信息
@@ -27,7 +27,7 @@ scraped_at: 2026-05-05T12:42:57+08:00
 | 校区地址 | 上海市徐汇区蒲汇塘路99号 |
 | 联系电话 |  |
 | 官方网站 | http://dhf.xhedu.sh.cn/ |
-| 标签 | 普通高中 |
+| 标签 | 普通高中, 非遗传承, 红色传统, 百年底蕴 |
 
 ## 简介
 

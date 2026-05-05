@@ -12,7 +12,7 @@ website: https://www.shs.sh.cn
 tags: ["四校", "四校之首", "数学竞赛全国第一", "理科强", "竞赛强", "IMO金牌", "拔尖创新", "科技班", "工程班", "寄宿制"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 上海中学 基本信息

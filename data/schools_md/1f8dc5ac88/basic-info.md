@@ -9,10 +9,10 @@ ownership: 公办
 address: "上海市普陀区真光路919号"
 phone: "021-52704602"
 website: https://czzx.pte.sh.cn
-tags: ["区重点"]
+tags: ["区重点", "工程素养", "文明单位"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 上海市长征中学 基本信息
@@ -27,7 +27,7 @@ scraped_at: 2026-05-05T12:42:57+08:00
 | 校区地址 | 上海市普陀区真光路919号 |
 | 联系电话 | 021-52704602 |
 | 官方网站 | https://czzx.pte.sh.cn |
-| 标签 | 区重点 |
+| 标签 | 区重点, 工程素养, 文明单位 |
 
 ## 简介
 

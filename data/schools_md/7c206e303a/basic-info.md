@@ -9,10 +9,10 @@ ownership: 民办
 address: "上海市浦东新区秀沿路1688号"
 phone: "021-68180017"
 website: https://www.shangdejy.com/
-tags: ["普通高中"]
+tags: ["普通高中", "A-Level课程", "国际课程", "寄宿制", "大校园"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 上海市民办尚德实验学校 基本信息
@@ -27,7 +27,7 @@ scraped_at: 2026-05-05T12:42:57+08:00
 | 校区地址 | 上海市浦东新区秀沿路1688号 |
 | 联系电话 | 021-68180017 |
 | 官方网站 | https://www.shangdejy.com/ |
-| 标签 | 普通高中 |
+| 标签 | 普通高中, A-Level课程, 国际课程, 寄宿制, 大校园 |
 
 ## 简介
 

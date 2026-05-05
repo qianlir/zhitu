@@ -9,10 +9,10 @@ ownership: 公办
 address: "上海市浦东新区玉兰路356号"
 phone: "021-68457204"
 website: http://www.hsjpshj.pudong-edu.sh.cn
-tags: ["区重点"]
+tags: ["区重点", "心理健康教育", "足球特色", "名师荟萃", "花园学校"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 上海市建平世纪中学 基本信息
@@ -27,7 +27,7 @@ scraped_at: 2026-05-05T12:42:57+08:00
 | 校区地址 | 上海市浦东新区玉兰路356号 |
 | 联系电话 | 021-68457204 |
 | 官方网站 | http://www.hsjpshj.pudong-edu.sh.cn |
-| 标签 | 区重点 |
+| 标签 | 区重点, 心理健康教育, 足球特色, 名师荟萃, 花园学校 |
 
 ## 简介
 

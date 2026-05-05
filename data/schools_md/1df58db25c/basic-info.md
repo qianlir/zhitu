@@ -9,10 +9,10 @@ ownership: 公办
 address: "上海市浦东新区沪南路3768号"
 phone: ""
 website: https://www.futureschool.cn/
-tags: ["普通高中"]
+tags: ["普通高中", "院士校友", "民办", "诺贝尔校友"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 上海浦东民办未来科技学校 基本信息
@@ -27,7 +27,7 @@ scraped_at: 2026-05-05T12:42:57+08:00
 | 校区地址 | 上海市浦东新区沪南路3768号 |
 | 联系电话 |  |
 | 官方网站 | https://www.futureschool.cn/ |
-| 标签 | 普通高中 |
+| 标签 | 普通高中, 院士校友, 民办, 诺贝尔校友 |
 
 ## 简介
 

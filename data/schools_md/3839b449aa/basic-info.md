@@ -9,10 +9,10 @@ ownership: 民办
 address: "上海市闵行区虹莘路2166号"
 phone: "021-34174739"
 website: https://wlhs.mhedu.sh.cn/
-tags: ["区重点"]
+tags: ["区重点", "国际课程", "市特色高中"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 上海市文来中学 基本信息
@@ -27,7 +27,7 @@ scraped_at: 2026-05-05T12:42:57+08:00
 | 校区地址 | 上海市闵行区虹莘路2166号 |
 | 联系电话 | 021-34174739 |
 | 官方网站 | https://wlhs.mhedu.sh.cn/ |
-| 标签 | 区重点 |
+| 标签 | 区重点, 国际课程, 市特色高中 |
 
 ## 简介
 

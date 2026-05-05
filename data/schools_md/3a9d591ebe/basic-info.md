@@ -9,10 +9,10 @@ ownership: 民办
 address: "上海市松江区外青松公路9488号"
 phone: "400-160-5622"
 website: http://adcotechina.com/
-tags: ["普通高中"]
+tags: ["普通高中", "A-Level课程", "足球特色", "攀岩特色", "高尔夫特色"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 上海市松江区科德高级中学 基本信息
@@ -27,7 +27,7 @@ scraped_at: 2026-05-05T12:42:57+08:00
 | 校区地址 | 上海市松江区外青松公路9488号 |
 | 联系电话 | 400-160-5622 |
 | 官方网站 | http://adcotechina.com/ |
-| 标签 | 普通高中 |
+| 标签 | 普通高中, A-Level课程, 足球特色, 攀岩特色, 高尔夫特色 |
 
 ## 简介
 

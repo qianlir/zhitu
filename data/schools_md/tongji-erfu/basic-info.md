@@ -9,10 +9,10 @@ ownership: 公办
 address: "上海市杨浦区政民路25号"
 phone: "021-65834802"
 website: https://hstjef.pte.sh.cn/
-tags: ["区重点", "同济系"]
+tags: ["区重点", "同济系", "市特色高中"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 同济大学第二附属中学 基本信息
@@ -27,7 +27,7 @@ scraped_at: 2026-05-05T12:42:57+08:00
 | 校区地址 | 上海市杨浦区政民路25号 |
 | 联系电话 | 021-65834802 |
 | 官方网站 | https://hstjef.pte.sh.cn/ |
-| 标签 | 区重点, 同济系 |
+| 标签 | 区重点, 同济系, 市特色高中 |
 
 ## 简介
 

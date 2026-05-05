@@ -9,10 +9,10 @@ ownership: 公办
 address: "上海市浦东新区灵山路1672弄36号"
 phone: "021-68564467"
 website: https://www.hsxsh.pudong-edu.sh.cn/
-tags: ["区重点"]
+tags: ["区重点", "艺术教育", "市特色高中"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 上海市香山中学 基本信息
@@ -27,7 +27,7 @@ scraped_at: 2026-05-05T12:42:57+08:00
 | 校区地址 | 上海市浦东新区灵山路1672弄36号 |
 | 联系电话 | 021-68564467 |
 | 官方网站 | https://www.hsxsh.pudong-edu.sh.cn/ |
-| 标签 | 区重点 |
+| 标签 | 区重点, 艺术教育, 市特色高中 |
 
 ## 简介
 

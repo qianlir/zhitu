@@ -9,10 +9,10 @@ ownership: 公办
 address: "上海市闵行区颛桥镇田园路455号"
 phone: ""
 website: https://tygz.mhedu.sh.cn/
-tags: ["普通高中"]
+tags: ["普通高中", "传统文化", "市特色高中", "大学合作"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 上海闵行田园高级中学 基本信息
@@ -27,7 +27,7 @@ scraped_at: 2026-05-05T12:42:57+08:00
 | 校区地址 | 上海市闵行区颛桥镇田园路455号 |
 | 联系电话 |  |
 | 官方网站 | https://tygz.mhedu.sh.cn/ |
-| 标签 | 普通高中 |
+| 标签 | 普通高中, 传统文化, 市特色高中, 大学合作 |
 
 ## 简介
 

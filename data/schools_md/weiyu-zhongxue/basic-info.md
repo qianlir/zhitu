@@ -12,7 +12,7 @@ website: http://www1.weiyu.sh.cn
 tags: ["市重点", "新五虎", "IBDP国际课程", "徐汇区", "一本率80%", "186亩", "20余位大学校长校友"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 上海市位育中学 基本信息

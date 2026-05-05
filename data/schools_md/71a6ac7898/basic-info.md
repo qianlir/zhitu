@@ -9,10 +9,10 @@ ownership: 公办
 address: "上海市长宁区古羊路900号"
 phone: "021-62754970"
 website: https://jqsy.chneic.sh.cn
-tags: ["区重点"]
+tags: ["区重点", "手球特色", "一贯制学校"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 上海市建青实验学校 基本信息
@@ -27,7 +27,7 @@ scraped_at: 2026-05-05T12:42:57+08:00
 | 校区地址 | 上海市长宁区古羊路900号 |
 | 联系电话 | 021-62754970 |
 | 官方网站 | https://jqsy.chneic.sh.cn |
-| 标签 | 区重点 |
+| 标签 | 区重点, 手球特色, 一贯制学校 |
 
 ## 简介
 

@@ -9,10 +9,10 @@ ownership: 公办
 address: "上海市宝山区盘古路247弄20号"
 phone: "021-63160973"
 website: https://school.bsedu.org.cn/bszx/
-tags: ["区重点"]
+tags: ["区重点", "陶行知教育", "篮球特色", "百年名校"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 上海市宝山中学 基本信息
@@ -27,7 +27,7 @@ scraped_at: 2026-05-05T12:42:57+08:00
 | 校区地址 | 上海市宝山区盘古路247弄20号 |
 | 联系电话 | 021-63160973 |
 | 官方网站 | https://school.bsedu.org.cn/bszx/ |
-| 标签 | 区重点 |
+| 标签 | 区重点, 陶行知教育, 篮球特色, 百年名校 |
 
 ## 简介
 

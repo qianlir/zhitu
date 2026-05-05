@@ -8,7 +8,7 @@ type: 市实验示范
 ownership: 公办
 doc_type: readme
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 上海交通大学附属中学闵行分校 (交附闵行)

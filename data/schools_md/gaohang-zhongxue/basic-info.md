@@ -9,10 +9,10 @@ ownership: 公办
 address: "上海市浦东新区高桥镇欧高路钟家弄88号"
 phone: "021-50416385"
 website: https://www.hsgq.pudong-edu.sh.cn/
-tags: ["区重点", "寄宿制"]
+tags: ["区重点", "寄宿制", "民族教育"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 上海市高桥中学 基本信息
@@ -27,7 +27,7 @@ scraped_at: 2026-05-05T12:42:57+08:00
 | 校区地址 | 上海市浦东新区高桥镇欧高路钟家弄88号 |
 | 联系电话 | 021-50416385 |
 | 官方网站 | https://www.hsgq.pudong-edu.sh.cn/ |
-| 标签 | 区重点, 寄宿制 |
+| 标签 | 区重点, 寄宿制, 民族教育 |
 
 ## 简介
 

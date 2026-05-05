@@ -9,10 +9,10 @@ ownership: 公办
 address: "上海市静安区常德路964号"
 phone: "021-62562009"
 website: http://www.yizhong.edu.sh.cn
-tags: ["普通高中"]
+tags: ["普通高中", "信息技术特色", "艺术教育", "心理健康教育"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 上海市第一中学 基本信息
@@ -27,7 +27,7 @@ scraped_at: 2026-05-05T12:42:57+08:00
 | 校区地址 | 上海市静安区常德路964号 |
 | 联系电话 | 021-62562009 |
 | 官方网站 | http://www.yizhong.edu.sh.cn |
-| 标签 | 普通高中 |
+| 标签 | 普通高中, 信息技术特色, 艺术教育, 心理健康教育 |
 
 ## 简介
 

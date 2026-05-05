@@ -9,10 +9,10 @@ ownership: 公办
 address: "上海市浦东新区上南路801号"
 phone: "021-58836040"
 website: https://www.hsshn.pudong-edu.sh.cn
-tags: ["区重点", "南片"]
+tags: ["区重点", "南片", "科技教育", "艺术教育", "心理健康教育"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 上海市上南中学 基本信息
@@ -27,7 +27,7 @@ scraped_at: 2026-05-05T12:42:57+08:00
 | 校区地址 | 上海市浦东新区上南路801号 |
 | 联系电话 | 021-58836040 |
 | 官方网站 | https://www.hsshn.pudong-edu.sh.cn |
-| 标签 | 区重点, 南片 |
+| 标签 | 区重点, 南片, 科技教育, 艺术教育, 心理健康教育 |
 
 ## 简介
 

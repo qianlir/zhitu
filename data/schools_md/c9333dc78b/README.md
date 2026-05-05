@@ -8,7 +8,7 @@ type: 普通高中
 ownership: 公办
 doc_type: readme
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 上海松江区爱菊学校 (松江区爱菊学)
@@ -23,4 +23,4 @@ scraped_at: 2026-05-05T12:42:57+08:00
 
 ## 关键标签
 
-`普通高中`
+`普通高中` `A-Level课程` `一贯制学校` `民办`

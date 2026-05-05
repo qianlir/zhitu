@@ -9,10 +9,10 @@ ownership: 公办
 address: "上海市静安区蒙古路48号"
 phone: "021-63802372"
 website: http://www.xdschool.edu.sh.cn/
-tags: ["普通高中"]
+tags: ["普通高中", "红色传统", "围棋特色", "百年名校"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 上海市向东中学 基本信息
@@ -27,7 +27,7 @@ scraped_at: 2026-05-05T12:42:57+08:00
 | 校区地址 | 上海市静安区蒙古路48号 |
 | 联系电话 | 021-63802372 |
 | 官方网站 | http://www.xdschool.edu.sh.cn/ |
-| 标签 | 普通高中 |
+| 标签 | 普通高中, 红色传统, 围棋特色, 百年名校 |
 
 ## 简介
 

@@ -9,10 +9,10 @@ ownership: 公办
 address: "上海市闵行区平阳路150号"
 phone: "021-64806128"
 website: http://www.liaoyuanedu.org
-tags: ["普通高中"]
+tags: ["普通高中", "IB课程", "A-Level课程", "AP课程", "国际课程"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 上海市民办燎原双语高级中学 基本信息
@@ -27,7 +27,7 @@ scraped_at: 2026-05-05T12:42:57+08:00
 | 校区地址 | 上海市闵行区平阳路150号 |
 | 联系电话 | 021-64806128 |
 | 官方网站 | http://www.liaoyuanedu.org |
-| 标签 | 普通高中 |
+| 标签 | 普通高中, IB课程, A-Level课程, AP课程, 国际课程 |
 
 ## 简介
 

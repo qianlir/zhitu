@@ -12,7 +12,7 @@ website: https://www.hsefz.com
 tags: ["四校", "竞赛金牌摇篮", "数学竞赛强", "物理竞赛", "信息学奥赛", "科技创新", "IMO金牌", "国际大赛", "寄宿制"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 华东师范大学第二附属中学 基本信息

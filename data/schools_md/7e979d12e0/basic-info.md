@@ -9,10 +9,10 @@ ownership: 公办
 address: "上海市长宁区水城路450弄1号"
 phone: "021-62590198"
 website: http://xxgz.hongyucloud.com
-tags: ["区重点"]
+tags: ["区重点", "外语特色", "足球特色", "花园学校"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 上海市仙霞高级中学 基本信息
@@ -27,7 +27,7 @@ scraped_at: 2026-05-05T12:42:57+08:00
 | 校区地址 | 上海市长宁区水城路450弄1号 |
 | 联系电话 | 021-62590198 |
 | 官方网站 | http://xxgz.hongyucloud.com |
-| 标签 | 区重点 |
+| 标签 | 区重点, 外语特色, 足球特色, 花园学校 |
 
 ## 简介
 

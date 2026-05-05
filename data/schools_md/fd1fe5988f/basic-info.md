@@ -9,10 +9,10 @@ ownership: 公办
 address: "上海市金山区亭林镇松隐大街100号"
 phone: ""
 website: https://www.shjdny.cn/
-tags: ["普通高中"]
+tags: ["普通高中", "国际课程", "寄宿制", "民办"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 上海市民办交大南洋中学 基本信息
@@ -27,7 +27,7 @@ scraped_at: 2026-05-05T12:42:57+08:00
 | 校区地址 | 上海市金山区亭林镇松隐大街100号 |
 | 联系电话 |  |
 | 官方网站 | https://www.shjdny.cn/ |
-| 标签 | 普通高中 |
+| 标签 | 普通高中, 国际课程, 寄宿制, 民办 |
 
 ## 简介
 

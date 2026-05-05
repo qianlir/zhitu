@@ -9,10 +9,10 @@ ownership: 民办
 address: "上海市松江区三新北路900弄1800号"
 phone: "021-61671999"
 website: https://www.ykpaoschool.cn
-tags: ["普通高中"]
+tags: ["普通高中", "IB课程", "民办"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 上海民办包玉刚实验高中 基本信息
@@ -27,7 +27,7 @@ scraped_at: 2026-05-05T12:42:57+08:00
 | 校区地址 | 上海市松江区三新北路900弄1800号 |
 | 联系电话 | 021-61671999 |
 | 官方网站 | https://www.ykpaoschool.cn |
-| 标签 | 普通高中 |
+| 标签 | 普通高中, IB课程, 民办 |
 
 ## 简介
 

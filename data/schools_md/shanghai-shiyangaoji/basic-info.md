@@ -12,7 +12,7 @@ website: https://www.ses.sh.edu.cn
 tags: ["市重点", "三公之一", "十年一贯制", "超常教育", "弹性学制", "创新班"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 上海市实验学校 基本信息

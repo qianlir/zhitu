@@ -9,10 +9,10 @@ ownership: 民办
 address: "上海市静安区景凤路185号"
 phone: "021-56835111"
 website: http://www.tjb.edu.sh.cn/
-tags: ["区重点"]
+tags: ["区重点", "A-Level课程", "国际课程", "高尔夫特色", "机器人教育"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 上海田家炳中学 基本信息
@@ -27,7 +27,7 @@ scraped_at: 2026-05-05T12:42:57+08:00
 | 校区地址 | 上海市静安区景凤路185号 |
 | 联系电话 | 021-56835111 |
 | 官方网站 | http://www.tjb.edu.sh.cn/ |
-| 标签 | 区重点 |
+| 标签 | 区重点, A-Level课程, 国际课程, 高尔夫特色, 机器人教育 |
 
 ## 简介
 

@@ -9,10 +9,10 @@ ownership: 公办
 address: "上海市闵行区虹莘路3233号"
 phone: "021-54855649"
 website: https://www.qibaodwight.org/
-tags: ["普通高中"]
+tags: ["普通高中", "IB课程", "A-Level课程"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 上海七宝德怀特高级中学 基本信息
@@ -27,7 +27,7 @@ scraped_at: 2026-05-05T12:42:57+08:00
 | 校区地址 | 上海市闵行区虹莘路3233号 |
 | 联系电话 | 021-54855649 |
 | 官方网站 | https://www.qibaodwight.org/ |
-| 标签 | 普通高中 |
+| 标签 | 普通高中, IB课程, A-Level课程 |
 
 ## 简介
 

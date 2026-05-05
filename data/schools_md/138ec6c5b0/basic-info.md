@@ -9,10 +9,10 @@ ownership: 民办
 address: "上海市静安区共和新路2800号"
 phone: "021-56770097"
 website: http://www.fhschool.edu.sh.cn/
-tags: ["普通高中"]
+tags: ["普通高中", "民办", "课程改革"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 上海市民办风范中学 基本信息
@@ -27,7 +27,7 @@ scraped_at: 2026-05-05T12:42:57+08:00
 | 校区地址 | 上海市静安区共和新路2800号 |
 | 联系电话 | 021-56770097 |
 | 官方网站 | http://www.fhschool.edu.sh.cn/ |
-| 标签 | 普通高中 |
+| 标签 | 普通高中, 民办, 课程改革 |
 
 ## 简介
 

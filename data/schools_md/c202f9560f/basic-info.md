@@ -9,10 +9,10 @@ ownership: 公办
 address: "上海市闵行区龙茗路1628号"
 phone: "021-51198921"
 website: https://gmgz.mhedu.sh.cn/
-tags: ["普通高中"]
+tags: ["普通高中", "智慧课堂", "信息化教学"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 上海市古美高级中学 基本信息
@@ -27,7 +27,7 @@ scraped_at: 2026-05-05T12:42:57+08:00
 | 校区地址 | 上海市闵行区龙茗路1628号 |
 | 联系电话 | 021-51198921 |
 | 官方网站 | https://gmgz.mhedu.sh.cn/ |
-| 标签 | 普通高中 |
+| 标签 | 普通高中, 智慧课堂, 信息化教学 |
 
 ## 简介
 

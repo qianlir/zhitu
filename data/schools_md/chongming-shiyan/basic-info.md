@@ -9,10 +9,10 @@ ownership: 公办
 address: "上海市崇明区城桥镇"
 phone: ""
 website: https://www.cmjy.sh.cn/SYZX/
-tags: ["区重点"]
+tags: ["区重点", "科技教育", "心理健康教育", "篮球特色", "定向越野"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 上海市崇明区实验中学 基本信息
@@ -27,7 +27,7 @@ scraped_at: 2026-05-05T12:42:57+08:00
 | 校区地址 | 上海市崇明区城桥镇 |
 | 联系电话 |  |
 | 官方网站 | https://www.cmjy.sh.cn/SYZX/ |
-| 标签 | 区重点 |
+| 标签 | 区重点, 科技教育, 心理健康教育, 篮球特色, 定向越野 |
 
 ## 简介
 

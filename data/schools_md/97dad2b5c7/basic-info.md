@@ -9,10 +9,10 @@ ownership: 公办
 address: "上海市闵行区腾冲路168号"
 phone: "021-54155324"
 website: https://xzzx.mhedu.sh.cn/
-tags: ["区重点"]
+tags: ["区重点", "美术特色", "课程改革"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:42:57+08:00
+scraped_at: 2026-05-05T13:20:24+08:00
 ---
 
 # 上海市莘庄中学 基本信息
@@ -27,7 +27,7 @@ scraped_at: 2026-05-05T12:42:57+08:00
 | 校区地址 | 上海市闵行区腾冲路168号 |
 | 联系电话 | 021-54155324 |
 | 官方网站 | https://xzzx.mhedu.sh.cn/ |
-| 标签 | 区重点 |
+| 标签 | 区重点, 美术特色, 课程改革 |
 
 ## 简介
 
