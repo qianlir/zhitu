@@ -12,7 +12,7 @@ website: http://ypfdsy.edu.sh.cn
 tags: ["区重点"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:04:55+08:00
+scraped_at: 2026-05-05T12:42:57+08:00
 ---
 
 # 上海市复旦实验中学 基本信息

@@ -12,7 +12,7 @@ website: https://jdyz.jdjy.sh.cn
 tags: ["市重点", "市实验性示范性", "寄宿制", "首批市重点", "百年名校"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:04:55+08:00
+scraped_at: 2026-05-05T12:42:57+08:00
 ---
 
 # 上海市嘉定区第一中学 基本信息

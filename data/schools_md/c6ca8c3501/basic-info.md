@@ -12,7 +12,7 @@ website: https://www.arete.cn
 tags: ["普通高中"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:04:56+08:00
+scraped_at: 2026-05-05T12:42:57+08:00
 ---
 
 # 上海华旭双语学校 基本信息

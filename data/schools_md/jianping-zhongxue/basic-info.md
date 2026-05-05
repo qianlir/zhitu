@@ -12,7 +12,7 @@ website: https://www.jpzx.cn
 tags: ["八大", "师资顶尖", "特级教师10人", "浦东龙头", "文理均衡", "校风和谐"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:04:55+08:00
+scraped_at: 2026-05-05T12:42:57+08:00
 ---
 
 # 上海市建平中学 基本信息

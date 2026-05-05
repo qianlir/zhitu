@@ -8,7 +8,7 @@ type: 普通高中
 ownership: 公办
 doc_type: readme
 source: seed_json
-scraped_at: 2026-05-05T12:04:56+08:00
+scraped_at: 2026-05-05T12:42:57+08:00
 ---
 
 # 上海闵行区诺达双语学校 (闵行区诺达双)

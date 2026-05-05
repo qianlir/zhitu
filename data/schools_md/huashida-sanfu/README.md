@@ -8,7 +8,7 @@ type: 市实验示范
 ownership: 公办
 doc_type: readme
 source: seed_json
-scraped_at: 2026-05-05T12:04:55+08:00
+scraped_at: 2026-05-05T12:42:57+08:00
 ---
 
 # 华东师范大学第三附属中学 (华三)

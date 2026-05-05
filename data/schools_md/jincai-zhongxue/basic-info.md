@@ -12,7 +12,7 @@ website: https://www.jincai.sh.cn
 tags: ["市重点", "新五虎", "IB会员校", "英语强", "浦东热门", "综评率89%", "150亩大校园"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:04:55+08:00
+scraped_at: 2026-05-05T12:42:57+08:00
 ---
 
 # 上海市进才中学 基本信息

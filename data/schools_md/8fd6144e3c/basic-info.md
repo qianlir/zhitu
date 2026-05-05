@@ -12,7 +12,7 @@ website: https://jjc.shnu.edu.cn/8b/a3/c29201a756643/page.htm
 tags: ["区重点"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:04:55+08:00
+scraped_at: 2026-05-05T12:42:57+08:00
 ---
 
 # 上海师范大学附属嘉定高级中学 基本信息

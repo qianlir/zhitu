@@ -12,7 +12,7 @@ website: http://www.ypgz.edu.sh.cn
 tags: ["市重点", "市实验性示范性", "现代化寄宿制", "于漪名誉校长"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T12:04:55+08:00
+scraped_at: 2026-05-05T12:42:57+08:00
 ---
 
 # 上海市杨浦高级中学 基本信息
