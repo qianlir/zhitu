@@ -230,17 +230,40 @@ def _match_reason(school_row: dict, q: str) -> str:
         tags = tags_raw
     intro = school_row.get("intro_text") or ""
 
-    # 先查 tags（短且精准）— 对 tags 做直接子串匹配
-    if q in tags:
-        # 找到包含查询词的 tag
-        tag_list = [t.strip() for t in tags.split("，") if t.strip()]
-        for t in tag_list:
-            if q in t:
-                return t[:30]
-    # 再查 intro
+    tag_list = [t.strip() for t in tags.split("，") if t.strip()] if tags else []
+
+    # 1. tags 完整匹配（最优）
+    for t in tag_list:
+        if q in t:
+            return t[:30]
+
+    # 2. intro snippet（精确匹配）
     snippet = _extract_snippet(intro, q, 40)
     if snippet:
         return snippet
+
+    # 3. 部分匹配 tag：要求超过半数子词命中同一 tag
+    q_chars = [q[i:i+2] for i in range(0, len(q)-1, 2)] if len(q) >= 4 else ([q[i:i+2] for i in range(len(q)-1)] if len(q) >= 2 else list(q))
+    threshold = len(q_chars) if len(q_chars) <= 3 else max(2, (len(q_chars) + 1) // 2)
+    best_tag, best_hits = "", 0
+    for t in tag_list:
+        hits = sum(1 for w in q_chars if w in t)
+        if hits > best_hits:
+            best_tag, best_hits = t, hits
+    if best_hits >= threshold:
+        return best_tag[:30]
+
+    # 4. 部分匹配 intro
+    snippet = _extract_snippet(intro, q, 40)
+    if snippet:
+        return snippet
+
+    # 5. 最后回退：取第一个有意义的 tag
+    skip = {"公办", "民办", "市实验示范", "区实验示范", "委属市重点", "普通高中"}
+    for t in tag_list:
+        if t not in skip and len(t) >= 2:
+            return t[:30]
+
     return ""
 
 
