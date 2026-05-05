@@ -212,7 +212,7 @@ def _extract_snippet(text: str, q: str, max_len: int = 40) -> str:
 
 
 def _match_reason(school_row: dict, q: str) -> str:
-    """生成匹配理由。校名匹配返回空，语义匹配返回 snippet。"""
+    """生成匹配理由。始终返回最相关的短文本。"""
     if not q:
         return ""
     name = school_row.get("name", "") + (school_row.get("short_name") or "")
@@ -220,50 +220,60 @@ def _match_reason(school_row: dict, q: str) -> str:
         return ""
 
     tags_raw = school_row.get("tags") or ""
-    # tags 可能是 JSON 数组字符串，解析为纯文本
     if tags_raw.startswith("["):
         try:
-            tags = "，".join(json.loads(tags_raw))
+            tag_list = json.loads(tags_raw)
         except Exception:
-            tags = tags_raw.strip("[]\"'")
+            tag_list = [t.strip() for t in tags_raw.strip("[]").split(",") if t.strip()]
     else:
-        tags = tags_raw
+        tag_list = [t.strip() for t in tags_raw.split("，") if t.strip()] if tags_raw else []
     intro = school_row.get("intro_text") or ""
 
-    tag_list = [t.strip() for t in tags.split("，") if t.strip()] if tags else []
+    # 拆查询为2字子词
+    q_words = []
+    if len(q) >= 4:
+        q_words = [q[i:i+2] for i in range(0, len(q)-1, 2)]
+    elif len(q) >= 2:
+        q_words = [q[i:i+2] for i in range(len(q)-1)]
+    else:
+        q_words = list(q)
 
-    # 1. tags 完整匹配（最优）
+    # 1. tags 完整匹配
     for t in tag_list:
         if q in t:
             return t[:30]
 
-    # 2. intro snippet（精确匹配）
-    snippet = _extract_snippet(intro, q, 40)
-    if snippet:
-        return snippet
-
-    # 3. 部分匹配 tag：要求超过半数子词命中同一 tag
-    q_chars = [q[i:i+2] for i in range(0, len(q)-1, 2)] if len(q) >= 4 else ([q[i:i+2] for i in range(len(q)-1)] if len(q) >= 2 else list(q))
-    threshold = len(q_chars) if len(q_chars) <= 3 else max(2, (len(q_chars) + 1) // 2)
-    best_tag, best_hits = "", 0
+    # 2. tags 部分匹配 — 按命中子词数排序，取最佳
+    scored_tags = []
     for t in tag_list:
-        hits = sum(1 for w in q_chars if w in t)
-        if hits > best_hits:
-            best_tag, best_hits = t, hits
-    if best_hits >= threshold:
-        return best_tag[:30]
+        hits = sum(1 for w in q_words if w in t)
+        if hits > 0:
+            scored_tags.append((hits, t))
+    if scored_tags:
+        scored_tags.sort(key=lambda x: x[0], reverse=True)
+        return scored_tags[0][1][:30]
 
-    # 4. 部分匹配 intro
-    snippet = _extract_snippet(intro, q, 40)
-    if snippet:
-        return snippet
+    # 3. intro 部分匹配 — 按句分割，找命中最多子词的句子
+    import re
+    sentences = [s.strip() for s in re.split(r'[。，,\n；]', intro) if len(s.strip()) > 3]
+    # 完整匹配
+    for s in sentences:
+        if q in s:
+            return s[:40]
+    # 部分匹配
+    best_s, best_n = "", 0
+    for s in sentences:
+        n = sum(1 for w in q_words if w in s)
+        if n > best_n:
+            best_s, best_n = s, n
+    if best_n > 0:
+        return best_s[:40]
 
-    # 5. 最后回退：取第一个有意义的 tag
-    skip = {"公办", "民办", "市实验示范", "区实验示范", "委属市重点", "普通高中"}
+    # 4. 回退：第一个有意义的 tag
+    skip = {"公办", "民办"}
     for t in tag_list:
         if t not in skip and len(t) >= 2:
             return t[:30]
-
     return ""
 
 
