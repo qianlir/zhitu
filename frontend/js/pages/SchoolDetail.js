@@ -151,8 +151,8 @@ function SchoolDetailPage({ schoolId, onNavigate, onCompare, compareIds = [] }) 
             style: { display: "grid", gridTemplateColumns: "repeat(6, 1fr)", gap: 0, marginTop: 24, paddingTop: 24, borderTop: "1px solid var(--border)" },
             children: [
               { l: "2025统招", v: fmtScore(school.score2025), accent: true },
-              { l: "名额到区", v: fmtScore(school.mingeDistrict), color: "#d97706" },
-              { l: "名额到校", v: fmtScore(school.mingeSchool), color: "var(--success)" },
+              { l: "名额到区", v: school.mingeDistrict ? "各区不同" : "—", color: "#d97706" },
+              { l: "名额到校(最低)", v: fmtScore(school.mingeSchool), color: "var(--success)" },
               { l: "自招分", v: fmtScore(school.zizhao), color: "#8b5cf6" },
               { l: "一本率", v: school.bbenRate + "%" },
               { l: "招生人数", v: school.intake + " 人" }

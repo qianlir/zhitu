@@ -3,6 +3,7 @@ function MSchoolDetail({ schoolId, onBack }) {
   const [loading, setLoading] = React.useState(true);
   const [err, setErr] = React.useState(null);
   const [tab, setTab] = React.useState("info");
+  const [showDqDetail, setShowDqDetail] = React.useState(false);
   React.useEffect(() => {
     setLoading(true);
     setErr(null);
@@ -157,8 +158,7 @@ function MSchoolDetail({ schoolId, onBack }) {
                   ["区域", school.district + "区"],
                   ["校区地址", school.address || "—"],
                   ["联系电话", school.phone || "—"],
-                  ["到区分(参考)", school.mingeDistrict ? fmtScore(school.mingeDistrict) + " ⚠️各区不同" : "—"],
-                  ["到校分(参考)", fmtScore(school.mingeSchool)],
+                  ["到校分(最低)", fmtScore(school.mingeSchool)],
                   ["自招分", fmtScore(school.zizhao)],
                   ["985率", (school.top985 || "—") + "%"],
                   ["清北复交", (school.qbfd || "—") + " 人"]
@@ -184,7 +184,73 @@ function MSchoolDetail({ schoolId, onBack }) {
                     }, undefined, false, undefined, this)
                   ]
                 }, k, true, undefined, this))
-              }, undefined, false, undefined, this)
+              }, undefined, false, undefined, this),
+              school.mingeDistrict && jsxDEV_7x81h0kn("div", {
+                className: "mc",
+                style: { marginTop: 12 },
+                children: [
+                  jsxDEV_7x81h0kn("div", {
+                    onClick: () => setShowDqDetail(!showDqDetail),
+                    style: { display: "flex", justifyContent: "space-between", alignItems: "center", cursor: "pointer" },
+                    children: [
+                      jsxDEV_7x81h0kn("div", {
+                        children: [
+                          jsxDEV_7x81h0kn("div", {
+                            style: { fontSize: 14, fontWeight: 600 },
+                            children: "名额到区分数线"
+                          }, undefined, false, undefined, this),
+                          jsxDEV_7x81h0kn("div", {
+                            style: { fontSize: 12, color: "var(--accent)", marginTop: 2 },
+                            children: "⚠️ 各区分数不同，点击查看"
+                          }, undefined, false, undefined, this)
+                        ]
+                      }, undefined, true, undefined, this),
+                      jsxDEV_7x81h0kn("span", {
+                        style: { fontSize: 18, color: "var(--text-3)", transform: showDqDetail ? "rotate(180deg)" : "", transition: "transform 200ms" },
+                        children: "▾"
+                      }, undefined, false, undefined, this)
+                    ]
+                  }, undefined, true, undefined, this),
+                  showDqDetail && jsxDEV_7x81h0kn("div", {
+                    style: { marginTop: 12, paddingTop: 12, borderTop: "1px solid var(--border)" },
+                    children: [
+                      (school.admissions || []).filter((a) => a.batch === "名额到区").sort((a, b) => b.year - a.year).map((a) => jsxDEV_7x81h0kn("div", {
+                        style: { display: "flex", justifyContent: "space-between", padding: "8px 0", borderBottom: "1px solid var(--border)", fontSize: 14 },
+                        children: [
+                          jsxDEV_7x81h0kn("span", {
+                            style: { color: "var(--text-3)" },
+                            children: [
+                              a.year,
+                              "年"
+                            ]
+                          }, undefined, true, undefined, this),
+                          jsxDEV_7x81h0kn("div", {
+                            style: { textAlign: "right" },
+                            children: [
+                              jsxDEV_7x81h0kn("span", {
+                                style: { fontWeight: 600, color: "#d97706" },
+                                children: fmtScore(a.min_score)
+                              }, undefined, false, undefined, this),
+                              jsxDEV_7x81h0kn("span", {
+                                style: { fontSize: 11, color: "var(--text-3)", marginLeft: 8 },
+                                children: [
+                                  "(",
+                                  a.quota,
+                                  "人)"
+                                ]
+                              }, undefined, true, undefined, this)
+                            ]
+                          }, undefined, true, undefined, this)
+                        ]
+                      }, a.year + a.batch, true, undefined, this)),
+                      jsxDEV_7x81h0kn("div", {
+                        style: { fontSize: 11, color: "var(--text-muted)", marginTop: 8 },
+                        children: "注：以上为该校在某区的参考分数线，实际各区分数不同"
+                      }, undefined, false, undefined, this)
+                    ]
+                  }, undefined, true, undefined, this)
+                ]
+              }, undefined, true, undefined, this)
             ]
           }, undefined, true, undefined, this),
           tab === "scores" && jsxDEV_7x81h0kn("div", {
