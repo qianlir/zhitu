@@ -1,0 +1,42 @@
+{
+  "models": [
+    {
+      "name": "gte-rerank",
+      "provider": "dashscope",
+      "enabled": true,
+      "priority": 1,
+      "config": {
+        "model": "gte-rerank",
+        "api_key_env": "DASHSCOPE_API_KEY",
+        "timeout": 5
+      }
+    },
+    {
+      "name": "zhipu-rerank",
+      "provider": "zhipu",
+      "enabled": true,
+      "priority": 2,
+      "config": {
+        "api_key_env": "ZHIPU_RERANK_API_KEY",
+        "timeout": 5
+      }
+    },
+    {
+      "name": "qwen3-rerank",
+      "provider": "dashscope",
+      "enabled": true,
+      "priority": 3,
+      "config": {
+        "model": "qwen3-rerank",
+        "api_key_env": "DASHSCOPE_API_KEY",
+        "timeout": 5
+      }
+    },
+    {
+      "name": "keyword",
+      "provider": "builtin",
+      "enabled": true,
+      "priority": 99
+    }
+  ]
+}
