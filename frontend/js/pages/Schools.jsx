@@ -82,7 +82,7 @@ function SchoolsPage({ onOpenSchool, initialQuery, onNavigate }) {
         <a href="#" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('home'); }} style={{ fontSize: 13, color: 'var(--text-3)', textDecoration: 'none', marginBottom: 8, display: 'inline-block' }}>← 返回首页</a>
         <h1 style={{ fontSize: 24, fontWeight: 600, margin: '0 0 16px' }}>学校查询</h1>
         <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
-          <input type="search" placeholder="搜索学校名称..." value={query} onChange={e => setQuery(e.target.value)} style={{ flex: 1, fontSize: 15, padding: '12px 16px' }} />
+          <input type="search" placeholder="搜索学校名、区域、特色（如：数学竞赛、寄宿制、浦东）..." value={query} onChange={e => setQuery(e.target.value)} style={{ flex: 1, fontSize: 15, padding: '12px 16px' }} />
           <button className="btn btn-primary" onClick={() => {}}>搜索</button>
         </div>
       </div>

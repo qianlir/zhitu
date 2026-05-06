@@ -214,7 +214,7 @@ def hybrid_search(q: str, limit: int = 30) -> list[str]:
     rrf_map = {sid: score for sid, score in top_candidates}
     rerank_map = {sid: score for sid, score in reranked}
 
-    # 归一化 reranker 分数到 0-1
+    # 归一化 reranker 分数到 0-1，并过滤低相关结果
     rerank_scores = [s for _, s in reranked]
     if rerank_scores:
         r_min, r_max = min(rerank_scores), max(rerank_scores)
@@ -223,10 +223,14 @@ def hybrid_search(q: str, limit: int = 30) -> list[str]:
     else:
         rerank_norm = {}
 
+    # 过滤低相关结果：保留 reranker 归一化分 >= 0.3 或 top-5
     final = []
     for sid in rrf_map:
         rrf_score = rrf_map[sid]
         rerank_score = rerank_norm.get(sid, 0.0)
+
+        if len(rerank_norm) > 5 and rerank_score < 0.3 and len(final) >= 5:
+            continue
 
         rank_idx = len(final)
         if rank_idx < 3:
