@@ -25,7 +25,8 @@ function SchoolsPage({ onOpenSchool, initialQuery, onNavigate }) {
   };
 
   React.useEffect(() => {
-    Promise.all([API.schools({ limit: 500 }), API.districts(), API.types()])
+    var initQ = initialQuery || '';
+    Promise.all([API.schools({ q: initQ, limit: 500 }), API.districts(), API.types()])
       .then(([list, ds, ts]) => {
         setAllSchools(list.schools || []);
         setDistrictList(ds.length ? ds : SH_DISTRICTS);
