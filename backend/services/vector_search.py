@@ -223,22 +223,28 @@ def hybrid_search(q: str, limit: int = 30) -> list[str]:
     else:
         rerank_norm = {}
 
-    # 过滤低相关结果：保留 reranker 归一化分 >= 0.3 或 top-5
+    # 排序策略：reranker 分数 × 关键词覆盖率加权
+    # 不依赖绝对阈值（不同模型分数范围不同），用相对排序 + 关键词验证
+    q_words = [q[i:i+2] for i in range(0, len(q)-1, 2)] if len(q) >= 4 else [q]
+
+    scored = []
+    for sid, rerank_score in rerank_norm.items():
+        text = _INDEX.get("raw_texts", {}).get(sid, "")
+        kw_hits = sum(1 for w in q_words if w in text)
+        kw_ratio = kw_hits / len(q_words) if q_words else 0
+
+        # 混合：reranker 70% + 关键词 30%（关键词作为硬约束补充）
+        blend = 0.7 * rerank_score + 0.3 * kw_ratio
+        scored.append((sid, blend))
+
+    scored.sort(key=lambda x: x[1], reverse=True)
+
+    # 相对过滤：只保留分数 >= 最高分 30% 的结果（至少保留 top-5）
     final = []
-    for sid in rrf_map:
-        rrf_score = rrf_map[sid]
-        rerank_score = rerank_norm.get(sid, 0.0)
-
-        if len(rerank_norm) > 5 and rerank_score < 0.3 and len(final) >= 5:
+    top_score = scored[0][1] if scored else 0
+    for sid, blend in scored:
+        if blend < top_score * 0.3 and len(final) >= 5:
             continue
-
-        rank_idx = len(final)
-        if rank_idx < 3:
-            blend = 0.55 * rrf_score + 0.45 * rerank_score
-        elif rank_idx < 10:
-            blend = 0.40 * rrf_score + 0.60 * rerank_score
-        else:
-            blend = 0.25 * rrf_score + 0.75 * rerank_score
 
         final.append((sid, blend))
 
