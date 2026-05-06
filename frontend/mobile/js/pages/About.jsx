@@ -26,7 +26,12 @@ function MAbout({ onBack }) {
           <div style={{fontSize:14,fontWeight:600,color:'#92400e',marginBottom:4}}>⚠️ 重要提示</div>
           <div style={{fontSize:13,color:'#78350f',lineHeight:1.7}}>本工具仅供参考，最终以教育考试院公布为准。</div>
         </div>
-        <div style={{textAlign:'center',fontSize:11,color:'var(--text-muted)',marginTop:16}}>© 2026 千里 qianli.wang</div>
+        <div className="mc">
+          <h3 style={{fontSize:15,fontWeight:600,margin:'0 0 8px'}}>技术信息</h3>
+          <p style={{fontSize:13,color:'var(--text-2)',lineHeight:1.7,margin:0}}>服务器：阿里云 ECS 2核2G · ¥99/年 · 个人独立开发运维</p>
+        </div>
+        <div style={{textAlign:'center',fontSize:15,color:'var(--primary)',fontWeight:500,margin:'20px 0 12px'}}>祝每一位考生都能考上理想的学府</div>
+        <div style={{textAlign:'center',fontSize:11,color:'var(--text-muted)',marginTop:8}}>© 2026 千里 qianli.wang</div>
       </div>
     </div>
   );

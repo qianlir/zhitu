@@ -42,7 +42,18 @@ function AboutPage() {
         </div>
       </div>
 
-      <div style={{ textAlign: 'center', fontSize: 12, color: 'var(--text-muted)', marginTop: 32 }}>
+      <div className="card card-pad" style={{ marginBottom: 20 }}>
+        <h2 style={{ fontSize: 18, fontWeight: 600, margin: '0 0 12px' }}>技术信息</h2>
+        <p style={{ fontSize: 14, color: 'var(--text-2)', lineHeight: 1.8, margin: 0 }}>
+          服务器：阿里云 ECS 2核2G · ¥99/年 · 个人独立开发运维
+        </p>
+      </div>
+
+      <div style={{ textAlign: 'center', margin: '40px 0 16px', fontSize: 18, color: 'var(--primary)', fontWeight: 500 }}>
+        祝每一位考生都能考上理想的学府
+      </div>
+
+      <div style={{ textAlign: 'center', fontSize: 12, color: 'var(--text-muted)', marginTop: 12 }}>
         © 2026 <a href="http://qianli.wang" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>千里 qianli.wang</a> · Shanghai
       </div>
     </main>
