@@ -77,25 +77,42 @@ function MRecommend({ onOpenSchool, onBack }) {
           return arr;
         });
       }
-      const actionRegex = /\[([A-Z_]+):([^\]]*)\]/g;
+      const actionPattern = /\[([A-Z_]+):([^\]]*)\]/g;
       let m;
-      while ((m = actionRegex.exec(full)) !== null) {
+      let actionsFound = 0;
+      while ((m = actionPattern.exec(full)) !== null) {
         const [, cmd, args] = m;
         const ids = args.split(",").map((s) => s.trim());
-        if (cmd === "SET_DQ" && getS(ids[0])) setTdPick(ids[0]);
-        if (cmd === "SET_DX") setTsPicks(ids.filter((id) => getS(id)).slice(0, 2));
-        if (cmd === "SET_PX") setPPicks(ids.filter((id) => getS(id)).slice(0, 15));
-        if (cmd === "ADD_PX") setPPicks((prev) => [...prev, ...ids.filter((id) => getS(id) && !prev.includes(id))].slice(0, 15));
+        if (cmd === "SET_DQ" && getS(ids[0])) {
+          setTdPick(ids[0]);
+          actionsFound++;
+        }
+        if (cmd === "SET_DX") {
+          setTsPicks(ids.filter((id) => getS(id)).slice(0, 2));
+          actionsFound++;
+        }
+        if (cmd === "SET_PX") {
+          setPPicks(ids.filter((id) => getS(id)).slice(0, 15));
+          actionsFound++;
+        }
+        if (cmd === "ADD_PX") {
+          setPPicks((prev) => [...prev, ...ids.filter((id) => getS(id) && !prev.includes(id))].slice(0, 15));
+          actionsFound++;
+        }
         if (cmd === "REPLACE_PX") {
           const [o, n] = args.split(">").map((s) => s.trim());
-          if (o && n && getS(n)) setPPicks((prev) => prev.map((id) => id === o ? n : id));
+          if (o && n && getS(n)) {
+            setPPicks((prev) => prev.map((id) => id === o ? n : id));
+            actionsFound++;
+          }
         }
-        if (cmd === "REMOVE_PX") setPPicks((prev) => prev.filter((id) => !ids.includes(id)));
+        if (cmd === "REMOVE_PX") {
+          setPPicks((prev) => prev.filter((id) => !ids.includes(id)));
+          actionsFound++;
+        }
       }
-      const hasActions = actionRegex.test(full);
-      actionRegex.lastIndex = 0;
-      const cleanText = full.replace(actionRegex, "").trim();
-      const display = hasActions ? cleanText + "\n\n\u2705 \u5DF2\u66F4\u65B0\u5FD7\u613F\u8868" : cleanText;
+      const cleanText = full.replace(/\[([A-Z_]+):([^\]]*)\]/g, "").trim();
+      const display = actionsFound > 0 ? cleanText + "\n\n\u2705 \u5DF2\u66F4\u65B0\u5FD7\u613F\u8868" : cleanText;
       setMessages((prev) => {
         const arr = [...prev];
         arr[arr.length - 1] = { role: "assistant", content: display };
@@ -200,6 +217,6 @@ ${dr <= 500 ? "\u5934\u90E8\u8003\u751F\uFF0C\u56DB\u6821\u6709\u7ADE\u4E89\u529
 }
 function renderMd(text) {
   if (!text) return "";
-  return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/\n- /g, "\n\u2022 ").replace(/\n/g, "<br/>");
+  return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/^### (.+)$/gm, '<div style="font-size:15px;font-weight:700;margin:12px 0 6px;color:var(--primary)">$1</div>').replace(/^## (.+)$/gm, '<div style="font-size:16px;font-weight:700;margin:14px 0 8px">$1</div>').replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/\*([^*]+)\*/g, "<em>$1</em>").replace(/\n- /g, "\n\u2022 ").replace(/\n\n/g, '<div style="margin:8px 0"></div>').replace(/\n/g, "<br/>");
 }
 window.MRecommend = MRecommend;

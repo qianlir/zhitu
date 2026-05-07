@@ -84,23 +84,22 @@ function MRecommend({ onOpenSchool, onBack }) {
         setMessages(prev => { const arr = [...prev]; arr[arr.length - 1] = { role: 'assistant', content: full }; return arr; });
       }
       // Parse actions from response
-      const actionRegex = /\[([A-Z_]+):([^\]]*)\]/g;
+      const actionPattern = /\[([A-Z_]+):([^\]]*)\]/g;
       let m;
-      while ((m = actionRegex.exec(full)) !== null) {
+      let actionsFound = 0;
+      while ((m = actionPattern.exec(full)) !== null) {
         const [, cmd, args] = m;
         const ids = args.split(',').map(s => s.trim());
-        if (cmd === 'SET_DQ' && getS(ids[0])) setTdPick(ids[0]);
-        if (cmd === 'SET_DX') setTsPicks(ids.filter(id => getS(id)).slice(0, 2));
-        if (cmd === 'SET_PX') setPPicks(ids.filter(id => getS(id)).slice(0, 15));
-        if (cmd === 'ADD_PX') setPPicks(prev => [...prev, ...ids.filter(id => getS(id) && !prev.includes(id))].slice(0, 15));
-        if (cmd === 'REPLACE_PX') { const [o, n] = args.split('>').map(s => s.trim()); if (o && n && getS(n)) setPPicks(prev => prev.map(id => id === o ? n : id)); }
-        if (cmd === 'REMOVE_PX') setPPicks(prev => prev.filter(id => !ids.includes(id)));
+        if (cmd === 'SET_DQ' && getS(ids[0])) { setTdPick(ids[0]); actionsFound++; }
+        if (cmd === 'SET_DX') { setTsPicks(ids.filter(id => getS(id)).slice(0, 2)); actionsFound++; }
+        if (cmd === 'SET_PX') { setPPicks(ids.filter(id => getS(id)).slice(0, 15)); actionsFound++; }
+        if (cmd === 'ADD_PX') { setPPicks(prev => [...prev, ...ids.filter(id => getS(id) && !prev.includes(id))].slice(0, 15)); actionsFound++; }
+        if (cmd === 'REPLACE_PX') { const [o, n] = args.split('>').map(s => s.trim()); if (o && n && getS(n)) { setPPicks(prev => prev.map(id => id === o ? n : id)); actionsFound++; } }
+        if (cmd === 'REMOVE_PX') { setPPicks(prev => prev.filter(id => !ids.includes(id))); actionsFound++; }
       }
       // Clean actions from display + show confirmation
-      const hasActions = actionRegex.test(full);
-      actionRegex.lastIndex = 0;
-      const cleanText = full.replace(actionRegex, '').trim();
-      const display = hasActions ? cleanText + '\n\n✅ 已更新志愿表' : cleanText;
+      const cleanText = full.replace(/\[([A-Z_]+):([^\]]*)\]/g, '').trim();
+      const display = actionsFound > 0 ? cleanText + '\n\n✅ 已更新志愿表' : cleanText;
       setMessages(prev => { const arr = [...prev]; arr[arr.length - 1] = { role: 'assistant', content: display }; return arr; });
     } catch (err) {
       setMessages(prev => { const arr = [...prev]; arr[arr.length - 1] = { role: 'assistant', content: '抱歉：' + (err.message || '请稍后再试') }; return arr; });
@@ -278,9 +277,13 @@ function MRecommend({ onOpenSchool, onBack }) {
 function renderMd(text) {
   if (!text) return '';
   return text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
-    .replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
-    .replace(/\n- /g,'\n• ')
-    .replace(/\n/g,'<br/>');
+    .replace(/^### (.+)$/gm, '<div style="font-size:15px;font-weight:700;margin:12px 0 6px;color:var(--primary)">$1</div>')
+    .replace(/^## (.+)$/gm, '<div style="font-size:16px;font-weight:700;margin:14px 0 8px">$1</div>')
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*([^*]+)\*/g, '<em>$1</em>')
+    .replace(/\n- /g, '\n• ')
+    .replace(/\n\n/g, '<div style="margin:8px 0"></div>')
+    .replace(/\n/g, '<br/>');
 }
 
 window.MRecommend = MRecommend;
