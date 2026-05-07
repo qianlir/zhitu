@@ -39,10 +39,17 @@ function MRecommend({ onOpenSchool, onBack }) {
 
     const used = new Set([td?.id, ...ts.map(s => s.id)].filter(Boolean));
     const avail = pList.filter(s => !used.has(s.id));
-    const c = avail.filter(s => s.score2025 > score && s.score2025 <= score + 10).slice(0, 4);
-    const w = avail.filter(s => s.score2025 >= score - 8 && s.score2025 <= score + 2 && !c.find(x => x.id === s.id)).slice(0, 6);
-    const b = avail.filter(s => s.score2025 < score - 8 && !c.find(x => x.id === s.id) && !w.find(x => x.id === s.id)).slice(0, 5);
-    setPPicks([...c, ...w, ...b].map(s => s.id).slice(0, 15));
+    const picked = new Set();
+    const pick = (list, n) => { const r = []; for (const s of list) { if (r.length >= n || picked.has(s.id)) continue; r.push(s); picked.add(s.id); } return r; };
+    const c = pick(avail.filter(s => s.score2025 > score && s.score2025 <= score + 15), 4);
+    const w = pick(avail.filter(s => s.score2025 >= score - 10 && s.score2025 <= score + 3), 6);
+    const b = pick(avail.filter(s => s.score2025 < score - 5), 5);
+    let all = [...c, ...w, ...b];
+    if (all.length < 15) {
+      const extra = pick(avail.filter(s => !picked.has(s.id)).sort((a, b) => Math.abs(a.score2025 - score) - Math.abs(b.score2025 - score)), 15 - all.length);
+      all = [...all, ...extra];
+    }
+    setPPicks(all.map(s => s.id).slice(0, 15));
   };
 
   // AI send — uses streaming API
