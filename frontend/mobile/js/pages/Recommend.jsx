@@ -7,6 +7,8 @@ function MRecommend({ onOpenSchool, onBack }) {
   const [tsPicks, setTsPicks] = React.useState([]);
   const [pPicks, setPPicks] = React.useState([]);
   const [messages, setMessages] = React.useState([]);
+  const [picker, setPicker] = React.useState(null); // {type:'dq'|'dx'|'px', index?:number}
+  const [pickerQ, setPickerQ] = React.useState('');
   const [input, setInput] = React.useState('');
   const [loading, setLoading] = React.useState(false);
   const [allSchools, setAllSchools] = React.useState([]);
@@ -32,9 +34,12 @@ function MRecommend({ onOpenSchool, onBack }) {
     const tdList = allSchools.filter(s => s.mingeDistrict != null && (s.tier === '四校' || s.kind === '委属市重点' || s.kind === '市实验示范'));
     const tsList = allSchools.filter(s => s.mingeSchool != null && (s.district === district || s.tier === '四校'));
 
-    const td = tdList.find(s => (s.mingeDistrict || 999) <= score + 8);
+    // 到区：选冲刺（分数高于考生 5~20 分的最优学校）
+    const tdCandidates = tdList.filter(s => (s.mingeDistrict || 0) > score && (s.mingeDistrict || 0) <= score + 20).sort((a, b) => (b.mingeDistrict || 0) - (a.mingeDistrict || 0));
+    const td = tdCandidates[0] || tdList.find(s => (s.mingeDistrict || 999) <= score + 5);
     if (td) setTdPick(td.id);
-    const ts = tsList.filter(s => (s.mingeSchool || 999) <= score + 5).slice(0, 2);
+    // 到校：选冲刺（分数高于考生的学校，到校分通常低于统招）
+    const ts = tsList.filter(s => (s.mingeSchool || 0) > score - 5 && (s.mingeSchool || 0) <= score + 15).sort((a, b) => (b.mingeSchool || 0) - (a.mingeSchool || 0)).slice(0, 2);
     setTsPicks(ts.map(s => s.id));
 
     const used = new Set([td?.id, ...ts.map(s => s.id)].filter(Boolean));
@@ -237,18 +242,25 @@ function MRecommend({ onOpenSchool, onBack }) {
         {tdPick && getS(tdPick) ? (
           <div style={{position:'relative'}}>
             <MSchoolRow school={getS(tdPick)} onClick={() => onOpenSchool(tdPick)} showScore={getS(tdPick)?.mingeDistrict} />
-            <button onClick={(e)=>{e.stopPropagation();setTdPick(null)}} style={{position:'absolute',top:8,right:8,background:'var(--danger)',color:'#fff',border:'none',borderRadius:'50%',width:22,height:22,fontSize:12,cursor:'pointer'}}>×</button>
+            <div style={{position:'absolute',top:8,right:8,display:'flex',gap:4}}>
+              <button onClick={(e)=>{e.stopPropagation();setPicker({type:'dq'})}} style={{background:'var(--primary)',color:'#fff',border:'none',borderRadius:'50%',width:22,height:22,fontSize:11,cursor:'pointer'}}>换</button>
+              <button onClick={(e)=>{e.stopPropagation();setTdPick(null)}} style={{background:'var(--danger)',color:'#fff',border:'none',borderRadius:'50%',width:22,height:22,fontSize:12,cursor:'pointer'}}>×</button>
+            </div>
           </div>
-        ) : <div className="mc-sm" style={{ color: 'var(--text-muted)', textAlign: 'center', padding: 20 }}>未选</div>}
+        ) : <button className="mc-sm" onClick={()=>setPicker({type:'dq'})} style={{width:'100%',color:'var(--primary)',textAlign:'center',padding:20,cursor:'pointer',border:'1px dashed var(--primary)',background:'transparent',fontSize:14,fontFamily:'inherit'}}>+ 选择到区学校</button>}
 
         <h3 style={{ fontSize: 15, fontWeight: 600, margin: '16px 0 8px' }}>🏫 名额到校</h3>
         <div style={{fontSize:11,color:'var(--accent)',marginBottom:6}}>⚠️ 各初中名额不同，请确认你所在初中的具体分配</div>
-        {tsPicks.length > 0 ? tsPicks.map(id => { const s = getS(id); return s ? (
+        {tsPicks.map((id, i) => { const s = getS(id); return s ? (
           <div key={id} style={{position:'relative'}}>
             <MSchoolRow school={s} onClick={() => onOpenSchool(id)} showScore={s?.mingeSchool} />
-            <button onClick={(e)=>{e.stopPropagation();setTsPicks(tsPicks.filter(x=>x!==id))}} style={{position:'absolute',top:8,right:8,background:'var(--danger)',color:'#fff',border:'none',borderRadius:'50%',width:22,height:22,fontSize:12,cursor:'pointer'}}>×</button>
+            <div style={{position:'absolute',top:8,right:8,display:'flex',gap:4}}>
+              <button onClick={(e)=>{e.stopPropagation();setPicker({type:'dx',index:i})}} style={{background:'var(--primary)',color:'#fff',border:'none',borderRadius:'50%',width:22,height:22,fontSize:11,cursor:'pointer'}}>换</button>
+              <button onClick={(e)=>{e.stopPropagation();setTsPicks(tsPicks.filter(x=>x!==id))}} style={{background:'var(--danger)',color:'#fff',border:'none',borderRadius:'50%',width:22,height:22,fontSize:12,cursor:'pointer'}}>×</button>
+            </div>
           </div>
-        ) : null; }) : <div className="mc-sm" style={{ color: 'var(--text-muted)', textAlign: 'center', padding: 20 }}>未选</div>}
+        ) : null; })}
+        {tsPicks.length < 2 && <button className="mc-sm" onClick={()=>setPicker({type:'dx',index:tsPicks.length})} style={{width:'100%',color:'var(--primary)',textAlign:'center',padding:16,cursor:'pointer',border:'1px dashed var(--primary)',background:'transparent',fontSize:14,fontFamily:'inherit'}}>+ 添加到校 ({tsPicks.length}/2)</button>}
 
         <h3 style={{ fontSize: 15, fontWeight: 600, margin: '16px 0 8px' }}>📋 平行志愿 ({pPicks.length}/15)</h3>
         {pPicks.map((id, i) => {
@@ -265,17 +277,62 @@ function MRecommend({ onOpenSchool, onBack }) {
                 <div style={{ fontSize: 11, color: 'var(--text-3)' }}>{s.district} · {fmtScore(s.score2025)}</div>
               </div>
               <span style={{ fontSize: 11, fontWeight: 600, color, padding: '2px 8px', background: color + '15', borderRadius: 4 }}>{tag}</span>
+              <button onClick={(e)=>{e.stopPropagation();setPicker({type:'px',index:i})}} style={{background:'transparent',border:'none',color:'var(--primary)',fontSize:11,cursor:'pointer',padding:'0 4px',flexShrink:0}}>换</button>
               <button onClick={(e)=>{e.stopPropagation();setPPicks(pPicks.filter(x=>x!==id))}} style={{background:'transparent',border:'none',color:'var(--text-muted)',fontSize:16,cursor:'pointer',padding:'0 4px',flexShrink:0}}>×</button>
             </div>
           );
         })}
-        {pPicks.length < 15 && <div style={{ padding: 10, fontSize: 12, color: 'var(--danger)', textAlign: 'center' }}>⚠️ 建议填满15个</div>}
+        {pPicks.length < 15 && <button className="mc-sm" onClick={()=>setPicker({type:'px',index:pPicks.length})} style={{width:'100%',color:'var(--primary)',textAlign:'center',padding:16,cursor:'pointer',border:'1px dashed var(--primary)',background:'transparent',fontSize:14,fontFamily:'inherit'}}>+ 添加平行志愿 ({pPicks.length}/15)</button>}
 
         <div style={{ display: 'flex', gap: 10, marginTop: 16 }}>
           <button className="mb mb2" onClick={() => setPhase('chat')} style={{ flex: 1, fontSize: 14 }}>← AI 调整</button>
           <button className="mb mb1" onClick={() => setPhase('input')} style={{ flex: 1, fontSize: 14 }}>重新填报</button>
         </div>
       </div>
+
+      {/* 学校选择弹窗 */}
+      {picker && (
+        <div style={{position:'fixed',inset:0,zIndex:200,background:'rgba(0,0,0,0.5)',display:'flex',flexDirection:'column'}}>
+          <div style={{flex:1,background:'#fff',marginTop:'15vh',borderTopLeftRadius:16,borderTopRightRadius:16,display:'flex',flexDirection:'column',overflow:'hidden'}}>
+            <div style={{padding:'16px',borderBottom:'1px solid var(--border)',display:'flex',justifyContent:'space-between',alignItems:'center'}}>
+              <div style={{fontSize:16,fontWeight:600}}>选择学校（{picker.type==='dq'?'到区':picker.type==='dx'?'到校':'平行志愿'}）</div>
+              <button onClick={()=>{setPicker(null);setPickerQ('')}} style={{background:'transparent',border:'none',fontSize:20,cursor:'pointer',color:'var(--text-3)'}}>×</button>
+            </div>
+            <div style={{padding:'8px 16px'}}>
+              <input value={pickerQ} onChange={e=>setPickerQ(e.target.value)} placeholder="搜索学校名称..." className="mi" style={{width:'100%',borderRadius:8,padding:'10px 14px',fontSize:14}} />
+            </div>
+            <div style={{flex:1,overflowY:'auto',padding:'0 16px'}}>
+              {allSchools.filter(s => {
+                if (pickerQ && !s.name.includes(pickerQ) && !(s.shortName||'').includes(pickerQ)) return false;
+                if (picker.type === 'dq') return s.mingeDistrict != null;
+                if (picker.type === 'dx') return s.mingeSchool != null && (s.district === district || s.tier === '四校');
+                return s.score2025 != null;
+              }).sort((a,b) => (b.score2025||0)-(a.score2025||0)).slice(0,30).map(s => {
+                const used = s.id === tdPick || tsPicks.includes(s.id) || pPicks.includes(s.id);
+                return (
+                  <div key={s.id} onClick={() => {
+                    if (picker.type === 'dq') setTdPick(s.id);
+                    else if (picker.type === 'dx') {
+                      if (picker.index < tsPicks.length) setTsPicks(tsPicks.map((x,i) => i===picker.index ? s.id : x));
+                      else setTsPicks([...tsPicks, s.id].slice(0,2));
+                    } else {
+                      if (picker.index < pPicks.length) setPPicks(pPicks.map((x,i) => i===picker.index ? s.id : x));
+                      else setPPicks([...pPicks, s.id].slice(0,15));
+                    }
+                    setPicker(null); setPickerQ('');
+                  }} style={{padding:'12px 0',borderBottom:'1px solid var(--border)',cursor:'pointer',display:'flex',justifyContent:'space-between',alignItems:'center',opacity:used?0.4:1}}>
+                    <div>
+                      <div style={{fontWeight:600,fontSize:14}}>{s.name}</div>
+                      <div style={{fontSize:11,color:'var(--text-3)'}}>{s.district} · {s.kind} · {picker.type==='dq'?'到区'+fmtScore(s.mingeDistrict):picker.type==='dx'?'到校'+fmtScore(s.mingeSchool):'统招'+fmtScore(s.score2025)}</div>
+                    </div>
+                    {used && <span style={{fontSize:11,color:'var(--text-muted)'}}>已选</span>}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
