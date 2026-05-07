@@ -45,14 +45,24 @@ function MRecommend({ onOpenSchool, onBack }) {
     setInput("");
     setMessages((prev) => [...prev, { role: "user", content: msg }]);
     setLoading(true);
+    const tdList = allSchools.filter((s) => s.mingeDistrict != null && (s.tier === "\u56DB\u6821" || s.kind === "\u59D4\u5C5E\u5E02\u91CD\u70B9" || s.kind === "\u5E02\u5B9E\u9A8C\u793A\u8303")).sort((a, b) => (b.mingeDistrict || 0) - (a.mingeDistrict || 0));
+    const tsList = allSchools.filter((s) => s.mingeSchool != null && (s.district === district || s.tier === "\u56DB\u6821")).sort((a, b) => (b.mingeSchool || 0) - (a.mingeSchool || 0));
+    const pList = allSchools.filter((s) => s.score2025 != null && (s.district === district || s.tier === "\u56DB\u6821" || s.tier === "\u516B\u5927")).sort((a, b) => b.score2025 - a.score2025);
+    const tdSchool = tdPick ? getS(tdPick) : null;
+    const dxSchools = tsPicks.map(getS).filter(Boolean);
+    const pSchools = pPicks.map(getS).filter(Boolean);
+    const dqCtx = tdList.slice(0, 20).map((s) => s.id + "|" + s.name + "|" + s.district + "|\u5230\u533A" + (s.mingeDistrict || "-")).join("\n");
+    const dxCtx = tsList.slice(0, 15).map((s) => s.id + "|" + s.name + "|" + s.district + "|\u5230\u6821" + (s.mingeSchool || "-")).join("\n");
+    const pxCtx = pList.slice(0, 40).map((s) => s.id + "|" + s.name + "|" + s.district + "|" + s.kind + "|\u7EDF\u62DB" + s.score2025 + "|\u4E00\u672C\u7387" + s.bbenRate + "%").join("\n");
     const payload = {
       score,
       district,
       district_rank: dr,
       risk: "balanced",
-      tdPick,
-      tsPicks,
-      pPicks,
+      preferences: {
+        home_district: district,
+        notes: "\u7528\u6237\u6D88\u606F: " + msg + "\n\n\u5F53\u524D\u65B9\u6848: \u5230\u533A=" + (tdSchool?.name || "\u672A\u9009") + ", \u5230\u6821=" + (dxSchools.map((s) => s.name).join("\u3001") || "\u672A\u9009") + ", \u5E73\u884C(" + pSchools.length + "/15)=" + (pSchools.map((s, i) => i + 1 + "." + s.name).join(" ") || "\u672A\u9009") + "\n\u6392\u540D: " + district + "\u533A\u7EA6\u7B2C" + dr + "\u540D, \u5168\u5E02\u7EA6\u7B2C" + cr + "\u540D\n\n\u3010\u540D\u989D\u5230\u533A\u53EF\u9009\u5B66\u6821\u3011(\u90091\u4E2A\u51B2\u523A)\n" + dqCtx + "\n\n\u3010\u540D\u989D\u5230\u6821\u53EF\u9009\u5B66\u6821\u3011(\u90092\u4E2A\uFF0C\u9650" + district + "\u533A\u5185)\n" + dxCtx + "\n\n\u3010\u5E73\u884C\u5FD7\u613F\u53EF\u9009\u5B66\u6821\u3011(\u5FC5\u987B\u9009\u6EE115\u4E2A! \u51B24+\u7A336+\u4FDD5\uFF0C\u4ECE\u9AD8\u5230\u4F4E\u6392\u5217)\n" + pxCtx + "\n\n\u3010\u91CD\u8981\u89C4\u5219\u3011\n1. \u6BCF\u6B21\u56DE\u590D\u672B\u5C3E\u5FC5\u987B\u8F93\u51FA\u5B8C\u6574\u65B9\u6848\u6307\u4EE4:\n[SET_DQ:school_id]\n[SET_DX:id1,id2]\n[SET_PX:id1,id2,id3,id4,id5,id6,id7,id8,id9,id10,id11,id12,id13,id14,id15]\n2. \u5E73\u884C\u5FD7\u613F\u5FC5\u987B\u6070\u597D15\u4E2Aschool_id\uFF0C\u4E0D\u80FD\u5C11\uFF01\n3. \u5B66\u6821\u53EF\u4EE5\u91CD\u590D\uFF01\u5230\u533A/\u5230\u6821\u9009\u7684\u5B66\u6821\u5728\u5E73\u884C\u5FD7\u613F\u4E2D\u53EF\u4EE5\u518D\u6B21\u51FA\u73B0"
+      },
       message: msg,
       history: messages.slice(-6)
     };
@@ -82,9 +92,13 @@ function MRecommend({ onOpenSchool, onBack }) {
         }
         if (cmd === "REMOVE_PX") setPPicks((prev) => prev.filter((id) => !ids.includes(id)));
       }
+      const hasActions = actionRegex.test(full);
+      actionRegex.lastIndex = 0;
+      const cleanText = full.replace(actionRegex, "").trim();
+      const display = hasActions ? cleanText + "\n\n\u2705 \u5DF2\u66F4\u65B0\u5FD7\u613F\u8868" : cleanText;
       setMessages((prev) => {
         const arr = [...prev];
-        arr[arr.length - 1] = { role: "assistant", content: full.replace(actionRegex, "").trim() };
+        arr[arr.length - 1] = { role: "assistant", content: display };
         return arr;
       });
     } catch (err) {

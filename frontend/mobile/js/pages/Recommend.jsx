@@ -53,9 +53,26 @@ function MRecommend({ onOpenSchool, onBack }) {
     setMessages(prev => [...prev, { role: 'user', content: msg }]);
     setLoading(true);
 
+    // 构建可选学校列表（与 PC 端 AIChat 一致）
+    const tdList = allSchools.filter(s => s.mingeDistrict != null && (s.tier === '四校' || s.kind === '委属市重点' || s.kind === '市实验示范')).sort((a,b) => (b.mingeDistrict||0)-(a.mingeDistrict||0));
+    const tsList = allSchools.filter(s => s.mingeSchool != null && (s.district === district || s.tier === '四校')).sort((a,b) => (b.mingeSchool||0)-(a.mingeSchool||0));
+    const pList = allSchools.filter(s => s.score2025 != null && (s.district === district || s.tier === '四校' || s.tier === '八大')).sort((a,b) => b.score2025 - a.score2025);
+
+    const tdSchool = tdPick ? getS(tdPick) : null;
+    const dxSchools = tsPicks.map(getS).filter(Boolean);
+    const pSchools = pPicks.map(getS).filter(Boolean);
+
+    const dqCtx = tdList.slice(0,20).map(s => s.id+'|'+s.name+'|'+s.district+'|到区'+(s.mingeDistrict||'-')).join('\n');
+    const dxCtx = tsList.slice(0,15).map(s => s.id+'|'+s.name+'|'+s.district+'|到校'+(s.mingeSchool||'-')).join('\n');
+    const pxCtx = pList.slice(0,40).map(s => s.id+'|'+s.name+'|'+s.district+'|'+s.kind+'|统招'+s.score2025+'|一本率'+s.bbenRate+'%').join('\n');
+
     const payload = {
       score, district, district_rank: dr, risk: 'balanced',
-      tdPick, tsPicks, pPicks, message: msg,
+      preferences: {
+        home_district: district,
+        notes: '用户消息: ' + msg + '\n\n当前方案: 到区=' + (tdSchool?.name||'未选') + ', 到校=' + (dxSchools.map(s=>s.name).join('、')||'未选') + ', 平行(' + pSchools.length + '/15)=' + (pSchools.map((s,i)=>(i+1)+'.'+s.name).join(' ')||'未选') + '\n排名: ' + district + '区约第' + dr + '名, 全市约第' + cr + '名\n\n【名额到区可选学校】(选1个冲刺)\n' + dqCtx + '\n\n【名额到校可选学校】(选2个，限' + district + '区内)\n' + dxCtx + '\n\n【平行志愿可选学校】(必须选满15个! 冲4+稳6+保5，从高到低排列)\n' + pxCtx + '\n\n【重要规则】\n1. 每次回复末尾必须输出完整方案指令:\n[SET_DQ:school_id]\n[SET_DX:id1,id2]\n[SET_PX:id1,id2,id3,id4,id5,id6,id7,id8,id9,id10,id11,id12,id13,id14,id15]\n2. 平行志愿必须恰好15个school_id，不能少！\n3. 学校可以重复！到区/到校选的学校在平行志愿中可以再次出现',
+      },
+      message: msg,
       history: messages.slice(-6),
     };
 
@@ -79,8 +96,12 @@ function MRecommend({ onOpenSchool, onBack }) {
         if (cmd === 'REPLACE_PX') { const [o, n] = args.split('>').map(s => s.trim()); if (o && n && getS(n)) setPPicks(prev => prev.map(id => id === o ? n : id)); }
         if (cmd === 'REMOVE_PX') setPPicks(prev => prev.filter(id => !ids.includes(id)));
       }
-      // Clean actions from display
-      setMessages(prev => { const arr = [...prev]; arr[arr.length - 1] = { role: 'assistant', content: full.replace(actionRegex, '').trim() }; return arr; });
+      // Clean actions from display + show confirmation
+      const hasActions = actionRegex.test(full);
+      actionRegex.lastIndex = 0;
+      const cleanText = full.replace(actionRegex, '').trim();
+      const display = hasActions ? cleanText + '\n\n✅ 已更新志愿表' : cleanText;
+      setMessages(prev => { const arr = [...prev]; arr[arr.length - 1] = { role: 'assistant', content: display }; return arr; });
     } catch (err) {
       setMessages(prev => { const arr = [...prev]; arr[arr.length - 1] = { role: 'assistant', content: '抱歉：' + (err.message || '请稍后再试') }; return arr; });
     }
