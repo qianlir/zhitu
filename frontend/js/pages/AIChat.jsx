@@ -1,18 +1,21 @@
 function renderMd(text) {
   if (!text) return '';
-  return text
-    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+  var s = text
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  // 确保 ### 和 --- 在行首（AI 有时不换行）
+  s = s.replace(/([^\n])###\s/g, '$1\n### ');
+  s = s.replace(/([^\n])---/g, '$1\n---');
+  s = s.replace(/([。！？])(\d+)\.\s/g, '$1\n$2. ');
+  return s
     .replace(/^### (.+)$/gm, '<div style="font-size:15px;font-weight:700;margin:14px 0 6px;color:var(--primary)">$1</div>')
     .replace(/^## (.+)$/gm, '<div style="font-size:16px;font-weight:700;margin:16px 0 8px">$1</div>')
     .replace(/^---+$/gm, '<hr style="border:none;border-top:1px solid var(--border);margin:12px 0"/>')
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
     .replace(/\*([^*\n]+)\*/g, '<em style="color:var(--text-3);font-size:13px">$1</em>')
-    .replace(/(\d+)\.\s+/g, '<div style="margin:10px 0 4px"><strong style="color:var(--primary)">$1.</strong> ')
-    .replace(/(<div style="margin:10px 0 4px">)/g, '</div>$1')
+    .replace(/^(\d+)\.\s+/gm, '<div style="margin:10px 0 4px"><strong style="color:var(--primary)">$1.</strong> ')
     .replace(/\n- /g, '<div style="padding-left:16px;margin:4px 0">• ')
     .replace(/\n\n/g, '<div style="margin:10px 0"></div>')
-    .replace(/\n/g, '<br/>')
-    .replace(/^<\/div>/, '');
+    .replace(/\n/g, '<br/>');
 }
 
 function getFollowUps(messages, score, tdPick, pPicks) {

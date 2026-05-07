@@ -266,6 +266,10 @@ ${dr <= 500 ? "\u5934\u90E8\u8003\u751F\uFF0C\u56DB\u6821\u6709\u7ADE\u4E89\u529
 }
 function renderMd(text) {
   if (!text) return "";
-  return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/^### (.+)$/gm, '<div style="font-size:15px;font-weight:700;margin:14px 0 6px;color:var(--primary)">$1</div>').replace(/^## (.+)$/gm, '<div style="font-size:16px;font-weight:700;margin:16px 0 8px">$1</div>').replace(/^---+$/gm, '<hr style="border:none;border-top:1px solid var(--border);margin:12px 0"/>').replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/\*([^*\n]+)\*/g, '<em style="color:var(--text-3);font-size:12px">$1</em>').replace(/(\d+)\.\s+/g, '<div style="margin:10px 0 4px"><strong style="color:var(--primary)">$1.</strong> ').replace(/(<div style="margin:10px 0 4px">)/g, "</div>$1").replace(/\n- /g, '<div style="padding-left:16px;margin:4px 0">\u2022 ').replace(/\n\n/g, '<div style="margin:10px 0"></div>').replace(/\n/g, "<br/>").replace(/^<\/div>/, "");
+  var s = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  s = s.replace(/([^\n])###\s/g, "$1\n### ");
+  s = s.replace(/([^\n])---/g, "$1\n---");
+  s = s.replace(/([。！？])(\d+)\.\s/g, "$1\n$2. ");
+  return s.replace(/^### (.+)$/gm, '<div style="font-size:15px;font-weight:700;margin:14px 0 6px;color:var(--primary)">$1</div>').replace(/^## (.+)$/gm, '<div style="font-size:16px;font-weight:700;margin:16px 0 8px">$1</div>').replace(/^---+$/gm, '<hr style="border:none;border-top:1px solid var(--border);margin:12px 0"/>').replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/\*([^*\n]+)\*/g, '<em style="color:var(--text-3);font-size:12px">$1</em>').replace(/^(\d+)\.\s+/gm, '<div style="margin:10px 0 4px"><strong style="color:var(--primary)">$1.</strong> ').replace(/\n- /g, '<div style="padding-left:16px;margin:4px 0">\u2022 ').replace(/\n\n/g, '<div style="margin:10px 0"></div>').replace(/\n/g, "<br/>");
 }
 window.MRecommend = MRecommend;
