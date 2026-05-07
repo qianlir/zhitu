@@ -382,3 +382,46 @@ async def assemble_school_list(
     page = results[offset : offset + limit]
 
     return {"total": total, "schools": page}
+
+
+def assemble_school_list_sync(
+    districts: list[str] | None = None,
+    types: list[str] | None = None,
+    funding: str | None = None,
+    score_min: float = 0,
+    score_max: float = 999,
+    bben_min: float = 0,
+    sort: str = "score_desc",
+    limit: int = 200,
+    offset: int = 0,
+) -> dict:
+    """同步版本（无搜索查询，不走 reranker）。供 recommender 等同步调用方使用。"""
+    all_ids = [r["school_id"] for r in query("SELECT school_id FROM schools")]
+
+    results = []
+    for sid in all_ids:
+        s = assemble_school(sid)
+        if not s:
+            continue
+        if districts and s["district"] not in districts:
+            continue
+        if types and s["kind"] not in types:
+            continue
+        if funding and s["funding"] != funding:
+            continue
+        score = s.get("score2025") or 0
+        if score < score_min or score > score_max:
+            continue
+        bben = (s.get("bbenRate") or 0) / 100
+        if bben < bben_min:
+            continue
+        results.append(s)
+
+    if sort == "score_desc":
+        results.sort(key=lambda x: x.get("score2025") or 0, reverse=True)
+    elif sort == "score_asc":
+        results.sort(key=lambda x: x.get("score2025") or 0)
+
+    total = len(results)
+    page = results[offset : offset + limit]
+    return {"total": total, "schools": page}

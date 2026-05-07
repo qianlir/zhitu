@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 from backend.db.connection import query
-from backend.services.school_assembler import assemble_school_list
+from backend.services.school_assembler import assemble_school_list_sync
 
 
 def _prob(school_score: float, user_score: float, kind: str) -> int:
@@ -49,7 +49,7 @@ def generate_recommendations(
     offset = offsets.get(risk, 0)
     target = score + offset
 
-    result = assemble_school_list(limit=500)
+    result = assemble_school_list_sync(limit=500)
     all_schools = result["schools"]
 
     stretch = []
