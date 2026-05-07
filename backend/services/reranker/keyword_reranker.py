@@ -7,7 +7,7 @@ from backend.services.reranker.base import RerankerBase
 class KeywordReranker(RerankerBase):
     name = "keyword"
 
-    def rerank(self, query: str, documents: list[tuple[str, str]], top_n: int = 30) -> list[tuple[str, float]]:
+    async def rerank(self, query: str, documents: list[tuple[str, str]], top_n: int = 30) -> list[tuple[str, float]]:
         if not documents or not query:
             return [(sid, 0.0) for sid, _ in documents]
 

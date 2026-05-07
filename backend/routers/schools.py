@@ -10,7 +10,7 @@ router = APIRouter()
 
 
 @router.get("")
-def list_schools(
+async def list_schools(
     q: str = "",
     districts: str = Query("", description="comma-separated district names"),
     types: str = Query("", description="comma-separated school types"),
@@ -22,7 +22,7 @@ def list_schools(
     limit: int = 200,
     offset: int = 0,
 ) -> dict:
-    return assemble_school_list(
+    return await assemble_school_list(
         q=q,
         districts=[d.strip() for d in districts.split(",") if d.strip()],
         types=[t.strip() for t in types.split(",") if t.strip()],

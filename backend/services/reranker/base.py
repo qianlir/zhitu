@@ -11,7 +11,7 @@ class RerankerBase(ABC):
     name: str = "base"
 
     @abstractmethod
-    def rerank(self, query: str, documents: list[tuple[str, str]], top_n: int = 30) -> list[tuple[str, float]]:
+    async def rerank(self, query: str, documents: list[tuple[str, str]], top_n: int = 30) -> list[tuple[str, float]]:
         """
         Args:
             query: 用户查询

@@ -159,8 +159,8 @@ def _rrf_merge(ranked_lists: list[list[str]], k: int = 60) -> list[tuple[str, fl
 # 4. 重排序 — 多模型 Reranker（DashScope / 智谱 / 关键词兜底）
 # ============================================================
 
-def _rerank_batch(candidates: list[tuple[str, float]], q: str) -> list[tuple[str, float]]:
-    """对 RRF 候选集做重排。自动选择最优可用模型。"""
+async def _rerank_batch(candidates: list[tuple[str, float]], q: str) -> list[tuple[str, float]]:
+    """对 RRF 候选集做重排。自动选择最优可用模型（异步）。"""
     global _INDEX
     if _INDEX is None:
         _build_index()
@@ -172,22 +172,22 @@ def _rerank_batch(candidates: list[tuple[str, float]], q: str) -> list[tuple[str
         text = _INDEX.get("raw_texts", {}).get(sid, "")
         docs.append((sid, text))
 
-    return rerank_documents(q, docs, top_n=len(docs))
+    return await rerank_documents(q, docs, top_n=len(docs))
 
 
 # ============================================================
 # 5. 完整搜索管线
 # ============================================================
 
-def hybrid_search(q: str, limit: int = 30) -> list[str]:
-    """QMD 理论搜索管线：扩展 → 多路搜索 → RRF → 多模型重排。"""
+async def hybrid_search(q: str, limit: int = 30) -> list[str]:
+    """QMD 理论搜索管线：扩展 → 多路搜索 → RRF → 多模型重排（异步）。"""
     if not q:
         return []
 
-    # Step 1: 查询扩展
+    # Step 1: 查询扩展（同步，纯 CPU）
     variants = expand_query(q)
 
-    # Step 2: 多路搜索（每个变体 × BM25 + 向量 = 最多6路）
+    # Step 2: 多路搜索（同步，FTS5 + TF-IDF 纯 CPU）
     ranked_lists = []
 
     from backend.services.school_assembler import _fts_search
@@ -203,12 +203,12 @@ def hybrid_search(q: str, limit: int = 30) -> list[str]:
     if not ranked_lists:
         return []
 
-    # Step 3: RRF 融合
+    # Step 3: RRF 融合（同步，纯数学）
     rrf_results = _rrf_merge(ranked_lists, k=60)
 
-    # Step 4: Reranker 重排序（top-50 送入，自动选最优模型）
+    # Step 4: Reranker 重排序（异步，外部 API 调用）
     top_candidates = rrf_results[:50]
-    reranked = _rerank_batch(top_candidates, q)
+    reranked = await _rerank_batch(top_candidates, q)
 
     # Step 5: RRF + Reranker 混合（位置感知）
     rrf_map = {sid: score for sid, score in top_candidates}

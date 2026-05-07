@@ -1,4 +1,4 @@
-"""Reranker 管理器 — 多模型优先级 + 熔断 + 自动恢复。"""
+"""Reranker 管理器 — 多模型优先级 + 熔断 + 自动恢复（异步）。"""
 from __future__ import annotations
 
 import json
@@ -103,12 +103,12 @@ class RerankerManager:
             names = [r.name for r in _rerankers]
             logger.info("Reranker models loaded: %s", names)
 
-    def rerank(self, query: str, documents: list[tuple[str, str]], top_n: int = 30) -> list[tuple[str, float]]:
+    async def rerank(self, query: str, documents: list[tuple[str, str]], top_n: int = 30) -> list[tuple[str, float]]:
         for r in _rerankers:
             if not _is_available(r.name):
                 continue
             try:
-                result = r.rerank(query, documents, top_n)
+                result = await r.rerank(query, documents, top_n)
                 logger.debug("Reranked by %s", r.name)
                 return result
             except Exception as e:
@@ -120,6 +120,6 @@ class RerankerManager:
         return [(sid, 0.0) for sid, _ in documents[:top_n]]
 
 
-def rerank_documents(query: str, documents: list[tuple[str, str]], top_n: int = 30) -> list[tuple[str, float]]:
+async def rerank_documents(query: str, documents: list[tuple[str, str]], top_n: int = 30) -> list[tuple[str, float]]:
     """便捷函数。"""
-    return RerankerManager().rerank(query, documents, top_n)
+    return await RerankerManager().rerank(query, documents, top_n)

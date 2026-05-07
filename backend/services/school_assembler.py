@@ -297,13 +297,13 @@ def _match_reason(school_row: dict, q: str) -> str:
     return ""
 
 
-def _hybrid_search(q: str) -> list[str]:
-    """QMD 理论搜索管线：查询扩展 → 多路搜索 → RRF → 重排。"""
+async def _hybrid_search(q: str) -> list[str]:
+    """QMD 理论搜索管线：查询扩展 → 多路搜索 → RRF → 重排（异步）。"""
     from backend.services.vector_search import hybrid_search
-    return hybrid_search(q, limit=30)
+    return await hybrid_search(q, limit=30)
 
 
-def assemble_school_list(
+async def assemble_school_list(
     q: str = "",
     districts: list[str] | None = None,
     types: list[str] | None = None,
@@ -331,7 +331,7 @@ def assemble_school_list(
 
         if semantic_q:
             # 有语义查询部分 → 走 QMD 搜索管线
-            all_ids = _hybrid_search(semantic_q)
+            all_ids = await _hybrid_search(semantic_q)
             _reason_cache = {}
             for sid in all_ids:
                 row = query_one("SELECT name, short_name, tags, intro_text FROM schools WHERE school_id = ?", (sid,))
