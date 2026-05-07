@@ -2,12 +2,17 @@ function renderMd(text) {
   if (!text) return '';
   return text
     .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-    .replace(/### (.+)/g, '<div style="font-size:15px;font-weight:700;margin:14px 0 6px;color:var(--text)">$1</div>')
-    .replace(/## (.+)/g, '<div style="font-size:16px;font-weight:700;margin:16px 0 8px;color:var(--text)">$1</div>')
+    .replace(/^### (.+)$/gm, '<div style="font-size:15px;font-weight:700;margin:14px 0 6px;color:var(--primary)">$1</div>')
+    .replace(/^## (.+)$/gm, '<div style="font-size:16px;font-weight:700;margin:16px 0 8px">$1</div>')
+    .replace(/^---+$/gm, '<hr style="border:none;border-top:1px solid var(--border);margin:12px 0"/>')
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-    .replace(/\n- /g, '\n• ')
-    .replace(/\n(\d+)\. /g, '\n$1. ')
-    .replace(/\n/g, '<br/>');
+    .replace(/\*([^*\n]+)\*/g, '<em style="color:var(--text-3);font-size:13px">$1</em>')
+    .replace(/(\d+)\.\s+/g, '<div style="margin:10px 0 4px"><strong style="color:var(--primary)">$1.</strong> ')
+    .replace(/(<div style="margin:10px 0 4px">)/g, '</div>$1')
+    .replace(/\n- /g, '<div style="padding-left:16px;margin:4px 0">• ')
+    .replace(/\n\n/g, '<div style="margin:10px 0"></div>')
+    .replace(/\n/g, '<br/>')
+    .replace(/^<\/div>/, '');
 }
 
 function getFollowUps(messages, score, tdPick, pPicks) {
