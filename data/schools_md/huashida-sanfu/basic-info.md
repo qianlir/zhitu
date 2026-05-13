@@ -12,7 +12,7 @@ website: https://www.jsedu.sh.cn/hdsdsfz
 tags: ["市重点", "华师大附属", "160亩新校区", "寄宿制", "恒温泳池", "新基础教育"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 华东师范大学第三附属中学 基本信息

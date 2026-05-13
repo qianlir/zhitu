@@ -2,7 +2,7 @@
 school_id: xingzhi-zhongxue
 doc_type: admission
 source: official_2024
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 admissions:
   - year: 2025
     batch: 统招

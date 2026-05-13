@@ -12,7 +12,7 @@ website: https://m.jsedu.sh.cn/tlzx/
 tags: ["普通高中", "体教结合", "足球特色", "田径特色", "大学合作"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海体育大学附属金山亭林中学 基本信息

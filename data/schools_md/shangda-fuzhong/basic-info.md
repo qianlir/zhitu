@@ -12,7 +12,7 @@ website: https://sdfz.shu.edu.cn/
 tags: ["市重点", "上海大学附属", "寄宿制", "210亩大校园", "钱伟长题校名", "科创特色"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海大学附属中学 基本信息

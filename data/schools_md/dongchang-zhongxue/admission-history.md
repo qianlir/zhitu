@@ -2,7 +2,7 @@
 school_id: dongchang-zhongxue
 doc_type: admission
 source: official_2024
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 admissions:
   - year: 2025
     batch: 统招
@@ -21,7 +21,7 @@ admissions:
     control_line: 580
 ---
 
-# 上海市东昌中学 历年录取分数线
+# 华东师范大学附属东昌中学 历年录取分数线
 
 > 数据来源：上海市教育考试院、浦东新区政府官网等公开渠道。
 

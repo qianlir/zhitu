@@ -12,7 +12,7 @@ website: https://school.bsedu.org.cn/thzx/
 tags: ["普通高中", "科技特色", "美术特色", "体育特色", "心理健康"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海市通河中学 134002 宝山区 公办 区实验性示范性高中144 上海市顾村中学 基本信息

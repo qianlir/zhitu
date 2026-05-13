@@ -12,7 +12,7 @@ website: https://www.s2ss.cn/
 tags: ["普通高中", "田径特色", "自行车特色", "大校园", "花园学校"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海市第二体育运动学校 基本信息

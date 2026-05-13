@@ -12,7 +12,7 @@ website: https://bile.hpe.cn/
 tags: ["普通高中", "科技教育", "艺术教育", "传统文化", "市特色高中"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海音乐学院附属黄浦比乐中学 基本信息

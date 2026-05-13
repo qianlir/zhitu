@@ -25,10 +25,11 @@ function RecommendPage({ onOpenSchool }) {
       .sort((a, b) => (b.mingeDistrict || 0) - (a.mingeDistrict || 0)),
     [allSchools]
   );
+  // TODO: 后续根据学生所在学校决定候选，暂时与名额到区一致
   const tsList = React.useMemo(() =>
-    allSchools.filter(s => s.mingeSchool != null && (s.district === district || s.tier === '四校'))
+    allSchools.filter(s => s.mingeSchool != null && (s.tier === '四校' || s.tier === '八大' || s.kind === '市实验示范' || s.kind === '委属市重点'))
       .sort((a, b) => (b.mingeSchool || 0) - (a.mingeSchool || 0)),
-    [allSchools, district]
+    [allSchools]
   );
   const pList = React.useMemo(() =>
     allSchools.filter(s => s.score2025 != null && (s.district === district || s.tier === '四校' || s.tier === '八大'))

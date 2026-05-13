@@ -1,6 +1,6 @@
 ---
 school_id: songjiang-erzhong
-name: 上海市松江第二中学
+name: 上海市松江二中
 short_name: 松江二中
 district: 松江
 tier: city_key
@@ -12,14 +12,14 @@ website: http://www.sjez.com
 tags: ["市重点", "新五虎", "云间书院", "生物奥赛", "270年历史", "丰子恺母校"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
-# 上海市松江第二中学 基本信息
+# 上海市松江二中 基本信息
 
 | 字段 | 值 |
 |---|---|
-| 学校全名 | 上海市松江第二中学 |
+| 学校全名 | 上海市松江二中 |
 | 简称 | 松江二中 |
 | 所在区 | 松江 |
 | 学校层级 | 市实验示范 |

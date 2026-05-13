@@ -19,7 +19,13 @@ function PlanResult({ score, district, tdPick, setTdPick, tsPicks, setTsPicks, p
     if (addingTo && searchRef.current) searchRef.current.focus();
   }, [addingTo]);
 
-  const usedIds = new Set([tdPick, ...tsPicks, ...pPicks].filter(Boolean));
+  // 不同批次可选同一学校，仅本批次内判重
+  const getUsedIds = () => {
+    if (addingTo === 'dq') return new Set([tdPick].filter(Boolean));
+    if (addingTo === 'dx') return new Set(tsPicks);
+    if (addingTo === 'px') return new Set(pPicks);
+    return new Set();
+  };
 
   const getPool = () => {
     if (addingTo === 'dq') return tdList;
@@ -29,7 +35,7 @@ function PlanResult({ score, district, tdPick, setTdPick, tsPicks, setTsPicks, p
   };
 
   const filtered = getPool()
-    .filter(s => !usedIds.has(s.id))
+    .filter(s => !getUsedIds().has(s.id))
     .filter(s => !searchQ || s.name.includes(searchQ) || (s.shortName && s.shortName.includes(searchQ)) || s.district.includes(searchQ));
 
   const addSchool = (id) => {

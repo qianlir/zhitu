@@ -12,7 +12,7 @@ website: https://tc.hpe.cn/
 tags: ["普通高中", "创新教育", "设计创意", "陶行知教育"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海市同济黄浦设计创意中学 基本信息

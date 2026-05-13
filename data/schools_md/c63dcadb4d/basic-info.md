@@ -12,7 +12,7 @@ website: https://zgzx.xhedu.sh.cn/
 tags: ["区重点", "STEM教育", "机器人教育", "非遗传承"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海市中国中学 基本信息

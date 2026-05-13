@@ -12,7 +12,7 @@ website: https://xhzx.xhedu.sh.cn/
 tags: ["区重点", "市特色高中", "历史名校"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海市徐汇中学 基本信息

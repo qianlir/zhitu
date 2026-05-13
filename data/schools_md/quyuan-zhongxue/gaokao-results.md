@@ -2,7 +2,7 @@
 school_id: quyuan-zhongxue
 doc_type: gaokao
 source: seed_approximate
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 gaokao_results:
   - year: 2024
     one_ben_rate: 0.27
@@ -11,7 +11,7 @@ gaokao_results:
     fudan_jiaoda_count: 0
 ---
 
-# 上海市奉贤区曙光中学 高考成绩
+# 华东理工大学附属奉贤曙光中学 高考成绩
 
 > 数据为公开报道近似值，部分学校未公布完整数据。
 

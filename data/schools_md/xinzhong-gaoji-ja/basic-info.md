@@ -12,7 +12,7 @@ website: http://www.xzschool.edu.sh.cn/
 tags: ["市重点", "现代化寄宿制", "1925年创办"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海市新中高级中学 基本信息

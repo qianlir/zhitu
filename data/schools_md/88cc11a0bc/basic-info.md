@@ -12,7 +12,7 @@ website: https://wszx.xhedu.sh.cn/
 tags: ["区重点", "篮球特色", "民乐特色", "信息技术"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海市第五十四中学 基本信息

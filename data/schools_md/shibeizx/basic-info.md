@@ -12,7 +12,7 @@ website: http://www.shibei.edu.sh.cn
 tags: ["市重点", "首批实验性示范性", "百年名校", "孙中山题词", "蔡元培题词"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海市市北中学 基本信息

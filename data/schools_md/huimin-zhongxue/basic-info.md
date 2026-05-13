@@ -12,7 +12,7 @@ website: http://www.hmschool.edu.sh.cn
 tags: ["区重点", "民族教育特色", "信息技术特色", "体教结合"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海市回民中学 基本信息

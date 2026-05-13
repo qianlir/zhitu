@@ -12,7 +12,7 @@ website: http://www.hsgd.pudong-edu.sh.cn/
 tags: ["普通高中", "心理健康教育", "棒球特色"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海市高东中学 基本信息

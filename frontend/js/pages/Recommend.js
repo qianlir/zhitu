@@ -20,9 +20,10 @@ function RecommendPage({ onOpenSchool }) {
     () => allSchools.filter((s) => s.mingeDistrict != null && (s.tier === "\u56DB\u6821" || s.tier === "\u516B\u5927" || s.kind === "\u5E02\u5B9E\u9A8C\u793A\u8303" || s.kind === "\u59D4\u5C5E\u5E02\u91CD\u70B9")).sort((a, b) => (b.mingeDistrict || 0) - (a.mingeDistrict || 0)),
     [allSchools]
   );
+  // TODO: 后续根据学生所在学校决定候选，暂时与名额到区一致
   const tsList = React.useMemo(
-    () => allSchools.filter((s) => s.mingeSchool != null && (s.district === district || s.tier === "\u56DB\u6821")).sort((a, b) => (b.mingeSchool || 0) - (a.mingeSchool || 0)),
-    [allSchools, district]
+    () => allSchools.filter((s) => s.mingeSchool != null && (s.tier === "\u56DB\u6821" || s.tier === "\u516B\u5927" || s.kind === "\u5E02\u5B9E\u9A8C\u793A\u8303" || s.kind === "\u59D4\u5C5E\u5E02\u91CD\u70B9")).sort((a, b) => (b.mingeSchool || 0) - (a.mingeSchool || 0)),
+    [allSchools]
   );
   const pList = React.useMemo(
     () => allSchools.filter((s) => s.score2025 != null && (s.district === district || s.tier === "\u56DB\u6821" || s.tier === "\u516B\u5927")).sort((a, b) => b.score2025 - a.score2025),

@@ -12,7 +12,7 @@ website: https://hesy.cn/
 tags: ["普通高中", "国防教育", "传统文化", "寄宿制", "大校园"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海民办华曜浦东实验学校 基本信息

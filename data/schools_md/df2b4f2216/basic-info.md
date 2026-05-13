@@ -12,7 +12,7 @@ website: ""
 tags: ["区重点", "航空航天特色", "院士校友"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海市文建中学 基本信息

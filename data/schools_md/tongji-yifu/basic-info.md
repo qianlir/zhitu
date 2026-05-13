@@ -12,7 +12,7 @@ website: https://tjyfz.tongji.edu.cn
 tags: ["区重点", "大学附属", "国家级示范校", "100亩校园"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 同济大学第一附属中学 基本信息

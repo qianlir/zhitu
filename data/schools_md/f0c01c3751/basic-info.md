@@ -12,7 +12,7 @@ website: https://shnhzx.pdedu.sh.cn/
 tags: ["市重点", "386亩全市最大", "寄宿制", "新疆班", "钱伟长题校名"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海南汇中学 基本信息

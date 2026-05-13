@@ -12,7 +12,7 @@ website: http://www.beijiaoedu.com
 tags: ["区重点", "大学附属", "金融特色", "百年名校"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海财经大学附属北郊高级中学 基本信息

@@ -12,7 +12,7 @@ website: https://www.zhuzhong.cn/
 tags: ["市重点", "古镇学校", "寄宿制", "202亩大校园", "新疆班", "体验德育"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海市朱家角中学 基本信息

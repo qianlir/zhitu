@@ -1,7 +1,7 @@
 [
   {
     "school_id": "shanghai-zhongxue",
-    "name": "上海中学",
+    "name": "上海市上海中学",
     "short_name": "上中",
     "district": "徐汇",
     "tier": "four_schools",
@@ -521,7 +521,7 @@
   },
   {
     "school_id": "songjiang-erzhong",
-    "name": "上海市松江第二中学",
+    "name": "上海市松江二中",
     "short_name": "松江二中",
     "district": "松江",
     "tier": "city_key",
@@ -768,7 +768,7 @@
   },
   {
     "school_id": "songjiang-yizhong",
-    "name": "上海市松江第一中学",
+    "name": "上海市松江一中",
     "short_name": "松江一中",
     "district": "松江",
     "tier": "district_key",
@@ -845,7 +845,7 @@
   },
   {
     "school_id": "dongchang-zhongxue",
-    "name": "上海市东昌中学",
+    "name": "华东师范大学附属东昌中学",
     "short_name": "东昌",
     "district": "浦东",
     "tier": "regular",
@@ -1573,7 +1573,7 @@
   },
   {
     "school_id": "quyuan-zhongxue",
-    "name": "上海市奉贤区曙光中学",
+    "name": "华东理工大学附属奉贤曙光中学",
     "short_name": "曙光",
     "district": "奉贤",
     "tier": "district_key",
@@ -3432,7 +3432,7 @@
   },
   {
     "school_id": "7595a807d6",
-    "name": "上海市北虹高级中学",
+    "name": "上海音乐学院虹口区北虹高级中学",
     "short_name": "北虹高级中学",
     "district": "虹口",
     "tier": "regular",
@@ -4231,5 +4231,1743 @@
       "市特色高中"
     ],
     "intro": "上海市崇明区城桥中学创建于1978年，是崇明岛上一所公办高级中学，2009年被评为崇明区实验性示范性高中，2021年被评为上海市特色普通高中。学校面向全市招生，现有24个教学班，全校在职教职工151人，其中高级教师51名。学校秉承'发扬人的优点、发掘人的潜能、发挥人的才干、发展人的特长'教育思想，以尊重和发展学生个性特长为基本思想，形成鲜明的艺术、科技、体育办学特色。先后荣获全国第一批中华优秀文化传承学校、国家级体育传统项目学校、上海市文明单位、上海市艺术教育特色学校、上海市头脑奥林匹克特色学校等荣誉。"
+  },
+  {
+    "school_id": "ge-zhi-zhong-xue-feng-xian-xiao-qu",
+    "name": "上海市格致中学（奉贤校区）",
+    "short_name": "格致中学（奉贤校区）",
+    "district": "黄浦",
+    "tier": "shi_key_branch",
+    "type": "享受市实验性示范性高中招生政策",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "黄浦",
+      "公办"
+    ],
+    "intro": "上海市格致中学（奉贤校区），位于上海黄浦，是一所公办享受市实验性示范性高中招生政策。"
+  },
+  {
+    "school_id": "tong-ji-da-xue-ke-ji-zhong-xue",
+    "name": "同济大学科技中学",
+    "short_name": "同济科技中学",
+    "district": "黄浦",
+    "tier": "shi_key_branch",
+    "type": "享受市实验性示范性高中招生政策",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "黄浦",
+      "公办"
+    ],
+    "intro": "同济大学科技中学，位于上海黄浦，是一所公办享受市实验性示范性高中招生政策。"
+  },
+  {
+    "school_id": "jin-ling-zhong-xue",
+    "name": "上海市金陵中学",
+    "short_name": "金陵中学",
+    "district": "黄浦",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "黄浦",
+      "公办"
+    ],
+    "intro": "上海市金陵中学，位于上海黄浦，是一所公办一般高中。"
+  },
+  {
+    "school_id": "shi-wai-zhong-xue",
+    "name": "上海市世外中学",
+    "short_name": "世外中学",
+    "district": "徐汇",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "民办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "徐汇",
+      "民办",
+      "国际课程班"
+    ],
+    "intro": "上海市世外中学，位于上海徐汇，是一所民办一般高中。"
+  },
+  {
+    "school_id": "ling-ling-zhong-xue",
+    "name": "上海市零陵中学",
+    "short_name": "零陵中学",
+    "district": "徐汇",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "徐汇",
+      "公办"
+    ],
+    "intro": "上海市零陵中学，位于上海徐汇，是一所公办一般高中。"
+  },
+  {
+    "school_id": "min-ban-wei-yu-zhong-xue",
+    "name": "上海民办位育中学",
+    "short_name": "民办位育中学",
+    "district": "徐汇",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "民办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "徐汇",
+      "民办"
+    ],
+    "intro": "上海民办位育中学，位于上海徐汇，是一所民办一般高中。"
+  },
+  {
+    "school_id": "jiu-long-mo-fan-zhong-xue",
+    "name": "上海市久隆模范中学",
+    "short_name": "久隆模范中学",
+    "district": "静安",
+    "tier": "qu_key",
+    "type": "区实验性示范性高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "静安",
+      "公办"
+    ],
+    "intro": "上海市久隆模范中学，位于上海静安，是一所公办区实验性示范性高中。"
+  },
+  {
+    "school_id": "tong-ji-da-xue-fu-shu-qi-yi-zhong-xue",
+    "name": "同济大学附属七一中学",
+    "short_name": "同济附属七一中学",
+    "district": "静安",
+    "tier": "qu_key",
+    "type": "区实验性示范性高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "静安",
+      "公办"
+    ],
+    "intro": "同济大学附属七一中学，位于上海静安，是一所公办区实验性示范性高中。"
+  },
+  {
+    "school_id": "fu-dan-fu-zhong-jing-an-gao-ji-zhong-xue",
+    "name": "复旦附中静安高级中学",
+    "short_name": "复旦附中静安高级中学",
+    "district": "静安",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "静安",
+      "公办"
+    ],
+    "intro": "复旦附中静安高级中学，位于上海静安，是一所公办一般高中。"
+  },
+  {
+    "school_id": "jin-yuan-gao-ji-zhong-xue-nan-xiao",
+    "name": "上海市晋元高级中学南校",
+    "short_name": "晋元高级中学南校",
+    "district": "普陀",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "普陀",
+      "公办"
+    ],
+    "intro": "上海市晋元高级中学南校，位于上海普陀，是一所公办一般高中。"
+  },
+  {
+    "school_id": "pei-jia-shuang-yu",
+    "name": "上海培佳双语学校",
+    "short_name": "培佳双语学校",
+    "district": "普陀",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "民办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "普陀",
+      "民办"
+    ],
+    "intro": "上海培佳双语学校，位于上海普陀，是一所民办一般高中。"
+  },
+  {
+    "school_id": "lu-xun-zhong-xue",
+    "name": "上海市鲁迅中学",
+    "short_name": "鲁迅中学",
+    "district": "虹口",
+    "tier": "qu_key",
+    "type": "区实验性示范性高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "虹口",
+      "公办"
+    ],
+    "intro": "上海市鲁迅中学，位于上海虹口，是一所公办区实验性示范性高中。"
+  },
+  {
+    "school_id": "tong-ji-da-xue-fu-shu-cheng-zhong-zhong-xue",
+    "name": "同济大学附属澄衷中学",
+    "short_name": "同济附属澄衷中学",
+    "district": "虹口",
+    "tier": "qu_key",
+    "type": "区实验性示范性高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "虹口",
+      "公办"
+    ],
+    "intro": "同济大学附属澄衷中学，位于上海虹口，是一所公办区实验性示范性高中。"
+  },
+  {
+    "school_id": "li-gong-da-xue-fu-shu-yang-pu-shao-yun-zhong-xue",
+    "name": "上海理工大学附属杨浦少云中学",
+    "short_name": "理工大学附属杨浦少云中学",
+    "district": "杨浦",
+    "tier": "qu_key",
+    "type": "区实验性示范性高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "杨浦",
+      "公办"
+    ],
+    "intro": "上海理工大学附属杨浦少云中学，位于上海杨浦，是一所公办区实验性示范性高中。"
+  },
+  {
+    "school_id": "fu-dan-da-xue-di-er-fu-shu-zhong-xue",
+    "name": "复旦大学第二附属中学",
+    "short_name": "复旦第二附属中学",
+    "district": "杨浦",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "杨浦",
+      "公办"
+    ],
+    "intro": "复旦大学第二附属中学，位于上海杨浦，是一所公办一般高中。"
+  },
+  {
+    "school_id": "min-xing-di-san-zhong-xue",
+    "name": "上海市闵行第三中学",
+    "short_name": "闵行第三中学",
+    "district": "闵行",
+    "tier": "qu_key",
+    "type": "市特色普通高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "闵行",
+      "公办"
+    ],
+    "intro": "上海市闵行第三中学，位于上海闵行，是一所公办市特色普通高中。"
+  },
+  {
+    "school_id": "wai-guo-yu-da-xue-min-xing-wai-guo-yu-zhong-xue",
+    "name": "上海外国语大学闵行外国语中学",
+    "short_name": "外国语大学闵行外国语中学",
+    "district": "闵行",
+    "tier": "qu_key",
+    "type": "区实验性示范性高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "闵行",
+      "公办"
+    ],
+    "intro": "上海外国语大学闵行外国语中学，位于上海闵行，是一所公办区实验性示范性高中。"
+  },
+  {
+    "school_id": "hua-dong-li-gong-da-xue-fu-shu-min-xing-ke-ji-gao-ji-zhong-xue",
+    "name": "华东理工大学附属闵行科技高级中学",
+    "short_name": "华理工附闵行科技高级中学",
+    "district": "闵行",
+    "tier": "qu_key",
+    "type": "区实验性示范性高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "闵行",
+      "公办"
+    ],
+    "intro": "华东理工大学附属闵行科技高级中学，位于上海闵行，是一所公办区实验性示范性高中。"
+  },
+  {
+    "school_id": "qi-bao-zhong-xue-fu-shu-xin-dou-shi-yan-zhong-xue",
+    "name": "上海市七宝中学附属鑫都实验中学",
+    "short_name": "七宝中学附属鑫都实验中学",
+    "district": "闵行",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "闵行",
+      "公办"
+    ],
+    "intro": "上海市七宝中学附属鑫都实验中学，位于上海闵行，是一所公办一般高中。"
+  },
+  {
+    "school_id": "min-xing-zhong-xue-dong-xiao",
+    "name": "上海市闵行中学东校",
+    "short_name": "闵行中学东校",
+    "district": "闵行",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "闵行",
+      "公办"
+    ],
+    "intro": "上海市闵行中学东校，位于上海闵行，是一所公办一般高中。"
+  },
+  {
+    "school_id": "qi-bao-zhong-xue-pu-jiang-fen-xiao",
+    "name": "上海市七宝中学浦江分校",
+    "short_name": "七宝中学浦江分校",
+    "district": "闵行",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "闵行",
+      "公办"
+    ],
+    "intro": "上海市七宝中学浦江分校，位于上海闵行，是一所公办一般高中。"
+  },
+  {
+    "school_id": "zhong-yi-yao-da-xue-fu-shu-pu-jiang-gao-ji-zhong-xue",
+    "name": "上海中医药大学附属浦江高级中学",
+    "short_name": "中医药大学附浦江高级中学",
+    "district": "闵行",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "闵行",
+      "公办"
+    ],
+    "intro": "上海中医药大学附属浦江高级中学，位于上海闵行，是一所公办一般高中。"
+  },
+  {
+    "school_id": "min-xing-qu-jiao-yu-xue-yuan-fu-shu-zhong-xue",
+    "name": "上海市闵行区教育学院附属中学",
+    "short_name": "闵行区教育学院附属中学",
+    "district": "闵行",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "闵行",
+      "公办"
+    ],
+    "intro": "上海市闵行区教育学院附属中学，位于上海闵行，是一所公办一般高中。"
+  },
+  {
+    "school_id": "min-xing-qu-xie-he-shuang-yu-jiao-ke",
+    "name": "上海闵行区协和双语教科学校",
+    "short_name": "闵行区协和双语教科学校",
+    "district": "闵行",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "民办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "闵行",
+      "民办"
+    ],
+    "intro": "上海闵行区协和双语教科学校，位于上海闵行，是一所民办一般高中。"
+  },
+  {
+    "school_id": "min-xing-qu-nuo-mei-gao-ji-zhong-xue",
+    "name": "上海闵行区诺美高级中学",
+    "short_name": "闵行区诺美高级中学",
+    "district": "闵行",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "民办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "闵行",
+      "民办"
+    ],
+    "intro": "上海闵行区诺美高级中学，位于上海闵行，是一所民办一般高中。"
+  },
+  {
+    "school_id": "sheng-hua-zi-zhu-gao-ji-zhong-xue",
+    "name": "上海圣华紫竹高级中学",
+    "short_name": "圣华紫竹高级中学",
+    "district": "闵行",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "民办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "闵行",
+      "民办"
+    ],
+    "intro": "上海圣华紫竹高级中学，位于上海闵行，是一所民办一般高中。"
+  },
+  {
+    "school_id": "min-xing-qu-wan-ke-shuang-yu",
+    "name": "上海闵行区万科双语学校",
+    "short_name": "闵行区万科双语学校",
+    "district": "闵行",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "民办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "闵行",
+      "民办"
+    ],
+    "intro": "上海闵行区万科双语学校，位于上海闵行，是一所民办一般高中。"
+  },
+  {
+    "school_id": "hua-dong-shi-fan-da-xue-di-er-fu-shu-zhong-xue-bao-shan-xiao-qu",
+    "name": "华东师范大学第二附属中学（宝山校区）",
+    "short_name": "华师大第二附中学（宝山校区）",
+    "district": "宝山",
+    "tier": "shi_key_branch",
+    "type": "享受市实验性示范性高中招生政策",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "宝山",
+      "公办"
+    ],
+    "intro": "华东师范大学第二附属中学（宝山校区），位于上海宝山，是一所公办享受市实验性示范性高中招生政策。"
+  },
+  {
+    "school_id": "gu-cun-zhong-xue",
+    "name": "上海市顾村中学",
+    "short_name": "顾村中学",
+    "district": "宝山",
+    "tier": "qu_key",
+    "type": "区实验性示范性高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "宝山",
+      "公办"
+    ],
+    "intro": "上海市顾村中学，位于上海宝山，是一所公办区实验性示范性高中。"
+  },
+  {
+    "school_id": "cun-zhi-gao-ji-zhong-xue",
+    "name": "上海存志高级中学",
+    "short_name": "存志高级中学",
+    "district": "宝山",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "民办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "宝山",
+      "民办"
+    ],
+    "intro": "上海存志高级中学，位于上海宝山，是一所民办一般高中。"
+  },
+  {
+    "school_id": "chuang-yi-gao-ji-zhong-xue",
+    "name": "上海创艺高级中学",
+    "short_name": "创艺高级中学",
+    "district": "宝山",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "民办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "宝山",
+      "民办"
+    ],
+    "intro": "上海创艺高级中学，位于上海宝山，是一所民办一般高中。"
+  },
+  {
+    "school_id": "jin-rui",
+    "name": "上海金瑞学校",
+    "short_name": "金瑞学校",
+    "district": "宝山",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "民办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "宝山",
+      "民办"
+    ],
+    "intro": "上海金瑞学校，位于上海宝山，是一所民办一般高中。"
+  },
+  {
+    "school_id": "min-ban-zhi-de-shi-yan",
+    "name": "上海民办至德实验学校",
+    "short_name": "民办至德实验学校",
+    "district": "宝山",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "民办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "宝山",
+      "民办"
+    ],
+    "intro": "上海民办至德实验学校，位于上海宝山，是一所民办一般高中。"
+  },
+  {
+    "school_id": "bao-shan-qu-shi-wai",
+    "name": "上海宝山区世外学校",
+    "short_name": "宝山区世外学校",
+    "district": "宝山",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "民办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "宝山",
+      "民办"
+    ],
+    "intro": "上海宝山区世外学校，位于上海宝山，是一所民办一般高中。"
+  },
+  {
+    "school_id": "shi-fan-da-xue-fu-shu-zhong-xue-jia-ding-xin-cheng-fen-xiao",
+    "name": "上海师范大学附属中学嘉定新城分校",
+    "short_name": "师范大学附中学嘉定新城分校",
+    "district": "嘉定",
+    "tier": "shi_key_branch",
+    "type": "享受市实验性示范性高中招生政策",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "嘉定",
+      "公办"
+    ],
+    "intro": "上海师范大学附属中学嘉定新城分校，位于上海嘉定，是一所公办享受市实验性示范性高中招生政策。"
+  },
+  {
+    "school_id": "jia-ding-qu-min-ban-hua-sheng-huai-shao",
+    "name": "上海嘉定区民办华盛怀少学校",
+    "short_name": "嘉定区民办华盛怀少学校",
+    "district": "嘉定",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "民办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "嘉定",
+      "民办"
+    ],
+    "intro": "上海嘉定区民办华盛怀少学校，位于上海嘉定，是一所民办一般高中。"
+  },
+  {
+    "school_id": "pu-dong-fu-dan-fu-zhong-fen-xiao",
+    "name": "上海市浦东复旦附中分校",
+    "short_name": "浦东复旦附中分校",
+    "district": "浦东",
+    "tier": "shi_key_branch",
+    "type": "享受市实验性示范性高中招生政策",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "浦东",
+      "公办"
+    ],
+    "intro": "上海市浦东复旦附中分校，位于上海浦东，是一所公办享受市实验性示范性高中招生政策。"
+  },
+  {
+    "school_id": "hua-dong-li-gong-da-xue-fu-shu-pu-dong-ke-ji-gao-ji-zhong-xue",
+    "name": "华东理工大学附属浦东科技高级中学",
+    "short_name": "华理工附浦东科技高级中学",
+    "district": "浦东",
+    "tier": "qu_key",
+    "type": "区实验性示范性高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "浦东",
+      "公办"
+    ],
+    "intro": "华东理工大学附属浦东科技高级中学，位于上海浦东，是一所公办区实验性示范性高中。"
+  },
+  {
+    "school_id": "hua-dong-shi-fan-da-xue-fu-shu-pu-dong-lin-gang-gao-ji-zhong-xue",
+    "name": "华东师范大学附属浦东临港高级中学",
+    "short_name": "华师大附浦东临港高级中学",
+    "district": "浦东",
+    "tier": "qu_key",
+    "type": "区实验性示范性高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "浦东",
+      "公办"
+    ],
+    "intro": "华东师范大学附属浦东临港高级中学，位于上海浦东，是一所公办区实验性示范性高中。"
+  },
+  {
+    "school_id": "pu-dong-lin-gang-ke-ji-gao-ji-zhong-xue",
+    "name": "上海市浦东临港科技高级中学",
+    "short_name": "浦东临港科技高级中学",
+    "district": "浦东",
+    "tier": "qu_key",
+    "type": "区实验性示范性高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "浦东",
+      "公办"
+    ],
+    "intro": "上海市浦东临港科技高级中学，位于上海浦东，是一所公办区实验性示范性高中。"
+  },
+  {
+    "school_id": "pu-dong-zhong-xue",
+    "name": "上海市浦东中学",
+    "short_name": "浦东中学",
+    "district": "浦东",
+    "tier": "qu_key",
+    "type": "区实验性示范性高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "浦东",
+      "公办"
+    ],
+    "intro": "上海市浦东中学，位于上海浦东，是一所公办区实验性示范性高中。"
+  },
+  {
+    "school_id": "jiao-tong-da-xue-fu-shu-zhong-xue-pu-dong-shi-yan-gao-zhong",
+    "name": "上海交通大学附属中学浦东实验高中",
+    "short_name": "交通大学附中学浦东实验高中",
+    "district": "浦东",
+    "tier": "qu_key",
+    "type": "区实验性示范性高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "浦东",
+      "公办"
+    ],
+    "intro": "上海交通大学附属中学浦东实验高中，位于上海浦东，是一所公办区实验性示范性高中。"
+  },
+  {
+    "school_id": "yang-jing-zhong-xue-nan-xiao",
+    "name": "上海市洋泾中学南校",
+    "short_name": "洋泾中学南校",
+    "district": "浦东",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "浦东",
+      "公办"
+    ],
+    "intro": "上海市洋泾中学南校，位于上海浦东，是一所公办一般高中。"
+  },
+  {
+    "school_id": "jian-ping-zhong-xue-yun-xi-fen-xiao",
+    "name": "上海市建平中学筠溪分校",
+    "short_name": "建平中学筠溪分校",
+    "district": "浦东",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "浦东",
+      "公办"
+    ],
+    "intro": "上海市建平中学筠溪分校，位于上海浦东，是一所公办一般高中。"
+  },
+  {
+    "school_id": "jin-cai-zhong-xue-gen-lin-fen-xiao",
+    "name": "上海市进才中学根林分校",
+    "short_name": "进才中学根林分校",
+    "district": "浦东",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "浦东",
+      "公办"
+    ],
+    "intro": "上海市进才中学根林分校，位于上海浦东，是一所公办一般高中。"
+  },
+  {
+    "school_id": "chuan-sha-zhong-xue-you-ren-fen-xiao",
+    "name": "上海市川沙中学友仁分校",
+    "short_name": "川沙中学友仁分校",
+    "district": "浦东",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "浦东",
+      "公办"
+    ],
+    "intro": "上海市川沙中学友仁分校，位于上海浦东，是一所公办一般高中。"
+  },
+  {
+    "school_id": "yu-min-zhong-xue",
+    "name": "上海市育民中学",
+    "short_name": "育民中学",
+    "district": "浦东",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "浦东",
+      "公办"
+    ],
+    "intro": "上海市育民中学，位于上海浦东，是一所公办一般高中。"
+  },
+  {
+    "school_id": "di-er-gong-ye-da-xue-fu-shu-gong-lu-zhong-xue",
+    "name": "上海第二工业大学附属龚路中学",
+    "short_name": "第二工业大学附属龚路中学",
+    "district": "浦东",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "浦东",
+      "公办"
+    ],
+    "intro": "上海第二工业大学附属龚路中学，位于上海浦东，是一所公办一般高中。"
+  },
+  {
+    "school_id": "hua-dong-shi-fan-da-xue-zhang-jiang-shi-yan-zhong-xue",
+    "name": "华东师范大学张江实验中学",
+    "short_name": "华师大张江实验中学",
+    "district": "浦东",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "浦东",
+      "公办"
+    ],
+    "intro": "华东师范大学张江实验中学，位于上海浦东，是一所公办一般高中。"
+  },
+  {
+    "school_id": "san-lin-zhong-xue-dong-xiao",
+    "name": "上海市三林中学东校",
+    "short_name": "三林中学东校",
+    "district": "浦东",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "浦东",
+      "公办"
+    ],
+    "intro": "上海市三林中学东校，位于上海浦东，是一所公办一般高中。"
+  },
+  {
+    "school_id": "chuan-sha-zhong-xue-bei-xiao",
+    "name": "上海市川沙中学北校",
+    "short_name": "川沙中学北校",
+    "district": "浦东",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "浦东",
+      "公办"
+    ],
+    "intro": "上海市川沙中学北校，位于上海浦东，是一所公办一般高中。"
+  },
+  {
+    "school_id": "min-ban-yu-xin-gao-ji-zhong-xue",
+    "name": "上海市民办育辛高级中学",
+    "short_name": "民办育辛高级中学",
+    "district": "浦东",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "民办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "浦东",
+      "民办"
+    ],
+    "intro": "上海市民办育辛高级中学，位于上海浦东，是一所民办一般高中。"
+  },
+  {
+    "school_id": "zhu-qiao-gao-ji-zhong-xue",
+    "name": "上海市祝桥高级中学",
+    "short_name": "祝桥高级中学",
+    "district": "浦东",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "浦东",
+      "公办"
+    ],
+    "intro": "上海市祝桥高级中学，位于上海浦东，是一所公办一般高中。"
+  },
+  {
+    "school_id": "wu-xun-zhong-xue",
+    "name": "上海市吴迅中学",
+    "short_name": "吴迅中学",
+    "district": "浦东",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "浦东",
+      "公办"
+    ],
+    "intro": "上海市吴迅中学，位于上海浦东，是一所公办一般高中。"
+  },
+  {
+    "school_id": "pu-dong-xin-qu-qun-feng-gao-ji-zhong-xue",
+    "name": "上海市浦东新区群峰高级中学",
+    "short_name": "浦东新区群峰高级中学",
+    "district": "浦东",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "浦东",
+      "公办"
+    ],
+    "intro": "上海市浦东新区群峰高级中学，位于上海浦东，是一所公办一般高中。"
+  },
+  {
+    "school_id": "pu-dong-xin-qu-min-ban-zi-ao-gao-ji-zhong-xue",
+    "name": "上海浦东新区民办籽奥高级中学",
+    "short_name": "浦东新区民办籽奥高级中学",
+    "district": "浦东",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "民办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "浦东",
+      "民办"
+    ],
+    "intro": "上海浦东新区民办籽奥高级中学，位于上海浦东，是一所民办一般高中。"
+  },
+  {
+    "school_id": "hua-dong-shi-fan-da-xue-fu-shu-feng-jing-zhong-xue",
+    "name": "华东师范大学附属枫泾中学",
+    "short_name": "华师大附属枫泾中学",
+    "district": "金山",
+    "tier": "qu_key",
+    "type": "市特色普通高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "金山",
+      "公办"
+    ],
+    "intro": "华东师范大学附属枫泾中学，位于上海金山，是一所公办市特色普通高中。"
+  },
+  {
+    "school_id": "zhang-yan-zhong-xue",
+    "name": "上海市张堰中学",
+    "short_name": "张堰中学",
+    "district": "金山",
+    "tier": "qu_key",
+    "type": "区实验性示范性高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "金山",
+      "公办"
+    ],
+    "intro": "上海市张堰中学，位于上海金山，是一所公办区实验性示范性高中。"
+  },
+  {
+    "school_id": "hua-dong-shi-fan-da-xue-di-er-fu-shu-zhong-xue-jin-shan-shi-yan",
+    "name": "华东师范大学第二附属中学金山实验学校",
+    "short_name": "华师大第二附中学金山实验学校",
+    "district": "金山",
+    "tier": "qu_key",
+    "type": "区实验性示范性高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "金山",
+      "公办"
+    ],
+    "intro": "华东师范大学第二附属中学金山实验学校，位于上海金山，是一所公办区实验性示范性高中。"
+  },
+  {
+    "school_id": "feng-ye-shuang-yu",
+    "name": "上海枫叶双语学校",
+    "short_name": "枫叶双语学校",
+    "district": "金山",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "民办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "金山",
+      "民办",
+      "国际课程班"
+    ],
+    "intro": "上海枫叶双语学校，位于上海金山，是一所民办一般高中。"
+  },
+  {
+    "school_id": "jin-shan-qu-shi-wai",
+    "name": "上海金山区世外学校",
+    "short_name": "金山区世外学校",
+    "district": "金山",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "民办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "金山",
+      "民办"
+    ],
+    "intro": "上海金山区世外学校，位于上海金山，是一所民办一般高中。"
+  },
+  {
+    "school_id": "hua-dong-shi-fan-da-xue-di-er-fu-shu-zhong-xue-song-jiang-fen-xiao",
+    "name": "华东师范大学第二附属中学松江分校",
+    "short_name": "华师大第二附中学松江分校",
+    "district": "松江",
+    "tier": "shi_key",
+    "type": "市实验性示范性高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "松江",
+      "公办"
+    ],
+    "intro": "华东师范大学第二附属中学松江分校，位于上海松江，是一所公办市实验性示范性高中。"
+  },
+  {
+    "school_id": "shi-fan-da-xue-fu-shu-zhong-xue-song-jiang-fen-xiao",
+    "name": "上海师范大学附属中学松江分校",
+    "short_name": "师范大学附属中学松江分校",
+    "district": "松江",
+    "tier": "shi_key_branch",
+    "type": "享受市实验性示范性高中招生政策",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "松江",
+      "公办"
+    ],
+    "intro": "上海师范大学附属中学松江分校，位于上海松江，是一所公办享受市实验性示范性高中招生政策。"
+  },
+  {
+    "school_id": "wai-guo-yu-da-xue-fu-shu-wai-guo-yu-xue-xiao-song-jiang-yun-jian-zhong-xue",
+    "name": "上海外国语大学附属外国语学校松江云间中学",
+    "short_name": "外国语大学附外国语学校松江云间中学",
+    "district": "松江",
+    "tier": "shi_key_branch",
+    "type": "享受市实验性示范性高中招生政策",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "松江",
+      "公办"
+    ],
+    "intro": "上海外国语大学附属外国语学校松江云间中学，位于上海松江，是一所公办享受市实验性示范性高中招生政策。"
+  },
+  {
+    "school_id": "hua-dong-zheng-fa-da-xue-fu-shu-song-jiang-gao-ji-zhong-xue",
+    "name": "华东政法大学附属松江高级中学",
+    "short_name": "华政附属松江高级中学",
+    "district": "松江",
+    "tier": "qu_key",
+    "type": "区实验性示范性高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "松江",
+      "公办"
+    ],
+    "intro": "华东政法大学附属松江高级中学，位于上海松江，是一所公办区实验性示范性高中。"
+  },
+  {
+    "school_id": "dong-hua-da-xue-fu-shu-song-jiang-gao-ji-zhong-xue",
+    "name": "东华大学附属松江高级中学",
+    "short_name": "东华附属松江高级中学",
+    "district": "松江",
+    "tier": "qu_key",
+    "type": "区实验性示范性高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "松江",
+      "公办"
+    ],
+    "intro": "东华大学附属松江高级中学，位于上海松江，是一所公办区实验性示范性高中。"
+  },
+  {
+    "school_id": "hua-dong-shi-fan-da-xue-song-jiang-shi-yan-gao-ji-zhong-xue",
+    "name": "华东师范大学松江实验高级中学",
+    "short_name": "华师大松江实验高级中学",
+    "district": "松江",
+    "tier": "qu_key",
+    "type": "区实验性示范性高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "松江",
+      "公办"
+    ],
+    "intro": "华东师范大学松江实验高级中学，位于上海松江，是一所公办区实验性示范性高中。"
+  },
+  {
+    "school_id": "dui-wai-jing-mao-da-xue-fu-shu-song-jiang-gao-ji-zhong-xue",
+    "name": "上海对外经贸大学附属松江高级中学",
+    "short_name": "对外经贸大学附松江高级中学",
+    "district": "松江",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "松江",
+      "公办"
+    ],
+    "intro": "上海对外经贸大学附属松江高级中学，位于上海松江，是一所公办一般高中。"
+  },
+  {
+    "school_id": "song-jiang-qu-li-teng-gao-ji-zhong-xue",
+    "name": "上海市松江区励滕高级中学",
+    "short_name": "松江区励滕高级中学",
+    "district": "松江",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "民办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "松江",
+      "民办"
+    ],
+    "intro": "上海市松江区励滕高级中学，位于上海松江，是一所民办一般高中。"
+  },
+  {
+    "school_id": "song-jiang-qu-hong-yi-nan-yang-gao-ji-zhong-xue",
+    "name": "上海市松江区弘毅南洋高级中学",
+    "short_name": "松江区弘毅南洋高级中学",
+    "district": "松江",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "民办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "松江",
+      "民办"
+    ],
+    "intro": "上海市松江区弘毅南洋高级中学，位于上海松江，是一所民办一般高中。"
+  },
+  {
+    "school_id": "ling-ke-shuang-yu",
+    "name": "上海领科双语学校",
+    "short_name": "领科双语学校",
+    "district": "松江",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "民办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "松江",
+      "民办"
+    ],
+    "intro": "上海领科双语学校，位于上海松江，是一所民办一般高中。"
+  },
+  {
+    "school_id": "xi-wai-wai-guo-yu",
+    "name": "上海市西外外国语学校",
+    "short_name": "西外外国语学校",
+    "district": "松江",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "民办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "松江",
+      "民办",
+      "国际课程班"
+    ],
+    "intro": "上海市西外外国语学校，位于上海松江，是一所民办一般高中。"
+  },
+  {
+    "school_id": "he-xian",
+    "name": "上海赫贤学校",
+    "short_name": "赫贤学校",
+    "district": "松江",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "民办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "松江",
+      "民办"
+    ],
+    "intro": "上海赫贤学校，位于上海松江，是一所民办一般高中。"
+  },
+  {
+    "school_id": "shi-fan-da-xue-fu-shu-qing-pu-shi-yan-zhong-xue",
+    "name": "上海师范大学附属青浦实验中学",
+    "short_name": "师范大学附属青浦实验中学",
+    "district": "青浦",
+    "tier": "qu_key",
+    "type": "区实验性示范性高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "青浦",
+      "公办"
+    ],
+    "intro": "上海师范大学附属青浦实验中学，位于上海青浦，是一所公办区实验性示范性高中。"
+  },
+  {
+    "school_id": "qing-pu-qu-di-er-zhong-xue",
+    "name": "上海市青浦区第二中学",
+    "short_name": "青浦区第二中学",
+    "district": "青浦",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "青浦",
+      "公办"
+    ],
+    "intro": "上海市青浦区第二中学，位于上海青浦，是一所公办一般高中。"
+  },
+  {
+    "school_id": "qing-pu-qu-shi-wai-gao-ji-zhong-xue",
+    "name": "上海青浦区世外高级中学",
+    "short_name": "青浦区世外高级中学",
+    "district": "青浦",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "民办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "青浦",
+      "民办"
+    ],
+    "intro": "上海青浦区世外高级中学，位于上海青浦，是一所民办一般高中。"
+  },
+  {
+    "school_id": "qing-pu-qu-xie-he-shuang-yu",
+    "name": "上海青浦区协和双语学校",
+    "short_name": "青浦区协和双语学校",
+    "district": "青浦",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "民办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "青浦",
+      "民办"
+    ],
+    "intro": "上海青浦区协和双语学校，位于上海青浦，是一所民办一般高中。"
+  },
+  {
+    "school_id": "hua-dong-shi-fan-da-xue-di-er-fu-shu-zhong-xue-lin-gang-feng-xian-fen-xiao",
+    "name": "华东师范大学第二附属中学临港奉贤分校",
+    "short_name": "华师大第二附中学临港奉贤分校",
+    "district": "奉贤",
+    "tier": "shi_key_branch",
+    "type": "享受市实验性示范性高中招生政策",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "奉贤",
+      "公办"
+    ],
+    "intro": "华东师范大学第二附属中学临港奉贤分校，位于上海奉贤，是一所公办享受市实验性示范性高中招生政策。"
+  },
+  {
+    "school_id": "dong-hua-da-xue-fu-shu-feng-xian-zhi-yuan-zhong-xue",
+    "name": "东华大学附属奉贤致远中学",
+    "short_name": "东华附属奉贤致远中学",
+    "district": "奉贤",
+    "tier": "qu_key",
+    "type": "区实验性示范性高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "奉贤",
+      "公办"
+    ],
+    "intro": "东华大学附属奉贤致远中学，位于上海奉贤，是一所公办区实验性示范性高中。"
+  },
+  {
+    "school_id": "feng-xian-zhong-xue-fu-shu-nan-qiao-zhong-xue",
+    "name": "上海市奉贤中学附属南桥中学",
+    "short_name": "奉贤中学附属南桥中学",
+    "district": "奉贤",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "奉贤",
+      "公办"
+    ],
+    "intro": "上海市奉贤中学附属南桥中学，位于上海奉贤，是一所公办一般高中。"
+  },
+  {
+    "school_id": "mei-da-fei-shuang-yu-gao-ji-zhong-xue",
+    "name": "上海美达菲双语高级中学",
+    "short_name": "美达菲双语高级中学",
+    "district": "奉贤",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "民办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "奉贤",
+      "民办"
+    ],
+    "intro": "上海美达菲双语高级中学，位于上海奉贤，是一所民办一般高中。"
+  },
+  {
+    "school_id": "feng-xian-qu-bo-hua-gao-ji-zhong-xue",
+    "name": "上海奉贤区博华高级中学",
+    "short_name": "奉贤区博华高级中学",
+    "district": "奉贤",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "民办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "奉贤",
+      "民办"
+    ],
+    "intro": "上海奉贤区博华高级中学，位于上海奉贤，是一所民办一般高中。"
+  },
+  {
+    "school_id": "shi-yan-xue-xiao-dong-tan-gao-ji-zhong-xue",
+    "name": "上海市实验学校东滩高级中学",
+    "short_name": "实验学校东滩高级中学",
+    "district": "崇明",
+    "tier": "shi_key_branch",
+    "type": "享受市实验性示范性高中招生政策",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "崇明",
+      "公办"
+    ],
+    "intro": "上海市实验学校东滩高级中学，位于上海崇明，是一所公办享受市实验性示范性高中招生政策。"
+  },
+  {
+    "school_id": "xin-ji-yuan-shuang-yu",
+    "name": "上海新纪元双语学校",
+    "short_name": "新纪元双语学校",
+    "district": "崇明",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "民办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "崇明",
+      "民办"
+    ],
+    "intro": "上海新纪元双语学校，位于上海崇明，是一所民办一般高中。"
+  },
+  {
+    "school_id": "ke-ji-da-xue-fu-shu",
+    "name": "上海科技大学附属学校",
+    "short_name": "科技大学附属学校",
+    "district": "上海市",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "公办",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "tags": [
+      "上海市",
+      "公办"
+    ],
+    "intro": "上海科技大学附属学校，位于上海上海市，是一所公办一般高中。"
+  },
+  {
+    "name": "上海市第四中学",
+    "short_name": "第四中学",
+    "district": "徐汇",
+    "tier": "district_key",
+    "type": "区实验性示范性高中",
+    "ownership": "公办",
+    "tags": [
+      "徐汇",
+      "公办"
+    ],
+    "intro": "上海市第四中学，位于上海徐汇，是一所公办区实验性示范性高中。",
+    "school_id": "di-si-zhong-xue",
+    "address": "",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "name": "上海市民办上实剑桥外国语中学",
+    "short_name": "上实剑桥",
+    "district": "杨浦",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "民办",
+    "tags": [
+      "杨浦",
+      "民办",
+      "国际课程班"
+    ],
+    "intro": "上海市民办上实剑桥外国语中学，位于上海杨浦，是一所民办一般高中，设有国际课程班。",
+    "school_id": "min-ban-shang-shi-jian-qiao-wai-guo-yu-zhong-xue",
+    "address": "",
+    "phone": "",
+    "website": ""
+  },
+  {
+    "name": "上海市向明中学（浦江校区）",
+    "short_name": "向明中学(浦江)",
+    "district": "黄浦",
+    "tier": "shi_key_branch",
+    "type": "享受市实验性示范性高中招生政策",
+    "ownership": "公办",
+    "tags": [
+      "黄浦",
+      "公办"
+    ],
+    "school_id": "xiang-ming-zhong-xue-pu-jiang-xiao-qu",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "intro": "上海市向明中学（浦江校区），位于上海黄浦，是一所公办享受市实验性示范性高中招生政策。"
+  },
+  {
+    "name": "上海市第二中学（梅陇校区）",
+    "short_name": "市二中学(梅陇)",
+    "district": "徐汇",
+    "tier": "shi_key_branch",
+    "type": "享受市实验性示范性高中招生政策",
+    "ownership": "公办",
+    "tags": [
+      "徐汇",
+      "公办"
+    ],
+    "school_id": "di-er-zhong-xue-mei-long-xiao-qu",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "intro": "上海市第二中学（梅陇校区），位于上海徐汇，是一所公办享受市实验性示范性高中招生政策。"
+  },
+  {
+    "name": "复旦大学附属中学徐汇分校",
+    "short_name": "复附徐汇分校",
+    "district": "徐汇",
+    "tier": "shi_key_branch",
+    "type": "享受市实验性示范性高中招生政策",
+    "ownership": "公办",
+    "tags": [
+      "徐汇",
+      "公办"
+    ],
+    "school_id": "fu-dan-da-xue-fu-shu-zhong-xue-xu-hui-fen-xiao",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "intro": "复旦大学附属中学徐汇分校，位于上海徐汇，是一所公办享受市实验性示范性高中招生政策。"
+  },
+  {
+    "name": "华东师范大学第二附属中学（普陀校区）",
+    "short_name": "华二(普陀)",
+    "district": "普陀",
+    "tier": "shi_key_branch",
+    "type": "享受市实验性示范性高中招生政策",
+    "ownership": "公办",
+    "tags": [
+      "普陀",
+      "公办"
+    ],
+    "school_id": "hua-dong-shi-fan-da-xue-di-er-fu-shu-zhong-xue-pu-tuo-xiao-qu",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "intro": "华东师范大学第二附属中学（普陀校区），位于上海普陀，是一所公办享受市实验性示范性高中招生政策。"
+  },
+  {
+    "name": "上海市曹杨第二中学东校",
+    "short_name": "曹杨二中东校",
+    "district": "普陀",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "公办",
+    "tags": [
+      "普陀",
+      "公办"
+    ],
+    "school_id": "cao-yang-di-er-zhong-xue-dong-xiao",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "intro": "上海市曹杨第二中学东校，位于上海普陀，是一所公办一般高中。"
+  },
+  {
+    "name": "上海外国语大学附属外国语学校东校",
+    "short_name": "上外附中东校",
+    "district": "虹口",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "公办",
+    "tags": [
+      "虹口",
+      "公办"
+    ],
+    "school_id": "wai-guo-yu-da-xue-fu-shu-wai-guo-yu-xue-xiao-dong-xiao",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "intro": "上海外国语大学附属外国语学校东校，位于上海虹口，是一所公办一般高中。"
+  },
+  {
+    "name": "华东师范大学第二附属中学闵行紫竹分校",
+    "short_name": "华二紫竹分校",
+    "district": "闵行",
+    "tier": "shi_key_branch",
+    "type": "享受市实验性示范性高中招生政策",
+    "ownership": "公办",
+    "tags": [
+      "闵行",
+      "公办"
+    ],
+    "school_id": "hua-dong-shi-fan-da-xue-di-er-fu-shu-zhong-xue-min-xing-zi-zhu-fen-xiao",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "intro": "华东师范大学第二附属中学闵行紫竹分校，位于上海闵行，是一所公办享受市实验性示范性高中招生政策。"
+  },
+  {
+    "name": "上海师范大学附属中学闵行分校",
+    "short_name": "上师附闵行分校",
+    "district": "闵行",
+    "tier": "shi_key_branch",
+    "type": "享受市实验性示范性高中招生政策",
+    "ownership": "公办",
+    "tags": [
+      "闵行",
+      "公办"
+    ],
+    "school_id": "shi-fan-da-xue-fu-shu-zhong-xue-min-xing-fen-xiao",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "intro": "上海师范大学附属中学闵行分校，位于上海闵行，是一所公办享受市实验性示范性高中招生政策。"
+  },
+  {
+    "name": "上海师范大学附属中学宝山分校",
+    "short_name": "上师附宝山分校",
+    "district": "宝山",
+    "tier": "shi_key_branch",
+    "type": "享受市实验性示范性高中招生政策",
+    "ownership": "公办",
+    "tags": [
+      "宝山",
+      "公办"
+    ],
+    "school_id": "shi-fan-da-xue-fu-shu-zhong-xue-bao-shan-fen-xiao",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "intro": "上海师范大学附属中学宝山分校，位于上海宝山，是一所公办享受市实验性示范性高中招生政策。"
+  },
+  {
+    "name": "上海交通大学附属中学嘉定分校",
+    "short_name": "交附嘉定分校",
+    "district": "嘉定",
+    "tier": "shi_key_branch",
+    "type": "享受市实验性示范性高中招生政策",
+    "ownership": "公办",
+    "tags": [
+      "嘉定",
+      "公办"
+    ],
+    "school_id": "jiao-tong-da-xue-fu-shu-zhong-xue-jia-ding-fen-xiao",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "intro": "上海交通大学附属中学嘉定分校，位于上海嘉定，是一所公办享受市实验性示范性高中招生政策。"
+  },
+  {
+    "name": "上海应用技术大学附属奉贤奉城高级中学",
+    "short_name": "应技大附奉城高级",
+    "district": "奉贤",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "公办",
+    "tags": [
+      "奉贤",
+      "公办"
+    ],
+    "school_id": "ying-yong-ji-shu-da-xue-fu-shu-feng-xian-feng-cheng-gao-ji-zhong-xue",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "intro": "上海应用技术大学附属奉贤奉城高级中学，位于上海奉贤，是一所公办一般高中。"
+  },
+  {
+    "name": "华东理工大学附属中学",
+    "short_name": "华理工附中",
+    "district": "徐汇",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "公办",
+    "tags": [
+      "徐汇",
+      "公办"
+    ],
+    "school_id": "hua-dong-li-gong-da-xue-fu-shu-zhong-xue",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "intro": "华东理工大学附属中学，位于上海徐汇，是一所公办一般高中。"
+  },
+  {
+    "name": "华东师范大学附属天山学校",
+    "short_name": "华师大附天山",
+    "district": "长宁",
+    "tier": "district_key",
+    "type": "区实验性示范性高中",
+    "ownership": "公办",
+    "tags": [
+      "长宁",
+      "公办"
+    ],
+    "school_id": "hua-dong-shi-fan-da-xue-fu-shu-tian-shan",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "intro": "华东师范大学附属天山学校，位于上海长宁，是一所公办区实验性示范性高中。"
+  },
+  {
+    "name": "华东师范大学附属闵行永德学校",
+    "short_name": "华师大附永德",
+    "district": "闵行",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "公办",
+    "tags": [
+      "闵行",
+      "公办"
+    ],
+    "school_id": "hua-dong-shi-fan-da-xue-fu-shu-min-xing-yong-de",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "intro": "华东师范大学附属闵行永德学校，位于上海闵行，是一所公办一般高中。"
+  },
+  {
+    "name": "上海浦东新区民办宏文学校",
+    "short_name": "宏文学校",
+    "district": "浦东",
+    "tier": "general",
+    "type": "一般高中",
+    "ownership": "民办",
+    "tags": [
+      "浦东",
+      "民办"
+    ],
+    "school_id": "pu-dong-xin-qu-min-ban-hong-wen",
+    "address": "",
+    "phone": "",
+    "website": "",
+    "intro": "上海浦东新区民办宏文学校，位于上海浦东，是一所民办一般高中。"
   }
 ]

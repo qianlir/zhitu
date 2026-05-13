@@ -8,7 +8,7 @@ type: 区实验示范
 ownership: 公办
 doc_type: readme
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海市同济中学 (同济中学)

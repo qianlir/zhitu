@@ -12,7 +12,7 @@ website: ""
 tags: ["普通高中", "艺术教育", "头脑OM", "市特色高中"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海市崇明区城桥中学 基本信息

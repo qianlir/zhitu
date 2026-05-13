@@ -12,7 +12,7 @@ website: http://www.shsxzsyzx.com
 tags: ["普通高中", "传统文化", "陶行知教育", "非遗传承", "市特色高中"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海市行知实验中学 基本信息

@@ -8,7 +8,7 @@ type: 委属市重点
 ownership: 公办
 doc_type: readme
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 华东师范大学第二附属中学 (华二)

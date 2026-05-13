@@ -12,7 +12,7 @@ website: https://jfzx.sjedu.cn/
 tags: ["普通高中", "百年底蕴", "一贯制", "民办学校"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海市松江九峰实验学校 基本信息

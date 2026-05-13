@@ -12,7 +12,7 @@ website: http://2ndfls.ctiku.com/
 tags: ["普通高中", "A-Level课程", "游泳传统", "高尔夫特色", "寄宿制"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海浦东新区民办东鼎外国语学校 基本信息

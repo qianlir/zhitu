@@ -12,7 +12,7 @@ website: https://lwgj.hpe.cn/
 tags: ["区重点", "科技教育", "科技特色", "设计特色", "百年底蕴"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海市卢湾高级中学 基本信息

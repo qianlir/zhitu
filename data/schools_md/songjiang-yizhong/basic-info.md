@@ -1,6 +1,6 @@
 ---
 school_id: songjiang-yizhong
-name: 上海市松江第一中学
+name: 上海市松江一中
 short_name: 松江一中
 district: 松江
 tier: district_key
@@ -12,14 +12,14 @@ website: https://school.sjyz.sjedu.cn
 tags: ["区重点", "寄宿制", "艺术教育", "百年名校", "大校园"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
-# 上海市松江第一中学 基本信息
+# 上海市松江一中 基本信息
 
 | 字段 | 值 |
 |---|---|
-| 学校全名 | 上海市松江第一中学 |
+| 学校全名 | 上海市松江一中 |
 | 简称 | 松江一中 |
 | 所在区 | 松江 |
 | 学校层级 | 区实验示范 |

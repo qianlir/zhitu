@@ -12,7 +12,7 @@ website: http://www.sxfz.edu.sh.cn/
 tags: ["普通高中", "戏剧教育", "艺术教育", "市特色高中"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海戏剧学院附属高级中学 基本信息

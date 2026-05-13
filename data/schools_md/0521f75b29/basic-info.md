@@ -12,7 +12,7 @@ website: http://www.huamo.com
 tags: ["市重点", "红色基因", "陈鹤琴创校", "双通教育", "篮球传统"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海市华东模范中学 基本信息

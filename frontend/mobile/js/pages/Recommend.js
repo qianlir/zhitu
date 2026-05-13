@@ -29,7 +29,7 @@ function MRecommend({ onOpenSchool, onBack }) {
   const autoGen = () => {
     const pList = allSchools.filter((s) => s.score2025 != null && (s.district === district || s.tier === "\u56DB\u6821" || s.tier === "\u516B\u5927")).sort((a, b2) => b2.score2025 - a.score2025);
     const tdList = allSchools.filter((s) => s.mingeDistrict != null && (s.tier === "\u56DB\u6821" || s.kind === "\u59D4\u5C5E\u5E02\u91CD\u70B9" || s.kind === "\u5E02\u5B9E\u9A8C\u793A\u8303"));
-    const tsList = allSchools.filter((s) => s.mingeSchool != null && (s.district === district || s.tier === "\u56DB\u6821"));
+    const tsList = allSchools.filter((s) => s.mingeSchool != null && (s.tier === "\u56DB\u6821" || s.kind === "\u59D4\u5C5E\u5E02\u91CD\u70B9" || s.kind === "\u5E02\u5B9E\u9A8C\u793A\u8303"));
     const tdCandidates = tdList.filter((s) => (s.mingeDistrict || 0) > score && (s.mingeDistrict || 0) <= score + 20).sort((a, b2) => (b2.mingeDistrict || 0) - (a.mingeDistrict || 0));
     const td = tdCandidates[0] || tdList.find((s) => (s.mingeDistrict || 999) <= score + 5);
     if (td) setTdPick(td.id);
@@ -64,7 +64,7 @@ function MRecommend({ onOpenSchool, onBack }) {
     setMessages((prev) => [...prev, { role: "user", content: msg }]);
     setLoading(true);
     const tdList = allSchools.filter((s) => s.mingeDistrict != null && (s.tier === "\u56DB\u6821" || s.kind === "\u59D4\u5C5E\u5E02\u91CD\u70B9" || s.kind === "\u5E02\u5B9E\u9A8C\u793A\u8303")).sort((a, b) => (b.mingeDistrict || 0) - (a.mingeDistrict || 0));
-    const tsList = allSchools.filter((s) => s.mingeSchool != null && (s.district === district || s.tier === "\u56DB\u6821")).sort((a, b) => (b.mingeSchool || 0) - (a.mingeSchool || 0));
+    const tsList = allSchools.filter((s) => s.mingeSchool != null && (s.tier === "\u56DB\u6821" || s.kind === "\u59D4\u5C5E\u5E02\u91CD\u70B9" || s.kind === "\u5E02\u5B9E\u9A8C\u793A\u8303")).sort((a, b) => (b.mingeSchool || 0) - (a.mingeSchool || 0));
     const pList = allSchools.filter((s) => s.score2025 != null && (s.district === district || s.tier === "\u56DB\u6821" || s.tier === "\u516B\u5927")).sort((a, b) => b.score2025 - a.score2025);
     const tdSchool = tdPick ? getS(tdPick) : null;
     const dxSchools = tsPicks.map(getS).filter(Boolean);
@@ -246,10 +246,10 @@ ${dr <= 500 ? "\u5934\u90E8\u8003\u751F\uFF0C\u56DB\u6821\u6709\u7ADE\u4E89\u529
   }, style: { background: "transparent", border: "none", fontSize: 20, cursor: "pointer", color: "var(--text-3)" } }, "\xD7")), /* @__PURE__ */ React.createElement("div", { style: { padding: "8px 16px" } }, /* @__PURE__ */ React.createElement("input", { value: pickerQ, onChange: (e) => setPickerQ(e.target.value), placeholder: "\u641C\u7D22\u5B66\u6821\u540D\u79F0...", className: "mi", style: { width: "100%", borderRadius: 8, padding: "10px 14px", fontSize: 14 } })), /* @__PURE__ */ React.createElement("div", { style: { flex: 1, overflowY: "auto", padding: "0 16px" } }, allSchools.filter((s) => {
     if (pickerQ && !s.name.includes(pickerQ) && !(s.shortName || "").includes(pickerQ)) return false;
     if (picker.type === "dq") return s.mingeDistrict != null;
-    if (picker.type === "dx") return s.mingeSchool != null && (s.district === district || s.tier === "\u56DB\u6821");
+    if (picker.type === "dx") return s.mingeSchool != null && (s.tier === "\u56DB\u6821" || s.kind === "\u59D4\u5C5E\u5E02\u91CD\u70B9" || s.kind === "\u5E02\u5B9E\u9A8C\u793A\u8303");
     return s.score2025 != null;
   }).sort((a, b) => (b.score2025 || 0) - (a.score2025 || 0)).slice(0, 30).map((s) => {
-    const used = s.id === tdPick || tsPicks.includes(s.id) || pPicks.includes(s.id);
+    const used = picker.type === "dq" ? s.id === tdPick : picker.type === "dx" ? tsPicks.includes(s.id) : pPicks.includes(s.id);
     return /* @__PURE__ */ React.createElement("div", { key: s.id, onClick: () => {
       if (picker.type === "dq") setTdPick(s.id);
       else if (picker.type === "dx") {

@@ -12,7 +12,7 @@ website: http://www.ghschool.com/
 tags: ["普通高中", "外语特色", "国际课程", "篮球特色", "足球特色"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海民办光华中学 基本信息

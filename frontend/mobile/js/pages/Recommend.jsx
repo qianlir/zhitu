@@ -32,7 +32,8 @@ function MRecommend({ onOpenSchool, onBack }) {
   const autoGen = () => {
     const pList = allSchools.filter(s => s.score2025 != null && (s.district === district || s.tier === '四校' || s.tier === '八大')).sort((a, b) => b.score2025 - a.score2025);
     const tdList = allSchools.filter(s => s.mingeDistrict != null && (s.tier === '四校' || s.kind === '委属市重点' || s.kind === '市实验示范'));
-    const tsList = allSchools.filter(s => s.mingeSchool != null && (s.district === district || s.tier === '四校'));
+    // TODO: 后续根据学生所在学校决定候选，暂时与名额到区一致
+    const tsList = allSchools.filter(s => s.mingeSchool != null && (s.tier === '四校' || s.kind === '委属市重点' || s.kind === '市实验示范'));
 
     // 到区：选冲刺（分数高于考生 5~20 分的最优学校）
     const tdCandidates = tdList.filter(s => (s.mingeDistrict || 0) > score && (s.mingeDistrict || 0) <= score + 20).sort((a, b) => (b.mingeDistrict || 0) - (a.mingeDistrict || 0));
@@ -67,7 +68,8 @@ function MRecommend({ onOpenSchool, onBack }) {
 
     // 构建可选学校列表（与 PC 端 AIChat 一致）
     const tdList = allSchools.filter(s => s.mingeDistrict != null && (s.tier === '四校' || s.kind === '委属市重点' || s.kind === '市实验示范')).sort((a,b) => (b.mingeDistrict||0)-(a.mingeDistrict||0));
-    const tsList = allSchools.filter(s => s.mingeSchool != null && (s.district === district || s.tier === '四校')).sort((a,b) => (b.mingeSchool||0)-(a.mingeSchool||0));
+    // TODO: 后续根据学生所在学校决定候选，暂时与名额到区一致
+    const tsList = allSchools.filter(s => s.mingeSchool != null && (s.tier === '四校' || s.kind === '委属市重点' || s.kind === '市实验示范')).sort((a,b) => (b.mingeSchool||0)-(a.mingeSchool||0));
     const pList = allSchools.filter(s => s.score2025 != null && (s.district === district || s.tier === '四校' || s.tier === '八大')).sort((a,b) => b.score2025 - a.score2025);
 
     const tdSchool = tdPick ? getS(tdPick) : null;
@@ -305,10 +307,10 @@ function MRecommend({ onOpenSchool, onBack }) {
               {allSchools.filter(s => {
                 if (pickerQ && !s.name.includes(pickerQ) && !(s.shortName||'').includes(pickerQ)) return false;
                 if (picker.type === 'dq') return s.mingeDistrict != null;
-                if (picker.type === 'dx') return s.mingeSchool != null && (s.district === district || s.tier === '四校');
+                if (picker.type === 'dx') return s.mingeSchool != null && (s.tier === '四校' || s.kind === '委属市重点' || s.kind === '市实验示范');
                 return s.score2025 != null;
               }).sort((a,b) => (b.score2025||0)-(a.score2025||0)).slice(0,30).map(s => {
-                const used = s.id === tdPick || tsPicks.includes(s.id) || pPicks.includes(s.id);
+                const used = picker.type === 'dq' ? s.id === tdPick : picker.type === 'dx' ? tsPicks.includes(s.id) : pPicks.includes(s.id);
                 return (
                   <div key={s.id} onClick={() => {
                     if (picker.type === 'dq') setTdPick(s.id);

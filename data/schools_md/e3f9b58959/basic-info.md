@@ -12,7 +12,7 @@ website: http://www.tjzx.edu.sh.cn
 tags: ["区重点", "德语特色", "篮球特色", "院士校友", "大学合作"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海市同济中学 基本信息

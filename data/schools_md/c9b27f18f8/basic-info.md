@@ -12,7 +12,7 @@ website: https://dj.hpe.cn
 tags: ["市重点", "外语特色", "英语小班化", "德语教学", "射击特色", "创造教育"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海外国语大学附属大境中学 基本信息

@@ -12,7 +12,7 @@ website: https://sfz.shnu.edu.cn/
 tags: ["普通高中", "临港新城", "工程特色", "师范特色"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海师范大学第四附属中学 基本信息

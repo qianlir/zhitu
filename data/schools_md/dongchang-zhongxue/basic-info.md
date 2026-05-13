@@ -1,6 +1,6 @@
 ---
 school_id: dongchang-zhongxue
-name: 上海市东昌中学
+name: 华东师范大学附属东昌中学
 short_name: 东昌
 district: 浦东
 tier: regular
@@ -12,14 +12,14 @@ website: https://www.hsdch.pudong-edu.sh.cn/
 tags: ["普通高中", "金融素养教育", "市特色高中", "大学合作"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
-# 上海市东昌中学 基本信息
+# 华东师范大学附属东昌中学 基本信息
 
 | 字段 | 值 |
 |---|---|
-| 学校全名 | 上海市东昌中学 |
+| 学校全名 | 华东师范大学附属东昌中学 |
 | 简称 | 东昌 |
 | 所在区 | 浦东 |
 | 学校层级 | 普通高中 |

@@ -12,7 +12,7 @@ website: https://gmgz.mhedu.sh.cn/
 tags: ["普通高中", "智慧课堂", "信息化教学"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海市古美高级中学 基本信息

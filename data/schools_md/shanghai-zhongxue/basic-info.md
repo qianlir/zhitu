@@ -1,6 +1,6 @@
 ---
 school_id: shanghai-zhongxue
-name: 上海中学
+name: 上海市上海中学
 short_name: 上中
 district: 徐汇
 tier: four_schools
@@ -12,14 +12,14 @@ website: https://www.shs.sh.cn
 tags: ["四校", "四校之首", "数学竞赛全国第一", "理科强", "竞赛强", "IMO金牌", "拔尖创新", "科技班", "工程班", "寄宿制"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
-# 上海中学 基本信息
+# 上海市上海中学 基本信息
 
 | 字段 | 值 |
 |---|---|
-| 学校全名 | 上海中学 |
+| 学校全名 | 上海市上海中学 |
 | 简称 | 上中 |
 | 所在区 | 徐汇 |
 | 学校层级 | 委属市重点 |

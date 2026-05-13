@@ -12,7 +12,7 @@ website: https://ldzx.sjedu.cn/
 tags: ["区重点", "科创教育", "艺术教育"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海市松江区立达中学 基本信息

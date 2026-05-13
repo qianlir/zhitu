@@ -12,7 +12,7 @@ website: https://gezhi.hpe.cn
 tags: ["市重点", "理科见长", "数学奥赛", "复旦数学创新班", "14位院士", "150年历史"]
 doc_type: basic
 source: seed_json
-scraped_at: 2026-05-05T13:20:24+08:00
+scraped_at: 2026-05-13T10:16:37+08:00
 ---
 
 # 上海市格致中学 基本信息
