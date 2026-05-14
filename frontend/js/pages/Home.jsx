@@ -1,3 +1,38 @@
+// 分数估名次组件
+function RankEstimator() {
+  const [score, setScore] = React.useState('');
+  const estDR = score ? estimateRank(+score, PUDONG_RANK) : null;
+  const estCR = score ? estimateRank(+score, CITY_RANK) : null;
+  const tier = score ? tierLabel(+score) : '';
+  const cls = score ? tierClass(+score) : '';
+
+  return (
+    <div style={{ marginTop: 28, background: '#fff', borderRadius: 12, padding: '20px 24px', maxWidth: 520, margin: '28px auto 0', boxShadow: 'var(--shadow-sm)', border: '1px solid var(--border)' }}>
+      <div style={{ fontSize: 14, fontWeight: 600, marginBottom: 12, color: 'var(--text-2)' }}>📊 分数估名次</div>
+      <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
+        <input type="number" placeholder="输入中考分数" value={score} onChange={e => setScore(e.target.value)}
+          style={{ flex: 1, padding: '10px 14px', border: '1px solid var(--border)', borderRadius: 8, fontSize: 16, fontWeight: 600, color: 'var(--primary)', textAlign: 'center' }} />
+        {score && estCR && (
+          <div style={{ display: 'flex', gap: 12, fontSize: 13 }}>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ color: 'var(--text-muted)', fontSize: 11 }}>全市排名</div>
+              <div style={{ fontWeight: 700, color: 'var(--primary)', fontSize: 18 }}>~{estCR.toLocaleString()}</div>
+            </div>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ color: 'var(--text-muted)', fontSize: 11 }}>浦东排名</div>
+              <div style={{ fontWeight: 700, color: 'var(--secondary)', fontSize: 18 }}>~{estDR.toLocaleString()}</div>
+            </div>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ color: 'var(--text-muted)', fontSize: 11 }}>定位</div>
+              <div><span className={'score-chip ' + cls} style={{ fontSize: 12 }}>{tier}</span></div>
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
 // PAGE 1: Home / Landing
 function HomePage({ onNavigate, onOpenSchool }) {
   const [featured, setFeatured] = React.useState([]);
@@ -44,6 +79,8 @@ function HomePage({ onNavigate, onOpenSchool }) {
             <button className="pill" style={{ cursor: 'pointer', background: '#fff' }} onClick={() => onNavigate('schools')}>🏆 按类型</button>
             <button className="pill" style={{ cursor: 'pointer', background: '#fff' }} onClick={() => onNavigate('schools')}>📊 按分数段</button>
           </div>
+
+          <RankEstimator />
         </div>
       </section>
 
